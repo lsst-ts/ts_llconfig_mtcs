@@ -159,7 +159,7 @@ c:\\Configuration\\ACWData.ini	c:\\Configuration\\ACWData.ini	Motor timer file p
 2000.0000000000	2000.0000000000	ResettingTime	Timeout time to reset the system	ms	DOUBLE	2	1	CW	ACW	0	0	0	1206	60	33	0	0
 1.0000000000	1.0000000000	Rotation sense	Manage the rotation sense. A value of 1 makes the ACW rotates clockwise locking to gears and - 1 makes rotates counter clockwise		DOUBLE	2	1	CW	ACW	-1	1	1	1207	60	33	0	0
 12.0000000000	12.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	mm/s	DOUBLE	2	1	CW	ACW	0.01	15	1	1209	60	33	0	0
-4000.0000000000	4000.0000000000	StopTrans_Timeout	Timeout time to stop a movement	ms	DOUBLE	2	1	CW	ACW	0	0	0	1210	60	33	0	0
+4000.01	4000.0000000000	StopTrans_Timeout	Timeout time to stop a movement	ms	DOUBLE	2	1	CW	ACW	0	0	0	1210	60	33	0	0
 300.ACW	300.ACW	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	CW	ACW	0	0	0	1227	60	33	0	0
 10.0000000000	10.0000000000	Tracking Acceleration	The acceleration used when tracking	deg/s^2	DOUBLE	2	1	CW	ACW	0.1	1.5	1	1211	60	33	0	0
 1.0000000000	1.0000000000	Tracking CompensationGain	Compenation value used in tracking command to convert to position command, acording to ((endVelocity^2)/acceleration)*(0.5)*CompensationGain formula		DOUBLE	2	0	CW	ACW	0.5	100	0	1379	60	33	0	0
