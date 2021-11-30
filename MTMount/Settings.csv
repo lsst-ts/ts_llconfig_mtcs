@@ -1074,6 +1074,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 500.0000000000	500.0000000000	RT to Safety Clock ms	This is the RT to safety clock time value.	ms	DOUBLE	2	1	Safety	General	0	0	0	729	57	31	0	0
 3000.0000000000	3000.0000000000	Safety Clock ms	This is the safety clock time value.	ms	DOUBLE	2	1	Safety	General	0	0	0	728	57	31	0	0
 200.0000000000	200.0000000000	AfterCommanderLaunchWait	This is the time to wait after launching the commander	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	736	58	32	0	0
+10000.0000000000	10000.0000000000	BeforeAmbientTemperatureTaskLaunchWait	This is the time to wait before launching the Ambient Temperature task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1402	58	32	0	0
 6500.0000000000	6500.0000000000	BeforeAZMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	746	58	32	0	0
 4500.0000000000	4500.0000000000	BeforeBALLaunchWait	This is the time to wait before launching the balancing task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	741	58	32	0	0
 3500.0000000000	3500.0000000000	BeforeBoschLaunchWait	This is the time to wait before launching the bosch task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	738	58	32	0	0
