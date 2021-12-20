@@ -628,7 +628,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 150000.0000000000	150000.0000000000	Powering time out	Timeout of the powering process	ms	DOUBLE	2	1	MainPowerSupply	MainPowerSupply	0	0	0	381	48	27	0	0
 1000.0000000000	1000.0000000000	Reseting time	Waiting time between the MPS reset and clearing faults	ms	DOUBLE	2	1	MainPowerSupply	MainPowerSupply	0	0	0	382	48	27	0	0
 5000.0000000000	5000.0000000000	Wait Power Off In Fault	Time to wait before sending switch off to Power supply	ms	DOUBLE	2	0	MainPowerSupply	MainPowerSupply	0	0	0	977	48	27	0	0
-15.0000000000	15.0000000000	MinElevationPosition	Minimum Elevation Position for the mirror cover to close.	deg	DOUBLE	2	1	MirrorCover	General	0	0	0	873	14	19	0	0
+-0.1	15.0000000000	MinElevationPosition	Minimum Elevation Position for the mirror cover to close.	deg	DOUBLE	2	1	MirrorCover	General	0	0	0	873	14	19	0	0
 900.MC	900.MC	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MirrorCover	General	1	7	0	526	14	19	0	0
 60000.0000000000	60000.0000000000	WaitTrans_Timeout	Wait transition timeout	ms	DOUBLE	2	1	MirrorCover	General	0	0	0	540	14	19	0	0
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC1	0	30	1	80	15	19	0	0
