@@ -1065,7 +1065,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 800.OSS	800.OSS	SystemSource	This is the identifier for the system used when publishing the Alarm source.	s	STRING	3	1	OSS	OSS	0	0	0	963	50	28	0	0
 10.0000000000	10.0000000000	watchdogMaximumTime	Maximum time that the controller will wait without a watchdog signal	s	DOUBLE	2	1	OSS	OSS	0	0	0	1033	50	28	0	0
 3.0000000000	3.0000000000	Fault Iterations Safety NoOk	This is a counter used to trigger the Safety NO OK variable as TRUE if the value is greater than the set value.		DOUBLE	2	1	Safety	General	0	0	0	727	57	31	0	0
-100.0000000000	100.0000000000	Monitoring Timeout ms	This is the timeout for the monitoring task in the TMA safety code.	ms	DOUBLE	2	1	Safety	General	0	0	0	730	57	31	0	0
+1000.0000000000	1000.0000000000	Monitoring Timeout ms	This is the timeout for the monitoring task in the TMA safety code.	ms	DOUBLE	2	1	Safety	General	0	0	0	730	57	31	0	0
 1000.0000000000	1000.0000000000	OverrideCausesTimeout	This is the timeout for executing the override causes command.	ms	DOUBLE	2	1	Safety	General	0	0	0	731	57	31	0	0
 6.0000000000	6.0000000000	ResetCausesNumberOfChecks	This is a setting used to trigger a warning that tells that some causes persist and were not restored. The trigger is sent if the number of checks is greater or equal to this setting value.		DOUBLE	2	1	Safety	General	0	0	0	733	57	31	0	0
 1.0000000000	1.0000000000	ResetCausesTimeBeforeChecking s	Time to wait before checking that the causes were reseted.	s	DOUBLE	2	1	Safety	General	0	0	0	734	57	31	0	0
