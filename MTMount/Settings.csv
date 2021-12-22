@@ -529,11 +529,11 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 86.4000000000	86.4000000000	Limits Max Position value	Maximun allowed postion command	deg	DOUBLE	2	1	MainAxis	Elevation	80	91.3	1	1276	53	25	0	0
 1	1	Limits Min Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1277	53	25	0	0
 15.1000000000	15.1000000000	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	1	MainAxis	Elevation	-1.3	20	1	1278	53	25	0	0
-1	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1279	53	25	0	0
+0	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1279	53	25	0	0
 15.1000000000	15.1000000000	Limits Negative Adjustable Software limit value	Vaue for Negative adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	0	20	0	1280	53	25	0	0
-1	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1282	53	25	0	0
-1	1	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1281	53	25	0	0
-1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1283	53	25	0	0
+0	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1282	53	25	0	0
+0	1	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1281	53	25	0	0
+0	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1283	53	25	0	0
 -0.1000000000	-0.1000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	-0.2	20	0	1284	53	25	0	0
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Elevation	0	0	0	1334	53	25	0	0
 5.200000	5.200000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1285	53	25	0	0
