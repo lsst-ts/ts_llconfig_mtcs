@@ -103,7 +103,7 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	Balancing	Balancing4	0	0	0	254	40	22	0	0
 0.000000	0.000000	WaitAfterReset			DOUBLE	2	1	Balancing	Balancing4	0	0	0	255	40	22	0	0
 1100.BAL	1100.BAL	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	Balancing	General	1	7	0	531	36	22	0	0
-192.168.209.3	192.168.209.3	address	This is the IP address of the MLC.		STRING	3	1	BoschSystem	General	0	0	0	813	62	34	0	0
+192.168.212.3	192.168.212.3	address	This is the IP address of the MLC.		STRING	3	1	BoschSystem	General	0	0	0	813	62	34	0	0
 0	0	ChangeToParking	This setting defines if the system will execute the actions to change some motors to parking/notParking. If true before starting the bosch system some motors will change to parking.\nIf false no actions are executed before starting.		BOOLEAN	1	1	BoschSystem	General	0	0	0	797	62	34	0	0
 0	0	Parking Motor ID 1	This setting defines if the motor has to be in parking or not. Parking means that the motor will be off, and the statechart corresponding to the Motor ID will not start.		BOOLEAN	1	1	BoschSystem	General	0	0	0	775	62	34	0	0
 0	0	Parking Motor ID 10	This setting defines if the motor has to be in parking or not. Parking means that the motor will be off, and the statechart corresponding to the Motor ID will not start.		BOOLEAN	1	1	BoschSystem	General	0	0	0	784	62	34	0	0
@@ -608,11 +608,13 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 43.0000000000	43.0000000000	High Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	1	10	3	13	0	0
 5.0000000000	5.0000000000	High Surface Temperature	The difference between ambient temperature and surface temperature is above the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	25	1	8	3	13	0	0
 		ID String			STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1063	3	13	0	0
+192.168.210.50	192.168.210.50	IP address	This is the IP address of the RMC for the modbus connection.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1405	3	13	0	0
 5.0000000000	5.0000000000	Low Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-5	10	1	11	3	13	0	0
 -5.0000000000	-5.0000000000	Low Surface Temperature	The difference between ambient temperature and surface temperature is bellow the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-30	0	1	9	3	13	0	0
 2.000000	2.000000	Lower Limit Hysteresis Relative	This is the lower temperature limit  relative to the ambient temperature for the hysteresis control used when RMC is not working	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	15	1	406	3	13	0	0
 35.0000000000	35.0000000000	Maximum Setpoint Temperature	Maximum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	30	40	1	403	3	13	0	0
 5.000000	5.000000	Minimum Setpoint Temperature	Minimum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	1	404	3	13	0	0
+502.0000000000	502.0000000000	port	This is the connection port for the modbus of the RMC.		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	0	0	1406	3	13	0	0
 1350.0000000000	1350.0000000000	Special Error Lower Limit	The error numbers between this setting and the Special Error Upper Limit will trigger the special fault in the main cabinet statechart. This special fault will trigger a fault in all subsystem to prepare for a possible cabinet switch off.		DOUBLE	2	0	MainCabinetTemperature	MainCabinet	20	48	0	1382	3	13	0	0
 1399.0000000000	1399.0000000000	Special Error Upper Limit	The error numbers between this setting and the Special Error Lower Limit will trigger the special fault in the main cabinet statechart. This special fault will trigger a fault in all subsystem to prepare for a possible cabinet switch off.		DOUBLE	2	0	MainCabinetTemperature	MainCabinet	20	48	0	1381	3	13	0	0
 1300.MainCabinet	1300.MainCabinet	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1062	3	13	0	0
