@@ -1098,6 +1098,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 6000.0000000000	6000.0000000000	BeforeMPSLaunchWait	This is the time to wait before launching the main power supply task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	851	58	32	0	0
 8500.0000000000	8500.0000000000	BeforeOSSLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1096	58	32	0	0
 0.0000000000	0.0000000000	BeforeSafetyLaunchWait	This is the time to wait before launching the safety task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	737	58	32	0	0
+6000.0000000000	6000.0000000000	BeforeTECLaunchWait	This is the time to wait before launching the TEC task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1408	58	32	0	0
 10000.000000	10000.000000	LocalRemote timeout	After this time the Top End chiller checking for local remote change will send a timeout error	ms	DOUBLE	2	1	TopEndChiller	General	5000	30000	1	377	46	26	0	0
 10000.000000	10000.000000	Power ON/OFF timeout	After this time the Top End chiller checking for power on or off will send a timeout error	ms	DOUBLE	2	1	TopEndChiller	General	5000	30000	1	375	46	26	0	0
 1000.000000	1000.000000	Reset pulse time	Time of the reset pulse sent to Top en chiller controller	ms	DOUBLE	2	1	TopEndChiller	General	1000	3000	1	376	46	26	0	0
