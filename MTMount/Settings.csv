@@ -349,7 +349,7 @@ TMA-AZ-ENC-ELV-0002	TMA-AZ-ENC-ELV-0002	Head Name	Name of the head according to 
 LP X+	LP X+	ID String	This is the identifier for the cover in string format.		STRING	3	1	LockingPins	LockingPin1	0	0	0	528	42	23	0	0
 80.000000	80.000000	LockPosition	Position to move locking pin where the elevation axis is locked	mm	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	268	42	23	0	0
 7.600000	7.600000	Max Critical Speed	Max speed alloable. Above this limit the event system will trigger an alarm	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	295	42	23	0	0
-82.0000000000	82.0000000000	Max Position	The maximum position of the locking pin motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin1	42	85	0	397	42	23	0	0
+92.0000000000	92.0000000000	Max Position	The maximum position of the locking pin motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin1	42	85	0	397	42	23	0	0
 7.5000000000	7.5000000000	Max Speed	The maximum speed of the locking pin motor, if the speed is greater than this the command is rejected.	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	261	42	23	0	0
 -3.000000	-3.000000	Min Position	The minimum position of the balancing motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin1	-10	5	1	399	42	23	0	0
 19.0000000000	19.0000000000	MotorID			DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	270	42	23	0	0
@@ -368,7 +368,7 @@ LP X+	LP X+	ID String	This is the identifier for the cover in string format.		ST
 LP X-	LP X-	ID String	This is the identifier for the cover in string format.		STRING	3	1	LockingPins	LockingPin2	0	0	0	529	43	23	0	0
 80.000000	80.000000	LockPosition	Position to move locking pin where the elevation axis is locked	mm	DOUBLE	2	1	LockingPins	LockingPin2	0	0	0	283	43	23	0	0
 7.600000	7.600000	Max Critical Speed	Max speed alloable. Above this limit the event system will trigger an alarm	mm/s	DOUBLE	2	1	LockingPins	LockingPin2	0	0	0	296	43	23	0	0
-82.000000	82.000000	Max Position	The maximum position of the locking pin motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin2	42	85	0	398	43	23	0	0
+92.0000000000	92.0000000000	Max Position	The maximum position of the locking pin motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin2	42	85	0	398	43	23	0	0
 7.500000	7.500000	Max Speed	The maximum speed of the locking pin motor, if the speed is greater than this the command is rejected.	mm/s	DOUBLE	2	1	LockingPins	LockingPin2	0	0	0	286	43	23	0	0
 -3.000000	-3.000000	Min Position	The minimum position of the balancing motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin2	-10	5	1	400	43	23	0	0
 20.000000	20.000000	MotorID			DOUBLE	2	0	LockingPins	LockingPin2	0	0	0	287	43	23	0	0
@@ -609,13 +609,13 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 43.0000000000	43.0000000000	High Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	1	10	3	13	0	0
 5.0000000000	5.0000000000	High Surface Temperature	The difference between ambient temperature and surface temperature is above the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	25	1	8	3	13	0	0
 		ID String			STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1063	3	13	0	0
-192.168.210.50	192.168.210.50	IP address	This is the IP address of the RMC for the modbus connection.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1405	3	13	0	0
+192.168.210.30	192.168.210.30	IP address	This is the IP address of the RMC for the modbus connection.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1405	3	13	0	0
 5.0000000000	5.0000000000	Low Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-5	10	1	11	3	13	0	0
 -5.0000000000	-5.0000000000	Low Surface Temperature	The difference between ambient temperature and surface temperature is bellow the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-30	0	1	9	3	13	0	0
 2.000000	2.000000	Lower Limit Hysteresis Relative	This is the lower temperature limit  relative to the ambient temperature for the hysteresis control used when RMC is not working	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	15	1	406	3	13	0	0
 35.0000000000	35.0000000000	Maximum Setpoint Temperature	Maximum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	30	40	1	403	3	13	0	0
 5.000000	5.000000	Minimum Setpoint Temperature	Minimum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	1	404	3	13	0	0
-50051	50051	port	This is the connection port for the modbus of the RMC.		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	0	0	1406	3	13	0	0
+502.0000000000	502.0000000000	port	This is the connection port for the modbus of the RMC.		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	0	0	1406	3	13	0	0
 1350.0000000000	1350.0000000000	Special Error Lower Limit	The error numbers between this setting and the Special Error Upper Limit will trigger the special fault in the main cabinet statechart. This special fault will trigger a fault in all subsystem to prepare for a possible cabinet switch off.		DOUBLE	2	0	MainCabinetTemperature	MainCabinet	20	48	0	1382	3	13	0	0
 1399.0000000000	1399.0000000000	Special Error Upper Limit	The error numbers between this setting and the Special Error Lower Limit will trigger the special fault in the main cabinet statechart. This special fault will trigger a fault in all subsystem to prepare for a possible cabinet switch off.		DOUBLE	2	0	MainCabinetTemperature	MainCabinet	20	48	0	1381	3	13	0	0
 1300.MainCabinet	1300.MainCabinet	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1062	3	13	0	0
