@@ -23,7 +23,7 @@ Speed Limit	The speed limit was violated.	1100.BAL	1101	1	37	BalancingEvents4	Wa
 Speed Limit	The speed limit was violated	1000.CCW	1001	1	51	CCW_Events	Warning	EQUAL	1	Motor 1 Speed > Speed Limit || Motor 2 Speed > Speed Limit	1	0	184	1
 Lubrication Level 1 Low	The motor 1 lubrication level is low	1000.CCW	1006	1	51	CCW_Events	Warning	EQUAL	1	Lubrication Level 1	1	0	186	1
 Lubrication Level 2 Low	The motor 2 lubrication level is low	1000.CCW	1007	1	51	CCW_Events	Warning	EQUAL	1	Lubrication Level 2	1	0	187	1
-MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	1	44	MPSEvents	Warning	EQUAL	1	Current > MaxCurrentWarning	1	0	191	1
+MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	1	44	MPSEvents	Warning	EQUAL	1	(Current > MaxCurrentWarning)  || (Current < -(MaxCurrentWarning))	1	0	191	1
 MinVoltage	The minimum allowed volage was lost.	600.MPS	601	1	44	MPSEvents	Warning	EQUAL	1	Voltage < MinVoltageWarning	0	0	192	1
 Phase drives telemetry reader	Phase drives telemetry reader task has an issue	50. MainAxes	54	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesTelemetryReaderTaskRunning	1	0	240	1
 Phase drives telemetry not connected	Phase drives telemetry connection is down	50. MainAxes	53	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesTelemetryNSconnected	1	0	241	1
@@ -109,7 +109,7 @@ Backup Temperature Sensor Failed	The backup temperature sensor used when RMC not
 Mirror Cover Safety	A safety issue has occured in the mirror cover module.	1500.MCL	1501	2	45	MCLEvents0	Alarm	EQUAL	1	Safety Switch	1	0	150	1
 SoftMotion Axis Fault	The softmotion axis go to fault	100.Azimuth	101	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	163	1
 STO	The STO for the axis is active	100.Azimuth	102	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Safety Switch	1	0	165	1
-MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	2	44	MPSEvents	Alarm	EQUAL	1	Current > MaxCurrent	1	0	166	1
+MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	2	44	MPSEvents	Alarm	EQUAL	1	(Current > MaxCurrent)  || (Current < -(MaxCurrent))	1	0	166	1
 MinVoltage	The minimum allowed volage was lost.	600.MPS	601	2	44	MPSEvents	Alarm	EQUAL	1	Voltage < MinVoltage	0	0	167	1
 ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	15	MCEvents1	Alarm	EQUAL	1	Colision	0	0	168	1
 ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	16	MCEvents2	Alarm	EQUAL	1	Colision	0	0	169	1
