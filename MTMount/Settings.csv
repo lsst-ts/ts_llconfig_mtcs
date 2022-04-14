@@ -1054,16 +1054,16 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1049	69	35	0	0
 0.0000000000	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1050	69	35	0	0
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	901	69	35	0	0
-6.000000	6.000000	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	962	50	28	0	0
-6.000000	6.000000	coolDownTankTimeout	Timeout for the tank to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	961	50	28	0	0
+2000	2000	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	962	50	28	0	0
+2000	2000	coolDownTankTimeout	Timeout for the tank to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	961	50	28	0	0
 		ID String			STRING	3	1	OSS	OSS	0	0	0	964	50	28	0	0
-7.000000	7.000000	operationTransitionTimeout	Timeout for the transition between automatic and manual mode, in secods.	s	DOUBLE	2	1	OSS	OSS	0	0	0	695	50	28	0	0
-6.000000	6.000000	powerOffCoolingTimeout	Timeout for the cooling system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	967	50	28	0	0
-6.000000	6.000000	powerOffMainPumpTimeout	Timeout for the main pump system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	969	50	28	0	0
-6.000000	6.000000	powerOffOilCirculationTimeout	Timeout for the oil circulation system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	970	50	28	0	0
-6.000000	6.000000	powerOnCoolingTimeout	Timeout for the cooling system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	958	50	28	0	0
-6.000000	6.000000	powerOnMainPumpTimeout	Timeout for the main pump system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	968	50	28	0	0
-6.000000	6.000000	powerOnOilCirculationTimeout	Timeout for the oil circulation system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	959	50	28	0	0
+2000	2000	operationTransitionTimeout	Timeout for the transition between automatic and manual mode, in secods.	s	DOUBLE	2	1	OSS	OSS	0	0	0	695	50	28	0	0
+2000	2000	powerOffCoolingTimeout	Timeout for the cooling system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	967	50	28	0	0
+2000	2000	powerOffMainPumpTimeout	Timeout for the main pump system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	969	50	28	0	0
+2000	2000	powerOffOilCirculationTimeout	Timeout for the oil circulation system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	970	50	28	0	0
+2000	2000	powerOnCoolingTimeout	Timeout for the cooling system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	958	50	28	0	0
+2000	2000	powerOnMainPumpTimeout	Timeout for the main pump system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	968	50	28	0	0
+2000	2000	powerOnOilCirculationTimeout	Timeout for the oil circulation system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	959	50	28	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	OSS	OSS	0	0	0	965	50	28	0	0
 800.OSS	800.OSS	SystemSource	This is the identifier for the system used when publishing the Alarm source.	s	STRING	3	1	OSS	OSS	0	0	0	963	50	28	0	0
 10.0000000000	10.0000000000	watchdogMaximumTime	Maximum time that the controller will wait without a watchdog signal	s	DOUBLE	2	1	OSS	OSS	0	0	0	1033	50	28	0	0
