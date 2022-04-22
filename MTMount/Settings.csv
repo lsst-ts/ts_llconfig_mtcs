@@ -222,10 +222,10 @@ c:\\Configuration\\CCWData.ini	c:\\Configuration\\CCWData.ini	Motor timer file p
 1.500000	1.500000	Error Timeout Margin	The error timeout margin in %.		DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	157	25	20	0	0
 DP X+	DP X+	ID String	This is the identifier for the deployable platform in string format.		STRING	3	1	DeployablePlatform	DeployablePlatform1	0	0	0	579	25	20	0	0
 10.0000000000	10.0000000000	InRangeMargin	The margin for deployed and retracted positions of the system	mm	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	1392	25	20	0	0
-2345.000000	2345.000000	Max Platform Position 1	The maximum position of platform element 1.	deg	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	139	25	20	0	0
-2415.000000	2415.000000	Max Platform Position 2	The maximum position of platform element 2.	deg	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	140	25	20	0	0
--5.000000	-5.000000	Min Platform Position 1	The minimum position of platform element 1.	deg	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	142	25	20	0	0
--5.000000	-5.000000	Min Platform Position 2	The minimum position of platform element 2.	deg	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	141	25	20	0	0
+2364	2364	Max Platform Position 1	The maximum position of platform element 1.	deg	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	139	25	20	0	0
+2386	2386	Max Platform Position 2	The maximum position of platform element 2.	deg	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	140	25	20	0	0
+73	73	Min Platform Position 1	The minimum position of platform element 1.	deg	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	142	25	20	0	0
+55	55	Min Platform Position 2	The minimum position of platform element 2.	deg	DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	141	25	20	0	0
 21	21	Motor ID Platform 1	The motor ID of platform motor 1.		DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	131	25	20	0	0
 22	22	Motor ID Platform 2	The motor ID of platform motor 2.		DOUBLE	2	0	DeployablePlatform	DeployablePlatform1	0	0	0	132	25	20	0	0
 98.0000000000	98.0000000000	Platform Acceleration	The acceleration of the platform.	mm/s^2	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0.1	100	1	136	25	20	0	0
@@ -233,7 +233,7 @@ DP X+	DP X+	ID String	This is the identifier for the deployable platform in stri
 100.0000000000	100.0000000000	Platform Jerk	The jerk of any platform element.	mm/s^3	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0.1	1000	1	138	25	20	0	0
 110.0000000000	110.0000000000	Platform Max Critical Velocity	The maximum critical velocity, which causes an alarm to be triggered.	mm/s	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0.1	110	1	134	25	20	0	0
 105.0000000000	105.0000000000	Platform Max Velocity	The maximum velocity, which causes a warning to be triggered.	mm/s	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0.1	110	1	133	25	20	0	0
-98.0000000000	98.0000000000	Platform Velocity	The moving velocity of any platform element.	mm/s	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0.1	110	1	135	25	20	0	0
+16	98.0000000000	Platform Velocity	The moving velocity of any platform element.	mm/s	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0.1	110	1	135	25	20	0	0
 20000.0000000000	20000.0000000000	TimeoutLockExtension	Timeout time for the lock extension command.	ms	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0	0	0	1072	25	20	0	0
 150.0000000000	150.0000000000	TimeoutMoveMargin	Timeout time margin for the move cmd.	%	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0	0	0	586	25	20	0	0
 3000.0000000000	3000.0000000000	TimeoutPowerOff	Timeout time for the power off cmd.	ms	DOUBLE	2	1	DeployablePlatform	DeployablePlatform1	0	0	0	588	25	20	0	0
@@ -254,7 +254,7 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 100.0000000000	100.0000000000	Platform Jerk	The jerk of any platform element.	mm/s^3	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0.1	1000	1	151	26	20	0	0
 110.0000000000	110.0000000000	Platform Max Critical Velocity	The maximum critical velocity, which causes an alarm to be triggered.	mm/s	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0.1	120	1	152	26	20	0	0
 105.0000000000	105.0000000000	Platform Max Velocity	The maximum velocity, which causes a warning to be triggered.	mm/s	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0.1	120	1	153	26	20	0	0
-98.0000000000	98.0000000000	Platform Velocity	The moving velocity of any platform element.	mm/s	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0.1	110	1	154	26	20	0	0
+16	98.0000000000	Platform Velocity	The moving velocity of any platform element.	mm/s	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0.1	110	1	154	26	20	0	0
 20000.0000000000	20000.0000000000	TimeoutLockExtension	Timeout time for the lock extension command.	ms	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0	0	0	1071	26	20	0	0
 150.0000000000	150.0000000000	TimeoutMoveMargin	Timeout time margin for the move cmd.	%	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0	0	0	587	26	20	0	0
 3000.0000000000	3000.0000000000	TimeoutPowerOff	Timeout time for the power off cmd.	ms	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0	0	0	589	26	20	0	0
