@@ -294,7 +294,7 @@ SLOT01:AXIS01	SLOT01:AXIS01	EIB Input Name	Input name of the head definition in 
 TMA-AZ-ENC-AZM-0001	TMA-AZ-ENC-AZM-0001	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head1	-2	50	1	385	28	21	0	0
 1.0000000000	1.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head1	1	4	1	719	28	21	0	0
 5.0517260000E-6	5.0517260000E-6	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head1	0	0	0	190	28	21	0	0
-0.0000000000	0.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head1	0	6	0	182	28	21	0	0
+371794.0000000000	371794.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head1	0	6	0	182	28	21	0	0
 0	0	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head2	-2	50	1	170	29	21	0	0
 SLOT01:AXIS02	SLOT01:AXIS02	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head2	-2	50	1	162	29	21	0	0
 TMA-AZ-ENC-ELV-0003	TMA-AZ-ENC-ELV-0003	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head2	-2	50	1	389	29	21	0	0
@@ -306,37 +306,37 @@ SLOT02:AXIS01	SLOT02:AXIS01	EIB Input Name	Input name of the head definition in 
 TMA-AZ-ENC-AZM-0002	TMA-AZ-ENC-AZM-0002	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head3	-2	50	1	386	30	21	0	0
 2.0000000000	2.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head3	1	4	1	721	30	21	0	0
 5.0517260000E-6	5.0517260000E-6	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head3	0	0	0	192	30	21	0	0
-0.0000000000	0.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head3	0	6	0	184	30	21	0	0
+608602.0000000000	608602.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head3	0	6	0	184	30	21	0	0
 0	0	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head4	-2	50	1	174	31	21	0	0
 SLOT02:AXIS02	SLOT02:AXIS02	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head4	-2	50	1	164	31	21	0	0
 TMA-AZ-ENC-ELV-0001	TMA-AZ-ENC-ELV-0001	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head4	-2	50	1	390	31	21	0	0
 1.0000000000	1.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head4	1	4	1	722	31	21	0	0
 -1.2104339410E-5	-1.2104339410E-5	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head4	0	0	0	193	31	21	0	0
-0.0000000000	0.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head4	0	6	0	185	31	21	0	0
+200000.0000000000	200000.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head4	0	6	0	185	31	21	0	0
 1	1	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head5	-2	50	1	172	32	21	0	0
 SLOT03:AXIS01	SLOT03:AXIS01	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head5	-2	50	1	165	32	21	0	0
 TMA-AZ-ENC-AZM-0003	TMA-AZ-ENC-AZM-0003	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head5	-2	50	1	387	32	21	0	0
 3.0000000000	3.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head5	1	4	1	723	32	21	0	0
 5.051726E-6	5.051726E-6	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head5	0	0	0	194	32	21	0	0
-0.0000000000	0.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head5	0	6	0	186	32	21	0	0
+993249.0000000000	993249.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head5	0	6	0	186	32	21	0	0
 0	0	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head6	-2	50	1	175	33	21	0	0
 SLOT03:AXIS02	SLOT03:AXIS02	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head6	-2	50	1	166	33	21	0	0
 TMA-AZ-ENC-ELV-0004	TMA-AZ-ENC-ELV-0004	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head6	-2	50	1	391	33	21	0	0
 4.0000000000	4.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head6	1	4	1	724	33	21	0	0
 1.2104339410E-5	1.2104339410E-5	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head6	0	0	0	195	33	21	0	0
-21628.0000000000	21628.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head6	0	6	0	187	33	21	0	0
+-53742.0000000000	-53742.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head6	0	6	0	187	33	21	0	0
 1	1	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head7	-2	50	1	173	34	21	0	0
 SLOT04:AXIS01	SLOT04:AXIS01	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head7	-2	50	1	167	34	21	0	0
 TMA-AZ-ENC-AZM-0004	TMA-AZ-ENC-AZM-0004	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head7	-2	50	1	388	34	21	0	0
 4.0000000000	4.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head7	1	4	1	725	34	21	0	0
 5.0517260000E-6	5.0517260000E-6	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head7	0	0	0	196	34	21	0	0
-0.0000000000	0.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head7	0	6	0	188	34	21	0	0
+1230104.0000000000	1230104.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head7	0	6	0	188	34	21	0	0
 0	0	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head8	-2	50	1	176	35	21	0	0
 SLOT04:AXIS02	SLOT04:AXIS02	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head8	-2	50	1	168	35	21	0	0
 TMA-AZ-ENC-ELV-0002	TMA-AZ-ENC-ELV-0002	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head8	-2	50	1	392	35	21	0	0
 2.0000000000	2.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head8	1	4	1	726	35	21	0	0
 -1.2104339410E-5	-1.2104339410E-5	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head8	0	0	0	197	35	21	0	0
--21628.0000000000	-21628.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head8	0	6	0	189	35	21	0	0
+253553.0000000000	253553.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head8	0	6	0	189	35	21	0	0
 89.0000000000	89.0000000000	ElevationPosNinetyMinus	This is the - limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis. 	deg	DOUBLE	2	1	LockingPins	General	0	0	0	274	41	23	0	0
 91.0000000000	91.0000000000	ElevationPosNinetyPlus	This is the + limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	0	0	0	273	41	23	0	0
 -1.0000000000	-1.0000000000	ElevationPosZeroMinus	This is the - limit for the Elevation axis to be able to insert the LP at 0 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	0	0	0	272	41	23	0	0
