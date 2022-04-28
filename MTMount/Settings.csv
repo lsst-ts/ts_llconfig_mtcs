@@ -265,7 +265,7 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 10.000000	10.000000	Max Elevation Angle	The maximum position of the elevation angle for allowing the deployable platforms to power on.	deg	DOUBLE	2	0	DeployablePlatform	General	0	0	0	155	24	20	0	0
 -10.000000	-10.000000	Min Elevation Angle	The minimum position of the elevation angle for allowing the deployable platforms to power on.	deg	DOUBLE	2	0	DeployablePlatform	General	0	0	0	156	24	20	0	0
 1200.DP	1200.DP	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	DeployablePlatform	General	1	7	0	581	24	20	0	0
-10.0000000000	10.0000000000	ACW Margin	Marin used in azimuth reference calculation with Azimuth Cable Wrap (ACW). The algorithm will use ACW as base value for azimuth and compare it to adapt to ACW value or to set as invalid reference.	deg	DOUBLE	2	0	EncoderSystem	General	1	3	1	1412	27	21	0	0
+10.0000000000	10.0000000000	ACW margin	Marin used in azimuth reference calculation with Azimuth Cable Wrap (ACW). The algorithm will use ACW as base value for azimuth and compare it to adapt to ACW value or to set as invalid reference.	deg	DOUBLE	2	0	EncoderSystem	General	1	3	1	1412	27	21	0	0
 2.0000000000	2.0000000000	Azimuth Critical Active Heads	If the number of active heads for azimuth axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	852	27	21	0	0
 10.0000000000	10.0000000000	Azimuth heads reference threshold [i.u]	Maximum error in the reference of azimuth heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	703	27	21	0	0
 1243770.000000	1243770.000000	Azimuth Tape Line Count	Number of line counts in the azimuth tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	393	27	21	0	0
@@ -503,7 +503,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 2210000.0000000000	2210000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Elevation	0	120	0	1240	53	25	0	0
 1	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1241	53	25	0	0
 6.0000000000	6.0000000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1242	53	25	0	0
-0.0000000000	0.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1251	53	25	0	0
+1.0000000000	0.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1251	53	25	0	0
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	1	MainAxis	Elevation	0	120	0	1252	53	25	0	0
 0.0000000000	0.0000000000	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	1	MainAxis	Elevation	0	120	1	1253	53	25	0	0
 0.0000000000	0.0000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1254	53	25	0	0
@@ -585,7 +585,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1307	53	25	0	0
 2000.000000	1500.000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1308	53	25	0	0
 200.0000000000	200.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1310	53	25	0	0
-1000.0000000000	1000.0000000000	Timeout for Axis Enable	Timeout for enable axis and drives in the softmotion axis	ms	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1311	53	25	0	0
+1500.0000000000	1000.0000000000	Timeout for Axis Enable	Timeout for enable axis and drives in the softmotion axis	ms	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1311	53	25	0	0
 20000.0000000000	20000.0000000000	Timeout for Brake Engage	Timeout for engaging brakes	ms	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1312	53	25	0	0
 60000.0000000000	60000.0000000000	Timeout for Brake Release	Timeout for releasing brakes	ms	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1313	53	25	0	0
 1000.0000000000	1000.0000000000	Timeout for Cable Wrap Power Off	Timeout for power off cable wrap	ms	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1314	53	25	0	0
