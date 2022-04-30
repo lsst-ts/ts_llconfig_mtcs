@@ -151,7 +151,7 @@ Motor 2	Motor 2	ID String 2	This is the identifier for the Motor 2 in string for
 1.0000000000	1.0000000000	Motor 1 ID	ID for the first motor in CCW		DOUBLE	2	1	CW	ACW	0	0	0	1200	60	33	0	0
 2.0000000000	2.0000000000	Motor 2 ID	ID for the first motor in CCW		DOUBLE	2	1	CW	ACW	0	0	0	1201	60	33	0	0
 c:\\Configuration\\ACWData.ini	c:\\Configuration\\ACWData.ini	Motor timer file path	Path for the file where using time of each motor will be saved		STRING	3	1	CW	ACW	0	0	0	1202	60	33	0	0
-140.0000000000	140.0000000000	Move_Trans_TimeMargin	Margin to perform a move before getting a timeout error. It is expressed in % of the calculated time with movement limits.	%	DOUBLE	2	1	CW	ACW	0	250	1	1203	60	33	0	0
+250	250	Move_Trans_TimeMargin	Margin to perform a move before getting a timeout error. It is expressed in % of the calculated time with movement limits.	%	DOUBLE	2	1	CW	ACW	0	250	1	1203	60	33	0	0
 1	1	Negative Software Limit Enable	Enable the softwar limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	CW	ACW	0	0	0	1387	60	33	0	0
 5000.0000000000	5000.0000000000	OffTrans_Timeout	Timeout time to switch off the system	ms	DOUBLE	2	1	CW	ACW	0	0	0	1204	60	33	0	0
 10000.0000000000	10000.0000000000	OnTrans_Timeout	Timeout time to switch on the system	ms	DOUBLE	2	1	CW	ACW	0	0	0	1205	60	33	0	0
@@ -384,16 +384,16 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Allow Relative Movements	Allow to move the telescope without doing reference in position mode		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	622	52	25	0	0
 0	0	Command Relative Movements	The move commands will be relative movements if this parameter is true and otherwise absolute movements will be performed		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	647	52	25	0	0
 0.0000000000	0.0000000000	Control Acceleration FeedForward Gain	Controller Acceleration feedforward gain	%	DOUBLE	2	1	MainAxis	Azimuth	0	120	1	655	52	25	0	0
-1	1	Control Damping Active	For azimuth axis, activate the active damping control		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1054	52	25	0	0
+0	0	Control Damping Active	For azimuth axis, activate the active damping control		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1054	52	25	0	0
 0.0000000000	0.0000000000	Control Damping X Direction Gain	Active controller gain for  X direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	1	1056	52	25	0	0
 0.0000000000	0.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	1	1057	52	25	0	0
 8670000.0000000000	8670000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	656	52	25	0	0
-0	0	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	657	52	25	0	0
-30.000000	30.000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
-7.000000	7.000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	651	52	25	0	0
+1	0	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	657	52	25	0	0
+6.0	6	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
+1.0	0	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	651	52	25	0	0
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	715	52	25	0	0
 0.0000000000	0.0000000000	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	1	MainAxis	Azimuth	0	120	1	654	52	25	0	0
-0.100000	0.100000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
+1000000000	0	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
 3.000000	3.000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.1	10.5	1	556	52	25	0	0
 14.000000	14.000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	28	1	620	52	25	0	0
 0.500000	0.500000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.5	1	555	52	25	0	0
@@ -506,7 +506,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.0000000000	0.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1251	53	25	0	0
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	1	MainAxis	Elevation	0	120	0	1252	53	25	0	0
 0.0000000000	0.0000000000	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	1	MainAxis	Elevation	0	120	1	1253	53	25	0	0
-0.0000000000	0.0000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1254	53	25	0	0
+10000000.0000000000	0.0000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1254	53	25	0	0
 3.0000000000	3.0000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.1	5.5	1	1255	53	25	0	0
 14.0000000000	14.0000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.1	28	1	1256	53	25	0	0
 0.5000000000	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	5	1	1257	53	25	0	0
@@ -638,7 +638,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 900.MC	900.MC	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MirrorCover	General	1	7	0	526	14	19	0	0
 60000.0000000000	60000.0000000000	WaitTrans_Timeout	Wait transition timeout	ms	DOUBLE	2	1	MirrorCover	General	0	0	0	540	14	19	0	0
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC1	0	30	1	80	15	19	0	0
-134.0000000000	134.0000000000	Deployed Position	The deployed position.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	140	1	834	15	19	0	0
+136	136	Deployed Position	The deployed position.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	140	1	834	15	19	0	0
 0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC1	0	136	1	1394	15	19	0	0
 900	900	Error ID	Error id of the current instance.		STRING	3	1	MirrorCover	MC1	1	7	0	88	15	19	0	0
 MC X+	MC X+	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC1	1	7	0	464	15	19	0	0
@@ -646,9 +646,9 @@ MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	
 8.0000000000	8.0000000000	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	140	0	829	15	19	0	0
 0	0	IsOnTop	This setting is used to know if this MC is on top or not. This is used in the guard.		BOOLEAN	1	1	MirrorCover	MC1	0	136	1	571	15	19	0	0
 10.0000000000	10.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCover	MC1	0	50	1	869	15	19	0	0
-135.0000000000	135.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	140	1	37	15	19	0	0
+137	137	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	140	1	37	15	19	0	0
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCover	MC1	0	0	0	874	15	19	0	0
-1.0000000000	1.0000000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	136	1	104	15	19	0	0
+0.8	0.8	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	136	1	104	15	19	0	0
 60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	1	MirrorCover	MC1	0	120	1	45	15	19	0	0
 60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	1	MirrorCover	MC1	0	120	1	53	15	19	0	0
 5.0000000000	5.0000000000	Motor ID	ID of the instances motor.		DOUBLE	2	1	MirrorCover	MC1	1	7	0	96	15	19	0	0
@@ -661,11 +661,11 @@ MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	
 5000.000000	5000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCover	MC1	1	7	0	471	15	19	0	0
 0	0	OpenOrder	This parameter indicates if this MC is one of the first MC to open. If true goes first, if false goes second		BOOLEAN	1	1	MirrorCover	MC1	0	136	1	536	15	19	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCover	MC1	0	0	0	472	15	19	0	0
-2.0000000000	2.0000000000	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	136	1	835	15	19	0	0
+1	1	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC1	-5	136	1	835	15	19	0	0
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	MirrorCover	MC1	0	0	0	473	15	19	0	0
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	1	MirrorCover	MC1	0	0	0	474	15	19	0	0
 25.000000	25.000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC2	0	25	1	81	16	19	0	0
-134.0000000000	134.0000000000	Deployed Position	The deployed position.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	140	1	836	16	19	0	0
+135.2	135.2	Deployed Position	The deployed position.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	140	1	836	16	19	0	0
 0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC2	0	136	1	1395	16	19	0	0
 900	900	Error ID	Error id of the current instance.		STRING	3	1	MirrorCover	MC2	1	7	0	89	16	19	0	0
 MC Y+	MC Y+	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC2	1	7	0	465	16	19	0	0
@@ -673,9 +673,9 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 8.0000000000	8.0000000000	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	140	0	827	16	19	0	0
 1	1	IsOnTop	This setting is used to know if this MC is on top or not. This is used in the guard.		BOOLEAN	1	1	MirrorCover	MC2	0	136	1	572	16	19	0	0
 10.0000000000	10.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCover	MC2	0	50	1	870	16	19	0	0
-135.0000000000	135.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	136	1	38	16	19	0	0
+136.000000000	136.000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	136	1	38	16	19	0	0
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCover	MC2	0	0	0	875	16	19	0	0
-1.0000000000	1.0000000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	136	1	105	16	19	0	0
+-1	-1	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	136	1	105	16	19	0	0
 60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	1	MirrorCover	MC2	0	120	1	46	16	19	0	0
 60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	1	MirrorCover	MC2	0	120	1	54	16	19	0	0
 11	11	Motor ID	ID of the instances motor.		DOUBLE	2	1	MirrorCover	MC2	1	7	0	97	16	19	0	0
@@ -688,7 +688,7 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 5000.000000	5000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCover	MC2	1	7	0	478	16	19	0	0
 1	1	OpenOrder	This parameter indicates if this MC is one of the first MC to open. If true goes first, if false goes second		BOOLEAN	1	1	MirrorCover	MC2	0	136	1	537	16	19	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCover	MC2	0	0	0	479	16	19	0	0
-2.0000000000	2.0000000000	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	136	1	839	16	19	0	0
+0	0	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC2	-5	136	1	839	16	19	0	0
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	MirrorCover	MC2	0	0	0	480	16	19	0	0
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	1	MirrorCover	MC2	0	0	0	481	16	19	0	0
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC3	0	25	1	82	17	19	0	0
@@ -702,7 +702,7 @@ MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 10.0000000000	10.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCover	MC3	0	50	1	871	17	19	0	0
 135.0000000000	135.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC3	-5	136	1	39	17	19	0	0
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCover	MC3	0	0	0	876	17	19	0	0
-1.0000000000	1.0000000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC3	-5	136	1	106	17	19	0	0
+-1	-1	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC3	-5	136	1	106	17	19	0	0
 60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	1	MirrorCover	MC3	0	120	1	47	17	19	0	0
 60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	1	MirrorCover	MC3	0	120	1	55	17	19	0	0
 9.000000	9.000000	Motor ID	ID of the instances motor.		DOUBLE	2	1	MirrorCover	MC3	1	7	0	98	17	19	0	0
@@ -715,11 +715,11 @@ MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 5000.000000	5000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCover	MC3	1	7	0	485	17	19	0	0
 0	0	OpenOrder	This parameter indicates if this MC is one of the first MC to open. If true goes first, if false goes second		BOOLEAN	1	1	MirrorCover	MC3	0	136	1	538	17	19	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCover	MC3	0	0	0	486	17	19	0	0
-2.0000000000	2.0000000000	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC3	-5	136	1	840	17	19	0	0
+0	0	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC3	-5	136	1	840	17	19	0	0
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	MirrorCover	MC3	0	0	0	487	17	19	0	0
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	1	MirrorCover	MC3	0	0	0	488	17	19	0	0
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC4	0	25	1	83	18	19	0	0
-134.0000000000	134.0000000000	Deployed Position	The deployed position.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	140	1	838	18	19	0	0
+131	131	Deployed Position	The deployed position.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	140	1	838	18	19	0	0
 0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC4	0	136	1	1397	18	19	0	0
 900	900	Error ID	Error id of the current instance.		STRING	3	1	MirrorCover	MC4	1	7	0	91	18	19	0	0
 MC Y-	MC Y-	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC4	1	7	0	467	18	19	0	0
@@ -727,9 +727,9 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 8.0000000000	8.0000000000	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	140	0	850	18	19	0	0
 1	1	IsOnTop	This setting is used to know if this MC is on top or not. This is used in the guard.		BOOLEAN	1	1	MirrorCover	MC4	0	136	1	574	18	19	0	0
 10.0000000000	10.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCover	MC4	0	50	1	872	18	19	0	0
-135.0000000000	135.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	140.5	1	40	18	19	0	0
+132	132	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	140.5	1	40	18	19	0	0
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCover	MC4	0	0	0	877	18	19	0	0
-1.0000000000	1.0000000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	136	1	107	18	19	0	0
+0	0	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	136	1	107	18	19	0	0
 60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	1	MirrorCover	MC4	0	120	1	48	18	19	0	0
 60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	1	MirrorCover	MC4	0	120	1	56	18	19	0	0
 7	7	Motor ID	ID of the instances motor.		DOUBLE	2	1	MirrorCover	MC4	1	7	0	99	18	19	0	0
@@ -742,7 +742,7 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 5000.000000	5000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCover	MC4	1	7	0	492	18	19	0	0
 1	1	OpenOrder	This parameter indicates if this MC is one of the first MC to open. If true goes first, if false goes second		BOOLEAN	1	1	MirrorCover	MC4	0	136	1	539	18	19	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCover	MC4	0	0	0	493	18	19	0	0
-2.0000000000	2.0000000000	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	136	1	841	18	19	0	0
+0.5	0.5	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	136	1	841	18	19	0	0
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	MirrorCover	MC4	0	0	0	494	18	19	0	0
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	1	MirrorCover	MC4	0	0	0	495	18	19	0	0
 1500.MC	1500.MC	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MirrorCoverLocks	General	1	7	0	527	56	30	0	0
@@ -753,7 +753,7 @@ MCL X+	MCL X+	ID String	This is the identifier for the cover in string format.		
 MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	1	MirrorCoverLocks	MCL1	1	7	0	575	19	30	0	0
 5	5	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL1	-5	140	0	830	19	30	0	0
 20.0000000000	20.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	50	1	865	19	30	0	0
-8	8	Locked Position	The locked position.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL1	-5	136	0	861	19	30	0	0
+3.8	3.8	Locked Position	The locked position.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL1	-5	136	0	861	19	30	0	0
 173.0000000000	173.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	190	1	41	19	30	0	0
 50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	0	0	878	19	30	0	0
 3.0000000000	3.0000000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	136	1	108	19	30	0	0
@@ -779,7 +779,7 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 5	5	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL2	-5	140	0	831	20	30	0	0
 20.0000000000	20.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	50	1	866	20	30	0	0
 7	7	Locked Position	The locked position.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL2	-5	136	0	862	20	30	0	0
-173.0000000000	173.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	190	1	42	20	30	0	0
+175	175	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	190	1	42	20	30	0	0
 50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	0	0	879	20	30	0	0
 3.000000	3.000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	136	1	109	20	30	0	0
 180.0000000000	180.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	1	MirrorCoverLocks	MCL2	0.1	600	1	50	20	30	0	0
@@ -803,7 +803,7 @@ MCL X-	MCL X-	ID String	This is the identifier for the cover in string format.		
 MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	1	MirrorCoverLocks	MCL3	1	7	0	577	21	30	0	0
 5	5	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	-5	140	0	832	21	30	0	0
 20.0000000000	20.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	50	1	867	21	30	0	0
-8	8	Locked Position	The locked position.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	-5	136	0	863	21	30	0	0
+6	6	Locked Position	The locked position.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	-5	136	0	863	21	30	0	0
 173.0000000000	173.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	190	1	43	21	30	0	0
 50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	0	0	880	21	30	0	0
 3.000000	3.000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	136	1	110	21	30	0	0
