@@ -167,7 +167,7 @@ c:\\Configuration\\ACWData.ini	c:\\Configuration\\ACWData.ini	Motor timer file p
 48.0000000000	48.0000000000	Tracking Jerk	The jerk used when tracking	deg/s^3	DOUBLE	2	1	CW	ACW	0.5	6	1	1212	60	33	0	0
 3000.0000000000	3000.0000000000	Tracking queue size	Queue size for the tracking task. If the maximun is achieved new commands will be lost. This setting is only available in the startup of the application		DOUBLE	2	1	CW	ACW	0	0	0	1213	60	33	0	0
 10.0000000000	10.0000000000	Tracking Speed	The speed used when tracking	deg/s^2	DOUBLE	2	1	CW	ACW	0.1	5.25	1	1214	60	33	0	0
-0.0000000000	0.0000000000	Tracking Time offset	Offset for tracking commands to be applied	s	DOUBLE	2	1	CW	ACW	0	0	0	1215	60	33	0	0
+0.000	0.000	Tracking Time offset	Offset for tracking commands to be applied	s	DOUBLE	2	1	CW	ACW	0	0	0	1215	60	33	0	0
 1300.000000	1300.000000	Tracking Wait for data before error	After this time without a new command the tracking task will througth an error	ms	DOUBLE	2	1	CW	ACW	0	0	0	1216	60	33	0	0
 500.0000000000	500.0000000000	Tracking Wait for first track setpoint error	After this time without the first tracking command the tracking task will througth an error	ms	DOUBLE	2	1	CW	ACW	0	0	0	1217	60	33	0	0
 5000.0000000000	5000.0000000000	Tracking Wait time for check setpoint	Time to wait for a new check with a command in the queue but the time is not fullfilled yet	us	DOUBLE	2	1	CW	ACW	0	0	0	1218	60	33	0	0
