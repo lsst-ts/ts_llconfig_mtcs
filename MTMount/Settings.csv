@@ -729,7 +729,7 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 10.0000000000	10.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCover	MC4	0	50	1	872	18	19	0	0
 132	132	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	140.5	1	40	18	19	0	0
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCover	MC4	0	0	0	877	18	19	0	0
-0	0	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	136	1	107	18	19	0	0
+-1	-1	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	136	1	107	18	19	0	0
 60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	1	MirrorCover	MC4	0	120	1	48	18	19	0	0
 60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	1	MirrorCover	MC4	0	120	1	56	18	19	0	0
 7	7	Motor ID	ID of the instances motor.		DOUBLE	2	1	MirrorCover	MC4	1	7	0	99	18	19	0	0
@@ -742,7 +742,7 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 5000.000000	5000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCover	MC4	1	7	0	492	18	19	0	0
 1	1	OpenOrder	This parameter indicates if this MC is one of the first MC to open. If true goes first, if false goes second		BOOLEAN	1	1	MirrorCover	MC4	0	136	1	539	18	19	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCover	MC4	0	0	0	493	18	19	0	0
-0.5	0.5	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	136	1	841	18	19	0	0
+-0.3	-0.3	Retracted Position	The retracted position.	deg	DOUBLE	2	1	MirrorCover	MC4	-5	136	1	841	18	19	0	0
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	MirrorCover	MC4	0	0	0	494	18	19	0	0
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	1	MirrorCover	MC4	0	0	0	495	18	19	0	0
 1500.MC	1500.MC	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MirrorCoverLocks	General	1	7	0	527	56	30	0	0
