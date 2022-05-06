@@ -764,7 +764,7 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	21	0	76	19	30	0	0
 45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	50	1	33	19	30	0	0
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	0	0	497	19	30	0	0
-1500.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	0	0	498	19	30	0	0
+150.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	0	0	498	19	30	0	0
 3000.0000000000	3000.0000000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	0	0	499	19	30	0	0
 3000.0000000000	3000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCoverLocks	MCL1	1	7	0	500	19	30	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	0	0	501	19	30	0	0
@@ -789,7 +789,7 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	50	1	77	20	30	0	0
 45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	50	1	34	20	30	0	0
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	0	0	504	20	30	0	0
-1500.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	0	0	505	20	30	0	0
+150.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	0	0	505	20	30	0	0
 3000.0000000000	3000.0000000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	0	0	506	20	30	0	0
 3000.0000000000	3000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCoverLocks	MCL2	1	7	0	507	20	30	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	0	0	508	20	30	0	0
@@ -803,7 +803,7 @@ MCL X-	MCL X-	ID String	This is the identifier for the cover in string format.		
 MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	1	MirrorCoverLocks	MCL3	1	7	0	577	21	30	0	0
 5	5	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	-5	140	0	832	21	30	0	0
 20.0000000000	20.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	50	1	867	21	30	0	0
-6	6	Locked Position	The locked position.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	-5	136	0	863	21	30	0	0
+5.5	5.5	Locked Position	The locked position.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	-5	136	0	863	21	30	0	0
 173.0000000000	173.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	190	1	43	21	30	0	0
 50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	0	0	880	21	30	0	0
 3.000000	3.000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	136	1	110	21	30	0	0
@@ -814,7 +814,7 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	50	1	78	21	30	0	0
 45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0.1	50	1	35	21	30	0	0
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	0	0	511	21	30	0	0
-1500.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	0	0	512	21	30	0	0
+150.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	0	0	512	21	30	0	0
 3000.0000000000	3000.0000000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	0	0	513	21	30	0	0
 3000.0000000000	3000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCoverLocks	MCL3	1	7	0	514	21	30	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCoverLocks	MCL3	0	0	0	649	21	30	0	0
@@ -839,7 +839,7 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL4	0.1	50	1	79	22	30	0	0
 45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL4	0.1	50	0	36	22	30	0	0
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	1	MirrorCoverLocks	MCL4	0	0	0	517	22	30	0	0
-1500.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	MirrorCoverLocks	MCL4	0	0	0	518	22	30	0	0
+150.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	MirrorCoverLocks	MCL4	0	0	0	518	22	30	0	0
 3000.0000000000	3000.0000000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	1	MirrorCoverLocks	MCL4	0	0	0	519	22	30	0	0
 3000.0000000000	3000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	MirrorCoverLocks	MCL4	1	7	0	520	22	30	0	0
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	MirrorCoverLocks	MCL4	0	0	0	650	22	30	0	0
