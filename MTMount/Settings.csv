@@ -384,9 +384,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Allow Relative Movements	Allow to move the telescope without doing reference in position mode		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	622	52	25	0	0
 0	0	Command Relative Movements	The move commands will be relative movements if this parameter is true and otherwise absolute movements will be performed		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	647	52	25	0	0
 0.0000000000	0.0000000000	Control Acceleration FeedForward Gain	Controller Acceleration feedforward gain	%	DOUBLE	2	1	MainAxis	Azimuth	0	120	1	655	52	25	0	0
+0	0	Control Activate FeedForward In Tracking?	The FeedForward for speed gain will be activated if the axis is in Tracking mode. Otherwise it will be deactivated. The activation will increase acording to Control FeedForward Activation Variation settings. Seet also Control Apply FeedForward? setting		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1413	52	25	0	0
+0	0	Control Apply FeedForward?	If this settings is True the speed feedfoward is always active otherwise could be active or not depending on the Control Activate FeedForward In Tracking? setting		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1415	52	25	0	0
 0	0	Control Damping Active	For azimuth axis, activate the active damping control		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1054	52	25	0	0
 0.0000000000	0.0000000000	Control Damping X Direction Gain	Active controller gain for  X direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	1	1056	52	25	0	0
 0.0000000000	0.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	1	1057	52	25	0	0
+0.0020000000	0.0020000000	Control FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	1	MainAxis	Azimuth	0.0001	0.1	1	1417	52	25	0	0
 8670000.0000000000	8670000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	656	52	25	0	0
 1	0	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	657	52	25	0	0
 6.0	6	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
@@ -497,9 +500,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Allow Relative Movements	Allow to move the telescope without doing reference in position mode		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1234	53	25	0	0
 0	0	Command Relative Movements	The move commands will be relative movements if this parameter is true and otherwise absolute movements will be performed		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1235	53	25	0	0
 0.0000000000	0.0000000000	Control Acceleration FeedForward Gain	Controller Acceleration feedforward gain	%	DOUBLE	2	1	MainAxis	Elevation	0	120	1	1236	53	25	0	0
+0	0	Control Activate FeedForward In Tracking?	The FeedForward for speed gain will be activated if the axis is in Tracking mode. Otherwise it will be deactivated. The activation will increase acording to Control FeedForward Activation Variation settings. Seet also Control Apply FeedForward? setting		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1414	53	25	0	0
+0	0	Control Apply FeedForward?	If this settings is True the speed feedfoward is always active otherwise could be active or not depending on the Control Activate FeedForward In Tracking? setting		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1416	53	25	0	0
 0	0	Control Damping Active	For azimuth axis, activate the active damping control		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1237	53	25	0	0
 0.0000000000	0.0000000000	Control Damping X Direction Gain	Active controller gain for  X direction		DOUBLE	2	1	MainAxis	Elevation	0	120	1	1238	53	25	0	0
 0.0000000000	0.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	1	MainAxis	Elevation	0	120	1	1239	53	25	0	0
+0.0020000000	0.0020000000	Control FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	1	MainAxis	Elevation	0.0001	0.1	1	1418	53	25	0	0
 2210000.0000000000	2210000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Elevation	0	120	0	1240	53	25	0	0
 1	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1241	53	25	0	0
 6.0000000000	6.0000000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1242	53	25	0	0
