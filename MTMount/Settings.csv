@@ -399,7 +399,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1000000000	0	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
 3.000000	3.000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.1	10.5	1	556	52	25	0	0
 14.000000	14.000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	28	1	620	52	25	0	0
-0.500000	0.500000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.5	1	555	52	25	0	0
+2.00000	0.500000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.5	1	555	52	25	0	0
 10.000000	10.000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	1	10.5	1	547	52	25	0	0
 48.000000	48.000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	48	1	621	52	25	0	0
 10.100000	10.100000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	1	10.5	1	541	52	25	0	0
