@@ -1024,13 +1024,13 @@ Cabinet0101	Cabinet0101	ID String	This is the identifier for the motor group in 
 1.0000000000	1.0000000000	Autotune Step Amplitude	Amplitude added to controller output to identify the system in autotune		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0.1	100	1	1016	68	35	0	0
 10.0000000000	10.0000000000	Autotune Time Constant Fator	Specifies a divider to apply to the identifed plant time constant to obtain the desried time constant response. Setting this value greater than 1 makes faster responses.		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0.1	100	1	1017	68	35	0	0
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1024	68	35	0	0
-1.0000000000	1.0000000000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	912	68	35	0	0
-0.0000000000	0.0000000000	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	918	68	35	0	0
-0.0000000000	0.0000000000	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	924	68	35	0	0
+0.000000	1.0000000000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	912	68	35	0	0
+0.000000	0.0000000000	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	918	68	35	0	0
+0.000000	0.0000000000	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	924	68	35	0	0
 ELDTgroup1	ELDTgroup1	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	ElevationGroup1	1	7	0	955	68	35	0	0
-1.0000000000	1.0000000000	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	990	68	35	0	0
-1.0000000000	1.0000000000	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	995	68	35	0	0
-1.0000000000	1.0000000000	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1000	68	35	0	0
+0.000000	1.0000000000	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	990	68	35	0	0
+0.000000	1.0000000000	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	995	68	35	0	0
+0.000000	1.0000000000	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1000	68	35	0	0
 1700.ELDT	1700.ELDT	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MotorThermalControl	ElevationGroup1	1	7	0	949	68	35	0	0
 5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	936	68	35	0	0
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	942	68	35	0	0
@@ -1046,13 +1046,13 @@ ELDTgroup1	ELDTgroup1	ID String	This is the identifier for the motor group in st
 1.0000000000	1.0000000000	Autotune Step Amplitude	Amplitude added to controller output to identify the system in autotune		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0.1	100	1	1019	69	35	0	0
 10.0000000000	10.0000000000	Autotune Time Constant Fator	Specifies a divider to apply to the identifed plant time constant to obtain the desried time constant response. Setting this value greater than 1 makes faster responses.		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0.1	100	1	1020	69	35	0	0
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1025	69	35	0	0
-1.0000000000	1.0000000000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	913	69	35	0	0
-0.0000000000	0.0000000000	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	919	69	35	0	0
-0.0000000000	0.0000000000	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	925	69	35	0	0
+0.000000	1.0000000000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	913	69	35	0	0
+0.000000	0.0000000000	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	919	69	35	0	0
+0.000000	0.0000000000	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	925	69	35	0	0
 ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	ElevationGroup2	1	7	0	956	69	35	0	0
-1.0000000000	1.0000000000	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	991	69	35	0	0
-1.0000000000	1.0000000000	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	996	69	35	0	0
-1.0000000000	1.0000000000	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1001	69	35	0	0
+0.000000	1.0000000000	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	991	69	35	0	0
+0.000000	1.0000000000	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	996	69	35	0	0
+0.000000	1.0000000000	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1001	69	35	0	0
 1700.ELDT	1700.ELDT	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MotorThermalControl	ElevationGroup2	1	7	0	950	69	35	0	0
 5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	937	69	35	0	0
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	943	69	35	0	0
