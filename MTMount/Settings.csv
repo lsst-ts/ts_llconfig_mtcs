@@ -392,12 +392,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0000000000	0.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	1	1057	52	25	0	0
 0.0020000000	0.0020000000	Control FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	1	MainAxis	Azimuth	0.0001	0.1	1	1417	52	25	0	0
 8670000.0000000000	8670000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	656	52	25	0	0
-1	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	657	52	25	0	0
-6.0	6.0	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
-1.0	1.0	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	651	52	25	0	0
+0	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	657	52	25	0	0
+15.0	6.0	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
+4.0	1.0	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	651	52	25	0	0
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	715	52	25	0	0
 0.0000000000	0.0000000000	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	1	MainAxis	Azimuth	0	120	1	654	52	25	0	0
-1000000000	1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
+0.2	1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
 3.000000	3.000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.1	10.5	1	556	52	25	0	0
 14.000000	14.000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	28	1	620	52	25	0	0
 2.00000	2.00000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.5	1	555	52	25	0	0
@@ -508,12 +508,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0000000000	0.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	1	MainAxis	Elevation	0	120	1	1239	53	25	0	0
 0.0020000000	0.0020000000	Control FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	1	MainAxis	Elevation	0.0001	0.1	1	1418	53	25	0	0
 2210000.0000000000	2210000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Elevation	0	120	0	1240	53	25	0	0
-1	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1241	53	25	0	0
-6.0000000000	6.0000000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1242	53	25	0	0
-1.0000000000	0.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1251	53	25	0	0
+0	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1241	53	25	0	0
+15	6.0000000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1242	53	25	0	0
+4	0.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1251	53	25	0	0
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	1	MainAxis	Elevation	0	120	0	1252	53	25	0	0
 0.0000000000	0.0000000000	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	1	MainAxis	Elevation	0	120	1	1253	53	25	0	0
-10000000.0000000000	0.0000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1254	53	25	0	0
+20	0.0000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1254	53	25	0	0
 3.0000000000	3.0000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.1	5.5	1	1255	53	25	0	0
 14.0000000000	14.0000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.1	28	1	1256	53	25	0	0
 0.5000000000	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	5	1	1257	53	25	0	0
@@ -541,16 +541,16 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1279	53	25	0	0
 15.1000000000	15.1000000000	Limits Negative Adjustable Software limit value	Vaue for Negative adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	0	20	0	1280	53	25	0	0
 1	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1282	53	25	0	0
-1	1	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1281	53	25	0	0
-1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1283	53	25	0	0
+0	1	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1281	53	25	0	0
+0	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1283	53	25	0	0
 -0.1000000000	-0.1000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	-0.2	20	0	1284	53	25	0	0
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Elevation	0	0	0	1334	53	25	0	0
 5.200000	5.200000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1285	53	25	0	0
 5.100000	5.100000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	0	0
-1	1	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1287	53	25	0	0
+0	1	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1287	53	25	0	0
 86.4000000000	86.4000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	80	90	0	1288	53	25	0	0
 1	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1290	53	25	0	0
-1	1	Limits Positive Operational Limit Switch enable	Enable positive Operational imit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1289	53	25	0	0
+0	1	Limits Positive Operational Limit Switch enable	Enable positive Operational imit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1289	53	25	0	0
 1	1	Limits Positive Software limit enable	Enable positive software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1291	53	25	0	0
 90.1000000000	90.1000000000	Limits Positive Software limit value	Vaue for Positive software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	80	90.2	0	1292	53	25	0	0
 0	0	Limits Softmotion Negative Software limit enable	Enable positive software limit in softmotion. Bellow this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1362	53	25	0	0
