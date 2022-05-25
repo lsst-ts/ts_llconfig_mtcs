@@ -393,11 +393,11 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	1	MainAxis	Azimuth	0.0001	0.1	1	1417	52	25	0	0
 8670000.0000000000	8670000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	656	52	25	0	0
 0	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	657	52	25	0	0
-15.0	6.0	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
-4.0	1.0	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	651	52	25	0	0
+45	6.0	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
+8	1.0	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	651	52	25	0	0
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	715	52	25	0	0
 0.0000000000	0.0000000000	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	1	MainAxis	Azimuth	0	120	1	654	52	25	0	0
-0.2	1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
+0.1	1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
 3.000000	3.000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.1	10.5	1	556	52	25	0	0
 14.000000	14.000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	28	1	620	52	25	0	0
 2.00000	2.00000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.5	1	555	52	25	0	0
@@ -509,11 +509,11 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	1	MainAxis	Elevation	0.0001	0.1	1	1418	53	25	0	0
 2210000.0000000000	2210000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Elevation	0	120	0	1240	53	25	0	0
 0	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1241	53	25	0	0
-15	6.0000000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1242	53	25	0	0
-4	0.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1251	53	25	0	0
+60	6.0000000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1242	53	25	0	0
+8	0.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1251	53	25	0	0
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	1	MainAxis	Elevation	0	120	0	1252	53	25	0	0
 0.0000000000	0.0000000000	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	1	MainAxis	Elevation	0	120	1	1253	53	25	0	0
-20	0.0000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1254	53	25	0	0
+0.1	0.0000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1254	53	25	0	0
 3.0000000000	3.0000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.1	5.5	1	1255	53	25	0	0
 14.0000000000	14.0000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.1	28	1	1256	53	25	0	0
 0.5000000000	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	5	1	1257	53	25	0	0
