@@ -347,7 +347,7 @@ TMA-AZ-ENC-ELV-0002	TMA-AZ-ENC-ELV-0002	Head Name	Name of the head according to 
 1000.000000	1000.000000	DefaultAcceleration	Default acceleration used by the motor to move	mm/s^2	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	265	42	23	0	0
 4000.000000	4000.000000	DefaultJerk	Default Jerk used by the motor to move	mm/s^3	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	266	42	23	0	0
 2.000000	2.000000	DefaultSpeed	Default Speed used by the motor to move	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	264	42	23	0	0
--1.0000000000	-1.0000000000	FreePosition	Position to move locking pin where the elevation axis is free to move	mm	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	269	42	23	0	0
+-2.0000000000	-2.0000000000	FreePosition	Position to move locking pin where the elevation axis is free to move	mm	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	269	42	23	0	0
 LP X+	LP X+	ID String	This is the identifier for the cover in string format.		STRING	3	1	LockingPins	LockingPin1	0	0	0	528	42	23	0	0
 85.0000000000	85.0000000000	LockPosition	Position to move locking pin where the elevation axis is locked	mm	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	268	42	23	0	0
 7.6000000000	7.6000000000	Max Critical Speed	Max speed alloable. Above this limit the event system will trigger an alarm	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	295	42	23	0	0
@@ -420,7 +420,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0	0	Limits AZCW Deviation Enable	Maximun allowed deviation between AZCW and AZ verification is enabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1228	52	25	0	0
 4.000000	4.000000	Limits AZCW Maximum Deviation Value	Maximun allowed deviation between AZCW and AZ verification value. If this value is overcomed a warning will be generated in azimuth		DOUBLE	2	1	MainAxis	Azimuth	0.1	28	0	1230	52	25	0	0
 1	1	Limits Following Error enable	Enable the following error	deg	BOOLEAN	1	1	MainAxis	Azimuth	0	0	0	1330	52	25	0	0
-5.000000	5.000000	Limits Following Error Value	Set the maximun allowed following error	deg	DOUBLE	2	1	MainAxis	Azimuth	0	0	0	710	52	25	0	0
+1.5	5.000000	Limits Following Error Value	Set the maximun allowed following error	deg	DOUBLE	2	1	MainAxis	Azimuth	0	0	0	710	52	25	0	0
 1	1	Limits Max Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1181	52	25	0	0
 260.000000	260.000000	Limits Max Position value	Maximun allowed postion command	deg	DOUBLE	2	1	MainAxis	Azimuth	250	272	1	1179	52	25	0	0
 1	1	Limits Min Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	0	0
@@ -621,7 +621,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 		ID String			STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1063	3	13	0	0
 192.168.210.30	192.168.210.30	IP address	This is the IP address of the RMC for the modbus connection.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1405	3	13	0	0
 5.0000000000	5.0000000000	Low Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-5	10	1	11	3	13	0	0
--5.0000000000	-5.0000000000	Low Surface Temperature	The difference between ambient temperature and surface temperature is bellow the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-30	0	1	9	3	13	0	0
+0	-5.0000000000	Low Surface Temperature	The difference between ambient temperature and surface temperature is bellow the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-30	0	1	9	3	13	0	0
 2.000000	2.000000	Lower Limit Hysteresis Relative	This is the lower temperature limit  relative to the ambient temperature for the hysteresis control used when RMC is not working	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	15	1	406	3	13	0	0
 35.0000000000	35.0000000000	Maximum Setpoint Temperature	Maximum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	30	40	1	403	3	13	0	0
 5.000000	5.000000	Minimum Setpoint Temperature	Minimum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	1	404	3	13	0	0
