@@ -387,17 +387,17 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0000000000	0.0000000000	Control Acceleration FeedForward Gain	Controller Acceleration feedforward gain	%	DOUBLE	2	1	MainAxis	Azimuth	0	120	1	655	52	25	0	0
 0	0	Control Activate FeedForward In Tracking?	The FeedForward for speed gain will be activated if the axis is in Tracking mode. Otherwise it will be deactivated. The activation will increase acording to Control FeedForward Activation Variation settings. Seet also Control Apply FeedForward? setting		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1413	52	25	0	0
 0	0	Control Apply FeedForward?	If this settings is True the speed feedfoward is always active otherwise could be active or not depending on the Control Activate FeedForward In Tracking? setting		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1415	52	25	0	0
-1	0	Control Damping Active	For azimuth axis, activate the active damping control		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1054	52	25	0	0
-0	0.0000000000	Control Damping X Direction Gain	Active controller gain for  X direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	0	1056	52	25	0	0
-4000000	0.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	0	1057	52	25	0	0
+1	1	Control Damping Active	For azimuth axis, activate the active damping control		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1054	52	25	0	0
+0	0	Control Damping X Direction Gain	Active controller gain for  X direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	0	1056	52	25	0	0
+4000000	4000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	1	MainAxis	Azimuth	0	120	0	1057	52	25	0	0
 0.0020000000	0.0020000000	Control FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	1	MainAxis	Azimuth	0.0001	0.1	1	1417	52	25	0	0
 8670000.0000000000	8670000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	656	52	25	0	0
-0	1	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	657	52	25	0	0
-45	6.0	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
-8	1.0	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	651	52	25	0	0
+0	0	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	657	52	25	0	0
+45	45	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	652	52	25	0	0
+8	8	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	651	52	25	0	0
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	1	MainAxis	Azimuth	0	120	0	715	52	25	0	0
 0.0000000000	0.0000000000	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	1	MainAxis	Azimuth	0	120	1	654	52	25	0	0
-0.1	1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
+0.1	0.1	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	653	52	25	0	0
 3.000000	3.000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.1	10.5	1	556	52	25	0	0
 14.000000	14.000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	28	1	620	52	25	0	0
 2.00000	2.00000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.5	1	555	52	25	0	0
@@ -420,7 +420,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0	0	Limits AZCW Deviation Enable	Maximun allowed deviation between AZCW and AZ verification is enabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1228	52	25	0	0
 4.000000	4.000000	Limits AZCW Maximum Deviation Value	Maximun allowed deviation between AZCW and AZ verification value. If this value is overcomed a warning will be generated in azimuth		DOUBLE	2	1	MainAxis	Azimuth	0.1	28	0	1230	52	25	0	0
 1	1	Limits Following Error enable	Enable the following error	deg	BOOLEAN	1	1	MainAxis	Azimuth	0	0	0	1330	52	25	0	0
-1.5	5.000000	Limits Following Error Value	Set the maximun allowed following error	deg	DOUBLE	2	1	MainAxis	Azimuth	0	0	0	710	52	25	0	0
+1.5	1.5	Limits Following Error Value	Set the maximun allowed following error	deg	DOUBLE	2	1	MainAxis	Azimuth	0	0	0	710	52	25	0	0
 1	1	Limits Max Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1181	52	25	0	0
 260.000000	260.000000	Limits Max Position value	Maximun allowed postion command	deg	DOUBLE	2	1	MainAxis	Azimuth	250	272	1	1179	52	25	0	0
 1	1	Limits Min Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	0	0
@@ -479,7 +479,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 7.0000000000	7.0000000000	TCS Max Velocity	Maximun allowed velocity in TCS command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	1	10.5	1	615	52	25	0	0
 1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1172	52	25	0	0
 1500.000000	1500.000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1171	52	25	0	0
-300.0000000000	200.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	606	52	25	0	0
+300.0000000000	300.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	606	52	25	0	0
 1000.0000000000	1000.0000000000	Timeout for Axis Enable	Timeout for enable axis and drives in the softmotion axis	ms	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	604	52	25	0	0
 20000.0000000000	20000.0000000000	Timeout for Brake Engage	Timeout for engaging brakes	ms	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	610	52	25	0	0
 60000.000000	60000.000000	Timeout for Brake Release	Timeout for releasing brakes	ms	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	608	52	25	0	0

@@ -193,12 +193,12 @@ Negative Softmotion Software limit	The negative software limit in the axis softm
 Positive Softmotion Software limit	The positive software limit in the axis softmotion has been exceeded	100.Azimuth	132	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	positiveSoftware	1	0	363	1
 Following Error	The axis detect and excesive deviation from the command	100.Azimuth	133	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	followingError	1	0	364	1
 Overspeed	Overspeed Alarm ocurred	100.Azimuth	104	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	overSpeed	1	0	365	1
-Axis Fault	Axis control algorith detected a fault. Posible causes are: NoNewData, Too Many Drives in Faul, AXESPXI and TMAPXI comm fault or software error.	100.Azimuth	136	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	external	1	0	366	1
+Axis Fault	Axis control algorith detected a fault. Posible causes are: NoNewData, Too Many Drives in Faul, AXESPXI and TMAPXI comm fault or software error. Check if NoNewData or PXIs comm alarms are active, otherwise this means drives fault	100.Azimuth	136	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	external	1	0	366	1
 Following Error	The axis detect and excesive deviation from the command	400.Elevation	433	2	49	ElevationAxisEvents	Alarm	EQUAL	1	followingError	1	0	367	1
 Negative Softmotion Software limit	The negative software limit in the axis softmotion has been exceeded	400.Elevation	431	2	49	ElevationAxisEvents	Alarm	EQUAL	1	negativeSoftware	1	0	368	1
 Overspeed	Overspeed Alarm ocurred	400.Elevation	404	2	49	ElevationAxisEvents	Alarm	EQUAL	1	overSpeed	1	0	369	1
 Positive Softmotion Software limit	The positive software limit in the axis softmotion has been exceeded	400.Elevation	432	2	49	ElevationAxisEvents	Alarm	EQUAL	1	positiveSoftware	1	0	370	1
-Axis Fault	Axis control algorith detected a fault. Posible causes are: NoNewData, Too Many Drives in Faul, AXESPXI and TMAPXI comm fault or software error.	400.Elevation	436	2	49	ElevationAxisEvents	Alarm	EQUAL	1	external	1	0	371	1
+Axis Fault	Axis control algorith detected a fault. Posible causes are: NoNewData, Too Many Drives in Faul, AXESPXI and TMAPXI comm fault or software error. Check if NoNewData or PXIs comm alarms are active, otherwise this means drives fault	400.Elevation	436	2	49	ElevationAxisEvents	Alarm	EQUAL	1	external	1	0	371	1
 Axis Communication Tasks Not Running	The status or telemetry task for the axis is not running.	400.Elevation	481	2	49	ElevationAxisEvents	Alarm	EQUAL	0	AxisStatusReaderTaskRunning&&AxisStatusReaderTaskRunning	1	0	372	1
 Axis Communication Not Connected	The status or telemetry task for the axis is NOT connected.	400.Elevation	480	2	49	ElevationAxisEvents	Alarm	EQUAL	0	AxisStatusNSconnected&&AxisStatusNSconnected	1	0	373	1
 Axis Communication Tasks Not Running	The status or telemetry task for the axis is not running.	100.Azimuth	181	2	47	AzimuthAxisEvents	Alarm	EQUAL	0	AxisStatusReaderTaskRunning&&AxisStatusReaderTaskRunning	1	0	374	1
