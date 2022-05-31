@@ -38,8 +38,8 @@ AZCW Deviation Limit	The maximum allowed deviation between azimuth cable wrap po
 NoNewData	New data does not arrive from EIB	400.Elevation	405	1	49	ElevationAxisEvents	Warning	EQUAL	1	NoNewDataWarningActive	0	0	359	1
 Critical Temperature Increase 	Cabinet Temperature increased above critical limit.	1300.MainCabinet	1351	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Door&&(((((Cabinet Temperature 1>=Critical High Cabinet Temperature)&&(~Cabinet Temperature 1 error))||((Cabinet Temperature 2>=Critical High Cabinet Temperature)&&(~Cabinet Temperature 2 error)))&&(~RMC connection error))||((Backup Temperature>=Critical High Cabinet Temperature)&&(RMC connection error)))	1	0	5	1
 Critical Temperature Drop	Cabinet Temperature decreased below critical limit.	1300.MainCabinet	1350	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Door&&(((((Cabinet Temperature 1<=Critical Low Cabinet Temperature)&&(~Cabinet Temperature 1 error))||((Cabinet Temperature 2<=Critical Low Cabinet Temperature)&&(~Cabinet Temperature 2 error)))&&(~RMC connection error))||((Backup Temperature<=Critical Low Cabinet Temperature)&&(RMC connection error)))	1	0	6	1
-Cabinet Fan Faulty	The heat exchanger fan is faulty.	1300.MainCabinet	1301	2	2	MainCabinetEvents	Alarm	EQUAL	1	Cabinet Fan Faulty	1	0	10	1
-Cabinet Heater Faulty	The cabinet heater is faulty.	1300.MainCabinet	1302	2	2	MainCabinetEvents	Alarm	EQUAL	1	Cabinet Heater Faulty	1	0	11	1
+Cabinet Fan Faulty	The heat exchanger fan is faulty.	1300.MainCabinet	1301	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Fan Faulty	1	0	10	1
+Cabinet Heater Faulty	The cabinet heater is faulty.	1300.MainCabinet	1302	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Heater Faulty	1	0	11	1
 Mirror Cover Safety	A safety issue has occured in the mirror cover module.	900.MC	901	2	14	MCEvents0	Alarm	EQUAL	1	Safety Switch	1	0	29	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	900.MC	903	2	15	MCEvents1	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	38	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	900.MC	903	2	16	MCEvents2	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	39	1
@@ -104,7 +104,7 @@ Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2
 Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	35	BalancingEvents2	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	145	1
 Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	36	BalancingEvents3	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	146	1
 Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	37	BalancingEvents4	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	147	1
-Cabinet Valve Faulty	The cabinet valve is faulty.	1300.MainCabinet	1303	2	2	MainCabinetEvents	Alarm	EQUAL	1	Cabinet Valve Faulty	1	0	148	1
+Cabinet Valve Faulty	The cabinet valve is faulty.	1300.MainCabinet	1303	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Valve Faulty	1	0	148	1
 Backup Temperature Sensor Failed	The backup temperature sensor used when RMC not working failed.  If the RMC controller communication is lost, the backup hysteresis based controller will not work.	1300.MainCabinet	1312	2	2	MainCabinetEvents	Alarm	EQUAL	1	Backup Sensor error	1	0	149	1
 Mirror Cover Safety	A safety issue has occured in the mirror cover module.	1500.MCL	1501	2	45	MCLEvents0	Alarm	EQUAL	1	Safety Switch	1	0	150	1
 SoftMotion Axis Fault	The softmotion axis go to fault	100.Azimuth	101	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	163	1
