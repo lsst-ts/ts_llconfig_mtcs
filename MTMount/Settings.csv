@@ -427,12 +427,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 260.000000	260.000000	Limits Max Position value	Maximun allowed postion command	deg	DOUBLE	2	1	MainAxis	Azimuth	250	272	1	1179	52	25	0	0
 1	1	Limits Min Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	0	0
 -260.000000	-260.000000	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	1	MainAxis	Azimuth	-272	-250	1	1180	52	25	0	0
-1	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	0	0
+0	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	0	0
 -265.0000000000	-265.0000000000	Limits Negative Adjustable Software limit value	Vaue for Negative adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	Limits Negative Software limit value	-200	1	1245	52	25	0	0
 1	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1178	52	25	0	0
 0	0	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1249	52	25	0	0
 1	1	Limits Negative Positive Software limit enable	Enable positive software limit in softmotion. Over this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1360	52	25	0	0
-1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	0	0
+0	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	0	0
 -265.000000	-265.000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	-200	-275	0	625	52	25	0	0
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Azimuth	0	0	0	1328	52	25	0	0
 8.5000000000	8.5000000000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	0	0	706	52	25	0	0
