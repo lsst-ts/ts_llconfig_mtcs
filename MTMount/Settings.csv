@@ -427,12 +427,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 260.000000	260.000000	Limits Max Position value	Maximun allowed postion command	deg	DOUBLE	2	1	MainAxis	Azimuth	250	272	1	1179	52	25	0	0
 1	1	Limits Min Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	0	0
 -260.000000	-260.000000	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	1	MainAxis	Azimuth	-272	-250	1	1180	52	25	0	0
-0	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	0	0
+1	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	0	0
 -265.0000000000	-265.0000000000	Limits Negative Adjustable Software limit value	Vaue for Negative adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	Limits Negative Software limit value	-200	1	1245	52	25	0	0
 1	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1178	52	25	0	0
 0	0	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1249	52	25	0	0
 1	1	Limits Negative Positive Software limit enable	Enable positive software limit in softmotion. Over this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1360	52	25	0	0
-0	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	0	0
+1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	0	0
 -265.000000	-265.000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	-200	-275	0	625	52	25	0	0
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Azimuth	0	0	0	1328	52	25	0	0
 8.5000000000	8.5000000000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	0	0	706	52	25	0	0
@@ -555,7 +555,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 86.4000000000	86.4000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	80	90	0	1288	53	25	0	0
 1	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1290	53	25	0	0
 0	0	Limits Positive Operational Limit Switch enable	Enable positive Operational imit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1289	53	25	0	0
-1	1	Limits Positive Software limit enable	Enable positive software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1291	53	25	0	0
+0	1	Limits Positive Software limit enable	Enable positive software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1291	53	25	0	0
 90.1000000000	90.1000000000	Limits Positive Software limit value	Vaue for Positive software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	80	90.2	0	1292	53	25	0	0
 0	0	Limits Softmotion Negative Software limit enable	Enable positive software limit in softmotion. Bellow this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1362	53	25	0	0
 -3.0000000000	-3.0000000000	Limits Softmotion Negative Software limit value	Vaue for softmotion Positive software limit. \nBellow this limit the axis does not allow any movement. This limit must allow all desired movements, also maintenance movements to safety limits	deg	DOUBLE	2	1	MainAxis	Elevation	-200	-275	0	1363	53	25	0	0
@@ -1099,7 +1099,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 7500.0000000000	7500.0000000000	BeforeCabinet0101LaunchWait	This is the time to wait before launching the cabinet 0101 thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1073	58	32	0	0
 8000.0000000000	8000.0000000000	BeforeCabinetLaunchWait	This is the time to wait before launching the cabinet task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	739	58	32	0	0
 5000.0000000000	5000.0000000000	BeforeCCWLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	807	58	32	0	0
-5500.0000000000	5500.0000000000	BeforeDPLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	895	58	32	0	0
+9500.0000000000	9500.0000000000	BeforeDPLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	895	58	32	0	0
 7000.0000000000	7000.0000000000	BeforeELMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	747	58	32	0	0
 9500.0000000000	9500.0000000000	BeforeIOTelemetryPublicationLaunchWait	This is the time to wait before launching the IO Telemetry publication task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1232	58	32	0	0
 10000.0000000000	10000.0000000000	BeforeLPLaunchWait	This is the time to wait before launching the locking pins task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	740	58	32	0	0
