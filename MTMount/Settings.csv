@@ -338,7 +338,7 @@ TMA-AZ-ENC-ELV-0002	TMA-AZ-ENC-ELV-0002	Head Name	Name of the head according to 
 2.0000000000	2.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head8	1	4	1	726	35	21	43	0
 -1.2104339410E-5	-1.2104339410E-5	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head8	0	0	0	197	35	21	43	0
 196789.0000000000	196789.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head8	0	6	0	189	35	21	43	0
-1	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	0	0
+0	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	43	0
 89.0000000000	89.0000000000	ElevationPosNinetyMinus	This is the - limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis. 	deg	DOUBLE	2	1	LockingPins	General	89	91	1	274	41	23	43	0
 91.0000000000	91.0000000000	ElevationPosNinetyPlus	This is the + limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	89	91	1	273	41	23	43	0
 -1.0000000000	-1.0000000000	ElevationPosZeroMinus	This is the - limit for the Elevation axis to be able to insert the LP at 0 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	-2	1	1	272	41	23	43	0
