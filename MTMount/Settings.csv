@@ -403,9 +403,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 3.0000000000	3.0000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.1	10.5	1	556	52	25	45	0
 14.0000000000	14.0000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	42	1	620	52	25	45	0
 2.0000000000	2.0000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10	1	555	52	25	45	0
-10.000000	10.000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	1	10.5	1	547	52	25	45	0
-24.0000000000	24.0000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	48	1	621	52	25	45	0
-10.0000000000	10.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	1	10	1	541	52	25	45	0
+10.400000	10.000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	1	10.5	1	547	52	25	0	0
+36.0000000000	24.0000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	48	1	621	52	25	0	0
+10.0000000000	10.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	1	10	1	541	52	25	0	0
 0.500000	0.500000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.1	1.5	1	557	52	25	45	0
 1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	14	1	638	52	25	45	0
 0.500000	0.500000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	1.5	1	558	52	25	45	0
@@ -435,8 +435,8 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	45	0
 -265.0000000000	-265.0000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	-275	-200	1	625	52	25	45	0
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Azimuth	0	0	0	1328	52	25	45	0
-8.5000000000	8.5000000000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.2	1	706	52	25	45	0
-8.0000000000	8.0000000000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.1	1	1176	52	25	45	0
+10.0000000000	8.5000000000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.2	1	706	52	25	0	0
+10.0000000000	8.0000000000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.1	1	1176	52	25	0	0
 1	1	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1246	52	25	45	0
 265.0000000000	265.0000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	270	1	1247	52	25	45	0
 1	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1177	52	25	45	0
