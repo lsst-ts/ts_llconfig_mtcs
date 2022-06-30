@@ -261,7 +261,7 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 3000.0000000000	3000.0000000000	TimeoutPowerOn	Timeout time for the power on cmd.	ms	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0	0	0	591	26	20	46	0
 3000.0000000000	3000.0000000000	TimeoutReset	Timeout time for the reset cmd.	ms	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0	0	0	585	26	20	46	0
 3000.0000000000	3000.0000000000	TimeoutStop	Timeout time for the stop cmd.	ms	DOUBLE	2	1	DeployablePlatform	DeployablePlatform2	0	0	0	583	26	20	46	0
-1	1	EnableExtensionLockGuard	If true the guard that checks that the deployable platform extension is inserted is executed. If false this guar is not executed.		BOOLEAN	1	0	DeployablePlatform	General	1	7	0	1070	24	20	46	0
+1	1	EnableExtensionLockGuard	If true the guard that checks that the deployable platform extension is inserted is executed. If false this guar is not executed.		BOOLEAN	1	0	DeployablePlatform	General	1	7	0	1070	24	20	0	0
 10.0000000000	10.0000000000	Max Elevation Angle	The maximum position of the elevation angle for allowing the deployable platforms to power on.	deg	DOUBLE	2	0	DeployablePlatform	General	-2	12	1	155	24	20	46	0
 -7.0000000000	-7.0000000000	Min Elevation Angle	The minimum position of the elevation angle for allowing the deployable platforms to power on.	deg	DOUBLE	2	0	DeployablePlatform	General	-10	0	1	156	24	20	46	0
 1200.DP	1200.DP	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	DeployablePlatform	General	1	7	0	581	24	20	46	0
@@ -1069,7 +1069,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1049	69	35	46	0
 0.0000000000	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1050	69	35	46	0
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	901	69	35	46	0
-2000	2000	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	962	50	28	46	0
+360	360	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	962	50	28	0	0
 2000	2000	coolDownTankTimeout	Timeout for the tank to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	961	50	28	46	0
 		ID String			STRING	3	0	OSS	OSS	0	0	0	964	50	28	46	0
 2000	2000	operationTransitionTimeout	Timeout for the transition between automatic and manual mode, in secods.	s	DOUBLE	2	1	OSS	OSS	0	0	0	695	50	28	46	0
