@@ -1,7 +1,7 @@
 VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE	LOWER_LIMIT	UPPER_LIMIT	VALIDATE	ID	INSTANCE_ID	STATECHART_ID	SET_ID	SET_ID_SAVED
-0.0000000000	0.0000000000	Ambient Temperature Offset	Offset to apply to the received ambient temperature	ºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	-2	2	1	1376	78	37	46	0
+0.0000000000	0.0000000000	Ambient Temperature Offset	Offset to apply to the received ambient temperature	ºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	-2	2	1	1376	78	37	0	0
 10.0000000000	10.0000000000	Commands to update settings	When the number of commands set in this settings is received by the task, the settings will be updated		DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	5	250	1	1378	78	37	46	0
-10.0000000000	10.0000000000	Initial Temperature	The system will start with this temperature until a commands to update the ambient temperature is received	ºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	5	15	1	1377	78	37	46	0
+10.0000000000	10.0000000000	Initial Temperature	The system will start with this temperature until a commands to update the ambient temperature is received	ºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	5	15	1	1377	78	37	0	0
 400.000000	400.000000	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing1	0	0	0	298	37	22	46	0
 1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	1	Balancing	Balancing1	1000	1700	1	209	37	22	46	0
 3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	1	Balancing	Balancing1	1000	3000	1	210	37	22	46	0
@@ -616,10 +616,10 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0000000000	0.0000000000	Traking Time offset	Time offset to apply to received command time in tracking command	s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1340	53	25	46	0
 5.0000000000	5.0000000000	Horn Time (s)	Time that the horn will be sounding	s	DOUBLE	2	0	MainAxis	General	0	0	0	1409	45	25	46	0
 40.0000000000	40.0000000000	Light Time (s)	Time that the light will be lighting	s	DOUBLE	2	0	MainAxis	General	0	0	0	1410	45	25	46	0
-10.0000000000	10.0000000000	Commands to update settings	When the number of commands to track ambient temperature set in this settings is received by the task, the settings will be updated		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	250	1	1391	3	13	46	0
+10.0000000000	10.0000000000	Commands to update settings	When the number of commands to track ambient temperature set in this settings is received by the task, the settings will be updated		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	250	1	1391	3	13	0	0
 45.0000000000	45.0000000000	Critical High Cabinet Temperature	This is the temperature at which an alarm is triggered.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	49	1	12	3	13	46	0
 4.0000000000	4.0000000000	Critical Low Cabinet Temperature	This is the temperature at which an alarm is triggered.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-4	10	1	13	3	13	46	0
-15.0000000000	15.0000000000	DefaultSetpoint	The setpoint sent when initializing, exiting and when going to fault in the Cabinet OMT.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	0	705	3	13	46	0
+15.0000000000	15.0000000000	DefaultSetpoint	The setpoint sent when initializing, exiting and when going to fault in the Cabinet OMT.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	0	705	3	13	0	0
 43.0000000000	43.0000000000	High Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	1	10	3	13	46	0
 5.0000000000	5.0000000000	High Surface Temperature	The difference between ambient temperature and surface temperature is above the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	25	1	8	3	13	46	0
 		ID String			STRING	3	0	MainCabinetTemperature	MainCabinet	4	10	1	1063	3	13	46	0
