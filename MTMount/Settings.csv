@@ -1008,7 +1008,7 @@ AZDTgroup4	AZDTgroup4	ID String	This is the identifier for the motor group in st
 60.0000000000	40.0000000000	Autotune Step Amplitude	Amplitude added to controller output to identify the system in autotune		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0.1	100	1	1076	70	35	0	0
 0.01000000000	0.1000000000	Autotune Time Constant Fator	Specifies a divider to apply to the identifed plant time constant to obtain the desried time constant response. Setting this value greater than 1 makes faster responses.		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0.1	100	0	1077	70	35	0	0
 0.1	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1078	70	35	0	0
-1	179.4354840000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1079	70	35	0	0
+50	179.4354840000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1079	70	35	0	0
 0.000000	0.4663290000	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1080	70	35	0	0
 0	2.1538520000	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1081	70	35	0	0
 Cabinet0101	Cabinet0101	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	Cabinet0101	1	7	0	1082	70	35	46	0
