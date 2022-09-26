@@ -1104,7 +1104,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 7500.0000000000	7500.0000000000	BeforeCabinet0101LaunchWait	This is the time to wait before launching the cabinet 0101 thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1073	58	32	46	0
 8000.0000000000	8000.0000000000	BeforeCabinetLaunchWait	This is the time to wait before launching the cabinet task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	739	58	32	46	0
 5000.0000000000	5000.0000000000	BeforeCCWLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	807	58	32	46	0
-20500.0000000000	20500.0000000000	BeforeDPLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	895	58	32	46	0
+120000.0000000000	120000.0000000000	BeforeDPLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	895	58	32	0	0
 7000.0000000000	7000.0000000000	BeforeELMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	747	58	32	46	0
 9500.0000000000	9500.0000000000	BeforeIOTelemetryPublicationLaunchWait	This is the time to wait before launching the IO Telemetry publication task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1232	58	32	46	0
 10000.0000000000	10000.0000000000	BeforeLPLaunchWait	This is the time to wait before launching the locking pins task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	740	58	32	46	0
