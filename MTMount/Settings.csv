@@ -338,7 +338,7 @@ TMA-AZ-ENC-ELV-0002	TMA-AZ-ENC-ELV-0002	Head Name	Name of the head according to 
 2.0000000000	2.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head8	1	4	1	726	35	21	46	0
 -1.2104339410E-5	-1.2104339410E-5	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head8	0	0	0	197	35	21	46	0
 196789.0000000000	196789.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head8	0	6	0	189	35	21	46	0
-0	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	46	0
+1	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	0	0
 89.0000000000	89.0000000000	ElevationPosNinetyMinus	This is the - limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis. 	deg	DOUBLE	2	1	LockingPins	General	89	91	1	274	41	23	46	0
 91.0000000000	91.0000000000	ElevationPosNinetyPlus	This is the + limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	89	91	1	273	41	23	46	0
 -1.0000000000	-1.0000000000	ElevationPosZeroMinus	This is the - limit for the Elevation axis to be able to insert the LP at 0 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	-2	1	1	272	41	23	46	0
@@ -1104,13 +1104,13 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 7500.0000000000	7500.0000000000	BeforeCabinet0101LaunchWait	This is the time to wait before launching the cabinet 0101 thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1073	58	32	46	0
 8000.0000000000	8000.0000000000	BeforeCabinetLaunchWait	This is the time to wait before launching the cabinet task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	739	58	32	46	0
 5000.0000000000	5000.0000000000	BeforeCCWLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	807	58	32	46	0
-120000.0000000000	120000.0000000000	BeforeDPLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	895	58	32	0	0
+4000.0000000000	180000.0000000000	BeforeDPLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	895	58	32	0	0
 7000.0000000000	7000.0000000000	BeforeELMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	747	58	32	46	0
 9500.0000000000	9500.0000000000	BeforeIOTelemetryPublicationLaunchWait	This is the time to wait before launching the IO Telemetry publication task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1232	58	32	46	0
 10000.0000000000	10000.0000000000	BeforeLPLaunchWait	This is the time to wait before launching the locking pins task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	740	58	32	46	0
-3000.0000000000	3000.0000000000	BeforeMainAxesOMTTaskLaunchWait	This is the time to wait before launching the OMT tasks for Main Axes	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1404	58	32	46	0
-2000.0000000000	2000.0000000000	BeforeMainAxesPXICommTaskLaunchWait	This is the time to wait before launching the task to communicate with the Axes PXI	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1403	58	32	46	0
-11000.0000000000	11000.0000000000	BeforeMainAxisLaunchWait	This is the time to wait before launching the main axis task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	744	58	32	46	0
+6000.0000000000	3000.0000000000	BeforeMainAxesOMTTaskLaunchWait	This is the time to wait before launching the OMT tasks for Main Axes	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1404	58	32	0	0
+4000.0000000000	2000.0000000000	BeforeMainAxesPXICommTaskLaunchWait	This is the time to wait before launching the task to communicate with the Axes PXI	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1403	58	32	0	0
+20000.0000000000	12000.0000000000	BeforeMainAxisLaunchWait	This is the time to wait before launching the main axis task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	744	58	32	0	0
 11500.0000000000	11500.0000000000	BeforeMCLaunchWait	This is the time to wait before launching the mirror cover task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	742	58	32	46	0
 12000.0000000000	12000.0000000000	BeforeMCLLaunchWait	This is the time to wait before launching the mirror cover lock task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	743	58	32	46	0
 2050000000.0000000000	2050000000.0000000000	BeforeModbusTempControllersLaunchWait	This is the time to wait before launching the Modbus temperature controllers task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1170	58	32	46	0
