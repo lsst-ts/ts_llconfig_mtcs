@@ -128,12 +128,12 @@ Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off 
 Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	600.MPS	611	2	44	MPSEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	195	1
 Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	900.MC	911	2	14	MCEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	196	1
 Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1500.MCL	1511	2	45	MCLEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	198	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	55	AzimuthGroupEvents1	Alarm	EQUAL	1	ValveFaulty	1	0	199	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	56	AzimuthGroupEvents2	Alarm	EQUAL	1	ValveFaulty	1	0	200	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	57	AzimuthGroupEvents3	Alarm	EQUAL	1	ValveFaulty	1	0	201	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	58	AzimuthGroupEvents4	Alarm	EQUAL	1	ValveFaulty	1	0	202	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1700.ELDT	1701	2	59	ElevationGroupEvents1	Alarm	EQUAL	1	ValveFaulty	1	0	203	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1700.ELDT	1701	2	60	ElevationGroupEvents2	Alarm	EQUAL	1	ValveFaulty	1	0	204	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	55	AzimuthGroupEvents1	Alarm	EQUAL	1	ValveFaulty	0	0	199	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	56	AzimuthGroupEvents2	Alarm	EQUAL	1	ValveFaulty	0	0	200	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	57	AzimuthGroupEvents3	Alarm	EQUAL	1	ValveFaulty	0	0	201	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	58	AzimuthGroupEvents4	Alarm	EQUAL	1	ValveFaulty	0	0	202	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1700.ELDT	1701	2	59	ElevationGroupEvents1	Alarm	EQUAL	1	ValveFaulty	0	0	203	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1700.ELDT	1701	2	60	ElevationGroupEvents2	Alarm	EQUAL	1	ValveFaulty	0	0	204	1
 OSS Malfunction	A safety issue has occurred in the OSS	800.OSS	810	2	40	OSSEvents	Alarm	EQUAL	1	Safety Switch	1	0	223	1
 Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	800.OSS	811	2	40	OSSEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	224	1
 Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1600.AZDT	1611	2	53	AzimuthGroupEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	225	1
