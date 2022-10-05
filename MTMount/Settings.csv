@@ -933,45 +933,45 @@ TMA_EL_PD_CBT_0002	TMA_EL_PD_CBT_0002	ID String	This is the identifier for the c
 2.0000000000	2.0000000000	Autotune Controller type	Controller type used in autotuning. 0 for P, 1 for PI and 2 for PID		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	2	1	1009	64	35	0	0
 40.000000	40.000000	Autotune Step Amplitude	Amplitude added to controller output to identify the system in autotune		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0.1	100	1	1005	64	35	0	0
 0.1	0.1000000000	Autotune Time Constant Fator	Specifies a divider to apply to the identifed plant time constant to obtain the desried time constant response. Setting this value greater than 1 makes faster responses.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0.1	100	0	1011	64	35	0	0
-0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1002	64	35	0	0
-0.387957	176.4300000000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	908	64	35	0	0
-3.211128	0.466329	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	914	64	35	0	0
-29.775945	2.153852	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	920	64	35	0	0
+0.1000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1002	64	35	0	0
+10	176.4300000000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	908	64	35	0	0
+0.000000	0.466329	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	914	64	35	0	0
+0	2.153852	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	920	64	35	0	0
 AZDTgroup1	AZDTgroup1	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	AzimuthGroup1	1	7	0	951	64	35	0	0
-439.360365	176.530817	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	980	64	35	0	0
--0.289836	0.001446	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	978	64	35	0	0
-1566.876546	40.965714	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	979	64	35	0	0
+0.000000	176.530817	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	980	64	35	0	0
+0	0.001446	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	978	64	35	0	0
+0	40.965714	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	979	64	35	0	0
 1600.AZDT	1600.AZDT	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MotorThermalControl	AzimuthGroup1	1	7	0	944	64	35	0	0
 30.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	932	64	35	0	0
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	938	64	35	0	0
-3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	926	64	35	0	0
+5.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	926	64	35	0	0
 500000.000000	500000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	971	64	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	902	64	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1034	64	35	0	0
-100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1040	64	35	0	0
-0.0000000000	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1041	64	35	0	0
+0	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1040	64	35	0	0
+100	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1041	64	35	0	0
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	896	64	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0.1	100	0	1065	65	35	0	0
 2.0000000000	2.0000000000	Autotune Controller type	Controller type used in autotuning. 0 for P, 1 for PI and 2 for PID		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	2	1	1006	65	35	0	0
 50.000000	40.000000	Autotune Step Amplitude	Amplitude added to controller output to identify the system in autotune		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0.1	100	1	1007	65	35	0	0
 0.1000000000	0.1000000000	Autotune Time Constant Fator	Specifies a divider to apply to the identifed plant time constant to obtain the desried time constant response. Setting this value greater than 1 makes faster responses.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0.1	100	0	1008	65	35	0	0
-0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1021	65	35	0	0
-0.521588	179.435484	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	909	65	35	0	0
-4.493460	0.466329	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	915	65	35	0	0
-44.951201	2.153852	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	921	65	35	0	0
+0.1000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1021	65	35	0	0
+817.569	179.435484	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	909	65	35	0	0
+2.913000	0.466329	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	915	65	35	0	0
+0	2.153852	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	921	65	35	0	0
 AZDTgroup2	AZDTgroup2	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	AzimuthGroup2	1	7	0	952	65	35	0	0
-607.671862	176.530817	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	987	65	35	0	0
-0.213354	0.001446	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	992	65	35	0	0
-2393.236112	40.965714	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	997	65	35	0	0
+387.671329	176.530817	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	987	65	35	0	0
+0.134186	0.001446	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	992	65	35	0	0
+1777.875132	40.965714	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	997	65	35	0	0
 1600.AZDT	1600.AZDT	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MotorThermalControl	AzimuthGroup2	1	7	0	945	65	35	0	0
-30.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	933	65	35	0	0
+50.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	933	65	35	0	0
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	939	65	35	0	0
-3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	927	65	35	0	0
+8.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	927	65	35	0	0
 500000.000000	500000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	972	65	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	903	65	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1035	65	35	0	0
-100	100	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1042	65	35	0	0
-0.0000000000	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1045	65	35	0	0
+0	100	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1042	65	35	0	0
+100	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1045	65	35	0	0
 5	5	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	897	65	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0.1	100	0	1066	66	35	0	0
 2.0000000000	2.0000000000	Autotune Controller type	Controller type used in autotuning. 0 for P, 1 for PI and 2 for PID		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	2	1	1003	66	35	0	0
