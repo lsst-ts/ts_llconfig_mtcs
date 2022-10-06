@@ -936,7 +936,7 @@ TMA_EL_PD_CBT_0002	TMA_EL_PD_CBT_0002	ID String	This is the identifier for the c
 0.1000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1002	64	35	0	0
 10	176.4300000000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	908	64	35	0	0
 0.000000	0.466329	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	914	64	35	0	0
-0	2.153852	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	920	64	35	0	0
+5	2.153852	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	920	64	35	0	0
 AZDTgroup1	AZDTgroup1	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	AzimuthGroup1	1	7	0	951	64	35	0	0
 0.000000	176.530817	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	980	64	35	0	0
 0	0.001446	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	978	64	35	0	0
@@ -977,10 +977,10 @@ AZDTgroup2	AZDTgroup2	ID String	This is the identifier for the motor group in st
 2.0000000000	2.0000000000	Autotune Controller type	Controller type used in autotuning. 0 for P, 1 for PI and 2 for PID		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	2	1	1003	66	35	0	0
 50	40.000000	Autotune Step Amplitude	Amplitude added to controller output to identify the system in autotune		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0.1	100	1	1010	66	35	0	0
 0.1000000000	0.1000000000	Autotune Time Constant Fator	Specifies a divider to apply to the identifed plant time constant to obtain the desried time constant response. Setting this value greater than 1 makes faster responses.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0.1	100	0	1004	66	35	0	0
-0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1022	66	35	0	0
-10	179.435484	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	910	66	35	0	0
+0.1000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1022	66	35	0	0
+40	179.435484	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	910	66	35	0	0
 0	0.466329	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	916	66	35	0	0
-0	2.153852	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	922	66	35	0	0
+5	2.153852	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	922	66	35	0	0
 AZDTgroup3	AZDTgroup3	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	AzimuthGroup3	1	7	0	953	66	35	0	0
 0	176.530817	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	988	66	35	0	0
 0	0.001446	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	993	66	35	0	0
@@ -988,12 +988,12 @@ AZDTgroup3	AZDTgroup3	ID String	This is the identifier for the motor group in st
 1600.AZDT	1600.AZDT	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MotorThermalControl	AzimuthGroup3	1	7	0	947	66	35	0	0
 30.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	934	66	35	0	0
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	940	66	35	0	0
-3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	928	66	35	0	0
+5.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	928	66	35	0	0
 500000.000000	500000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	973	66	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	904	66	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1036	66	35	0	0
-100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1043	66	35	0	0
-0.0000000000	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1046	66	35	0	0
+0	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1043	66	35	0	0
+100	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1046	66	35	0	0
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	898	66	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0.1	100	0	1067	67	35	0	0
 2.0000000000	2.0000000000	Autotune Controller type	Controller type used in autotuning. 0 for P, 1 for PI and 2 for PID		DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	2	1	1012	67	35	0	0
@@ -1084,18 +1084,18 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 0.0000000000	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1050	69	35	46	0
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	901	69	35	46	0
 360	360	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	962	50	28	0	0
-2000	2000	coolDownTankTimeout	Timeout for the tank to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	961	50	28	46	0
-		ID String			STRING	3	0	OSS	OSS	0	0	0	964	50	28	46	0
-2000	2000	operationTransitionTimeout	Timeout for the transition between automatic and manual mode, in secods.	s	DOUBLE	2	1	OSS	OSS	0	0	0	695	50	28	46	0
-2000	2000	powerOffCoolingTimeout	Timeout for the cooling system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	967	50	28	46	0
-2000	2000	powerOffMainPumpTimeout	Timeout for the main pump system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	969	50	28	46	0
-2000	2000	powerOffOilCirculationTimeout	Timeout for the oil circulation system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	970	50	28	46	0
-2000	2000	powerOnCoolingTimeout	Timeout for the cooling system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	958	50	28	46	0
-2000	2000	powerOnMainPumpTimeout	Timeout for the main pump system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	968	50	28	46	0
-2000	2000	powerOnOilCirculationTimeout	Timeout for the oil circulation system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	959	50	28	46	0
-3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	OSS	OSS	0	0	0	965	50	28	46	0
-800.OSS	800.OSS	SystemSource	This is the identifier for the system used when publishing the Alarm source.	s	STRING	3	1	OSS	OSS	0	0	0	963	50	28	46	0
-10.0000000000	10.0000000000	watchdogMaximumTime	Maximum time that the controller will wait without a watchdog signal	s	DOUBLE	2	1	OSS	OSS	0	0	0	1033	50	28	46	0
+2000	2000	coolDownTankTimeout	Timeout for the tank to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	961	50	28	0	0
+		ID String			STRING	3	0	OSS	OSS	0	0	0	964	50	28	0	0
+2000	2000	operationTransitionTimeout	Timeout for the transition between automatic and manual mode, in secods.	s	DOUBLE	2	1	OSS	OSS	0	0	0	695	50	28	0	0
+2000	2000	powerOffCoolingTimeout	Timeout for the cooling system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	967	50	28	0	0
+2000	2000	powerOffMainPumpTimeout	Timeout for the main pump system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	969	50	28	0	0
+2000	2000	powerOffOilCirculationTimeout	Timeout for the oil circulation system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	970	50	28	0	0
+2000	2000	powerOnCoolingTimeout	Timeout for the cooling system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	958	50	28	0	0
+2000	2000	powerOnMainPumpTimeout	Timeout for the main pump system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	968	50	28	0	0
+2000	2000	powerOnOilCirculationTimeout	Timeout for the oil circulation system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	959	50	28	0	0
+3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	OSS	OSS	0	0	0	965	50	28	0	0
+800.OSS	800.OSS	SystemSource	This is the identifier for the system used when publishing the Alarm source.	s	STRING	3	1	OSS	OSS	0	0	0	963	50	28	0	0
+10.0000000000	10.0000000000	watchdogMaximumTime	Maximum time that the controller will wait without a watchdog signal	s	DOUBLE	2	1	OSS	OSS	0	0	0	1033	50	28	0	0
 3.0000000000	3.0000000000	Fault Iterations Safety NoOk	This is a counter used to trigger the Safety NO OK variable as TRUE if the value is greater than the set value.		DOUBLE	2	1	Safety	General	0	0	0	727	57	31	46	0
 1000.0000000000	1000.0000000000	Monitoring Timeout ms	This is the timeout for the monitoring task in the TMA safety code.	ms	DOUBLE	2	1	Safety	General	0	0	0	730	57	31	46	0
 1000.0000000000	1000.0000000000	OverrideCausesTimeout	This is the timeout for executing the override causes command.	ms	DOUBLE	2	1	Safety	General	0	0	0	731	57	31	46	0
@@ -1120,7 +1120,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 10000.0000000000	10000.0000000000	BeforeLPLaunchWait	This is the time to wait before launching the locking pins task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	740	58	32	46	0
 6000.0000000000	3000.0000000000	BeforeMainAxesOMTTaskLaunchWait	This is the time to wait before launching the OMT tasks for Main Axes	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1404	58	32	0	0
 4000.0000000000	2000.0000000000	BeforeMainAxesPXICommTaskLaunchWait	This is the time to wait before launching the task to communicate with the Axes PXI	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1403	58	32	0	0
-20000.0000000000	12000.0000000000	BeforeMainAxisLaunchWait	This is the time to wait before launching the main axis task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	744	58	32	0	0
+200000000.0000000000	12000.0000000000	BeforeMainAxisLaunchWait	This is the time to wait before launching the main axis task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	744	58	32	0	0
 11500.0000000000	11500.0000000000	BeforeMCLaunchWait	This is the time to wait before launching the mirror cover task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	742	58	32	46	0
 12000.0000000000	12000.0000000000	BeforeMCLLaunchWait	This is the time to wait before launching the mirror cover lock task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	743	58	32	46	0
 2050000000.0000000000	2050000000.0000000000	BeforeModbusTempControllersLaunchWait	This is the time to wait before launching the Modbus temperature controllers task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1170	58	32	46	0
