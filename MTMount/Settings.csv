@@ -1119,7 +1119,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 9500.0000000000	9500.0000000000	BeforeIOTelemetryPublicationLaunchWait	This is the time to wait before launching the IO Telemetry publication task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1232	58	32	46	0
 10000.0000000000	10000.0000000000	BeforeLPLaunchWait	This is the time to wait before launching the locking pins task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	740	58	32	46	0
 200000000.0000000000	3000.0000000000	BeforeMainAxesOMTTaskLaunchWait	This is the time to wait before launching the OMT tasks for Main Axes	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1404	58	32	0	0
-200000000.0000000000	2000.0000000000	BeforeMainAxesPXICommTaskLaunchWait	This is the time to wait before launching the task to communicate with the Axes PXI	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1403	58	32	0	0
+2000.0000000000	2000.0000000000	BeforeMainAxesPXICommTaskLaunchWait	This is the time to wait before launching the task to communicate with the Axes PXI	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1403	58	32	0	0
 90000.0000000000	12000.0000000000	BeforeMainAxisLaunchWait	This is the time to wait before launching the main axis task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	744	58	32	0	0
 11500.0000000000	11500.0000000000	BeforeMCLaunchWait	This is the time to wait before launching the mirror cover task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	742	58	32	46	0
 12000.0000000000	12000.0000000000	BeforeMCLLaunchWait	This is the time to wait before launching the mirror cover lock task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	743	58	32	46	0
