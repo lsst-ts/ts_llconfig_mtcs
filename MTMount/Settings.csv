@@ -946,6 +946,7 @@ AZDTgroup1	AZDTgroup1	ID String	This is the identifier for the motor group in st
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	938	64	35	0	0
 5.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	926	64	35	0	0
 500000.000000	500000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	971	64	35	0	0
+100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1439	64	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	902	64	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1034	64	35	0	0
 0	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1040	64	35	0	0
@@ -968,6 +969,7 @@ AZDTgroup2	AZDTgroup2	ID String	This is the identifier for the motor group in st
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	939	65	35	0	0
 8.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	927	65	35	0	0
 500000.000000	500000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	972	65	35	0	0
+100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1440	65	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	903	65	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1035	65	35	0	0
 0	100	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1042	65	35	0	0
@@ -990,6 +992,7 @@ AZDTgroup3	AZDTgroup3	ID String	This is the identifier for the motor group in st
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	940	66	35	0	0
 5.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	928	66	35	0	0
 500000.000000	500000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	973	66	35	0	0
+100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1441	66	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	904	66	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1036	66	35	0	0
 0	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1043	66	35	0	0
@@ -1012,6 +1015,7 @@ AZDTgroup4	AZDTgroup4	ID String	This is the identifier for the motor group in st
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	941	67	35	0	0
 3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	929	67	35	0	0
 500000.000000	500000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	974	67	35	0	0
+100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	1442	67	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	905	67	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	1037	67	35	0	0
 100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	1044	67	35	0	0
@@ -1034,6 +1038,7 @@ Cabinet0101	Cabinet0101	ID String	This is the identifier for the motor group in 
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1087	70	35	46	0
 3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1088	70	35	46	0
 500000.0000000000	500000.0000000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1089	70	35	46	0
+0.0000000000	0.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1445	70	35	0	0
 40.0000000000	40.0000000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1090	70	35	46	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1091	70	35	46	0
 100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1092	70	35	46	0
@@ -1056,6 +1061,7 @@ ELDTgroup1	ELDTgroup1	ID String	This is the identifier for the motor group in st
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	942	68	35	46	0
 3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	930	68	35	46	0
 50000.000000	50000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	975	68	35	46	0
+100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1443	68	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	906	68	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1038	68	35	46	0
 100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1048	68	35	46	0
@@ -1078,6 +1084,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	943	69	35	46	0
 3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	931	69	35	46	0
 50000.000000	50000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	976	69	35	46	0
+100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1444	69	35	0	0
 100.000000	40.000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	907	69	35	0	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1039	69	35	46	0
 100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1049	69	35	46	0
@@ -1118,7 +1125,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 7000.0000000000	7000.0000000000	BeforeELMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	747	58	32	46	0
 9500.0000000000	9500.0000000000	BeforeIOTelemetryPublicationLaunchWait	This is the time to wait before launching the IO Telemetry publication task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1232	58	32	46	0
 10000.0000000000	10000.0000000000	BeforeLPLaunchWait	This is the time to wait before launching the locking pins task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	740	58	32	46	0
-200000000.0000000000	3000.0000000000	BeforeMainAxesOMTTaskLaunchWait	This is the time to wait before launching the OMT tasks for Main Axes	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1404	58	32	0	0
+4000.0000000000	3000.0000000000	BeforeMainAxesOMTTaskLaunchWait	This is the time to wait before launching the OMT tasks for Main Axes	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1404	58	32	0	0
 2000.0000000000	2000.0000000000	BeforeMainAxesPXICommTaskLaunchWait	This is the time to wait before launching the task to communicate with the Axes PXI	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1403	58	32	0	0
 90000.0000000000	12000.0000000000	BeforeMainAxisLaunchWait	This is the time to wait before launching the main axis task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	744	58	32	0	0
 11500.0000000000	11500.0000000000	BeforeMCLaunchWait	This is the time to wait before launching the mirror cover task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	742	58	32	46	0
