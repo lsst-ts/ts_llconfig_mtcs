@@ -157,7 +157,7 @@ ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.
 ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	308	1
 ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	ConnectionOK	1	0	309	1
 NoNewData	New data does not arrive from EIB	100.Azimuth	105	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	NoNewDataAlarmActive	1	0	310	1
-OSSAlarm	The OSS is in Fault state	50. MainAxes	57	2	46	MainAxisEvents	Alarm	EQUAL	1	OSSAlarm	0	0	316	1
+OSSAlarm	The OSS is in Fault state	50. MainAxes	57	2	46	MainAxisEvents	Alarm	EQUAL	1	OSSAlarm	1	0	316	1
 Phase Power Supply Alarm	The Phass Power Supply, supply for main axis, is in fault state	50. MainAxes	58	2	46	MainAxisEvents	Alarm	EQUAL	1	PhasePowerSupplyAlarm	1	0	317	1
 Positive Software limit	The positive software limit has been exceeded	100.Azimuth	110	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Software limit value)&&Limits Positive Software limit enable	1	0	318	1
 Negative Software limit	The negative software limit has been exceeded	100.Azimuth	111	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Software limit value)&&Limits Negative Software limit enable	1	0	319	1
