@@ -405,7 +405,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 2.0000000000	2.0000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10	1	555	52	25	50	0
 10.000000	10.000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	1	10.5	1	547	52	25	50	0
 29	29	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	48	1	621	52	25	50	0
-10.0000000000	10.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	1	10	1	541	52	25	50	0
+10.0000000000	10.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	1	11	1	541	52	25	50	0
 0.500000	0.500000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.1	1.5	1	557	52	25	50	0
 1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.1	14	1	638	52	25	50	0
 0.500000	0.500000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	1.5	1	558	52	25	50	0
@@ -628,14 +628,14 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 45.0000000000	45.0000000000	Critical High Cabinet Temperature	This is the temperature at which an alarm is triggered.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	49	1	12	3	13	50	0
 4.0000000000	4.0000000000	Critical Low Cabinet Temperature	This is the temperature at which an alarm is triggered.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-4	10	1	13	3	13	50	0
 15.0000000000	15.0000000000	DefaultSetpoint	The setpoint sent when initializing, exiting and when going to fault in the Cabinet OMT.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	0	705	3	13	50	0
-43.0000000000	43.0000000000	High Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	1	10	3	13	50	0
+21.0000000000	21.0000000000	High Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	1	10	3	13	50	0
 5.0000000000	5.0000000000	High Surface Temperature	The difference between ambient temperature and surface temperature is above the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	25	1	8	3	13	50	0
 		ID String			STRING	3	0	MainCabinetTemperature	MainCabinet	4	10	1	1063	3	13	50	0
 192.168.210.30	192.168.210.30	IP address	This is the IP address of the RMC for the modbus connection.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1405	3	13	50	0
 5.0000000000	5.0000000000	Low Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-5	10	1	11	3	13	50	0
 -5.0000000000	-5.0000000000	Low Surface Temperature	The difference between ambient temperature and surface temperature is bellow the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-30	1	1	9	3	13	50	0
 2.000000	2.000000	Lower Limit Hysteresis Relative	This is the lower temperature limit  relative to the ambient temperature for the hysteresis control used when RMC is not working	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	15	1	406	3	13	50	0
-18.0000000000	18.0000000000	Maximum Setpoint Temperature	Maximum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	10	20	1	403	3	13	50	0
+17.0000000000	17.0000000000	Maximum Setpoint Temperature	Maximum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	10	20	1	403	3	13	50	0
 5.000000	5.000000	Minimum Setpoint Temperature	Minimum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	1	404	3	13	50	0
 502.0000000000	502.0000000000	port	This is the connection port for the modbus of the RMC.		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	0	0	1406	3	13	50	0
 1350.0000000000	1350.0000000000	Special Error Lower Limit	The error numbers between this setting and the Special Error Upper Limit will trigger the special fault in the main cabinet statechart. This special fault will trigger a fault in all subsystem to prepare for a possible cabinet switch off.		DOUBLE	2	0	MainCabinetTemperature	MainCabinet	20	48	0	1382	3	13	50	0
@@ -1040,13 +1040,13 @@ AZDTgroup4	AZDTgroup4	ID String	This is the identifier for the motor group in st
 40.0000000000	40.0000000000	Autotune Step Amplitude	Amplitude added to controller output to identify the system in autotune		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0.1	100	1	1076	70	35	50	0
 0.1000000000	0.1000000000	Autotune Time Constant Fator	Specifies a divider to apply to the identifed plant time constant to obtain the desried time constant response. Setting this value greater than 1 makes faster responses.		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0.1	100	0	1077	70	35	50	0
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1078	70	35	50	0
-179.4354840000	179.4354840000	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1079	70	35	50	0
-0.4663290000	0.4663290000	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1080	70	35	50	0
-2.1538520000	2.1538520000	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1081	70	35	50	0
+20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1079	70	35	50	0
+0	0	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1080	70	35	50	0
+20	20	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1081	70	35	50	0
 Cabinet0101	Cabinet0101	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	Cabinet0101	1	7	0	1082	70	35	50	0
-176.5308170000	176.5308170000	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1083	70	35	50	0
-0.0014460000	0.0014460000	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1084	70	35	50	0
-40.9657140000	40.9657140000	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1085	70	35	50	0
+0	0	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1083	70	35	50	0
+0	0	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1084	70	35	50	0
+0	0	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1085	70	35	50	0
 1900.Cabinet0101	1900.Cabinet0101	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MotorThermalControl	Cabinet0101	1	7	0	1095	70	35	50	0
 5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1086	70	35	50	0
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1087	70	35	50	0
