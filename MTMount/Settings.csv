@@ -143,7 +143,7 @@ Motor 1	Motor 1	ID String 1	This is the identifier for the Motor 1 in string for
 Motor 2	Motor 2	ID String 2	This is the identifier for the Motor 2 in string format.		STRING	3	1	CW	ACW	0	0	0	1192	60	33	50	0
 11.0000000000	11.0000000000	Max Acceleration	The maximum allowed acceleration of the motor. If the command has bigger acceleration than this value the command will be rejected	deg/s^2	DOUBLE	2	1	CW	ACW	0.1	15	1	1193	60	33	50	0
 48.0000000000	48.0000000000	Max Jerk	The maximum allowed jerk of the motor. If the command has bigger jerk than this value the command will be rejected	deg/s^3	DOUBLE	2	1	CW	ACW	5	100	1	1194	60	33	50	0
-280.0000000000	280.0000000000	Max Position	Maximum allowed position	deg	DOUBLE	2	1	CW	ACW	250	300	1	1195	60	33	50	0
+280.0000000000	280.0000000000	Max Position	Maximum allowed position	deg	DOUBLE	2	1	CW	ACW	250	300	0	1195	60	33	50	0
 381.0000000000	381.0000000000	Max Software Limit	Maximum allowed position before triggering and alarm	deg	DOUBLE	2	0	CW	ACW	90	93	0	1196	60	33	50	0
 14.0000000000	14.0000000000	Max Speed	The maximum allowed speed of the motor. If the command has bigger speed than this value the command will be rejected	deg/s^2	DOUBLE	2	1	CW	ACW	0.1	20	1	1197	60	33	50	0
 -280.0000000000	-280.0000000000	Min Position	Minimum allowed position	deg	DOUBLE	2	1	CW	ACW	-320	-80	1	1198	60	33	50	0
@@ -155,22 +155,22 @@ c:\\Configuration\\ACWData.ini	c:\\Configuration\\ACWData.ini	Motor timer file p
 1	1	Negative Software Limit Enable	Enable the softwar limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	CW	ACW	0	0	0	1387	60	33	50	0
 5000.0000000000	5000.0000000000	OffTrans_Timeout	Timeout time to switch off the system	ms	DOUBLE	2	1	CW	ACW	0	0	0	1204	60	33	50	0
 10000.0000000000	10000.0000000000	OnTrans_Timeout	Timeout time to switch on the system	ms	DOUBLE	2	1	CW	ACW	0	0	0	1205	60	33	50	0
--360.0000000000	-360.0000000000	Position Offset	This is the offset added to the position of the CW, it is used both for the telemetry sent by the bosch task as well as the commands sent by the statechart. This setting is updated only after a reboot of the TMA-PXI.	deg	DOUBLE	2	0	CW	ACW	-355	-365	1	810	60	33	50	0
+-360.0000000000	360.0000000000	Position Offset	This is the offset added to the position of the CW, it is used both for the telemetry sent by the bosch task as well as the commands sent by the statechart. This setting is updated only after a reboot of the TMA-PXI.	deg	DOUBLE	2	0	CW	ACW	-355	-365	0	810	60	33	50	0
 1	1	Positive Software Limit Enable	Enable the softwar limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	CW	ACW	0	0	0	1208	60	33	50	0
 2000.0000000000	2000.0000000000	ResettingTime	Timeout time to reset the system	ms	DOUBLE	2	1	CW	ACW	0	0	0	1206	60	33	50	0
 1.0000000000	1.0000000000	Rotation sense	Manage the rotation sense. A value of 1 makes the ACW rotates clockwise locking to gears and - 1 makes rotates counter clockwise		DOUBLE	2	0	CW	ACW	-1	1	1	1207	60	33	50	0
 14	14	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	CW	ACW	0.01	15	1	1209	60	33	50	0
 4000.0000000000	4000.0000000000	StopTrans_Timeout	Timeout time to stop a movement	ms	DOUBLE	2	1	CW	ACW	0	0	0	1210	60	33	50	0
 300.ACW	300.ACW	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	CW	ACW	0	0	0	1227	60	33	50	0
-10.0000000000	10.0000000000	Tracking Acceleration	The acceleration used when tracking	deg/s^2	DOUBLE	2	1	CW	ACW	0.1	20	1	1211	60	33	50	0
-1.0000000000	1.0000000000	Tracking CompensationGain	Compenation value used in tracking command to convert to position command, acording to ((endVelocity^2)/acceleration)*(0.5)*CompensationGain formula		DOUBLE	2	0	CW	ACW	0.5	100	0	1379	60	33	50	0
-48.0000000000	48.0000000000	Tracking Jerk	The jerk used when tracking	deg/s^3	DOUBLE	2	1	CW	ACW	0.5	100	1	1212	60	33	50	0
+10.0000000000	13.0000000000	Tracking Acceleration	The acceleration used when tracking	deg/s^2	DOUBLE	2	1	CW	ACW	0.1	20	1	1211	60	33	50	0
+1.0000000000	1.2	Tracking CompensationGain	Compenation value used in tracking command to convert to position command, acording to ((endVelocity^2)/acceleration)*(0.5)*CompensationGain formula		DOUBLE	2	0	CW	ACW	0.5	100	0	1379	60	33	50	0
+48.0000000000	60.0000000000	Tracking Jerk	The jerk used when tracking	deg/s^3	DOUBLE	2	1	CW	ACW	0.5	100	1	1212	60	33	50	0
 3000.0000000000	3000.0000000000	Tracking queue size	Queue size for the tracking task. If the maximun is achieved new commands will be lost. This setting is only available in the startup of the application		DOUBLE	2	0	CW	ACW	0	0	0	1213	60	33	50	0
-10.0000000000	10.0000000000	Tracking Speed	The speed used when tracking	deg/s^2	DOUBLE	2	1	CW	ACW	0.1	16	1	1214	60	33	50	0
-0.0000000000	0.0000000000	Tracking Time offset	Offset for tracking commands to be applied	s	DOUBLE	2	0	CW	ACW	0	0	0	1215	60	33	50	0
+10.0000000000	12.0000000000	Tracking Speed	The speed used when tracking	deg/s^2	DOUBLE	2	1	CW	ACW	0.1	16	1	1214	60	33	50	0
+0.0000000000	-100	Tracking Time offset	Offset for tracking commands to be applied	s	DOUBLE	2	0	CW	ACW	0	0	0	1215	60	33	50	0
 1300.000000	1300.000000	Tracking Wait for data before error	After this time without a new command the tracking task will througth an error	ms	DOUBLE	2	1	CW	ACW	0	0	0	1216	60	33	50	0
 500.0000000000	500.0000000000	Tracking Wait for first track setpoint error	After this time without the first tracking command the tracking task will througth an error	ms	DOUBLE	2	1	CW	ACW	0	0	0	1217	60	33	50	0
-5000.0000000000	5000.0000000000	Tracking Wait time for check setpoint	Time to wait for a new check with a command in the queue but the time is not fullfilled yet	us	DOUBLE	2	1	CW	ACW	0	0	0	1218	60	33	50	0
+5000.0000000000	3000.0000000000	Tracking Wait time for check setpoint	Time to wait for a new check with a command in the queue but the time is not fullfilled yet	us	DOUBLE	2	1	CW	ACW	0	0	0	1218	60	33	50	0
 500.0000000000	500.0000000000	Tracking Wait time if no data in queue	Time to wait for checking for a new command when no data in the queue	us	DOUBLE	2	1	CW	ACW	0	0	0	1220	60	33	50	0
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	CW	ACW	0	0	0	1221	60	33	50	0
 0.9000000000	0.9000000000	Camera Deviation	Allowed deviation between camera position and camera cable wrap position. If this limit is overcomed the system will trigger a warning	deg	DOUBLE	2	1	CW	CCW	0.5	2	1	806	61	33	50	0
@@ -1053,7 +1053,7 @@ Cabinet0101	Cabinet0101	ID String	This is the identifier for the motor group in 
 3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1088	70	35	50	0
 500000.0000000000	500000.0000000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1089	70	35	50	0
 0.0000000000	0.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1445	70	35	50	0
-40.0000000000	40.0000000000	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1090	70	35	50	0
+40.0000000000	80	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1090	70	35	50	0
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1091	70	35	50	0
 100.0000000000	100.0000000000	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1092	70	35	50	0
 0.0000000000	0.0000000000	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1093	70	35	50	0
