@@ -439,7 +439,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 8.0000000000	8.0000000000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.1	1	1176	52	25	50	0
 1	1	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1246	52	25	50	0
 265.0000000000	265.0000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	270	1	1247	52	25	50	0
-1	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1177	52	25	50	0
+0	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1177	52	25	0	0
 0	0	Limits Positive Operational Limit Switch enable	Enable positive Operational imit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1248	52	25	50	0
 1	1	Limits Positive Software limit enable	Enable positive software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	626	52	25	50	0
 265.0000000000	265.0000000000	Limits Positive Software limit value	Vaue for Positive software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	275	1	627	52	25	50	0

@@ -213,3 +213,10 @@ Soft Stop	Soft Stop perfomed in the OSS	800.OSS	820	2	40	OSSEvents	Alarm	EQUAL	1
 Hard Stop	Hard Stop perfomed in the OSS	800.OSS	819	2	40	OSSEvents	Alarm	EQUAL	1	Hard Stop	1	0.3	383	1
 Emergency Stop	Emergency Stop perfomed in the OSS	800.OSS	818	2	40	OSSEvents	Alarm	EQUAL	1	Emergency Stop	1	0.3	384	1
 OSS Modbus fail	The Modbus comunication with the OSS is down	800.OSS	821	2	40	OSSEvents	Alarm	EQUAL	0	ModbusConnected	1	0	387	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	300.ACW	370	2	52	ACW_Events	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	389	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1100.BAL	1170	2	33	BalancingEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	390	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1000.CCW	1070	2	51	CCW_Events	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	391	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1400.LP	1470	2	27	LockingPinEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	392	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	900.MC	970	2	14	MCEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	393	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1500.MC	1570	2	45	MCLEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	394	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1200.DP	1270	2	32	PlatformEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	395	1
