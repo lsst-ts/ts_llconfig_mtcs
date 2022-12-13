@@ -287,7 +287,7 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 40.000000	40.000000	FPGA Clock Rate	Clock rate in MHz of the trigger program running in FPGA	MHz	DOUBLE	2	0	EncoderSystem	General	40	120	0	314	27	21	50	0
 192.168.211.10	192.168.211.10	Logging IP	IP for logging errors. The errors found by EIB will be sent to this port		STRING	3	0	EncoderSystem	General	0	0	0	178	27	21	50	0
 365.0000000000	365.0000000000	Sync Trigger Offset	Time in us to wait before sending trigger to EIB	us	DOUBLE	2	0	EncoderSystem	General	40	120	0	315	27	21	50	0
-80.0000000000	80.0000000000	Sync Trigger on Time	Time in us the EIB synchronization trigger will be on	us	DOUBLE	2	1	EncoderSystem	General	0	0	0	316	27	21	50	0
+80.0000000000	160.0000000000	Sync Trigger on Time	Time in us the EIB synchronization trigger will be on	us	DOUBLE	2	1	EncoderSystem	General	0	0	0	316	27	21	50	0
 10.0000000000	10.0000000000	UDP reading timeout	Timeout for getting data from EIB UDP port	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1105	27	21	50	0
 60.000000	60.000000	Wait after Reset	This is the time to wait before reconecting to EIB when a reset is performed	s	DOUBLE	2	0	EncoderSystem	General	50	100	1	198	27	21	50	0
 1	1	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head1	-2	50	1	169	28	21	50	0
