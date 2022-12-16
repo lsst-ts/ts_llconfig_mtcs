@@ -338,7 +338,7 @@ TMA-AZ-ENC-ELV-0002	TMA-AZ-ENC-ELV-0002	Head Name	Name of the head according to 
 2.0000000000	2.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head8	1	4	1	726	35	21	50	49
 -1.2104339410E-5	-1.2104339410E-5	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head8	0	0	0	197	35	21	50	49
 196789.0000000000	196789.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head8	0	6	0	189	35	21	50	49
-0	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	50	49
+1	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	0	49
 89.0000000000	89.0000000000	ElevationPosNinetyMinus	This is the - limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis. 	deg	DOUBLE	2	1	LockingPins	General	89	91	1	274	41	23	50	49
 91.0000000000	91.0000000000	ElevationPosNinetyPlus	This is the + limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	89	91	1	273	41	23	50	49
 -1.0000000000	-1.0000000000	ElevationPosZeroMinus	This is the - limit for the Elevation axis to be able to insert the LP at 0 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	-2	1	1	272	41	23	50	49
@@ -429,7 +429,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 -260.000000	-260.000000	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	1	MainAxis	Azimuth	-272	-250	1	1180	52	25	50	49
 1	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	50	49
 -265.0000000000	-265.0000000000	Limits Negative Adjustable Software limit value	Vaue for Negative adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	Limits Negative Software limit value	-200	1	1245	52	25	50	49
-1	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1178	52	25	50	49
+0	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1178	52	25	0	49
 0	0	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1249	52	25	50	49
 1	1	Limits Negative Positive Software limit enable	Enable positive software limit in softmotion. Over this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1360	52	25	50	49
 1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	50	49
@@ -439,7 +439,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 8.0000000000	8.0000000000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.1	1	1176	52	25	50	49
 1	1	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1246	52	25	50	49
 265.0000000000	265.0000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	270	1	1247	52	25	50	49
-1	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1177	52	25	50	49
+0	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1177	52	25	0	49
 0	0	Limits Positive Operational Limit Switch enable	Enable positive Operational imit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1248	52	25	50	49
 1	1	Limits Positive Software limit enable	Enable positive software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	626	52	25	50	49
 265.0000000000	265.0000000000	Limits Positive Software limit value	Vaue for Positive software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	275	1	627	52	25	50	49
