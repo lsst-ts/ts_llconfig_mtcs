@@ -36,8 +36,8 @@ Speed Limit	The speed limit was violated	300.ACW	301	1	52	ACW_Events	Warning	EQU
 Azimuth Deviation Limit	The allowed deviation between azimuth position and azimuth cable wrap position was overcomed	300.ACW	313	1	52	ACW_Events	Warning	EQUAL	1	(((Azimuth Position-Motor 1 Position)>Azimuth Deviation)||(-(Azimuth Position-Motor 1 Position)>Azimuth Deviation)||((Azimuth Position-Motor 2 Position)>Azimuth Deviation)||(-(Azimuth Position-Motor 2 Position)>Azimuth Deviation))&&~Azimuth Deviation Override	1	0	326	1
 AZCW Deviation Limit	The maximum allowed deviation between azimuth cable wrap position and azimuth position was overcomed	100.Azimuth	120	1	47	AzimuthAxisEvents	Warning	EQUAL	1	(((Position-CW Position)>Limits AZCW Maximum Deviation Value)||((Position-CW Position)<-Limits AZCW Maximum Deviation Value))&&Limits AZCW Deviation Enable	1	0	335	1
 NoNewData	New data does not arrive from EIB	400.Elevation	405	1	49	ElevationAxisEvents	Warning	EQUAL	1	NoNewDataWarningActive	0	0	359	1
-Past Time in Tracking Command	A tracking command was received with a past timestamp demand value.	100.Azimuth	150	1	47	AzimuthAxisEvents	Warning	EQUAL	1	overSpeed	1	0	396	1
-Past Time in Tracking Command	A tracking command was received with a past timestamp demand value.	400.Elevation	450	1	49	ElevationAxisEvents	Warning	EQUAL	1	overSpeed	1	0	397	1
+Past Time in Tracking Command	A tracking command was received with a past timestamp demand value.	100.Azimuth	150	1	47	AzimuthAxisEvents	Warning	EQUAL	1	pastTimeInTrackingCommand_Warning	1	0	396	1
+Past Time in Tracking Command	A tracking command was received with a past timestamp demand value.	400.Elevation	450	1	49	ElevationAxisEvents	Warning	EQUAL	1	pastTimeInTrackingCommand_Warning	1	0	397	1
 Critical Temperature Increase 	Cabinet Temperature increased above critical limit.	1300.MainCabinet	1351	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Door&&(((((Cabinet Temperature 1>=Critical High Cabinet Temperature)&&(~Cabinet Temperature 1 error))||((Cabinet Temperature 2>=Critical High Cabinet Temperature)&&(~Cabinet Temperature 2 error)))&&(~RMC connection error))||((Backup Temperature>=Critical High Cabinet Temperature)&&(RMC connection error)))	1	0	5	1
 Critical Temperature Drop	Cabinet Temperature decreased below critical limit.	1300.MainCabinet	1350	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Door&&(((((Cabinet Temperature 1<=Critical Low Cabinet Temperature)&&(~Cabinet Temperature 1 error))||((Cabinet Temperature 2<=Critical Low Cabinet Temperature)&&(~Cabinet Temperature 2 error)))&&(~RMC connection error))||((Backup Temperature<=Critical Low Cabinet Temperature)&&(RMC connection error)))	1	0	6	1
 Cabinet Fan Faulty	The heat exchanger fan is faulty.	1300.MainCabinet	1301	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Fan Faulty	1	0	10	1
@@ -109,7 +109,7 @@ Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2
 Cabinet Valve Faulty	The cabinet valve is faulty.	1300.MainCabinet	1303	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Valve Faulty	1	0	148	1
 Backup Temperature Sensor Failed	The backup temperature sensor used when RMC not working failed.  If the RMC controller communication is lost, the backup hysteresis based controller will not work.	1300.MainCabinet	1312	2	2	MainCabinetEvents	Alarm	EQUAL	1	Backup Sensor error	1	0	149	1
 Mirror Cover Safety	A safety issue has occured in the mirror cover module.	1500.MCL	1501	2	45	MCLEvents0	Alarm	EQUAL	1	Safety Switch	1	0	150	1
-SoftMotion Axis Fault	The softmotion axis go to fault	100.Azimuth	101	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	163	1
+SoftMotion Axis Fault	The softmotion axis went to fault	100.Azimuth	101	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	163	1
 STO	The STO for the axis is active	100.Azimuth	102	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Safety Switch	1	0	165	1
 MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	2	44	MPSEvents	Alarm	EQUAL	1	(Current > MaxCurrent)  || (Current < -(MaxCurrent))	1	0	166	1
 MinVoltage	The minimum allowed volage was lost.	600.MPS	601	2	44	MPSEvents	Alarm	EQUAL	1	Voltage < MinVoltage	0	0	167	1
@@ -186,7 +186,7 @@ Positive Adjustable Software limit	The positive adjustable software limit has be
 Positive Operational Limit Switch	The positive Operational limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Positive Operational Limit Switch && Limits Positive Operational Limit Switch enable	1	0	352	1
 Positive Limit Switch	The positive limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Positive Limit Switch && Limits Positive Limit Switch enable	1	0	353	1
 Positive Software limit	The positive software limit has been exceeded	400.Elevation	410	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Software limit value)&&Limits Positive Software limit enable	1	0	354	1
-SoftMotion Axis Fault	The softmotion axis go to fault	400.Elevation	401	2	49	ElevationAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	355	1
+SoftMotion Axis Fault	The softmotion axis went to fault	400.Elevation	401	2	49	ElevationAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	355	1
 STO	The STO for the axis is active	400.Elevation	402	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Safety Switch	1	0	356	1
 TMAPXI-AXESPXI communcication failure	The communication between TMAPXI and AXESPXI is down. This was detected by the AXESPXI and the axis is in fault	400.Elevation	0	2	49	ElevationAxisEvents	Alarm	EQUAL	1	TMAPXI-AXESPXI comm fault	1	0	357	1
 Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	50. MainAxes	65	2	46	MainAxisEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	361	1
@@ -223,4 +223,4 @@ Bosch Power Supply Off	The bosch power supply is off , therefore the systems tha
 Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1500.MC	1570	2	45	MCLEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	394	1
 Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1200.DP	1270	2	32	PlatformEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	395	1
 Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	100.Azimuth	160	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	1	0	398	1
-Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	400.Elevation	160	2	49	ElevationAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	1	0	399	1
+Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	400.Elevation	160	2	49	ElevationAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	0	0	399	1
