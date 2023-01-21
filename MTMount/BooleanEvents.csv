@@ -148,7 +148,7 @@ Surface Temperature Sernsor Failed	The temperature sensor that measures the surf
 Internal Temperature Sensor 2 Failed	The temperature sensor that measures the internal temperature in the main cabinet (2) has failed. Its value is not valid.	1300.MainCabinet	1305	2	2	MainCabinetEvents	Alarm	EQUAL	1	Cabinet Temperature 2 error	1	0	277	1
 Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1900.Cabinet0101	1911	2	61	Cabinet010Events0	Alarm	EQUAL	1	Main Cabinet Off	1	0	278	1
 ValveFaulty	The valve of the drives temperature controller is faulty.	1900.Cabinet0101	1901	2	62	Cabinet010Events1	Alarm	EQUAL	1	ValveFaulty	1	0	281	1
-CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	288	1
+CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	0	0	288	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	289	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	291	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	CabinetOK	1	0	292	1
