@@ -635,7 +635,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 5.0000000000	5.0000000000	Low Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-5	10	1	11	3	13	50	49
 -5.0000000000	-5.0000000000	Low Surface Temperature	The difference between ambient temperature and surface temperature is bellow the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-30	1	1	9	3	13	50	49
 2.000000	2.000000	Lower Limit Hysteresis Relative	This is the lower temperature limit  relative to the ambient temperature for the hysteresis control used when RMC is not working	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	15	1	406	3	13	50	49
-17.0000000000	17.0000000000	Maximum Setpoint Temperature	Maximum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	10	20	1	403	3	13	50	0
+16.0000000000	16.0000000000	Maximum Setpoint Temperature	Maximum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	10	20	1	403	3	13	50	0
 5.000000	5.000000	Minimum Setpoint Temperature	Minimum allowed temperature for setpoint	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	1	404	3	13	50	49
 502.0000000000	502.0000000000	port	This is the connection port for the modbus of the RMC.		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	0	0	1406	3	13	50	49
 1350.0000000000	1350.0000000000	Special Error Lower Limit	The error numbers between this setting and the Special Error Upper Limit will trigger the special fault in the main cabinet statechart. This special fault will trigger a fault in all subsystem to prepare for a possible cabinet switch off.		DOUBLE	2	0	MainCabinetTemperature	MainCabinet	20	48	0	1382	3	13	50	49
