@@ -1074,7 +1074,7 @@ ELDTgroup1	ELDTgroup1	ID String	This is the identifier for the motor group in st
 5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	936	68	35	50	49
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	942	68	35	50	49
 3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	930	68	35	50	49
-50000.000000	50000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	975	68	35	50	49
+1200000.000000	50000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	975	68	35	0	49
 100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1443	68	35	50	49
 100	100	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	906	68	35	50	49
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1038	68	35	50	49
@@ -1097,7 +1097,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature band at which a temperature deviation alarm is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	937	69	35	50	49
 -1.0000000000	-1.0000000000	TemperatureDeviationReference	This is the temperature reference to compare the deviation alarm and warning with.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	943	69	35	50	49
 3.0000000000	3.0000000000	TemperatureDeviationWarning	This is the temperature band at which a temperature deviation warning is sent.	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	931	69	35	50	49
-50000.000000	50000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	976	69	35	50	49
+1200000.000000	50000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	976	69	35	0	49
 100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1444	69	35	50	49
 100	100	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	907	69	35	50	49
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1039	69	35	50	49
