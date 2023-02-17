@@ -636,6 +636,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 10	10	DefaultSetpoint	The setpoint sent when initializing, exiting and when going to fault in the Cabinet OMT.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	0	705	3	13	51	0
 21.0000000000	21.0000000000	High Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	1	10	3	13	51	49
 5.0000000000	5.0000000000	High Surface Temperature	The difference between ambient temperature and surface temperature is above the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	25	1	8	3	13	51	49
+1.5000000000	1.5000000000	HighCabinetTemperatureHysteresis	Hysteresis value for temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	0	1476	3	13	0	0
 		ID String			STRING	3	0	MainCabinetTemperature	MainCabinet	4	10	1	1063	3	13	51	49
 192.168.210.30	192.168.210.30	IP address	This is the IP address of the RMC for the modbus connection.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1405	3	13	51	49
 5.0000000000	5.0000000000	Low Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-5	10	1	11	3	13	51	49
