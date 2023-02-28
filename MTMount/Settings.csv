@@ -976,7 +976,7 @@ AZDTgroup1	AZDTgroup1	ID String	This is the identifier for the motor group in st
 120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1034	64	35	54	49
 0	0	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1040	64	35	54	49
 -100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1041	64	35	54	49
-5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	896	64	35	54	49
+0.1	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	896	64	35	0	49
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0.1	100	0	1065	65	35	54	49
 2.0000000000	2.0000000000	Autotune Controller type	Controller type used in autotuning. 0 for P, 1 for PI and 2 for PID		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	2	1	1006	65	35	54	49
 40.000000	40.000000	Autotune Step Amplitude	Amplitude added to controller output to identify the system in autotune		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0.1	100	1	1007	65	35	54	49
