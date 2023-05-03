@@ -104,7 +104,7 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 0.000000	0.000000	WaitAfterReset			DOUBLE	2	0	Balancing	Balancing4	0	0	0	255	40	22	54	55
 1100.BAL	1100.BAL	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	Balancing	General	1	7	0	531	36	22	54	55
 200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	Balancing	General	0	50	0	1462	36	22	54	55
-192.168.212.3	192.168.212.3	address	This is the IP address of the MLC.		STRING	3	1	BoschSystem	General	0	0	0	813	62	34	54	55
+139.229.171.23	139.229.171.23	address	This is the IP address of the MLC.		STRING	3	1	BoschSystem	General	0	0	0	813	62	34	54	55
 0	0	ChangeToParking	This setting defines if the system will execute the actions to change some motors to parking/notParking. If true before starting the bosch system some motors will change to parking.\nIf false no actions are executed before starting.		BOOLEAN	1	1	BoschSystem	General	0	0	0	797	62	34	54	55
 0	0	Parking Motor ID 1	This setting defines if the motor has to be in parking or not. Parking means that the motor will be off, and the statechart corresponding to the Motor ID will not start.		BOOLEAN	1	1	BoschSystem	General	0	0	0	775	62	34	54	55
 0	0	Parking Motor ID 10	This setting defines if the motor has to be in parking or not. Parking means that the motor will be off, and the statechart corresponding to the Motor ID will not start.		BOOLEAN	1	1	BoschSystem	General	0	0	0	784	62	34	54	55
