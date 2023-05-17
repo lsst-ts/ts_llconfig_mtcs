@@ -104,7 +104,7 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 0.000000	0.000000	WaitAfterReset			DOUBLE	2	0	Balancing	Balancing4	0	0	0	255	40	22	54	55
 1100.BAL	1100.BAL	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	Balancing	General	1	7	0	531	36	22	54	55
 200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	Balancing	General	0	50	0	1462	36	22	54	55
-139.229.171.23	139.229.171.23	address	This is the IP address of the MLC.		STRING	3	1	BoschSystem	General	0	0	0	813	62	34	54	55
+192.168.212.3	139.229.171.23	address	This is the IP address of the MLC.		STRING	3	1	BoschSystem	General	0	0	0	813	62	34	54	55
 0	0	ChangeToParking	This setting defines if the system will execute the actions to change some motors to parking/notParking. If true before starting the bosch system some motors will change to parking.\nIf false no actions are executed before starting.		BOOLEAN	1	1	BoschSystem	General	0	0	0	797	62	34	54	55
 0	0	Parking Motor ID 1	This setting defines if the motor has to be in parking or not. Parking means that the motor will be off, and the statechart corresponding to the Motor ID will not start.		BOOLEAN	1	1	BoschSystem	General	0	0	0	775	62	34	54	55
 0	0	Parking Motor ID 10	This setting defines if the motor has to be in parking or not. Parking means that the motor will be off, and the statechart corresponding to the Motor ID will not start.		BOOLEAN	1	1	BoschSystem	General	0	0	0	784	62	34	54	55
@@ -268,37 +268,37 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 -7.0000000000	-7.0000000000	Min Elevation Angle	The minimum position of the elevation angle for allowing the deployable platforms to power on.	deg	DOUBLE	2	0	DeployablePlatform	General	-10	0	0	156	24	20	54	55
 1200.DP	1200.DP	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	DeployablePlatform	General	1	7	0	581	24	20	54	55
 200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	DeployablePlatform	General	0	50	0	1464	24	20	54	55
-10.1000000000	10.1000000000	ACW margin	Marin used in azimuth reference calculation with Azimuth Cable Wrap (ACW). The algorithm will use ACW as base value for azimuth and compare it to adapt to ACW value or to set as invalid reference.	deg	DOUBLE	2	0	EncoderSystem	General	1	12	1	1412	27	21	55	55
-2.0000000000	2.0000000000	Azimuth Critical Active Heads	If the number of active heads for azimuth axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	852	27	21	55	55
-10.0000000000	10.0000000000	Azimuth heads reference threshold [i.u]	Maximum error in the reference of azimuth heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	703	27	21	55	55
-1243770.000000	1243770.000000	Azimuth Tape Line Count	Number of line counts in the azimuth tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	393	27	21	55	55
-0.0000000000	0.0000000000	Azimuth Telescope Offset	This is the offset between telescope zero and encoder tape zero for azimuth. The zero for encoder is the junction of the tape and the zero for telescope is the north orientation	rad	DOUBLE	2	1	EncoderSystem	General	0	10	0	401	27	21	55	55
-4000.0000000000	4000.0000000000	Check UPD timeout	Time to start UPD loop in AXES PXI. This time must be less than CMD timeout power on, since this is an step of power on	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1104	27	21	55	55
-6000.0000000000	6000.0000000000	CMD timeout clear errors	Timeout for  clearing active errors in EIB task	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1102	27	21	55	55
-2000.0000000000	2000.0000000000	CMD timeout clear heads errors	Timeout for  clearing active heads errors	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1101	27	21	55	55
-6000.0000000000	6000.0000000000	CMD timeout power off	Timeout for  powering off axis heads	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1100	27	21	55	55
-10000.0000000000	10000.0000000000	CMD timeout power on	Timeout for  powering on axis heads	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1099	27	21	55	55
-110000.0000000000	110000.0000000000	CMD timeout reboot	Timeout for rebooting EIB hardware	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1103	27	21	55	55
-4000.0000000000	4000.0000000000	CMD timeout reference off	Timeout to stop reference execution	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1098	27	21	55	55
-40000.0000000000	40000.0000000000	CMD timeout reference on	Timeout to perform reference	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1097	27	21	55	55
-2000.0000000000	2000.0000000000	CMD timeout Relative Offset	Timeout to set the relative position offset in the EIB readings	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1250	27	21	55	55
-/c/Configuration/EIB/multi_ext.txt	/c/Configuration/EIB/multi_ext.txt	EIB config file path	The file path in PXI to get the EIB configuration. This file is Heidenhain developed file		STRING	3	0	EncoderSystem	General	-2	50	1	177	27	21	55	55
-2.0000000000	2.0000000000	Elevation Critical Active Heads	If the number of active heads for elevation axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	1175	27	21	55	55
-10.0000000000	10.0000000000	Elevation heads reference threshold [i.u]	Maximum error in the reference of elevation heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	704	27	21	55	55
-0.000000	0.000000	Elevation Tape Line Count	Number of line counts in the elevation tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	394	27	21	55	55
-0.0000000000	0.0000000000	Elevation Telescope Offset	This is the offset between telescope zero and encoder tape zero for Elevation. The zero for encoder is the start of the tape closest when telescope is horizon position and the zero for telescope is the horizon poisition	rad	DOUBLE	2	1	EncoderSystem	General	0	10	0	402	27	21	55	55
-40.000000	40.000000	FPGA Clock Rate	Clock rate in MHz of the trigger program running in FPGA	MHz	DOUBLE	2	0	EncoderSystem	General	40	120	0	314	27	21	55	55
-139.229.171.3	139.229.171.3	Logging IP	IP for logging errors. The errors found by EIB will be sent to this port		STRING	3	0	EncoderSystem	General	0	0	0	178	27	21	0	0
-365.0000000000	365.0000000000	Sync Trigger Offset	Time in us to wait before sending trigger to EIB	us	DOUBLE	2	0	EncoderSystem	General	40	120	0	315	27	21	55	55
-160.0000000000	160.0000000000	Sync Trigger on Time	Time in us the EIB synchronization trigger will be on	us	DOUBLE	2	1	EncoderSystem	General	0	0	0	316	27	21	55	55
-10.0000000000	10.0000000000	UDP reading timeout	Timeout for getting data from EIB UDP port	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1105	27	21	55	55
-60.000000	60.000000	Wait after Reset	This is the time to wait before reconecting to EIB when a reset is performed	s	DOUBLE	2	0	EncoderSystem	General	50	100	1	198	27	21	55	55
-1	1	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head1	-2	50	1	169	28	21	55	55
-SLOT01:AXIS01	SLOT01:AXIS01	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head1	-2	50	1	161	28	21	55	55
-TMA-AZ-ENC-AZM-0001	TMA-AZ-ENC-AZM-0001	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head1	-2	50	1	385	28	21	55	55
-1.0000000000	1.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head1	1	4	1	719	28	21	55	55
--0.000005051726	-0.000005051726	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head1	0	0	0	190	28	21	55	55
-371794.0000000000	371794.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head1	0	6	0	182	28	21	55	55
+10.1000000000	10.1000000000	ACW margin	Marin used in azimuth reference calculation with Azimuth Cable Wrap (ACW). The algorithm will use ACW as base value for azimuth and compare it to adapt to ACW value or to set as invalid reference.	deg	DOUBLE	2	0	EncoderSystem	General	1	12	1	1412	27	21	54	55
+2.0000000000	2.0000000000	Azimuth Critical Active Heads	If the number of active heads for azimuth axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	852	27	21	54	55
+10.0000000000	10.0000000000	Azimuth heads reference threshold [i.u]	Maximum error in the reference of azimuth heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	703	27	21	54	55
+1243770.000000	1243770.000000	Azimuth Tape Line Count	Number of line counts in the azimuth tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	393	27	21	54	55
+0.0000000000	0.0000000000	Azimuth Telescope Offset	This is the offset between telescope zero and encoder tape zero for azimuth. The zero for encoder is the junction of the tape and the zero for telescope is the north orientation	rad	DOUBLE	2	1	EncoderSystem	General	0	10	0	401	27	21	54	55
+4000.0000000000	4000.0000000000	Check UPD timeout	Time to start UPD loop in AXES PXI. This time must be less than CMD timeout power on, since this is an step of power on	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1104	27	21	54	55
+6000.0000000000	6000.0000000000	CMD timeout clear errors	Timeout for  clearing active errors in EIB task	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1102	27	21	54	55
+2000.0000000000	2000.0000000000	CMD timeout clear heads errors	Timeout for  clearing active heads errors	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1101	27	21	54	55
+6000.0000000000	6000.0000000000	CMD timeout power off	Timeout for  powering off axis heads	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1100	27	21	54	55
+10000.0000000000	10000.0000000000	CMD timeout power on	Timeout for  powering on axis heads	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1099	27	21	54	55
+110000.0000000000	110000.0000000000	CMD timeout reboot	Timeout for rebooting EIB hardware	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1103	27	21	54	55
+4000.0000000000	4000.0000000000	CMD timeout reference off	Timeout to stop reference execution	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1098	27	21	54	55
+40000.0000000000	40000.0000000000	CMD timeout reference on	Timeout to perform reference	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1097	27	21	54	55
+2000.0000000000	2000.0000000000	CMD timeout Relative Offset	Timeout to set the relative position offset in the EIB readings	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1250	27	21	54	55
+/c/Configuration/EIB/multi_ext.txt	/c/Configuration/EIB/multi_ext.txt	EIB config file path	The file path in PXI to get the EIB configuration. This file is Heidenhain developed file		STRING	3	0	EncoderSystem	General	-2	50	1	177	27	21	54	55
+2.0000000000	2.0000000000	Elevation Critical Active Heads	If the number of active heads for elevation axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	1175	27	21	54	55
+10.0000000000	10.0000000000	Elevation heads reference threshold [i.u]	Maximum error in the reference of elevation heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	704	27	21	54	55
+0.000000	0.000000	Elevation Tape Line Count	Number of line counts in the elevation tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	394	27	21	54	55
+0.0000000000	0.0000000000	Elevation Telescope Offset	This is the offset between telescope zero and encoder tape zero for Elevation. The zero for encoder is the start of the tape closest when telescope is horizon position and the zero for telescope is the horizon poisition	rad	DOUBLE	2	1	EncoderSystem	General	0	10	0	402	27	21	54	55
+40.000000	40.000000	FPGA Clock Rate	Clock rate in MHz of the trigger program running in FPGA	MHz	DOUBLE	2	0	EncoderSystem	General	40	120	0	314	27	21	54	55
+192.168.211.10	139.229.171.3	Logging IP	IP for logging errors. The errors found by EIB will be sent to this port		STRING	3	0	EncoderSystem	General	0	0	0	178	27	21	54	0
+365.0000000000	365.0000000000	Sync Trigger Offset	Time in us to wait before sending trigger to EIB	us	DOUBLE	2	0	EncoderSystem	General	40	120	0	315	27	21	54	55
+160.0000000000	160.0000000000	Sync Trigger on Time	Time in us the EIB synchronization trigger will be on	us	DOUBLE	2	1	EncoderSystem	General	0	0	0	316	27	21	54	55
+10.0000000000	10.0000000000	UDP reading timeout	Timeout for getting data from EIB UDP port	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1105	27	21	54	55
+60.000000	60.000000	Wait after Reset	This is the time to wait before reconecting to EIB when a reset is performed	s	DOUBLE	2	0	EncoderSystem	General	50	100	1	198	27	21	54	55
+1	1	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head1	-2	50	1	169	28	21	54	55
+SLOT01:AXIS01	SLOT01:AXIS01	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head1	-2	50	1	161	28	21	54	55
+TMA-AZ-ENC-AZM-0001	TMA-AZ-ENC-AZM-0001	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head1	-2	50	1	385	28	21	54	55
+1.0000000000	1.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head1	1	4	1	719	28	21	54	55
+-0.000005051726	-0.000005051726	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head1	0	0	0	190	28	21	54	55
+371794.0000000000	371794.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head1	0	6	0	182	28	21	54	55
 0	0	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head2	-2	50	1	170	29	21	54	55
 SLOT01:AXIS02	SLOT01:AXIS02	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head2	-2	50	1	162	29	21	54	55
 TMA-AZ-ENC-ELV-0003	TMA-AZ-ENC-ELV-0003	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head2	-2	50	1	389	29	21	54	55
@@ -339,7 +339,7 @@ TMA-AZ-ENC-AZM-0004	TMA-AZ-ENC-AZM-0004	Head Name	Name of the head according to 
 SLOT04:AXIS02	SLOT04:AXIS02	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head8	-2	50	1	168	35	21	54	55
 TMA-AZ-ENC-ELV-0002	TMA-AZ-ENC-ELV-0002	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head8	-2	50	1	392	35	21	54	55
 2.0000000000	2.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head8	1	4	1	726	35	21	54	55
--0.00001210433941	-0.00001210433941	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head8	0	0	0	197	35	21	54	55
+-1.2104339410E-5	-0.00001210433941	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head8	0	0	0	197	35	21	54	55
 196789.0000000000	196789.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head8	0	6	0	189	35	21	54	55
 0	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	54	55
 89.0000000000	89.0000000000	ElevationPosNinetyMinus	This is the - limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis. 	deg	DOUBLE	2	1	LockingPins	General	89	91	1	274	41	23	54	55
@@ -386,126 +386,126 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 7.0000000000	7.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	LockingPins	LockingPin2	0.01	10	1	825	43	23	54	55
 5000.0000000000	5000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	LockingPins	LockingPin2	0	0	0	292	43	23	54	55
 45.0000000000	45.0000000000	TestPosition	Position to move locking pin where the elevation axis has the ability to perform small movemets. Position for testing and balancing	mm	DOUBLE	2	0	LockingPins	LockingPin2	0	0	0	293	43	23	54	55
-0	0	Allow Relative Movements	Allow to move the telescope without doing reference in position mode		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	622	52	25	55	55
-0	0	Command Relative Movements	The move commands will be relative movements if this parameter is true and otherwise absolute movements will be performed		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	647	52	25	55	55
-0.0000000000	0.0000000000	Control Acceleration FeedForward Gain	Controller Acceleration feedforward gain	%	DOUBLE	2	0	MainAxis	Azimuth	0	100	1	655	52	25	55	55
-1	1	Control Activate Speed FeedForward In Tracking?	The FeedForward for speed gain will be activated if the axis is in Tracking mode. Otherwise it will be deactivated. The activation will increase acording to Control FeedForward Activation Variation settings. Seet also Control Apply FeedForward? setting		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1413	52	25	55	55
-0	0	Control Apply Speed FeedForward?	If this settings is True the speed feedfoward is always active otherwise could be active or not depending on the Control Activate FeedForward In Tracking? setting		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1415	52	25	55	55
-0	1	Control Damping Active	For azimuth axis, activate the active damping control		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1054	52	25	0	55
-1000.0000000000	1000.0000000000	Control Damping Max Allowed Force X Direction	The maximun allowed force for active damping control action in X direcction. This saturation affects only to active damping. Take into acount that active damping action is supporposed to rototation control action	N	DOUBLE	2	0	MainAxis	Azimuth	300	1500	1	1420	52	25	55	55
-1000.0000000000	1000.0000000000	Control Damping Max Allowed Force Y Direction	The maximun allowed force for active damping control action in Y direcction. This saturation affects only to active damping. Take into acount that active damping action is supporposed to rototation control action	N	DOUBLE	2	0	MainAxis	Azimuth	300	1500	1	1422	52	25	55	55
-0.0000000000	0.0000000000	Control Damping X Direction Gain	Active controller gain for  X direction		DOUBLE	2	0	MainAxis	Azimuth	0	120	0	1056	52	25	55	55
-0	4000000.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	0	MainAxis	Azimuth	0	120	0	1057	52	25	0	55
-8670000.0000000000	8670000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	0	MainAxis	Azimuth	0	120	0	656	52	25	55	55
-1	0	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	657	52	25	0	55
-0	45.0000000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	652	52	25	0	55
-0	8.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	651	52	25	0	55
-6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	0	MainAxis	Azimuth	0	120	0	715	52	25	55	55
-0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Azimuth	0.0001	0.1	0	1417	52	25	55	55
-100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	654	52	25	55	55
-0.1000000000	0.1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	653	52	25	55	55
-0.1	0.3000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	0	55
-0.4	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	0	55
-0.1	0.2000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	0	55
-0.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	0	55
-2.9000000000	2.9000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	55	55
-1.0000000000	1.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	55	55
-0.1	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	0	55
-0.4	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	638	52	25	0	55
-0.1	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	0	55
-0.5	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	548	52	25	0	55
-2.9	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	639	52	25	0	55
-1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	543	52	25	55	55
-0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	55	55
-1.0000000000	1.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	5	1	689	52	25	55	55
-0.0000000000	0.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Azimuth	300	1500	0	1460	52	25	55	55
-0.1000000000	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.2	1	683	52	25	55	55
-0.0100000000	0.0100000000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1060	52	25	55	55
-16.0000000000	16.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Azimuth	15	16	1	1231	52	25	55	55
-5.0000000000	5.0000000000	Limits AZCW Critical Deviation Value	Maximun allowed deviation between AZCW and AZ verification value. If this value is overcomed an alarm will be generated in azimuth		DOUBLE	2	0	MainAxis	Azimuth	0.1	28	0	1229	52	25	55	55
-0	0	Limits AZCW Deviation Enable	Maximun allowed deviation between AZCW and AZ verification is enabled		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1228	52	25	55	55
-4.0000000000	4.0000000000	Limits AZCW Maximum Deviation Value	Maximun allowed deviation between AZCW and AZ verification value. If this value is overcomed a warning will be generated in azimuth		DOUBLE	2	0	MainAxis	Azimuth	0.1	28	0	1230	52	25	55	55
-1	1	Limits Following Error enable	Enable the following error	deg	BOOLEAN	1	0	MainAxis	Azimuth	0	0	0	1330	52	25	55	55
-1.5000000000	1.5000000000	Limits Following Error Value	Set the maximun allowed following error	deg	DOUBLE	2	0	MainAxis	Azimuth	1.2	3	1	710	52	25	55	55
-1	1	Limits Max Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1181	52	25	55	55
-260.000000	260.000000	Limits Max Position value	Maximun allowed postion command	deg	DOUBLE	2	1	MainAxis	Azimuth	250	272	1	1179	52	25	55	55
-1	1	Limits Min Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	55	55
--260.000000	-260.000000	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	1	MainAxis	Azimuth	-272	-250	1	1180	52	25	55	55
-1	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	55	55
--265.0000000000	-265.0000000000	Limits Negative Adjustable Software limit value	Vaue for Negative adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	Limits Negative Software limit value	-200	1	1245	52	25	55	55
-0	0	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1178	52	25	55	55
-0	0	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1249	52	25	55	55
-1	1	Limits Negative Positive Software limit enable	Enable positive software limit in softmotion. Over this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1360	52	25	55	55
-1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	55	55
--265.0000000000	-265.0000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	-275	-200	1	625	52	25	55	55
-1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Azimuth	0	0	0	1328	52	25	55	55
-8.5000000000	8.5000000000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.2	1	706	52	25	55	55
-8.0000000000	8.0000000000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.1	1	1176	52	25	55	55
-1	1	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1246	52	25	55	55
-265.0000000000	265.0000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	270	1	1247	52	25	55	55
-0	0	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1177	52	25	55	55
-0	0	Limits Positive Operational Limit Switch enable	Enable positive Operational imit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1248	52	25	55	55
-1	1	Limits Positive Software limit enable	Enable positive software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	626	52	25	55	55
-265.0000000000	265.0000000000	Limits Positive Software limit value	Vaue for Positive software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	275	1	627	52	25	55	55
-1	1	Limits Softmotion Negative Software limit enable	Enable positive software limit in softmotion. Bellow this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1359	52	25	55	55
--275.0000000000	-275.0000000000	Limits Softmotion Negative Software limit value	Vaue for softmotion Positive software limit. \nBellow this limit the axis does not allow any movement. This limit must allow all desired movements, also maintenance movements to safety limits	deg	DOUBLE	2	1	MainAxis	Azimuth	-290	-200	1	1361	52	25	55	55
-1	1	Limits Softmotion Positive Software limit enable	Enable positive software limit in softmotion. Over this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1357	52	25	55	55
-275.0000000000	275.0000000000	Limits Softmotion Positive Software limit value	Vaue for softmotion Positive software limit. \nOver this limit the axis does not allow any movement. This limit must allow all desired movements, also maintenance movements to safety limits	deg	DOUBLE	2	1	MainAxis	Azimuth	200	275	1	1358	52	25	55	55
-0.2000000000	0.2000000000	OVERRIDE Default Acceleration	Default acceleration when a safety override of limit swithes is active	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	1	1	561	52	25	55	55
-1.0000000000	1.0000000000	OVERRIDE Default Jerk	Default jerk when a safety override of limit swithes is active	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	28	1	642	52	25	55	55
-0.1000000000	0.1000000000	OVERRIDE Default Velocity	Default velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.2	0	563	52	25	55	55
-0.5000000000	0.5000000000	OVERRIDE Max Acceleration	Maximun allowed acceleration when a safety override of limit swithes is active	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	1	1	549	52	25	55	55
-10	28.0000000000	OVERRIDE Max Jerk	Maximun jerk when a safety override of limit swithes is active	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	29	1	643	52	25	0	55
-0.1000000000	0.1000000000	OVERRIDE Max Velocity	Maximun allowed velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.2	0	545	52	25	55	55
-7.0000000000	7.0000000000	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1341	52	25	55	55
-24.0000000000	24.0000000000	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1342	52	25	55	55
-1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to caculate the position rms value that is used for In position event		DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1428	52	25	55	55
-0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1425	52	25	55	55
-0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	712	52	25	55	55
-10.5000000000	10.5000000000	Softmotion max acceleration	This acceleration is the maximun available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1371	52	25	55	55
-50.0000000000	50.0000000000	Softmotion max jerk	This jerk is the maximun available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1372	52	25	55	55
-10.5000000000	10.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	55	55
-118000.0000000000	118000.0000000000	Softmotion Maximum Torque Per Drive	The maximum allowed torque per drive. The system will not allow that command to each drive goes over this value	Nm	DOUBLE	2	0	MainAxis	Azimuth	6000	118000	1	600	52	25	55	55
-8.0000000000	8.0000000000	Softmotion Minimun drives for no fault	Bellow this limit the axis will be in fault		DOUBLE	2	0	MainAxis	Azimuth	1	16	1	413	52	25	55	55
-5001.0000000000	20001.0000000000	Softmotion No received Data Counter Alarm Value	Above this number the  sotmotion driver is in fault. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	415	52	25	0	55
-1001.0000000000	1001.0000000000	Softmotion No received Data Counter Warning Value	Above this number the sotmotion driver send a warning. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	417	52	25	55	55
--700.0000000000	-700.0000000000	Softmotion Number of Electric Turns	Number of electrica turns in for the axis. This is the number of poles		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	523	52	25	55	55
-1	1	Softmotion Speed From Position	If true the speed is calculated from position data, otherwise the EIB speed will be used		BOOLEAN	1	0	MainAxis	Azimuth	4	12	0	423	52	25	55	55
-100	100	Softmotion Tracking margin acceleration	This acceleration is the margin available acceleration when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1346	52	25	55	55
-100	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1347	52	25	55	55
-1.0000000000	1.0000000000	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1348	52	25	55	55
-7.1000000000	7.1000000000	Softmotion Tracking max acceleration	This acceleration is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1343	52	25	55	55
-29.0000000000	29.0000000000	Softmotion Tracking max jerk	This jerk is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	55	55
-7.1000000000	7.1000000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	55	55
-3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Azimuth	800	20000	1	1223	52	25	55	55
-100.Azimuth	100.Azimuth	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Azimuth	0	0	0	553	52	25	55	55
-5.0000000000	5.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.000000001	10.5	1	612	52	25	0	55
-28.0000000000	28.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	0	55
-2.0000000000	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	0	55
-7.0000000000	7.0000000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	614	52	25	0	55
-30.0000000000	30.0000000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	0	55
-7.0000000000	7.0000000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	615	52	25	0	55
-1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1172	52	25	55	55
-2000.0000000000	2000.0000000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1171	52	25	55	55
-300.0000000000	300.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	606	52	25	55	55
-1000.0000000000	1000.0000000000	Timeout for Axis Enable	Timeout for enable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	604	52	25	55	55
-20000.0000000000	20000.0000000000	Timeout for Brake Engage	Timeout for engaging brakes	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	610	52	25	55	55
-60000.0000000000	60000.0000000000	Timeout for Brake Release	Timeout for releasing brakes	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	608	52	25	55	55
-1000.0000000000	1000.0000000000	Timeout for Cable Wrap Power Off	Timeout for power off cable wrap	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	446	52	25	55	55
-1000.0000000000	1000.0000000000	Timeout for Cable Wrap Power On	Timeout for power on cable wrap	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	445	52	25	55	55
-1000.0000000000	1000.0000000000	Timeout for EnableTracking	Timeout for enabling the tracking	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1326	52	25	55	55
-130.0000000000	130.0000000000	Timeout for Fault Stop	Timeout margin to stop when a fault is detected	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	434	52	25	55	55
-42000.0000000000	42000.0000000000	Timeout for Homming	Timeout for perform a homming operation	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	691	52	25	55	55
-300000.0000000000	300000.0000000000	Timeout for Power Off	Timeout for all power off sequence	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	439	52	25	55	55
-300000.0000000000	300000.0000000000	Timeout for Power On	Timeout for all power on sequence	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	437	52	25	55	55
-30000.0000000000	30000.0000000000	Timeout for Reset	Timeout for reseting actions	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1233	52	25	55	55
-2000.0000000000	2000.0000000000	Timeout for Reset Axis	Timeout for reseting axis faults	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	602	52	25	55	55
-150.0000000000	150.0000000000	Timeout for Stop	Margin for a standard stop	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	433	52	25	55	55
-300.0000000000	300.0000000000	Timeout for Stop in Homing	Timeout margin for stopping homing operation 	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1243	52	25	55	55
-150.0000000000	150.0000000000	Timeout Move Margin	Margin for a movement	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1052	52	25	55	55
-1000.0000000000	1000.0000000000	Traking Consecutive tracking command timeout	After the firs tracking command is received, the time to generate and error if another tracking command is not received	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1336	52	25	55	55
-10000.0000000000	10000.0000000000	Traking First tracking command timeout	After the enable tracking command is received, the time to generate and error if a tracking command is not received	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1335	52	25	55	55
-0.0000000000	0.0000000000	Traking Time offset	Time offset to apply to received command time in tracking command	s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1337	52	25	55	55
+0	0	Allow Relative Movements	Allow to move the telescope without doing reference in position mode		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	622	52	25	54	55
+0	0	Command Relative Movements	The move commands will be relative movements if this parameter is true and otherwise absolute movements will be performed		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	647	52	25	54	55
+0.0000000000	0.0000000000	Control Acceleration FeedForward Gain	Controller Acceleration feedforward gain	%	DOUBLE	2	0	MainAxis	Azimuth	0	100	1	655	52	25	54	55
+1	1	Control Activate Speed FeedForward In Tracking?	The FeedForward for speed gain will be activated if the axis is in Tracking mode. Otherwise it will be deactivated. The activation will increase acording to Control FeedForward Activation Variation settings. Seet also Control Apply FeedForward? setting		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1413	52	25	54	55
+0	0	Control Apply Speed FeedForward?	If this settings is True the speed feedfoward is always active otherwise could be active or not depending on the Control Activate FeedForward In Tracking? setting		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1415	52	25	54	55
+1	1	Control Damping Active	For azimuth axis, activate the active damping control		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1054	52	25	54	55
+1000.0000000000	1000.0000000000	Control Damping Max Allowed Force X Direction	The maximun allowed force for active damping control action in X direcction. This saturation affects only to active damping. Take into acount that active damping action is supporposed to rototation control action	N	DOUBLE	2	0	MainAxis	Azimuth	300	1500	1	1420	52	25	54	55
+1000.0000000000	1000.0000000000	Control Damping Max Allowed Force Y Direction	The maximun allowed force for active damping control action in Y direcction. This saturation affects only to active damping. Take into acount that active damping action is supporposed to rototation control action	N	DOUBLE	2	0	MainAxis	Azimuth	300	1500	1	1422	52	25	54	55
+0.0000000000	0.0000000000	Control Damping X Direction Gain	Active controller gain for  X direction		DOUBLE	2	0	MainAxis	Azimuth	0	120	0	1056	52	25	54	55
+4000000.0000000000	4000000.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	0	MainAxis	Azimuth	0	120	0	1057	52	25	54	55
+8670000.0000000000	8670000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	0	MainAxis	Azimuth	0	120	0	656	52	25	54	55
+0	0	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	657	52	25	54	55
+45.0000000000	45.0000000000	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	652	52	25	54	55
+8.0000000000	8.0000000000	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	651	52	25	54	55
+6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	0	MainAxis	Azimuth	0	120	0	715	52	25	54	55
+0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Azimuth	0.0001	0.1	0	1417	52	25	54	55
+100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	654	52	25	54	55
+0.1000000000	0.1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	653	52	25	54	55
+0.3	0.3000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	54	55
+1.4	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	54	55
+0.2	0.2000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	54	55
+1	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	54	55
+2.9	2.9000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	54	55
+1	1.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	54	55
+0.500000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	54	55
+1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	638	52	25	54	55
+0.500000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	54	55
+1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	548	52	25	54	55
+28.0000000000	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	639	52	25	54	55
+1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	543	52	25	54	55
+0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	54	55
+1.0000000000	1.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	5	1	689	52	25	54	55
+0.0000000000	0.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Azimuth	300	1500	0	1460	52	25	54	55
+0.1000000000	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.2	1	683	52	25	54	55
+0.0100000000	0.0100000000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1060	52	25	54	55
+16.0000000000	16.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Azimuth	15	16	1	1231	52	25	54	55
+5.0000000000	5.0000000000	Limits AZCW Critical Deviation Value	Maximun allowed deviation between AZCW and AZ verification value. If this value is overcomed an alarm will be generated in azimuth		DOUBLE	2	0	MainAxis	Azimuth	0.1	28	0	1229	52	25	54	55
+0	0	Limits AZCW Deviation Enable	Maximun allowed deviation between AZCW and AZ verification is enabled		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1228	52	25	54	55
+4.0000000000	4.0000000000	Limits AZCW Maximum Deviation Value	Maximun allowed deviation between AZCW and AZ verification value. If this value is overcomed a warning will be generated in azimuth		DOUBLE	2	0	MainAxis	Azimuth	0.1	28	0	1230	52	25	54	55
+1	1	Limits Following Error enable	Enable the following error	deg	BOOLEAN	1	0	MainAxis	Azimuth	0	0	0	1330	52	25	54	55
+1.5000000000	1.5000000000	Limits Following Error Value	Set the maximun allowed following error	deg	DOUBLE	2	0	MainAxis	Azimuth	1.2	3	1	710	52	25	54	55
+1	1	Limits Max Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1181	52	25	54	55
+260.000000	260.000000	Limits Max Position value	Maximun allowed postion command	deg	DOUBLE	2	1	MainAxis	Azimuth	250	272	1	1179	52	25	54	55
+1	1	Limits Min Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	54	55
+-260.000000	-260.000000	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	1	MainAxis	Azimuth	-272	-250	1	1180	52	25	54	55
+1	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	54	55
+-265.0000000000	-265.0000000000	Limits Negative Adjustable Software limit value	Vaue for Negative adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	Limits Negative Software limit value	-200	1	1245	52	25	54	55
+0	0	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1178	52	25	54	55
+0	0	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1249	52	25	54	55
+1	1	Limits Negative Positive Software limit enable	Enable positive software limit in softmotion. Over this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1360	52	25	54	55
+1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	54	55
+-265.0000000000	-265.0000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	-275	-200	1	625	52	25	54	55
+1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Azimuth	0	0	0	1328	52	25	54	55
+8.5000000000	8.5000000000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.2	1	706	52	25	54	55
+8.0000000000	8.0000000000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0	10.1	1	1176	52	25	54	55
+1	1	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1246	52	25	54	55
+265.0000000000	265.0000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	270	1	1247	52	25	54	55
+0	0	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1177	52	25	54	55
+0	0	Limits Positive Operational Limit Switch enable	Enable positive Operational imit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1248	52	25	54	55
+1	1	Limits Positive Software limit enable	Enable positive software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	626	52	25	54	55
+265.0000000000	265.0000000000	Limits Positive Software limit value	Vaue for Positive software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Azimuth	200	275	1	627	52	25	54	55
+1	1	Limits Softmotion Negative Software limit enable	Enable positive software limit in softmotion. Bellow this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1359	52	25	54	55
+-275.0000000000	-275.0000000000	Limits Softmotion Negative Software limit value	Vaue for softmotion Positive software limit. \nBellow this limit the axis does not allow any movement. This limit must allow all desired movements, also maintenance movements to safety limits	deg	DOUBLE	2	1	MainAxis	Azimuth	-290	-200	1	1361	52	25	54	55
+1	1	Limits Softmotion Positive Software limit enable	Enable positive software limit in softmotion. Over this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1357	52	25	54	55
+275.0000000000	275.0000000000	Limits Softmotion Positive Software limit value	Vaue for softmotion Positive software limit. \nOver this limit the axis does not allow any movement. This limit must allow all desired movements, also maintenance movements to safety limits	deg	DOUBLE	2	1	MainAxis	Azimuth	200	275	1	1358	52	25	54	55
+0.2000000000	0.2000000000	OVERRIDE Default Acceleration	Default acceleration when a safety override of limit swithes is active	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	1	1	561	52	25	54	55
+1.0000000000	1.0000000000	OVERRIDE Default Jerk	Default jerk when a safety override of limit swithes is active	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	28	1	642	52	25	54	55
+0.1000000000	0.1000000000	OVERRIDE Default Velocity	Default velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.2	0	563	52	25	54	55
+0.5000000000	0.5000000000	OVERRIDE Max Acceleration	Maximun allowed acceleration when a safety override of limit swithes is active	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	1	1	549	52	25	54	55
+28.0000000000	28.0000000000	OVERRIDE Max Jerk	Maximun jerk when a safety override of limit swithes is active	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	29	1	643	52	25	54	55
+0.1000000000	0.1000000000	OVERRIDE Max Velocity	Maximun allowed velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.2	0	545	52	25	54	55
+7.0000000000	7.0000000000	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1341	52	25	54	55
+24.0000000000	24.0000000000	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1342	52	25	54	55
+1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to caculate the position rms value that is used for In position event		DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1428	52	25	54	55
+0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1425	52	25	54	55
+0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	712	52	25	54	55
+10.5000000000	10.5000000000	Softmotion max acceleration	This acceleration is the maximun available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1371	52	25	54	55
+50.0000000000	50.0000000000	Softmotion max jerk	This jerk is the maximun available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1372	52	25	54	55
+10.5000000000	10.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	54	55
+118000.0000000000	118000.0000000000	Softmotion Maximum Torque Per Drive	The maximum allowed torque per drive. The system will not allow that command to each drive goes over this value	Nm	DOUBLE	2	0	MainAxis	Azimuth	6000	118000	1	600	52	25	54	55
+8.0000000000	8.0000000000	Softmotion Minimun drives for no fault	Bellow this limit the axis will be in fault		DOUBLE	2	0	MainAxis	Azimuth	1	16	1	413	52	25	54	55
+20001.0000000000	20001.0000000000	Softmotion No received Data Counter Alarm Value	Above this number the  sotmotion driver is in fault. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	415	52	25	54	55
+1001.0000000000	1001.0000000000	Softmotion No received Data Counter Warning Value	Above this number the sotmotion driver send a warning. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	417	52	25	54	55
+-700.0000000000	-700.0000000000	Softmotion Number of Electric Turns	Number of electrica turns in for the axis. This is the number of poles		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	523	52	25	54	55
+1	1	Softmotion Speed From Position	If true the speed is calculated from position data, otherwise the EIB speed will be used		BOOLEAN	1	0	MainAxis	Azimuth	4	12	0	423	52	25	54	55
+100	100	Softmotion Tracking margin acceleration	This acceleration is the margin available acceleration when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1346	52	25	54	55
+100	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1347	52	25	54	55
+1.0000000000	1.0000000000	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1348	52	25	54	55
+7.1000000000	7.1000000000	Softmotion Tracking max acceleration	This acceleration is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1343	52	25	54	55
+29.0000000000	29.0000000000	Softmotion Tracking max jerk	This jerk is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	54	55
+7.1000000000	7.1000000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	54	55
+3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Azimuth	800	20000	1	1223	52	25	54	55
+100.Azimuth	100.Azimuth	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Azimuth	0	0	0	553	52	25	54	55
+5.0000000000	5.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.000000001	10.5	1	612	52	25	54	55
+28.0000000000	28.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	54	55
+2.000000	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	54	55
+7.0000000000	7.0000000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	614	52	25	54	55
+30.0000000000	30.0000000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	54	55
+7.0000000000	7.0000000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	615	52	25	54	55
+1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1172	52	25	54	55
+2000.0000000000	2000.0000000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1171	52	25	54	55
+300.0000000000	300.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	606	52	25	54	55
+1000.0000000000	1000.0000000000	Timeout for Axis Enable	Timeout for enable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	604	52	25	54	55
+20000.0000000000	20000.0000000000	Timeout for Brake Engage	Timeout for engaging brakes	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	610	52	25	54	55
+60000.0000000000	60000.0000000000	Timeout for Brake Release	Timeout for releasing brakes	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	608	52	25	54	55
+1000.0000000000	1000.0000000000	Timeout for Cable Wrap Power Off	Timeout for power off cable wrap	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	446	52	25	54	55
+1000.0000000000	1000.0000000000	Timeout for Cable Wrap Power On	Timeout for power on cable wrap	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	445	52	25	54	55
+1000.0000000000	1000.0000000000	Timeout for EnableTracking	Timeout for enabling the tracking	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1326	52	25	54	55
+130.0000000000	130.0000000000	Timeout for Fault Stop	Timeout margin to stop when a fault is detected	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	434	52	25	54	55
+42000.0000000000	42000.0000000000	Timeout for Homming	Timeout for perform a homming operation	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	691	52	25	54	55
+300000.0000000000	300000.0000000000	Timeout for Power Off	Timeout for all power off sequence	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	439	52	25	54	55
+300000.0000000000	300000.0000000000	Timeout for Power On	Timeout for all power on sequence	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	437	52	25	54	55
+30000.0000000000	30000.0000000000	Timeout for Reset	Timeout for reseting actions	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1233	52	25	54	55
+2000.0000000000	2000.0000000000	Timeout for Reset Axis	Timeout for reseting axis faults	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	602	52	25	54	55
+150.0000000000	150.0000000000	Timeout for Stop	Margin for a standard stop	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	433	52	25	54	55
+300.0000000000	300.0000000000	Timeout for Stop in Homing	Timeout margin for stopping homing operation 	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1243	52	25	54	55
+150.0000000000	150.0000000000	Timeout Move Margin	Margin for a movement	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1052	52	25	54	55
+1000.0000000000	1000.0000000000	Traking Consecutive tracking command timeout	After the firs tracking command is received, the time to generate and error if another tracking command is not received	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1336	52	25	54	55
+10000.0000000000	10000.0000000000	Traking First tracking command timeout	After the enable tracking command is received, the time to generate and error if a tracking command is not received	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1335	52	25	54	55
+0.0000000000	0.0000000000	Traking Time offset	Time offset to apply to received command time in tracking command	s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1337	52	25	54	55
 1	0	Allow Relative Movements	Allow to move the telescope without doing reference in position mode		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1234	53	25	54	55
 0	0	Command Relative Movements	The move commands will be relative movements if this parameter is true and otherwise absolute movements will be performed		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1235	53	25	54	55
 0.0000000000	0.0000000000	Control Acceleration FeedForward Gain	Controller Acceleration feedforward gain	%	DOUBLE	2	0	MainAxis	Elevation	0	120	1	1236	53	25	54	55
@@ -527,19 +527,19 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.05	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	0	55
 0.2	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	0	55
 0.05	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	0	55
-0.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	0	55
-2.4000000000	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	0	55
-1	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	0	55
-0.05	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	0	55
-0.2	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	0	55
-0.05	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	0	55
-0.05	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1265	53	25	0	55
-0.2	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	30	1	1266	53	25	0	55
-1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1267	53	25	0	55
-0.5000000000	0.5000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	0.5	1	1268	53	25	54	55
-1	5.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1269	53	25	0	55
+0.05	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	0	55
+0.2	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	0	55
+0.05	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	0	55
+0.5000000000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	54	55
+1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	54	55
+0.5000000000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	54	55
+1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1265	53	25	54	55
+15	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	30	1	1266	53	25	54	55
+1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1267	53	25	54	55
+0.500000	0.5000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	0.5	1	1268	53	25	54	55
+0.2	5.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1269	53	25	0	55
 45.0000000000	45.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Elevation	300	1500	0	1461	53	25	54	55
-0.1000000000	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.2	1	1270	53	25	0	55
+0.05	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.2	1	1270	53	25	0	55
 1	1	Homing Start in Positive Direction	If True the start direcction will be possitive one, otherwise it will try in negative direction first		BOOLEAN	1	1	MainAxis	Elevation	0.01	0.2	1	1271	53	25	54	55
 0.010000	0.010000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1272	53	25	54	55
 12.0000000000	12.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Elevation	15	16	1	1273	53	25	54	55
@@ -572,7 +572,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.0000000000	1.0000000000	OVERRIDE Default Jerk	Default jerk when a safety override of limit swithes is active	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	28	1	1294	53	25	54	55
 0.1000000000	0.1000000000	OVERRIDE Default Velocity	Default velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	0.2	0	1295	53	25	54	55
 0.5000000000	0.5000000000	OVERRIDE Max Acceleration	Maximun allowed acceleration when a safety override of limit swithes is active	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	1	1	1296	53	25	54	55
-14	28.0000000000	OVERRIDE Max Jerk	Maximun jerk when a safety override of limit swithes is active	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	28	1	1297	53	25	0	55
+28.0000000000	28.0000000000	OVERRIDE Max Jerk	Maximun jerk when a safety override of limit swithes is active	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	28	1	1297	53	25	54	55
 0.1000000000	0.1000000000	OVERRIDE Max Velocity	Maximun allowed velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	0.2	0	1298	53	25	54	55
 2	2	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1349	53	25	54	55
 24.0000000000	24.0000000000	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1350	53	25	54	55
@@ -584,24 +584,24 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 5.5000000000	5.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1375	53	25	54	55
 24000.0000000000	24000.0000000000	Softmotion Maximum Torque Per Drive	The maximum allowed torque per drive. The system will not allow that command to each drive goes over this value	Nm	DOUBLE	2	0	MainAxis	Elevation	4000	24000	1	601	53	25	54	55
 5.0000000000	5.0000000000	Softmotion Minimun drives for no fault	Bellow this limit the axis will be in fault		DOUBLE	2	0	MainAxis	Elevation	3	12	1	412	53	25	54	55
-5001.0000000000	20001.0000000000	Softmotion No received Data Counter Alarm Value	Above this number the  sotmotion driver is in fault. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Elevation	4	12	0	414	53	25	0	55
+20001.0000000000	20001.0000000000	Softmotion No received Data Counter Alarm Value	Above this number the  sotmotion driver is in fault. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Elevation	4	12	0	414	53	25	54	55
 1001.0000000000	1001.0000000000	Softmotion No received Data Counter Warning Value	Above this number the sotmotion driver send a warning. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Elevation	4	12	0	416	53	25	54	55
 390.0000000000	390.0000000000	Softmotion Number of Electric Turns	Number of electrica turns in for the axis. This is the number of poles		DOUBLE	2	0	MainAxis	Elevation	4	12	0	524	53	25	54	55
 1	1	Softmotion Speed From Position	If true the speed is calculated from position data, otherwise the EIB speed will be used		BOOLEAN	1	0	MainAxis	Elevation	4	12	0	422	53	25	54	55
 100	100	Softmotion Tracking margin acceleration	This acceleration is the margin available acceleration when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1351	53	25	54	55
 100	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1352	53	25	54	55
 1.0000000000	1.0000000000	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1353	53	25	54	55
-3.5500000000	3.5500000000	Softmotion Tracking max acceleration	This acceleration is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1354	53	25	54	55
-14.5000000000	14.5000000000	Softmotion Tracking max jerk	This jerk is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	25	1	1355	53	25	54	55
-3.5500000000	3.5500000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1356	53	25	0	55
+2	3.5500000000	Softmotion Tracking max acceleration	This acceleration is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1354	53	25	54	55
+14	14.5000000000	Softmotion Tracking max jerk	This jerk is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	25	1	1355	53	25	54	55
+1.5	3.5500000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1356	53	25	54	55
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Elevation	800	20000	1	1299	53	25	54	55
 400.Elevation	400.Elevation	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Elevation	0	0	0	1300	53	25	54	55
-0.05	1.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	0	55
-0.2	14.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	0	55
-0.05	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	0	55
-1	3.5500000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	0	55
-7	14.0500000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	0	55
-1	3.5500000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	0	55
+0.5	1.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	54	55
+10	14.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	54	55
+0.5	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	54	55
+1.2	3.5500000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	54	55
+14	14.0500000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	54	55
+2.2	3.5500000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	54	55
 1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1307	53	25	54	55
 2000.000000	2000.000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1308	53	25	54	55
 200.0000000000	200.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1310	53	25	54	55
@@ -623,12 +623,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1000.0000000000	1000.0000000000	Traking Consecutive tracking command timeout	After the firs tracking command is received, the time to generate and error if another tracking command is not received	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1338	53	25	54	55
 10000.0000000000	10000.0000000000	Traking First tracking command timeout	After the enable tracking command is received, the time to generate and error if a tracking command is not received	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1339	53	25	54	55
 0.0000000000	0.0000000000	Traking Time offset	Time offset to apply to received command time in tracking command	s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1340	53	25	54	55
-5.0000000000	5.0000000000	Horn Time (s)	Time that the horn will be sounding	s	DOUBLE	2	0	MainAxis	General	0	0	0	1409	45	25	55	55
-45.0000000000	45.0000000000	Inclinometer Gain	Gain to calculate deg from V input	deg/V	DOUBLE	2	0	MainAxis	General	0	0	0	1459	45	25	55	55
-100.0000000000	100.0000000000	Inclinometer Mean Samples Number	The number of samples used to calculate a mean with the inclinometer analog input		DOUBLE	2	0	MainAxis	General	0	0	0	1457	45	25	55	55
--33.0000000000	-33.0000000000	Inclinometer Offset	Offset to apply to the inclinoemter after applying the gain to the analog input	deg	DOUBLE	2	0	MainAxis	General	0	0	0	1458	45	25	55	55
-40.0000000000	40.0000000000	Light Time (s)	Time that the light will be lighting	s	DOUBLE	2	0	MainAxis	General	0	0	0	1410	45	25	55	55
-200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MainAxis	General	0	50	0	1466	45	25	55	55
+5.0000000000	5.0000000000	Horn Time (s)	Time that the horn will be sounding	s	DOUBLE	2	0	MainAxis	General	0	0	0	1409	45	25	54	55
+45.0000000000	45.0000000000	Inclinometer Gain	Gain to calculate deg from V input	deg/V	DOUBLE	2	0	MainAxis	General	0	0	0	1459	45	25	54	55
+100.0000000000	100.0000000000	Inclinometer Mean Samples Number	The number of samples used to calculate a mean with the inclinometer analog input		DOUBLE	2	0	MainAxis	General	0	0	0	1457	45	25	54	55
+-33.0000000000	-33.0000000000	Inclinometer Offset	Offset to apply to the inclinoemter after applying the gain to the analog input	deg	DOUBLE	2	0	MainAxis	General	0	0	0	1458	45	25	54	55
+40.0000000000	40.0000000000	Light Time (s)	Time that the light will be lighting	s	DOUBLE	2	0	MainAxis	General	0	0	0	1410	45	25	54	55
+200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MainAxis	General	0	50	0	1466	45	25	54	55
 500.0000000000	500.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MainCabinetTemperature	General	0	50	0	1467	7	13	54	55
 10.0000000000	10.0000000000	Commands to update settings	When the number of commands to track ambient temperature set in this settings is received by the task, the settings will be updated		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	250	1	1391	3	13	54	55
 45.0000000000	45.0000000000	Critical High Cabinet Temperature	This is the temperature at which an alarm is triggered.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	49	1	12	3	13	54	55
@@ -638,7 +638,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 5.0000000000	5.0000000000	High Surface Temperature	The difference between ambient temperature and surface temperature is above the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	25	1	8	3	13	54	55
 1.5	1.5	HighCabinetTemperatureHysteresis	Hysteresis value for temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	0	1476	3	13	54	55
 		ID String			STRING	3	0	MainCabinetTemperature	MainCabinet	4	10	1	1063	3	13	54	55
-139.229.171.8	139.229.171.8	IP address	This is the IP address of the RMC for the modbus connection.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1405	3	13	0	0
+192.168.210.30	139.229.171.8	IP address	This is the IP address of the RMC for the modbus connection.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1405	3	13	54	0
 5.0000000000	5.0000000000	Low Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-5	10	1	11	3	13	54	55
 -5.0000000000	-5.0000000000	Low Surface Temperature	The difference between ambient temperature and surface temperature is bellow the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-30	1	1	9	3	13	54	55
 2.000000	2.000000	Lower Limit Hysteresis Relative	This is the lower temperature limit  relative to the ambient temperature for the hysteresis control used when RMC is not working	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	15	1	406	3	13	54	55
