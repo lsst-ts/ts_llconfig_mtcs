@@ -416,7 +416,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	548	52	25	54	55
 28.0000000000	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	639	52	25	54	55
 1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	543	52	25	54	55
-0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	54	55
+0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	54	55
 1.0000000000	1.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	5	1	689	52	25	54	55
 0.0000000000	0.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Azimuth	300	1500	0	1460	52	25	54	55
 0.1000000000	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.2	1	683	52	25	54	55
@@ -459,9 +459,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.1000000000	0.1000000000	OVERRIDE Max Velocity	Maximun allowed velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.2	0	545	52	25	54	55
 7.0000000000	7.0000000000	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1341	52	25	54	55
 24.0000000000	24.0000000000	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1342	52	25	54	55
-1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to caculate the position rms value that is used for In position event		DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1428	52	25	54	55
-0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1425	52	25	54	55
-0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	712	52	25	54	55
+1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to caculate the position rms value that is used for In position event		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1428	52	25	54	55
+0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1425	52	25	54	55
+0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	712	52	25	54	55
 10.5000000000	10.5000000000	Softmotion max acceleration	This acceleration is the maximun available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1371	52	25	54	55
 50.0000000000	50.0000000000	Softmotion max jerk	This jerk is the maximun available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1372	52	25	54	55
 10.5000000000	10.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	54	55
@@ -536,7 +536,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1265	53	25	54	55
 15	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	30	1	1266	53	25	54	55
 1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1267	53	25	54	55
-0.500000	0.5000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	0.5	1	1268	53	25	54	55
+0.500000	0.5000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.5	1	1268	53	25	54	55
 0.2	5.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1269	53	25	0	55
 45.0000000000	45.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Elevation	300	1500	0	1461	53	25	54	55
 0.05	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.2	1	1270	53	25	0	55
@@ -576,9 +576,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.1000000000	0.1000000000	OVERRIDE Max Velocity	Maximun allowed velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	0.2	0	1298	53	25	54	55
 2	2	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1349	53	25	54	55
 24.0000000000	24.0000000000	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1350	53	25	54	55
-1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to caculate the position rms value that is used for In position event		DOUBLE	2	1	MainAxis	Elevation	4	12	0	1427	53	25	54	55
-0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1426	53	25	54	55
-0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	1	MainAxis	Elevation	4	12	0	713	53	25	54	55
+1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to caculate the position rms value that is used for In position event		DOUBLE	2	0	MainAxis	Elevation	4	12	0	1427	53	25	54	55
+0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1426	53	25	54	55
+0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	713	53	25	54	55
 5.5000000000	5.5000000000	Softmotion max acceleration	This acceleration is the maximun available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1373	53	25	54	55
 25.0000000000	25.0000000000	Softmotion max jerk	This jerk is the maximun available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1374	53	25	54	55
 5.5000000000	5.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1375	53	25	54	55
