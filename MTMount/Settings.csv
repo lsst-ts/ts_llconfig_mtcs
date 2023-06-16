@@ -404,22 +404,22 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Azimuth	0.0001	0.1	0	1417	52	25	55	55
 100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	654	52	25	55	55
 0.1000000000	0.1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	653	52	25	55	55
-0.3000000000	0.3000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	55	55
-1.4000000000	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	55	55
-0.2000000000	0.2000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	55	55
-1.0000000000	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	55	55
-2.9000000000	2.9000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	55	55
-1.0000000000	1.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	55	55
-0.5000000000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	55	55
+0.1	0.3000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	58	55
+0.4	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	58	55
+0.1	0.2000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	58	55
+0.1	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	58	55
+0.4	2.9000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	58	55
+0.1	1.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	58	55
+0.500000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	58	55
 1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	638	52	25	55	55
-0.5000000000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	55	55
+0.500000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	58	55
 1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	548	52	25	55	55
 28.0000000000	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	639	52	25	55	55
 1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	543	52	25	55	55
-0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	57	55
-1.0000000000	1.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	5	1	689	52	25	57	55
+0.1	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	58	55
+0.4	1.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	5	1	689	52	25	58	55
 0.0000000000	0.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Azimuth	300	1500	0	1460	52	25	55	55
-0.1000000000	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.2	1	683	52	25	57	55
+0.1	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.2	1	683	52	25	58	55
 0.0100000000	0.0100000000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1060	52	25	55	55
 16.0000000000	16.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Azimuth	15	16	1	1231	52	25	55	55
 5.0000000000	5.0000000000	Limits AZCW Critical Deviation Value	Maximun allowed deviation between AZCW and AZ verification value. If this value is overcomed an alarm will be generated in azimuth		DOUBLE	2	0	MainAxis	Azimuth	0.1	28	0	1229	52	25	55	55
@@ -462,9 +462,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to caculate the position rms value that is used for In position event		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1428	52	25	55	55
 0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1425	52	25	55	55
 0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	712	52	25	55	55
-10.5000000000	10.5000000000	Softmotion max acceleration	This acceleration is the maximun available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1371	52	25	55	55
-50.0000000000	50.0000000000	Softmotion max jerk	This jerk is the maximun available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1372	52	25	55	55
-10.5000000000	10.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	55	55
+0.1	10.5000000000	Softmotion max acceleration	This acceleration is the maximun available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1371	52	25	58	55
+0.4	50.0000000000	Softmotion max jerk	This jerk is the maximun available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1372	52	25	58	55
+0.1	10.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	58	55
 118000.0000000000	118000.0000000000	Softmotion Maximum Torque Per Drive	The maximum allowed torque per drive. The system will not allow that command to each drive goes over this value	Nm	DOUBLE	2	0	MainAxis	Azimuth	6000	118000	1	600	52	25	55	55
 8.0000000000	8.0000000000	Softmotion Minimun drives for no fault	Bellow this limit the axis will be in fault		DOUBLE	2	0	MainAxis	Azimuth	1	16	1	413	52	25	55	55
 20001.0000000000	20001.0000000000	Softmotion No received Data Counter Alarm Value	Above this number the  sotmotion driver is in fault. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	415	52	25	55	55
@@ -474,17 +474,17 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 100	100	Softmotion Tracking margin acceleration	This acceleration is the margin available acceleration when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1346	52	25	55	55
 100	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1347	52	25	55	55
 1.0000000000	1.0000000000	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1348	52	25	55	55
-7.1000000000	7.1000000000	Softmotion Tracking max acceleration	This acceleration is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1343	52	25	55	55
-29.0000000000	29.0000000000	Softmotion Tracking max jerk	This jerk is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	55	55
-7.1000000000	7.1000000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	55	55
+0.1	7.1000000000	Softmotion Tracking max acceleration	This acceleration is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1343	52	25	58	55
+0.4	29.0000000000	Softmotion Tracking max jerk	This jerk is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	58	55
+0.1	7.1000000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	58	55
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Azimuth	800	20000	1	1223	52	25	55	55
 100.Azimuth	100.Azimuth	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Azimuth	0	0	0	553	52	25	55	55
-5.0000000000	5.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.000000001	10.5	1	612	52	25	55	55
-28.0000000000	28.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	57	55
-2.0000000000	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	55	55
-7.0000000000	7.0000000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	614	52	25	55	55
-30.0000000000	30.0000000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	55	55
-7.0000000000	7.0000000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	615	52	25	55	55
+0.1	5.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.000000001	10.5	1	612	52	25	58	55
+0.4	28.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	58	55
+0.1	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	58	55
+0.1	7.0000000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	614	52	25	58	55
+0.4	30.0000000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	58	55
+0.1	7.0000000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	615	52	25	58	55
 1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1172	52	25	55	55
 2000.0000000000	2000.0000000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1171	52	25	55	55
 300.0000000000	300.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	606	52	25	55	55
@@ -524,22 +524,22 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Elevation	0.0001	0.1	1	1418	53	25	55	55
 100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Elevation	0	120	1	1253	53	25	55	55
 0.1	0.1	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1254	53	25	55	55
-1	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	57	55
-10	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	57	55
-0.5000000000	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	57	55
-1.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	57	55
-15	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	57	55
-1.5	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	57	55
+0.05	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	58	55
+0.2	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	58	55
+0.05	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	58	55
+0.05	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	58	55
+0.2	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	58	55
+0.05	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	58	55
 0.5000000000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	55	55
 1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	55	55
 0.5000000000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	55	55
 1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1265	53	25	55	55
-15	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	30	1	1266	53	25	57	55
+15	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	30	1	1266	53	25	58	55
 1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1267	53	25	55	55
-0.500000	0.5000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.5	1	1268	53	25	57	55
-5.000000	5.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1269	53	25	57	55
+0.05	0.5000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.5	1	1268	53	25	58	55
+0.2	5.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1269	53	25	58	55
 45.0000000000	45.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Elevation	300	1500	0	1461	53	25	55	55
-0.1000000000	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.2	1	1270	53	25	57	55
+0.05	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.2	1	1270	53	25	58	55
 1	1	Homing Start in Positive Direction	If True the start direcction will be possitive one, otherwise it will try in negative direction first		BOOLEAN	1	1	MainAxis	Elevation	0.01	0.2	1	1271	53	25	55	55
 0.010000	0.010000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1272	53	25	55	55
 12.0000000000	12.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Elevation	15	16	1	1273	53	25	55	55
@@ -554,10 +554,10 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1282	53	25	0	0
 0	1	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1281	53	25	57	55
 1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1283	53	25	55	55
--0.2000000000	-0.1000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	-0.2	20	0	1284	53	25	57	55
+-0.2000000000	-0.1000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	-0.2	20	0	1284	53	25	58	55
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Elevation	0	0	0	1334	53	25	55	55
-2	5.200000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1285	53	25	57	55
-1.9	5.100000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	57	55
+2	5.200000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1285	53	25	58	55
+1.9	5.100000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	58	55
 0	0	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1287	53	25	55	55
 86.4000000000	86.4000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	80	90	0	1288	53	25	55	55
 1	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1290	53	25	0	0
@@ -579,9 +579,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to caculate the position rms value that is used for In position event		DOUBLE	2	0	MainAxis	Elevation	4	12	0	1427	53	25	55	55
 0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1426	53	25	55	55
 0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	713	53	25	55	55
-5.5000000000	5.5000000000	Softmotion max acceleration	This acceleration is the maximun available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1373	53	25	55	55
-25.0000000000	25.0000000000	Softmotion max jerk	This jerk is the maximun available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1374	53	25	55	55
-5.5000000000	5.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1375	53	25	55	55
+0.05	5.5000000000	Softmotion max acceleration	This acceleration is the maximun available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1373	53	25	58	55
+0.2	25.0000000000	Softmotion max jerk	This jerk is the maximun available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1374	53	25	58	55
+0.05	5.5000000000	Softmotion max speed	This speed is the maximun available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1375	53	25	58	55
 24000.0000000000	24000.0000000000	Softmotion Maximum Torque Per Drive	The maximum allowed torque per drive. The system will not allow that command to each drive goes over this value	Nm	DOUBLE	2	0	MainAxis	Elevation	4000	24000	1	601	53	25	55	55
 5.0000000000	5.0000000000	Softmotion Minimun drives for no fault	Bellow this limit the axis will be in fault		DOUBLE	2	0	MainAxis	Elevation	3	12	1	412	53	25	55	55
 20001.0000000000	20001.0000000000	Softmotion No received Data Counter Alarm Value	Above this number the  sotmotion driver is in fault. Its time, no new data is received from encoder an internal counter increases its value by 1000, decresing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Elevation	4	12	0	414	53	25	55	55
@@ -591,17 +591,17 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 100	100	Softmotion Tracking margin acceleration	This acceleration is the margin available acceleration when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1351	53	25	55	55
 100	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1352	53	25	55	55
 1.0000000000	1.0000000000	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximun available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1353	53	25	55	55
-2	3.5500000000	Softmotion Tracking max acceleration	This acceleration is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1354	53	25	56	55
-14	14.5000000000	Softmotion Tracking max jerk	This jerk is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	25	1	1355	53	25	56	55
-1.5	3.5500000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1356	53	25	56	55
+0.05	3.5500000000	Softmotion Tracking max acceleration	This acceleration is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1354	53	25	58	55
+0.2	14.5000000000	Softmotion Tracking max jerk	This jerk is the maximun available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	25	1	1355	53	25	58	55
+0.05	3.5500000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1356	53	25	58	55
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Elevation	800	20000	1	1299	53	25	55	55
 400.Elevation	400.Elevation	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Elevation	0	0	0	1300	53	25	55	55
-0.5	1.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	57	55
-10	14.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	57	55
-0.5	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	57	55
-0.05	3.5500000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	56	55
-0.2	14.0500000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	56	55
-0.05	3.5500000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	56	55
+0.05	1.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	58	55
+0.2	14.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	58	55
+0.05	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	58	55
+0.05	3.5500000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	58	55
+0.2	14.0500000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	58	55
+0.05	3.5500000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	58	55
 1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1307	53	25	55	55
 2000.000000	2000.000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1308	53	25	55	55
 200.0000000000	200.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1310	53	25	55	55
@@ -633,7 +633,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 10.0000000000	10.0000000000	Commands to update settings	When the number of commands to track ambient temperature set in this settings is received by the task, the settings will be updated		DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	250	1	1391	3	13	54	55
 45.0000000000	45.0000000000	Critical High Cabinet Temperature	This is the temperature at which an alarm is triggered.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	49	1	12	3	13	54	55
 4.0000000000	4.0000000000	Critical Low Cabinet Temperature	This is the temperature at which an alarm is triggered.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	-4	10	1	13	3	13	54	55
-10	10	DefaultSetpoint	The setpoint sent when initializing, exiting and when going to fault in the Cabinet OMT.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	0	705	3	13	54	55
+10	10	DefaultSetpoint	The setpoint sent when initializing, exiting and when going to fault in the Cabinet OMT.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	5	10	0	705	3	13	0	55
 21.0000000000	21.0000000000	High Cabinet Temperature	Temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	12	22	1	10	3	13	54	55
 5.0000000000	5.0000000000	High Surface Temperature	The difference between ambient temperature and surface temperature is above the allowed one	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	25	1	8	3	13	54	55
 1.5	1.5	HighCabinetTemperatureHysteresis	Hysteresis value for temperature causing a warning.	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	20	48	0	1476	3	13	54	55
@@ -648,7 +648,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1350.0000000000	1350.0000000000	Special Error Lower Limit	The error numbers between this setting and the Special Error Upper Limit will trigger the special fault in the main cabinet statechart. This special fault will trigger a fault in all subsystem to prepare for a possible cabinet switch off.		DOUBLE	2	0	MainCabinetTemperature	MainCabinet	20	48	0	1382	3	13	54	55
 1399.0000000000	1399.0000000000	Special Error Upper Limit	The error numbers between this setting and the Special Error Lower Limit will trigger the special fault in the main cabinet statechart. This special fault will trigger a fault in all subsystem to prepare for a possible cabinet switch off.		DOUBLE	2	0	MainCabinetTemperature	MainCabinet	20	48	0	1381	3	13	54	55
 1300.MainCabinet	1300.MainCabinet	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	MainCabinetTemperature	MainCabinet	4	10	1	1062	3	13	54	55
-2.000000	2.000000	Upper Limit Hysteresis Relative	This is the upper temperature limit  relative to the ambient temperature for the hysteresis control used when RMC is not working	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	45	1	405	3	13	54	55
+2.000000	2.000000	Upper Limit Hysteresis Relative	This is the upper temperature limit  relative to the ambient temperature for the hysteresis control used when RMC is not working	degC	DOUBLE	2	1	MainCabinetTemperature	MainCabinet	0	45	1	405	3	13	0	55
 600.MPS	600.MPS	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MainPowerSupply	General	1	7	0	894	47	27	54	55
 300.0000000000	300.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MainPowerSupply	General	0	50	0	1468	47	27	54	55
 0.0000000000	0.0000000000	CW Power Off	Control Word value for powering off the MPS		DOUBLE	2	0	MainPowerSupply	MainPowerSupply	0	0	0	379	48	27	54	55
