@@ -524,12 +524,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Elevation	0.0001	0.1	1	1418	53	25	55	55
 100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Elevation	0	120	1	1253	53	25	55	55
 0.1	0.1	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1254	53	25	55	55
-0.25	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	0	55
-1	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	0	55
-0.25	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	0	55
-0.25	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	0	55
-1	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	0	55
-0.25	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	0	55
+0.5	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	0	55
+2	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	0	55
+0.5	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	0	55
+0.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	0	55
+2	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	0	55
+0.5	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	0	55
 0.5	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	55	55
 2	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	0	55
 0.5	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	55	55
