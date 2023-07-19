@@ -268,43 +268,43 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 -7.0000000000	-7.0000000000	Min Elevation Angle	The minimum position of the elevation angle for allowing the deployable platforms to power on.	deg	DOUBLE	2	0	DeployablePlatform	General	-10	0	0	156	24	20	54	55
 1200.DP	1200.DP	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	DeployablePlatform	General	1	7	0	581	24	20	54	55
 200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	DeployablePlatform	General	0	50	0	1464	24	20	54	55
-10.1000000000	10.1000000000	ACW margin	Marin used in azimuth reference calculation with Azimuth Cable Wrap (ACW). The algorithm will use ACW as base value for azimuth and compare it to adapt to ACW value or to set as invalid reference.	deg	DOUBLE	2	0	EncoderSystem	General	1	12	1	1412	27	21	54	55
-2.0000000000	2.0000000000	Azimuth Critical Active Heads	If the number of active heads for azimuth axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	852	27	21	54	55
-10.0000000000	10.0000000000	Azimuth heads reference threshold [i.u]	Maximum error in the reference of azimuth heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	703	27	21	54	55
-1243770.000000	1243770.000000	Azimuth Tape Line Count	Number of line counts in the azimuth tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	393	27	21	54	55
-0.0000000000	0.0000000000	Azimuth Telescope Offset	This is the offset between telescope zero and encoder tape zero for azimuth. The zero for encoder is the junction of the tape and the zero for telescope is the north orientation	rad	DOUBLE	2	1	EncoderSystem	General	0	10	0	401	27	21	54	55
-4000.0000000000	4000.0000000000	Check UPD timeout	Time to start UPD loop in AXES PXI. This time must be less than CMD timeout power on, since this is an step of power on	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1104	27	21	54	55
-6000.0000000000	6000.0000000000	CMD timeout clear errors	Timeout for  clearing active errors in EIB task	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1102	27	21	54	55
-2000.0000000000	2000.0000000000	CMD timeout clear heads errors	Timeout for  clearing active heads errors	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1101	27	21	54	55
-6000.0000000000	6000.0000000000	CMD timeout power off	Timeout for  powering off axis heads	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1100	27	21	54	55
-10000.0000000000	10000.0000000000	CMD timeout power on	Timeout for  powering on axis heads	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1099	27	21	54	55
-110000.0000000000	110000.0000000000	CMD timeout reboot	Timeout for rebooting EIB hardware	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1103	27	21	54	55
-4000.0000000000	4000.0000000000	CMD timeout reference off	Timeout to stop reference execution	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1098	27	21	54	55
-42000.0000000000	42000.0000000000	CMD timeout reference on	Timeout to perform reference	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1097	27	21	54	0
-2000.0000000000	2000.0000000000	CMD timeout Relative Offset	Timeout to set the relative position offset in the EIB readings	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1250	27	21	54	55
-/c/Configuration/EIB/multi_ext.txt	/c/Configuration/EIB/multi_ext.txt	EIB config file path	The file path in PXI to get the EIB configuration. This file is Heidenhain developed file		STRING	3	0	EncoderSystem	General	-2	50	1	177	27	21	54	55
-2.0000000000	2.0000000000	Elevation Critical Active Heads	If the number of active heads for elevation axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	1175	27	21	54	55
-10.0000000000	10.0000000000	Elevation heads reference threshold [i.u]	Maximum error in the reference of elevation heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	704	27	21	54	55
-0.000000	0.000000	Elevation Tape Line Count	Number of line counts in the elevation tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	394	27	21	54	55
-0.0000000000	0.0000000000	Elevation Telescope Offset	This is the offset between telescope zero and encoder tape zero for Elevation. The zero for encoder is the start of the tape closest when telescope is horizon position and the zero for telescope is the horizon poisition	rad	DOUBLE	2	1	EncoderSystem	General	0	10	0	402	27	21	54	55
-40.000000	40.000000	FPGA Clock Rate	Clock rate in MHz of the trigger program running in FPGA	MHz	DOUBLE	2	0	EncoderSystem	General	40	120	0	314	27	21	54	55
-139.229.171.3	139.229.171.3	Logging IP	IP for logging errors. The errors found by EIB will be sent to this port		STRING	3	0	EncoderSystem	General	0	0	0	178	27	21	54	0
-365.0000000000	365.0000000000	Sync Trigger Offset	Time in us to wait before sending trigger to EIB	us	DOUBLE	2	0	EncoderSystem	General	40	120	0	315	27	21	54	55
-160.0000000000	160.0000000000	Sync Trigger on Time	Time in us the EIB synchronization trigger will be on	us	DOUBLE	2	1	EncoderSystem	General	0	0	0	316	27	21	54	55
-10.0000000000	10.0000000000	UDP reading timeout	Timeout for getting data from EIB UDP port	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1105	27	21	54	55
-60.000000	60.000000	Wait after Reset	This is the time to wait before reconecting to EIB when a reset is performed	s	DOUBLE	2	0	EncoderSystem	General	50	100	1	198	27	21	54	55
-1	1	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head1	-2	50	1	169	28	21	54	55
-SLOT01:AXIS01	SLOT01:AXIS01	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head1	-2	50	1	161	28	21	54	55
-TMA-AZ-ENC-AZM-0001	TMA-AZ-ENC-AZM-0001	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head1	-2	50	1	385	28	21	54	55
-1.0000000000	1.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head1	1	4	1	719	28	21	54	55
--0.000005051726	-0.000005051726	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head1	0	0	0	190	28	21	54	55
-371794.0000000000	371794.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head1	0	6	0	182	28	21	54	55
-0	0	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head2	-2	50	1	170	29	21	54	55
-SLOT01:AXIS02	SLOT01:AXIS02	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head2	-2	50	1	162	29	21	54	55
-TMA-AZ-ENC-ELV-0003	TMA-AZ-ENC-ELV-0003	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head2	-2	50	1	389	29	21	54	55
-3.0000000000	3.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head2	1	4	1	720	29	21	54	55
-1.2104339410E-5	1.2104339410E-5	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head2	0	0	0	191	29	21	54	55
-56764.0000000000	56764.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head2	0	6	0	183	29	21	54	55
+10.1000000000	10.1000000000	ACW margin	Marin used in azimuth reference calculation with Azimuth Cable Wrap (ACW). The algorithm will use ACW as base value for azimuth and compare it to adapt to ACW value or to set as invalid reference.	deg	DOUBLE	2	0	EncoderSystem	General	1	12	1	1412	27	21	55	55
+2.0000000000	2.0000000000	Azimuth Critical Active Heads	If the number of active heads for azimuth axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	852	27	21	55	55
+10.0000000000	10.0000000000	Azimuth heads reference threshold [i.u]	Maximum error in the reference of azimuth heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	703	27	21	55	55
+1243770.000000	1243770.000000	Azimuth Tape Line Count	Number of line counts in the azimuth tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	393	27	21	55	55
+0.0000000000	0.0000000000	Azimuth Telescope Offset	This is the offset between telescope zero and encoder tape zero for azimuth. The zero for encoder is the junction of the tape and the zero for telescope is the north orientation	rad	DOUBLE	2	1	EncoderSystem	General	0	10	0	401	27	21	55	55
+4000.0000000000	4000.0000000000	Check UPD timeout	Time to start UPD loop in AXES PXI. This time must be less than CMD timeout power on, since this is an step of power on	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1104	27	21	55	55
+6000.0000000000	6000.0000000000	CMD timeout clear errors	Timeout for  clearing active errors in EIB task	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1102	27	21	55	55
+2000.0000000000	2000.0000000000	CMD timeout clear heads errors	Timeout for  clearing active heads errors	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1101	27	21	55	55
+6000.0000000000	6000.0000000000	CMD timeout power off	Timeout for  powering off axis heads	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1100	27	21	55	55
+10000.0000000000	10000.0000000000	CMD timeout power on	Timeout for  powering on axis heads	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1099	27	21	55	55
+110000.0000000000	110000.0000000000	CMD timeout reboot	Timeout for rebooting EIB hardware	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1103	27	21	55	55
+4000.0000000000	4000.0000000000	CMD timeout reference off	Timeout to stop reference execution	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1098	27	21	55	55
+42000.0000000000	42000.0000000000	CMD timeout reference on	Timeout to perform reference	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1097	27	21	0	0
+2000.0000000000	2000.0000000000	CMD timeout Relative Offset	Timeout to set the relative position offset in the EIB readings	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1250	27	21	55	55
+/c/Configuration/EIB/multi_ext.txt	/c/Configuration/EIB/multi_ext.txt	EIB config file path	The file path in PXI to get the EIB configuration. This file is Heidenhain developed file		STRING	3	0	EncoderSystem	General	-2	50	1	177	27	21	55	55
+2.0000000000	2.0000000000	Elevation Critical Active Heads	If the number of active heads for elevation axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	1175	27	21	55	55
+10.0000000000	10.0000000000	Elevation heads reference threshold [i.u]	Maximum error in the reference of elevation heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	704	27	21	55	55
+0.000000	0.000000	Elevation Tape Line Count	Number of line counts in the elevation tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	394	27	21	55	55
+0.0000000000	0.0000000000	Elevation Telescope Offset	This is the offset between telescope zero and encoder tape zero for Elevation. The zero for encoder is the start of the tape closest when telescope is horizon position and the zero for telescope is the horizon poisition	rad	DOUBLE	2	1	EncoderSystem	General	0	10	0	402	27	21	55	55
+40.000000	40.000000	FPGA Clock Rate	Clock rate in MHz of the trigger program running in FPGA	MHz	DOUBLE	2	0	EncoderSystem	General	40	120	0	314	27	21	55	55
+139.229.171.3	139.229.171.3	Logging IP	IP for logging errors. The errors found by EIB will be sent to this port		STRING	3	0	EncoderSystem	General	0	0	0	178	27	21	0	0
+365.0000000000	365.0000000000	Sync Trigger Offset	Time in us to wait before sending trigger to EIB	us	DOUBLE	2	0	EncoderSystem	General	40	120	0	315	27	21	55	55
+160.0000000000	160.0000000000	Sync Trigger on Time	Time in us the EIB synchronization trigger will be on	us	DOUBLE	2	1	EncoderSystem	General	0	0	0	316	27	21	55	55
+10.0000000000	10.0000000000	UDP reading timeout	Timeout for getting data from EIB UDP port	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1105	27	21	55	55
+60.000000	60.000000	Wait after Reset	This is the time to wait before reconecting to EIB when a reset is performed	s	DOUBLE	2	0	EncoderSystem	General	50	100	1	198	27	21	55	55
+1	1	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head1	-2	50	1	169	28	21	55	55
+SLOT01:AXIS01	SLOT01:AXIS01	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head1	-2	50	1	161	28	21	55	55
+TMA-AZ-ENC-AZM-0001	TMA-AZ-ENC-AZM-0001	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head1	-2	50	1	385	28	21	55	55
+1.0000000000	1.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head1	1	4	1	719	28	21	55	55
+-0.000005051726	-0.000005051726	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head1	0	0	0	190	28	21	55	55
+371794.0000000000	371794.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head1	0	6	0	182	28	21	55	55
+0	0	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head2	-2	50	1	170	29	21	55	55
+SLOT01:AXIS02	SLOT01:AXIS02	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head2	-2	50	1	162	29	21	55	55
+TMA-AZ-ENC-ELV-0003	TMA-AZ-ENC-ELV-0003	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head2	-2	50	1	389	29	21	55	55
+3.0000000000	3.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head2	1	4	1	720	29	21	55	55
+1.2104339410E-5	1.2104339410E-5	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head2	0	0	0	191	29	21	55	55
+56764.0000000000	56764.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head2	0	6	0	183	29	21	55	55
 1	1	Azimuth Axis	If True the head is a azimuth axis head, otherwise is for elevation		BOOLEAN	1	0	EncoderSystem	Head3	-2	50	1	171	30	21	54	55
 SLOT02:AXIS01	SLOT02:AXIS01	EIB Input Name	Input name of the head definition in the EIB		STRING	3	0	EncoderSystem	Head3	-2	50	1	163	30	21	54	55
 TMA-AZ-ENC-AZM-0002	TMA-AZ-ENC-AZM-0002	Head Name	Name of the head according to Empersarios naming		STRING	3	0	EncoderSystem	Head3	-2	50	1	386	30	21	54	55
@@ -524,12 +524,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Elevation	0.0001	0.1	1	1418	53	25	55	55
 100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Elevation	0	120	1	1253	53	25	55	55
 0.1	0.1	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1254	53	25	55	55
-1	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	57	55
-10	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	57	55
-0.5000000000	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	57	55
-1.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	57	55
-15	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	57	55
-1.5	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	57	55
+0.5	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	0	55
+2	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	0	55
+0.5	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	57	55
+0.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	0	55
+2	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	0	55
+0.5	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	0	55
 0.5000000000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	55	55
 1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	55	55
 0.5000000000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	55	55
