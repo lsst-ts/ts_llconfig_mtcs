@@ -517,19 +517,19 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0000000000	0.0000000000	Control Damping X Direction Gain	Active controller gain for  X direction		DOUBLE	2	0	MainAxis	Elevation	0	120	1	1238	53	25	55	55
 0.0000000000	0.0000000000	Control Damping Y Direction Gain	Active controller gain for  Y direction		DOUBLE	2	0	MainAxis	Elevation	0	120	1	1239	53	25	55	55
 2210000.0000000000	2210000.0000000000	Control Inertia	Inertia of the axis	kg*m^2	DOUBLE	2	0	MainAxis	Elevation	0	120	0	1240	53	25	55	55
-0	0	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1241	53	25	55	55
-30	30	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1242	53	25	55	55
-8	8	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1251	53	25	55	55
+0	0	Control Integral Disabled	The integral action of the controller is disabled		BOOLEAN	1	0	MainAxis	Elevation	0.1	28	1	1241	53	25	0	55
+30	30	Control Kp (Speed Error Gain)	Speed error gain to use in the controller	rad/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1242	53	25	0	55
+8	8	Control Kv (Position Error Gain)	Position error gain to use in the controller	rad/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1251	53	25	0	55
 6500.0000000000	6500.0000000000	Control Maximun Torque Variation	Maximun allowed torque varition. There is a filter in the controller that allows the value of this settings as maximun change between iterations	N*m	DOUBLE	2	0	MainAxis	Elevation	0	120	0	1252	53	25	55	55
 0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Elevation	0.0001	0.1	1	1418	53	25	55	55
 100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Elevation	0	120	1	1253	53	25	55	55
 0.1	0.1	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1254	53	25	55	55
-0.5	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	0	55
-2.0	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	0	55
-0.5	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	57	55
-0.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	0	55
-2.0	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	0	55
-0.5	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	0	55
+1	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	57	55
+10	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	57	55
+0.5000000000	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	57	55
+1.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	57	55
+15	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	57	55
+1.5	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	57	55
 0.5000000000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	55	55
 1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	55	55
 0.5000000000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	55	55
@@ -544,7 +544,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.010000	0.010000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1272	53	25	55	55
 12.0000000000	12.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Elevation	15	16	1	1273	53	25	55	55
 1	1	Limits Following Error enable	Enable the following error	deg	BOOLEAN	1	0	MainAxis	Elevation	0	0	0	1332	53	25	55	55
-1	1	Limits Following Error Value	Set the maximun allowed following error	deg	DOUBLE	2	0	MainAxis	Elevation	0	0	0	1331	53	25	55	55
+1	1	Limits Following Error Value	Set the maximun allowed following error	deg	DOUBLE	2	0	MainAxis	Elevation	0	0	0	1331	53	25	0	55
 0	1	Limits Max Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1275	53	25	57	55
 90.1	86.4000000000	Limits Max Position value	Maximun allowed postion command	deg	DOUBLE	2	1	MainAxis	Elevation	80	91.3	1	1276	53	25	57	55
 1	1	Limits Min Position enable	Maximun allowed postion command verification is enabled	deg	BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1277	53	25	55	55
@@ -556,8 +556,8 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1283	53	25	55	55
 -0.2000000000	-0.1000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	-0.2	20	0	1284	53	25	57	55
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	1	MainAxis	Elevation	0	0	0	1334	53	25	55	55
-4.5	5.200000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1285	53	25	0	55
-4.4	5.100000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	0	55
+2	5.200000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1285	53	25	57	55
+1.9	5.100000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	57	55
 0	0	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1287	53	25	55	55
 86.4000000000	86.4000000000	Limits Positive Adjustable Software limit value	Vaue for Positive adjustable software limit. \nThis limit will be valid if it is enabled indepent if the axis may move in relative mode	deg	DOUBLE	2	1	MainAxis	Elevation	80	90	0	1288	53	25	55	55
 1	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1290	53	25	0	0
@@ -597,7 +597,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Elevation	800	20000	1	1299	53	25	55	55
 400.Elevation	400.Elevation	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Elevation	0	0	0	1300	53	25	55	55
 1.5	1.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	0	55
-6	14.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	0	55
+6.0	14.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	0	55
 1.5	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	0	55
 1.5	3.5500000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	0	55
 6	14.0500000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	0	55
