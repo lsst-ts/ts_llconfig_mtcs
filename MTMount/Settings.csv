@@ -404,17 +404,17 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Azimuth	0.0001	0.1	0	1417	52	25	55	55
 100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	654	52	25	55	55
 0.1000000000	0.1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	653	52	25	55	55
-1.0	0.3000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	0	55
-4.0	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	0	55
-1.0	0.2000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	0	55
-1.0	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	0	55
-4.0	2.9000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	0	55
-1.0	1.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	0	55
+0.1	0.3000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	59	55
+0.4	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	59	55
+0.1	0.2000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	59	55
+0.1	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	59	55
+0.4	2.9000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	59	55
+0.1	1.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	59	55
 0.500000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	59	55
 1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	638	52	25	55	55
 0.500000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	59	55
 1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	548	52	25	55	55
-28.0000000000	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	639	52	25	55	55
+12	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	639	52	25	0	55
 1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	543	52	25	55	55
 0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	57	55
 1.0000000000	1.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	5	1	689	52	25	57	55
@@ -480,7 +480,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Azimuth	800	20000	1	1223	52	25	55	55
 100.Azimuth	100.Azimuth	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Azimuth	0	0	0	553	52	25	55	55
 3	5.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.000000001	10.5	1	612	52	25	0	55
-12	28.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	0	55
+28.0000000000	28.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	57	55
 3	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	0	55
 3	7.0000000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	614	52	25	0	55
 12	30.0000000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	0	55
@@ -524,18 +524,18 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the requiered value in Control Speed FeedFoward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Elevation	0.0001	0.1	1	1418	53	25	55	55
 100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Elevation	0	120	1	1253	53	25	55	55
 0.1	0.1	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1254	53	25	55	55
-0.5	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	0	55
-2.0	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	0	55
-0.5	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	57	55
-0.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	0	55
-2.0	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	0	55
-0.5	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	0	55
+1	0.2000000000	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	57	55
+10	1.4000000000	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	57	55
+0.5000000000	0.5000000000	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	57	55
+1.5	1.0000000000	EUI Max Acceleration	Maximun allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	57	55
+15	2.4000000000	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	57	55
+1.5	5.0000000000	EUI Max Velocity	Maximun allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	57	55
 0.5000000000	0.5000000000	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	55	55
 1.0000000000	1.0000000000	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	55	55
 0.5000000000	0.5000000000	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	55	55
 1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1265	53	25	55	55
 15	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	30	1	1266	53	25	57	55
-1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1267	53	25	55	55
+0.5	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1267	53	25	0	55
 0.500000	0.5000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	0.5	1	1268	53	25	57	55
 5.000000	5.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1269	53	25	57	55
 45.0000000000	45.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Elevation	300	1500	0	1461	53	25	55	55
@@ -596,9 +596,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.5	3.5500000000	Softmotion Tracking max speed	This jerk is the maximun available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	6	1	1356	53	25	0	55
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Elevation	800	20000	1	1299	53	25	55	55
 400.Elevation	400.Elevation	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Elevation	0	0	0	1300	53	25	55	55
-1.5	1.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	0	55
-6	14.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	0	55
-1.5	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	0	55
+0.5	1.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	57	55
+10	14.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	57	55
+0.5	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	57	55
 1.5	3.5500000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	0	55
 6	14.0500000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	0	55
 1.5	3.5500000000	TCS Max Velocity	Maximun allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	0	55
