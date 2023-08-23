@@ -668,7 +668,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 60000.0000000000	60000.0000000000	WaitTrans_Timeout	Wait transition timeout	ms	DOUBLE	2	1	MirrorCover	General	0	0	0	540	14	19	54	55
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC1	0	30	1	80	15	19	54	55
 136.0000000000	136.0000000000	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC1	-5	140	1	834	15	19	54	55
-0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC1	0	136	1	1394	15	19	54	55
+0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC1	0	136	1	1394	15	19	0	55
 900	900	Error ID	Error id of the current instance.		STRING	3	0	MirrorCover	MC1	1	7	0	88	15	19	54	55
 MC X+	MC X+	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC1	1	7	0	464	15	19	54	55
 MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	0	MirrorCover	MC1	1	7	0	567	15	19	54	55
@@ -777,7 +777,7 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 1500.MC	1500.MC	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MirrorCoverLocks	General	1	7	0	527	56	30	54	55
 200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MirrorCoverLocks	General	0	50	0	1471	56	30	54	55
 50.000000	50.000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	9	0	84	19	30	54	55
-0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCoverLocks	MCL1	0	136	1	1398	19	30	54	55
+0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCoverLocks	MCL1	0	136	1	1398	19	30	0	55
 1500	1500	Error ID	Error id of the current instance.		STRING	3	0	MirrorCoverLocks	MCL1	1	7	0	92	19	30	54	55
 MCL X+	MCL X+	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCoverLocks	MCL1	1	7	0	460	19	30	54	55
 MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	0	MirrorCoverLocks	MCL1	1	7	0	575	19	30	54	55
