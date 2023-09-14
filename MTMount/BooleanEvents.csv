@@ -210,7 +210,6 @@ Cabinet EL_OS_CBT_5002 High temperature	The temperature of the Cabinet EL_OS_CBT
 Cabinet EL_OS_CBT_5002 Low temperature	The temperature of the Cabinet EL_OS_CBT_5002  is too Low	800.OSS	817	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5002 Low temperature	1	0	379	1
 Cabinet EL_OS_CBT_5001 Low temperature	The temperature of the Cabinet EL_OS_CBT_5001  is too Low	800.OSS	815	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5001 Low temperature	1	0	380	1
 Cabinet AZ_OS_CBT_5001 Low temperature	The temperature of the Cabinet AZ_OS_CBT_5001  is too Low	800.OSS	813	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet AZ_OS_CBT_5001 Low temperature	1	0	381	1
-Soft Stop	Soft Stop perfomed in the OSS	800.OSS	820	2	40	OSSEvents	Alarm	EQUAL	1	Soft Stop	1	0.3	382	1
 Hard Stop	Hard Stop perfomed in the OSS	800.OSS	819	2	40	OSSEvents	Alarm	EQUAL	1	Hard Stop	1	0.3	383	1
 Emergency Stop	Emergency Stop perfomed in the OSS	800.OSS	818	2	40	OSSEvents	Alarm	EQUAL	1	Emergency Stop	1	0.3	384	1
 OSS Modbus fail	The Modbus comunication with the OSS is down	800.OSS	821	2	40	OSSEvents	Alarm	EQUAL	0	ModbusConnected	1	0	387	1
@@ -223,3 +222,4 @@ Bosch Power Supply Off	The bosch power supply is off , therefore the systems tha
 Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1200.DP	1270	2	32	PlatformEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	395	1
 Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	100.Azimuth	160	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	1	0	398	1
 Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	400.Elevation	160	2	49	ElevationAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	0	0	399	1
+Soft Stop	Soft Stop perfomed in the OSS	800.OSS	830	2	40	OSSEvents	Alarm	EQUAL	1	Soft Stop	1	0.3	402	1
