@@ -223,3 +223,5 @@ Bosch Power Supply Off	The bosch power supply is off , therefore the systems tha
 Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	100.Azimuth	160	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	1	0	398	1
 Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	400.Elevation	160	2	49	ElevationAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	0	0	399	1
 Soft Stop	Soft Stop perfomed in the OSS	800.OSS	830	2	40	OSSEvents	Alarm	EQUAL	1	Soft Stop	1	0.3	402	1
+Axis Externally Disabled	The axis was disabled externally without using the enable command.	100.Azimuth	190	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	409	1
+Axis Externally Disabled	The axis was disabled externally without using the enable command.	400.Elevation	490	2	49	ElevationAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	411	1
