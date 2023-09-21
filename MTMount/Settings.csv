@@ -1134,16 +1134,16 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 3000.0000000000	3000.0000000000	Safety Clock ms	This is the safety clock time value.	ms	DOUBLE	2	1	Safety	General	0	0	0	728	57	31	54	55
 400.0000000000	400.0000000000	AfterCommanderLaunchWait	This is the time to wait after launching the commander	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	736	58	32	54	55
 10000.0000000000	10000.0000000000	BeforeAmbientTemperatureTaskLaunchWait	This is the time to wait before launching the Ambient Temperature task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1402	58	32	54	55
-8500.0000000000	6500.0000000000	BeforeAZMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	746	58	32	0	55
+8500.0000000000	8500.0000000000	BeforeAZMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	746	58	32	0	0
 6000.0000000000	6000.0000000000	BeforeBALLaunchWait	This is the time to wait before launching the balancing task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	741	58	32	54	55
 4500.0000000000	4500.0000000000	BeforeBoschLaunchWait	This is the time to wait before launching the bosch task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	738	58	32	54	55
 4000.0000000000	4000.0000000000	BeforeBoschPowerSupplyLaunchWait	This is the time to wait before launching the bosch power supply task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	745	58	32	54	55
-9500.0000000000	7500.0000000000	BeforeCabinet0101LaunchWait	This is the time to wait before launching the cabinet 0101 thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1073	58	32	0	55
-7000.0000000000	8000.0000000000	BeforeCabinetLaunchWait	This is the time to wait before launching the cabinet task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	739	58	32	0	55
+9500.0000000000	9500.0000000000	BeforeCabinet0101LaunchWait	This is the time to wait before launching the cabinet 0101 thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1073	58	32	0	0
+7000.0000000000	7000.0000000000	BeforeCabinetLaunchWait	This is the time to wait before launching the cabinet task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	739	58	32	0	0
 5000.0000000000	5000.0000000000	BeforeCCWLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	807	58	32	54	55
 4000.0000000000	4000.0000000000	BeforeDPLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	895	58	32	54	55
-10000.0000000000	7000.0000000000	BeforeELMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	747	58	32	0	55
-16000.0000000000	9500.0000000000	BeforeIOTelemetryPublicationLaunchWait	This is the time to wait before launching the IO Telemetry publication task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1232	58	32	0	55
+10000.0000000000	10000.0000000000	BeforeELMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	747	58	32	0	0
+16000.0000000000	16000.0000000000	BeforeIOTelemetryPublicationLaunchWait	This is the time to wait before launching the IO Telemetry publication task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1232	58	32	0	0
 10000.0000000000	10000.0000000000	BeforeLPLaunchWait	This is the time to wait before launching the locking pins task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	740	58	32	54	55
 5000.0000000000	5000.0000000000	BeforeMainAxesOMTTaskLaunchWait	This is the time to wait before launching the OMT tasks for Main Axes	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1404	58	32	54	55
 2000.0000000000	2000.0000000000	BeforeMainAxesPXICommTaskLaunchWait	This is the time to wait before launching the task to communicate with the Axes PXI	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1403	58	32	54	55
@@ -1152,9 +1152,9 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 12000.0000000000	12000.0000000000	BeforeMCLLaunchWait	This is the time to wait before launching the mirror cover lock task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	743	58	32	54	55
 120000.0000000000	120000.0000000000	BeforeModbusTempControllersLaunchWait	This is the time to wait before launching the Modbus temperature controllers task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1170	58	32	54	55
 6000.0000000000	6000.0000000000	BeforeMPSLaunchWait	This is the time to wait before launching the main power supply task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	851	58	32	54	55
-12000.0000000000	8500.0000000000	BeforeOSSLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1096	58	32	0	55
+12000.0000000000	12000.0000000000	BeforeOSSLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1096	58	32	0	0
 0.0000000000	0.0000000000	BeforeSafetyLaunchWait	This is the time to wait before launching the safety task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	737	58	32	54	55
-15000.0000000000	6000.0000000000	BeforeTECLaunchWait	This is the time to wait before launching the TEC task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1408	58	32	0	55
+15000.0000000000	15000.0000000000	BeforeTECLaunchWait	This is the time to wait before launching the TEC task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1408	58	32	0	0
 		ID String	Not used for this subsystem.		STRING	3	1	TopEndChiller	General	5000	30000	1	1492	46	26	0	0
 10000.000000	10000.000000	LocalRemote timeout	After this time the Top End chiller checking for local remote change will send a timeout error	ms	DOUBLE	2	1	TopEndChiller	General	5000	30000	1	377	46	26	54	55
 10000.000000	10000.000000	Power ON/OFF timeout	After this time the Top End chiller checking for power on or off will send a timeout error	ms	DOUBLE	2	1	TopEndChiller	General	5000	30000	1	375	46	26	54	55
