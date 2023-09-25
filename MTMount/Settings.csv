@@ -343,32 +343,32 @@ TMA-AZ-ENC-ELV-0002	TMA-AZ-ENC-ELV-0002	Head Name	Name of the head according to 
 2.0000000000	2.0000000000	NSV_LinkID	This ID is used to link the encoder head data to the corresponding NSV. The options are 1, 2 ,3 or 4. 		DOUBLE	2	1	EncoderSystem	Head8	1	4	1	726	35	21	54	55
 -0.00001210433941	-0.00001210433941	Position Gain	Convert from periods to rad or periods/s to rad/s	rad/periods	DOUBLE	2	1	EncoderSystem	Head8	0	0	0	197	35	21	54	55
 196789.0000000000	196789.0000000000	Position Offset	Position offset of the head to do all heads read the same value after referencing	i.u.	DOUBLE	2	1	EncoderSystem	Head8	0	6	0	189	35	21	54	55
-0	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	0	55
-89.0000000000	89.0000000000	ElevationPosNinetyMinus	This is the - limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis. 	deg	DOUBLE	2	1	LockingPins	General	89	91	1	274	41	23	54	55
-91.0000000000	91.0000000000	ElevationPosNinetyPlus	This is the + limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	89	91	1	273	41	23	54	55
--1.0000000000	-1.0000000000	ElevationPosZeroMinus	This is the - limit for the Elevation axis to be able to insert the LP at 0 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	-2	1	1	272	41	23	54	55
-1.0000000000	1.0000000000	ElevationPosZeroPlus	This is the + limit for the Elevation axis to be able to insert the LP at 0 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	-1	2	1	271	41	23	54	55
-1400.LP	1400.LP	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	LockingPins	General	1	7	0	530	41	23	54	55
-200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	LockingPins	General	0	50	0	1465	41	23	54	55
-1000.0000000000	1000.0000000000	DefaultAcceleration	Default acceleration used by the motor to move	mm/s^2	DOUBLE	2	1	LockingPins	LockingPin1	500	2500	1	265	42	23	54	55
-4000.0000000000	4000.0000000000	DefaultJerk	Default Jerk used by the motor to move	mm/s^3	DOUBLE	2	1	LockingPins	LockingPin1	1000	5000	1	266	42	23	54	55
-2.0000000000	2.0000000000	DefaultSpeed	Default Speed used by the motor to move	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	10	1	264	42	23	54	55
--2.0000000000	-2.0000000000	FreePosition	Position to move locking pin where the elevation axis is free to move	mm	DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	269	42	23	54	55
-LP X+	LP X+	ID String	This is the identifier for the cover in string format.		STRING	3	1	LockingPins	LockingPin1	0	0	0	528	42	23	54	55
-85.0000000000	85.0000000000	LockPosition	Position to move locking pin where the elevation axis is locked	mm	DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	268	42	23	54	55
-7.6000000000	7.6000000000	Max Critical Speed	Max speed alloable. Above this limit the event system will trigger an alarm	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	10	1	295	42	23	54	55
-92.0000000000	92.0000000000	Max Position	The maximum position of the locking pin motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin1	42	95	1	397	42	23	54	55
-7.5000000000	7.5000000000	Max Speed	The maximum speed of the locking pin motor, if the speed is greater than this the command is rejected.	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	10	1	261	42	23	54	55
--3.000000	-3.000000	Min Position	The minimum position of the balancing motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin1	-10	5	1	399	42	23	54	55
-19.0000000000	19.0000000000	MotorID			DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	270	42	23	54	55
--1.0000000000	-1.0000000000	MoveVelocity_Trns_Timeout	Timeout for a move velocity command. -1 no timeout	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	259	42	23	54	55
-140.0000000000	140.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	260	42	23	54	55
-10000.000000	10000.000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	257	42	23	54	55
-10000.000000	10000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	256	42	23	54	55
-5000.0000000000	5000.0000000000	ResetTrans_Timeout	Reset transition timeout	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	758	42	23	54	55
-7.0000000000	7.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	LockingPins	LockingPin1	0.01	10	1	824	42	23	54	55
-5000.0000000000	5000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	258	42	23	54	55
-45.0000000000	45.0000000000	TestPosition	Position to move locking pin where the elevation axis has the ability to perform small movemets. Position for testing and balancing	mm	DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	267	42	23	54	55
+0	0	DisableElevationPsotionCheck	This is for disabling the elevation position check, this allows inserting the LP without checking the elevation position.		BOOLEAN	1	1	LockingPins	General	0	0	0	1419	41	23	55	55
+89.0000000000	89.0000000000	ElevationPosNinetyMinus	This is the - limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis. 	deg	DOUBLE	2	1	LockingPins	General	89	91	1	274	41	23	55	55
+91.0000000000	91.0000000000	ElevationPosNinetyPlus	This is the + limit for the Elevation axis to be able to insert the LP at 90 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	89	91	1	273	41	23	55	55
+-1.0000000000	-1.0000000000	ElevationPosZeroMinus	This is the - limit for the Elevation axis to be able to insert the LP at 0 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	-2	1	1	272	41	23	55	55
+1.0000000000	1.0000000000	ElevationPosZeroPlus	This is the + limit for the Elevation axis to be able to insert the LP at 0 degrees for EL axis.	deg	DOUBLE	2	1	LockingPins	General	-1	2	1	271	41	23	55	55
+1400.LP	1400.LP	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	LockingPins	General	1	7	0	530	41	23	55	55
+200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	LockingPins	General	0	50	0	1465	41	23	55	55
+1000.0000000000	1000.0000000000	DefaultAcceleration	Default acceleration used by the motor to move	mm/s^2	DOUBLE	2	1	LockingPins	LockingPin1	500	2500	1	265	42	23	55	55
+4000.0000000000	4000.0000000000	DefaultJerk	Default Jerk used by the motor to move	mm/s^3	DOUBLE	2	1	LockingPins	LockingPin1	1000	5000	1	266	42	23	55	55
+2.0000000000	2.0000000000	DefaultSpeed	Default Speed used by the motor to move	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	10	1	264	42	23	55	55
+-2.0000000000	-2.0000000000	FreePosition	Position to move locking pin where the elevation axis is free to move	mm	DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	269	42	23	55	55
+LP X+	LP X+	ID String	This is the identifier for the cover in string format.		STRING	3	1	LockingPins	LockingPin1	0	0	0	528	42	23	55	55
+85.0000000000	85.0000000000	LockPosition	Position to move locking pin where the elevation axis is locked	mm	DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	268	42	23	55	55
+7.6000000000	7.6000000000	Max Critical Speed	Max speed alloable. Above this limit the event system will trigger an alarm	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	10	1	295	42	23	55	55
+92.0000000000	92.0000000000	Max Position	The maximum position of the locking pin motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin1	42	95	1	397	42	23	55	55
+7.5000000000	7.5000000000	Max Speed	The maximum speed of the locking pin motor, if the speed is greater than this the command is rejected.	mm/s	DOUBLE	2	1	LockingPins	LockingPin1	0	10	1	261	42	23	55	55
+-3.000000	-3.000000	Min Position	The minimum position of the balancing motor, at which an error is fired.	mm	DOUBLE	2	1	LockingPins	LockingPin1	-10	5	1	399	42	23	55	55
+19.0000000000	19.0000000000	MotorID			DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	270	42	23	55	55
+-1.0000000000	-1.0000000000	MoveVelocity_Trns_Timeout	Timeout for a move velocity command. -1 no timeout	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	259	42	23	55	55
+140.0000000000	140.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	260	42	23	55	55
+10000.000000	10000.000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	257	42	23	55	55
+10000.000000	10000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	256	42	23	55	55
+5000.0000000000	5000.0000000000	ResetTrans_Timeout	Reset transition timeout	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	758	42	23	55	55
+7.0000000000	7.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	LockingPins	LockingPin1	0.01	10	1	824	42	23	55	55
+5000.0000000000	5000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	LockingPins	LockingPin1	0	0	0	258	42	23	55	55
+45.0000000000	45.0000000000	TestPosition	Position to move locking pin where the elevation axis has the ability to perform small movemets. Position for testing and balancing	mm	DOUBLE	2	0	LockingPins	LockingPin1	0	0	0	267	42	23	55	55
 1000.0000000000	1000.0000000000	DefaultAcceleration	Default acceleration used by the motor to move	mm/s^2	DOUBLE	2	1	LockingPins	LockingPin2	500	2500	1	275	43	23	54	55
 4000.0000000000	4000.0000000000	DefaultJerk	Default Jerk used by the motor to move	mm/s^3	DOUBLE	2	1	LockingPins	LockingPin2	1000	5000	1	276	43	23	54	55
 2.0000000000	2.0000000000	DefaultSpeed	Default Speed used by the motor to move	mm/s	DOUBLE	2	1	LockingPins	LockingPin2	0	10	1	277	43	23	54	55
@@ -418,10 +418,10 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.0000000000	1.0000000000	HHD Max Acceleration	Maximun allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	548	52	25	55	55
 28.0000000000	28.0000000000	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	639	52	25	55	55
 1.0000000000	1.0000000000	HHD Max Velocity	Maximun allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	543	52	25	55	55
-0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	57	55
-1.0000000000	1.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	5	1	689	52	25	57	55
+0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homming procedure	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	55	55
+1.0000000000	1.0000000000	Homing Jerk	Jerk for Homming procedure	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	5	1	689	52	25	55	55
 0.0000000000	0.0000000000	Homing Position Direction	If the actual position is higger than the value in this setting the homming will be performed in negative direccion. Otherwise positive direction homiming will be done	deg	DOUBLE	2	0	MainAxis	Azimuth	300	1500	0	1460	52	25	55	55
-0.1000000000	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.2	1	683	52	25	57	55
+0.1000000000	0.1000000000	Homing Speed	Speed for Homming procedure	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	0.2	1	683	52	25	55	55
 0.0100000000	0.0100000000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1060	52	25	55	55
 16.0000000000	16.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Azimuth	15	16	1	1231	52	25	55	55
 5.0000000000	5.0000000000	Limits AZCW Critical Deviation Value	Maximun allowed deviation between AZCW and AZ verification value. If this value is overcomed an alarm will be generated in azimuth		DOUBLE	2	0	MainAxis	Azimuth	0.1	28	0	1229	52	25	55	55
@@ -486,7 +486,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homming process	ms	DOUBLE	2	0	MainAxis	Azimuth	800	20000	1	1223	52	25	55	55
 100.Azimuth	100.Azimuth	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Azimuth	0	0	0	553	52	25	55	55
 2	5.0000000000	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.000000001	10.5	1	612	52	25	61	55
-28.0000000000	28.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	57	55
+28.0000000000	28.0000000000	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	55	55
 2	2.0000000000	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	61	55
 2	7.0000000000	TCS Max Acceleration	Maximun allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	614	52	25	61	55
 8	30.0000000000	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	61	55
@@ -965,26 +965,26 @@ TMA_EL_PD_CBT_0002	TMA_EL_PD_CBT_0002	ID String	This is the identifier for the c
 400.0000000000	400.0000000000	TemperatureWritableMaxValue	The maximun value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_EL_PD_CBT_0002	0	0	0	1433	76	36	54	55
 -150.0000000000	-150.0000000000	TemperatureWritableMinValue	The minimun value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_EL_PD_CBT_0002	0	0	0	1438	76	36	54	55
 1602	1602	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup1	0.1	100	0	1478	64	35	0	0
--1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0.1	100	0	1064	64	35	54	55
-0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1002	64	35	54	55
-20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	908	64	35	54	55
-0.01	0.01	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	914	64	35	54	55
-7	7	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	920	64	35	54	55
-AZDTgroup1	AZDTgroup1	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	AzimuthGroup1	1	7	0	951	64	35	54	55
-0	0	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	980	64	35	54	55
-0	0	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	978	64	35	54	55
-0	0	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	979	64	35	54	55
-1600.AZDT	1600.AZDT	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MotorThermalControl	AzimuthGroup1	1	7	0	944	64	35	54	55
-5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	932	64	35	54	55
-2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	938	64	35	54	55
--6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	926	64	35	54	55
-1200000.000000	1200000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	971	64	35	54	55
-100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1439	64	35	54	55
-100	100	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	902	64	35	54	55
-120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1034	64	35	54	55
-0	0	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1040	64	35	54	55
--100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1041	64	35	54	55
-5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	896	64	35	54	55
+-1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0.1	100	0	1064	64	35	55	55
+0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1002	64	35	55	55
+20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	908	64	35	55	55
+0.01	0.01	Control Td	This is the derivative time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	914	64	35	55	55
+7	7	Control Ti	This is the integral time value of the temperature controller.	min	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	920	64	35	55	55
+AZDTgroup1	AZDTgroup1	ID String	This is the identifier for the motor group in string format.		STRING	3	1	MotorThermalControl	AzimuthGroup1	1	7	0	951	64	35	55	55
+0	0	Plant Delay Time	Delay Time of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	980	64	35	55	55
+0	0	Plant Process Gain	Gain of first order plant used in control algorihm compensation of tunning		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	978	64	35	55	55
+0	0	Plant Time Constant	Time Constant of first order plant used in control algorihm compensation of tunning	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	979	64	35	55	55
+1600.AZDT	1600.AZDT	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MotorThermalControl	AzimuthGroup1	1	7	0	944	64	35	55	55
+5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	932	64	35	55	55
+2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	938	64	35	55	55
+-6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	926	64	35	55	55
+1200000.000000	1200000.000000	Timeout_PowerOn	The timeout value after which an alarm is ent if the command was not completed.	ms	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	971	64	35	55	55
+100.0000000000	100.0000000000	ValveApertureOffset	Offset added to the controller ouput for manage the aperture of the valve	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1439	64	35	55	55
+100	100	ValveDisabledAperture	This is the value to set the valve to when it is disabled.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	902	64	35	55	55
+120	120	ValveInPositionTimeout	The valve must be in position before this Timeout is fullfilled	s	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1034	64	35	55	55
+0	0	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1040	64	35	55	55
+-100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1041	64	35	55	55
+5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	896	64	35	55	55
 1602	1602	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup2	0.1	100	0	1479	65	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0.1	100	0	1065	65	35	54	55
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1021	65	35	54	55
@@ -1112,7 +1112,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 -100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1050	69	35	54	55
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	901	69	35	54	55
 360000.0000000000	360000.0000000000	TimeForWaitTemperatureStabilization	Time to wait before enabling the temperature faults	ms	DOUBLE	2	0	MotorThermalControl	General	0	50	0	1486	63	35	0	0
-1000.0000000000	1000.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MotorThermalControl	General	0	50	0	1473	63	35	54	55
+1000.0000000000	1000.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MotorThermalControl	General	0	50	0	1473	63	35	55	55
 830;831;832	830;831;832	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	OSS	General	0.1	100	0	1485	49	28	0	0
 5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	OSS	General	0	0	0	1487	49	28	0	0
 2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	1	OSS	General	0	0	0	1488	49	28	0	0
