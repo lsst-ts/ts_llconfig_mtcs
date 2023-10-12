@@ -674,13 +674,13 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 150000.0000000000	150000.0000000000	Powering time out	Timeout of the powering process	ms	DOUBLE	2	1	MainPowerSupply	MainPowerSupply	0	0	0	381	48	27	54	55
 1000.0000000000	1000.0000000000	Reseting time	Waiting time between the MPS reset and clearing faults	ms	DOUBLE	2	1	MainPowerSupply	MainPowerSupply	0	0	0	382	48	27	54	55
 5000.0000000000	5000.0000000000	Wait Power Off In Fault	Time to wait before sending switch off to Power supply	ms	DOUBLE	2	0	MainPowerSupply	MainPowerSupply	0	0	0	977	48	27	54	55
-15.0000000000	15.0000000000	MinElevationPosition	Minimum Elevation Position for the mirror cover to close.	deg	DOUBLE	2	1	MirrorCover	General	0	0	0	873	14	19	54	55
+0	15.0000000000	MinElevationPosition	Minimum Elevation Position for the mirror cover to close.	deg	DOUBLE	2	1	MirrorCover	General	0	0	0	873	14	19	0	55
 900.MC	900.MC	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MirrorCover	General	1	7	0	526	14	19	54	55
 200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MirrorCover	General	0	50	0	1469	14	19	54	55
 60000.0000000000	60000.0000000000	WaitTrans_Timeout	Wait transition timeout	ms	DOUBLE	2	1	MirrorCover	General	0	0	0	540	14	19	54	55
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC1	0	30	1	80	15	19	54	55
 136.0000000000	136.0000000000	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC1	-5	140	1	834	15	19	54	55
-0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC1	0	136	1	1394	15	19	0	55
+1	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC1	0	136	1	1394	15	19	0	55
 900	900	Error ID	Error id of the current instance.		STRING	3	0	MirrorCover	MC1	1	7	0	88	15	19	54	55
 MC X+	MC X+	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC1	1	7	0	464	15	19	54	55
 MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	0	MirrorCover	MC1	1	7	0	567	15	19	54	55
@@ -707,7 +707,7 @@ MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	0	MirrorCover	MC1	0	0	0	474	15	19	54	55
 25.000000	25.000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC2	0	25	1	81	16	19	54	55
 135.2	135.2	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC2	-5	140	1	836	16	19	54	55
-0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC2	0	136	1	1395	16	19	54	55
+1	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC2	0	136	1	1395	16	19	0	55
 900	900	Error ID	Error id of the current instance.		STRING	3	0	MirrorCover	MC2	1	7	0	89	16	19	54	55
 MC Y+	MC Y+	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC2	1	7	0	465	16	19	54	55
 MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	0	MirrorCover	MC2	1	7	0	568	16	19	54	55
@@ -734,7 +734,7 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	0	MirrorCover	MC2	0	0	0	481	16	19	54	55
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC3	0	25	1	82	17	19	54	55
 134.0000000000	134.0000000000	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC3	-5	140	1	837	17	19	54	55
-0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC3	0	136	1	1396	17	19	54	55
+1	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC3	0	136	1	1396	17	19	0	55
 900	900	Error ID	Error id of the current instance.		STRING	3	0	MirrorCover	MC3	1	7	0	90	17	19	54	55
 MC X-	MC X-	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC3	1	7	0	466	17	19	54	55
 MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	0	MirrorCover	MC3	1	7	0	569	17	19	54	55
@@ -761,7 +761,7 @@ MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	0	MirrorCover	MC3	0	0	0	488	17	19	54	55
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	1	MirrorCover	MC4	0	25	1	83	18	19	54	55
 131	131	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC4	-5	140	1	838	18	19	54	55
-0	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC4	0	136	1	1397	18	19	54	55
+1	0	DisableColisionCheck	WARNING! This setting is used to disable the colision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	1	MirrorCover	MC4	0	136	1	1397	18	19	0	55
 900	900	Error ID	Error id of the current instance.		STRING	3	0	MirrorCover	MC4	1	7	0	91	18	19	54	55
 MC Y-	MC Y-	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC4	1	7	0	467	18	19	54	55
 MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separeted by ",").		STRING	3	0	MirrorCover	MC4	1	7	0	570	18	19	54	55
@@ -888,9 +888,9 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	1	MirrorCoverLocks	MCL4	0	0	0	521	22	30	54	55
 164	164	Unlocked Position	The unlocked position.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL4	-5	180	1	860	22	30	54	55
 0.0000000000	0.0000000000	WaitAfterReset			DOUBLE	2	0	MirrorCoverLocks	MCL4	0	0	0	522	22	30	54	55
-2600.ModbusTemperature	2600.ModbusTemperature	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	ModbusTemperatureControllers	General	1	7	0	1127	71	36	54	55
-1000.000000	1000.000000	TaskSamplingTime	The sampling time used to execute the task that monitors all the Modbus Temperature Controllers.	ms	DOUBLE	2	1	ModbusTemperatureControllers	General	1000	60000	1	1106	71	36	54	55
-1000.0000000000	1000.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	ModbusTemperatureControllers	General	0	50	0	1472	71	36	54	55
+2600.ModbusTemperature	2600.ModbusTemperature	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	ModbusTemperatureControllers	General	1	7	0	1127	71	36	55	55
+1000.000000	1000.000000	TaskSamplingTime	The sampling time used to execute the task that monitors all the Modbus Temperature Controllers.	ms	DOUBLE	2	1	ModbusTemperatureControllers	General	1000	60000	1	1106	71	36	55	55
+1000.0000000000	1000.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	ModbusTemperatureControllers	General	0	50	0	1472	71	36	55	55
 10000.0000000000	10000.0000000000	CommandTimeout	The timeout for the received commands.	ms	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AX_DZ_CBT_0001	0	0	0	1138	72	36	54	55
 0	0	DisableController	This setting is used  to disable the code for this temperature controller. A reboot of the PXI is necessary to apply this setting		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_AX_DZ_CBT_0001	0	0	0	1447	72	36	54	55
 TMA_AX_DZ_CBT_0001	TMA_AX_DZ_CBT_0001	ID String	This is the identifier for the cabinet in string format.		STRING	3	1	ModbusTemperatureControllers	TMA_AX_DZ_CBT_0001	0	0	0	1122	72	36	54	55
@@ -936,21 +936,21 @@ TMA_AZ_PD_TRM_0001	TMA_AZ_PD_TRM_0001	ID String	This is the identifier for the c
 -6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1160	74	36	54	55
 400.0000000000	400.0000000000	TemperatureWritableMaxValue	The maximun value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1431	74	36	54	55
 -150.0000000000	-150.0000000000	TemperatureWritableMinValue	The minimun value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1436	74	36	54	55
-10000.0000000000	10000.0000000000	CommandTimeout	The timeout for the received commands.	ms	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1141	75	36	54	55
-0	0	DisableController	This setting is used  to disable the code for this temperature controller. A reboot of the PXI is necessary to apply this setting		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1450	75	36	54	55
-TMA_EL_PD_CBT_0001	TMA_EL_PD_CBT_0001	ID String	This is the identifier for the cabinet in string format.		STRING	3	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1125	75	36	54	55
-/c/Configuration/ModbusTemperatureControllers/TMA_EL_PD_CBT_0001_config.ini	/c/Configuration/ModbusTemperatureControllers/TMA_EL_PD_CBT_0001_config.ini	ModbusServerConfigFilePath	Path of the configuration file for the modbus server for this instance.		STRING	3	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	1000	60000	1	1111	75	36	54	55
-/c/Configuration/ModbusTemperatureControllers/TMA_EL_PD_CBT_0001_mapping.txt	/c/Configuration/ModbusTemperatureControllers/TMA_EL_PD_CBT_0001_mapping.txt	ModbusServerMappingFilePath	Path of the mapping file for the modbus server for this instance.		STRING	3	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	1000	60000	1	1115	75	36	54	55
-0.0000000000	0.0000000000	ResetValue	The value to send over modbus for resetting the controller.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1146	75	36	54	55
-1	1	SendResetValue	This setting defines if the reset command will send the ResetValue setting over modbus for resetting the controller or not. TRUE sends the ResetValue, FALSE does not.		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1168	75	36	54	55
--1.0000000000	-1.0000000000	SetpointOffset	This value is added to the setpoint set to the modbus controller.	degC	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1455	75	36	54	55
-0.1000000000	0.1000000000	TemperatureConversionRead	The conversion used to convert the read data from the modbus to the rigth data for displaying.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1131	75	36	54	55
-10.0000000000	10.0000000000	TemperatureConversionWrite	The conversion used to convert the command data to send through modbus the rigth data.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1136	75	36	54	55
-5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1156	75	36	54	55
-2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1151	75	36	54	55
--6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1161	75	36	54	55
-400.0000000000	400.0000000000	TemperatureWritableMaxValue	The maximun value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1432	75	36	54	55
--150.0000000000	-150.0000000000	TemperatureWritableMinValue	The minimun value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1437	75	36	54	55
+10000.0000000000	10000.0000000000	CommandTimeout	The timeout for the received commands.	ms	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1141	75	36	55	55
+0	0	DisableController	This setting is used  to disable the code for this temperature controller. A reboot of the PXI is necessary to apply this setting		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1450	75	36	55	55
+TMA_EL_PD_CBT_0001	TMA_EL_PD_CBT_0001	ID String	This is the identifier for the cabinet in string format.		STRING	3	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1125	75	36	55	55
+/c/Configuration/ModbusTemperatureControllers/TMA_EL_PD_CBT_0001_config.ini	/c/Configuration/ModbusTemperatureControllers/TMA_EL_PD_CBT_0001_config.ini	ModbusServerConfigFilePath	Path of the configuration file for the modbus server for this instance.		STRING	3	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	1000	60000	1	1111	75	36	55	55
+/c/Configuration/ModbusTemperatureControllers/TMA_EL_PD_CBT_0001_mapping.txt	/c/Configuration/ModbusTemperatureControllers/TMA_EL_PD_CBT_0001_mapping.txt	ModbusServerMappingFilePath	Path of the mapping file for the modbus server for this instance.		STRING	3	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	1000	60000	1	1115	75	36	55	55
+0.0000000000	0.0000000000	ResetValue	The value to send over modbus for resetting the controller.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1146	75	36	55	55
+1	1	SendResetValue	This setting defines if the reset command will send the ResetValue setting over modbus for resetting the controller or not. TRUE sends the ResetValue, FALSE does not.		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1168	75	36	55	55
+-1.0000000000	-1.0000000000	SetpointOffset	This value is added to the setpoint set to the modbus controller.	degC	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1455	75	36	55	55
+0.1000000000	0.1000000000	TemperatureConversionRead	The conversion used to convert the read data from the modbus to the rigth data for displaying.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1131	75	36	55	55
+10.0000000000	10.0000000000	TemperatureConversionWrite	The conversion used to convert the command data to send through modbus the rigth data.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1136	75	36	55	55
+5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1156	75	36	55	55
+2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1151	75	36	55	55
+-6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1161	75	36	55	55
+400.0000000000	400.0000000000	TemperatureWritableMaxValue	The maximun value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1432	75	36	55	55
+-150.0000000000	-150.0000000000	TemperatureWritableMinValue	The minimun value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1437	75	36	55	55
 10000.0000000000	10000.0000000000	CommandTimeout	The timeout for the received commands.	ms	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0002	0	0	0	1142	76	36	54	55
 0	0	DisableController	This setting is used  to disable the code for this temperature controller. A reboot of the PXI is necessary to apply this setting		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0002	0	0	0	1451	76	36	54	55
 TMA_EL_PD_CBT_0002	TMA_EL_PD_CBT_0002	ID String	This is the identifier for the cabinet in string format.		STRING	3	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0002	0	0	0	1126	76	36	54	55
