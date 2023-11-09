@@ -1,7 +1,7 @@
 VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE	LOWER_LIMIT	UPPER_LIMIT	VALIDATE	ID	INSTANCE_ID	STATECHART_ID	SET_ID	SET_ID_SAVED
-0.0000000000	0.0000000000	Ambient Temperature Offset	Offset to apply to the received ambient temperature	ÂºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	-2	2	1	1376	78	37	54	55
+0.0000000000	0.0000000000	Ambient Temperature Offset	Offset to apply to the received ambient temperature	ºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	-2	2	1	1376	78	37	54	55
 10.0000000000	10.0000000000	Commands to update settings	When the number of commands set in this settings is received by the task, the settings will be updated		DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	5	250	1	1378	78	37	54	55
-10.0000000000	10.0000000000	Initial Temperature	The system will start with this temperature until a commands to update the ambient temperature is received	ÂºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	5	15	1	1377	78	37	54	55
+10.0000000000	10.0000000000	Initial Temperature	The system will start with this temperature until a commands to update the ambient temperature is received	ºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	5	15	1	1377	78	37	54	55
 800.000000	800.000000	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing1	0	0	0	298	37	22	0	0
 1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	1	Balancing	Balancing1	1000	1700	1	209	37	22	54	55
 3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	1	Balancing	Balancing1	1000	3000	1	210	37	22	54	55
