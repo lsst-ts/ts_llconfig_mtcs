@@ -1162,7 +1162,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 12000.0000000000	12000.0000000000	BeforeMCLLaunchWait	This is the time to wait before launching the mirror cover lock task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	743	58	32	54	55
 120000.0000000000	120000.0000000000	BeforeModbusTempControllersLaunchWait	This is the time to wait before launching the Modbus temperature controllers task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1170	58	32	54	55
 6000.0000000000	6000.0000000000	BeforeMPSLaunchWait	This is the time to wait before launching the main power supply task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	851	58	32	54	55
-12000.0000000000	12000.0000000000	BeforeOSSLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1096	58	32	0	0
+25000.0000000000	12000.0000000000	BeforeOSSLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1096	58	32	0	0
 0.0000000000	0.0000000000	BeforeSafetyLaunchWait	This is the time to wait before launching the safety task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	737	58	32	54	55
 15000.0000000000	15000.0000000000	BeforeTECLaunchWait	This is the time to wait before launching the TEC task	ms	DOUBLE	2	1	TMAMainRT	General	0	0	0	1408	58	32	0	0
 		ID String	This is not used for this subsystem, is kept for consistency.		STRING	3	1	TopEndChiller	General	5000	30000	1	1492	46	26	0	0
