@@ -44,7 +44,7 @@ Active Drives	At least one drive is not active	100.Azimuth	120	1	47	AzimuthAxisE
 Active Drives	At least one drive is not active	400.Elevation	420	1	49	ElevationAxisEvents	Warning	LOWER	Limits Active Drives	ActiveDrives	1	0	0	0.3	358	2
 TemperatureTooLow	The temperature is  too low.	1600.AZDT	1602	1	58	AzimuthGroupEvents4	Warning	LOWER	TemperatureDeviationWarning	TemperatureDeviation	1	0	TemperatureDeviationHysteresis	8	388	2
 TemperatureTooLowAzCBT	The temperature of the AZ OS CBT 5001 is too low.	800.OSS	830	1	40	OSSEvents	Warning	LOWER	TemperatureDeviationAlarm	(TMA_AZ_OS_CBT_5001_TT1_PV-MCS_CABINET_TTSP)	1	0	TemperatureDeviationHysteresis	8	382	2
-TemperatureTooLowELCBT1	The temperature of the EL OS CBT 5001 is too low.	800.OSS	831	1	40	OSSEvents	Warning	LOWER	TemperatureDeviationWarning	((TMA_EL_OS_CBT_5001_TT1_PV-MCS_CABINET_TTSP)-TemperatureDeviationHysteresis)<=TemperatureDeviationWarning	1	0	TemperatureDeviationHysteresis	8	406	2
+TemperatureTooLowELCBT1	The temperature of the EL OS CBT 5001 is too low.	800.OSS	831	1	40	OSSEvents	Warning	LOWER	TemperatureDeviationWarning	(TMA_EL_OS_CBT_5001_TT1_PV-MCS_CABINET_TTSP)	1	0	TemperatureDeviationHysteresis	8	406	2
 TemperatureTooLowELCBT2	The temperature of the EL OS CBT 5002 is too low.	800.OSS	831	1	40	OSSEvents	Warning	LOWER	TemperatureDeviationWarning	(TMA_EL_OS_CBT_5002_TT1_PV-MCS_CABINET_TTSP)	1	0	TemperatureDeviationHysteresis	8	407	2
 Overspeed	Overspeed Warning ocurred	100.Azimuth	104	1	47	AzimuthAxisEvents	Warning	NOT EQUAL	0	Speed	1	Limits Overspeed Warning Value	0	0	320	4
 Overspeed	Overspeed Warning ocurred	400.Elevation	404	1	49	ElevationAxisEvents	Warning	NOT EQUAL	0	Speed	1	Limits Overspeed Warning Value	0	0	360	4
