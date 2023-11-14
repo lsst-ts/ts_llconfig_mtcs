@@ -921,21 +921,21 @@ TMA_AZ_PD_CBT_0001	TMA_AZ_PD_CBT_0001	ID String	This is the identifier for the c
 -6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_CBT_0001	0	0	0	1159	73	36	54	55
 400.0000000000	400.0000000000	TemperatureWritableMaxValue	The maximum value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_AZ_PD_CBT_0001	0	0	0	1430	73	36	54	55
 -150.0000000000	-150.0000000000	TemperatureWritableMinValue	The minimum value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_AZ_PD_CBT_0001	0	0	0	1435	73	36	54	55
-10000.0000000000	10000.0000000000	CommandTimeout	The timeout for the received commands.	ms	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1140	74	36	54	55
-1	0	DisableController	This setting is used  to disable the code for this temperature controller. A reboot of the PXI is necessary to apply this setting		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1449	74	36	61	55
-TMA_AZ_PD_TRM_0001	TMA_AZ_PD_TRM_0001	ID String	This is the identifier for the cabinet in string format.		STRING	3	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1124	74	36	54	55
-/c/Configuration/ModbusTemperatureControllers/TMA_AZ_PD_TRM_0001_config.ini	/c/Configuration/ModbusTemperatureControllers/TMA_AZ_PD_TRM_0001_config.ini	ModbusServerConfigFilePath	Path of the configuration file for the modbus server for this instance.		STRING	3	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	1000	60000	1	1110	74	36	54	55
-/c/Configuration/ModbusTemperatureControllers/TMA_AZ_PD_CBT_0001_mapping.txt	/c/Configuration/ModbusTemperatureControllers/TMA_AZ_PD_CBT_0001_mapping.txt	ModbusServerMappingFilePath	Path of the mapping file for the modbus server for this instance.		STRING	3	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	1000	60000	1	1113	74	36	54	55
-0.0000000000	0.0000000000	ResetValue	The value to send over modbus for resetting the controller.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1145	74	36	54	55
-1	1	SendResetValue	This setting defines if the reset command will send the ResetValue setting over modbus for resetting the controller or not. TRUE sends the ResetValue, FALSE does not.		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1167	74	36	54	55
--1.0000000000	-1.0000000000	SetpointOffset	This value is added to the setpoint set to the modbus controller.	degC	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1454	74	36	54	55
-0.1000000000	0.1000000000	TemperatureConversionRead	The conversion used to convert the read data from the modbus to the right data for displaying.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1129	74	36	54	55
-10.0000000000	10.0000000000	TemperatureConversionWrite	The conversion used to convert the command data to send through modbus the right data.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1135	74	36	54	55
-5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1155	74	36	54	55
-2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1150	74	36	54	55
--6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1160	74	36	54	55
-400.0000000000	400.0000000000	TemperatureWritableMaxValue	The maximum value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1431	74	36	54	55
--150.0000000000	-150.0000000000	TemperatureWritableMinValue	The minimum value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1436	74	36	54	55
+10000.0000000000	10000.0000000000	CommandTimeout	The timeout for the received commands.	ms	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1140	74	36	55	55
+0	0	DisableController	This setting is used  to disable the code for this temperature controller. A reboot of the PXI is necessary to apply this setting		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1449	74	36	55	55
+TMA_AZ_PD_TRM_0001	TMA_AZ_PD_TRM_0001	ID String	This is the identifier for the cabinet in string format.		STRING	3	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1124	74	36	55	55
+/c/Configuration/ModbusTemperatureControllers/TMA_AZ_PD_TRM_0001_config.ini	/c/Configuration/ModbusTemperatureControllers/TMA_AZ_PD_TRM_0001_config.ini	ModbusServerConfigFilePath	Path of the configuration file for the modbus server for this instance.		STRING	3	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	1000	60000	1	1110	74	36	55	55
+/c/Configuration/ModbusTemperatureControllers/TMA_AZ_PD_CBT_0001_mapping.txt	/c/Configuration/ModbusTemperatureControllers/TMA_AZ_PD_CBT_0001_mapping.txt	ModbusServerMappingFilePath	Path of the mapping file for the modbus server for this instance.		STRING	3	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	1000	60000	1	1113	74	36	55	55
+0.0000000000	0.0000000000	ResetValue	The value to send over modbus for resetting the controller.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1145	74	36	55	55
+1	1	SendResetValue	This setting defines if the reset command will send the ResetValue setting over modbus for resetting the controller or not. TRUE sends the ResetValue, FALSE does not.		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1167	74	36	55	55
+-1.0000000000	-1.0000000000	SetpointOffset	This value is added to the setpoint set to the modbus controller.	degC	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1454	74	36	55	55
+0.1000000000	0.1000000000	TemperatureConversionRead	The conversion used to convert the read data from the modbus to the right data for displaying.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1129	74	36	55	55
+10.0000000000	10.0000000000	TemperatureConversionWrite	The conversion used to convert the command data to send through modbus the right data.		DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1135	74	36	55	55
+5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1155	74	36	55	55
+2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1150	74	36	55	55
+-6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1160	74	36	55	55
+400.0000000000	400.0000000000	TemperatureWritableMaxValue	The maximum value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1431	74	36	55	55
+-150.0000000000	-150.0000000000	TemperatureWritableMinValue	The minimum value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_AZ_PD_TRM_0001	0	0	0	1436	74	36	55	55
 10000.0000000000	10000.0000000000	CommandTimeout	The timeout for the received commands.	ms	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1141	75	36	55	55
 0	0	DisableController	This setting is used  to disable the code for this temperature controller. A reboot of the PXI is necessary to apply this setting		BOOLEAN	1	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1450	75	36	55	55
 TMA_EL_PD_CBT_0001	TMA_EL_PD_CBT_0001	ID String	This is the identifier for the cabinet in string format.		STRING	3	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0001	0	0	0	1125	75	36	55	55
@@ -966,7 +966,7 @@ TMA_EL_PD_CBT_0002	TMA_EL_PD_CBT_0002	ID String	This is the identifier for the c
 -6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	ModbusTemperatureControllers	TMA_EL_PD_CBT_0002	0	0	0	1162	76	36	54	55
 400.0000000000	400.0000000000	TemperatureWritableMaxValue	The maximum value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_EL_PD_CBT_0002	0	0	0	1433	76	36	54	55
 -150.0000000000	-150.0000000000	TemperatureWritableMinValue	The minimum value for setpoint. This value must be the same as one fixed in the hardware to avoid errors when writing not allowed values		DOUBLE	2	0	ModbusTemperatureControllers	TMA_EL_PD_CBT_0002	0	0	0	1438	76	36	54	55
-1602	1602	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup1	0.1	100	0	1478	64	35	0	0
+1602	1602	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup1	0.1	100	0	1478	64	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0.1	100	0	1064	64	35	55	55
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1002	64	35	55	55
 20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	908	64	35	55	55
@@ -987,7 +987,7 @@ AZDTgroup1	AZDTgroup1	ID String	This is the identifier for the motor group in st
 0	0	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1040	64	35	55	55
 -100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	1041	64	35	55	55
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup1	0	0	0	896	64	35	55	55
-1602	1602	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup2	0.1	100	0	1479	65	35	0	0
+1602	1602	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup2	0.1	100	0	1479	65	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0.1	100	0	1065	65	35	54	55
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1021	65	35	54	55
 20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	909	65	35	54	55
@@ -1008,7 +1008,7 @@ AZDTgroup2	AZDTgroup2	ID String	This is the identifier for the motor group in st
 0	0	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1042	65	35	54	55
 -100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	1045	65	35	54	55
 5	5	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup2	0	0	0	897	65	35	54	55
-1602	1602	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup3	0.1	100	0	1480	66	35	0	0
+1602	1602	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup3	0.1	100	0	1480	66	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0.1	100	0	1066	66	35	54	55
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1022	66	35	54	55
 20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	910	66	35	54	55
@@ -1029,7 +1029,7 @@ AZDTgroup3	AZDTgroup3	ID String	This is the identifier for the motor group in st
 0	0	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1043	66	35	54	55
 -100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	1046	66	35	54	55
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup3	0	0	0	898	66	35	54	55
-1602	1602	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup4	0.1	100	0	1481	67	35	0	0
+1602	1602	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	AzimuthGroup4	0.1	100	0	1481	67	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0.1	100	0	1067	67	35	54	55
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	1023	67	35	54	55
 20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	911	67	35	54	55
@@ -1050,7 +1050,7 @@ AZDTgroup4	AZDTgroup4	ID String	This is the identifier for the motor group in st
 0	0	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	1044	67	35	54	55
 -100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	1047	67	35	54	55
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	AzimuthGroup4	0	0	0	899	67	35	54	55
-1902	1902	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	Cabinet0101	0.1	100	0	1484	70	35	0	0
+1902	1902	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	Cabinet0101	0.1	100	0	1484	70	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0.1	100	0	1074	70	35	54	55
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1078	70	35	54	55
 -20	-20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1079	70	35	54	55
@@ -1071,7 +1071,7 @@ Cabinet0101	Cabinet0101	ID String	This is the identifier for the motor group in 
 50	50	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1092	70	35	54	55
 -50	-50	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1093	70	35	54	55
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	Cabinet0101	0	0	0	1094	70	35	54	55
-1702	1702	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	ElevationGroup1	0.1	100	0	1482	68	35	0	0
+1702	1702	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	ElevationGroup1	0.1	100	0	1482	68	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0.1	100	0	1068	68	35	54	55
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1024	68	35	54	55
 20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	912	68	35	54	55
@@ -1092,7 +1092,7 @@ ELDTgroup1	ELDTgroup1	ID String	This is the identifier for the motor group in st
 0	0	ValveOutputHigh	The highest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1048	68	35	54	55
 -100	-100	ValveOutputLow	The lowest value that the controller can have as an output	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	1051	68	35	54	55
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup1	0	0	0	900	68	35	54	55
-1702	1702	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	ElevationGroup2	0.1	100	0	1483	69	35	0	0
+1702	1702	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	1	MotorThermalControl	ElevationGroup2	0.1	100	0	1483	69	35	0	0
 -1.0000000000	-1.0000000000	AmbientTemperatureOffset	The offset from the ambient temperature	Cdeg	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0.1	100	0	1069	69	35	54	55
 0.0000000000	0.0000000000	Control alpha	Specifies the derivative filter time constant. Increasing this value increases damping action. Alpha can be a value between 0 and 1 or NaN, which specifies no derivative filter is applied		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	1025	69	35	54	55
 20	20	Control Kp	This is the proportional gain value of the temperature controller.		DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	913	69	35	54	55
@@ -1115,24 +1115,24 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	1	MotorThermalControl	ElevationGroup2	0	0	0	901	69	35	54	55
 360000.0000000000	360000.0000000000	TimeForWaitTemperatureStabilization	Time to wait before enabling the temperature faults	ms	DOUBLE	2	0	MotorThermalControl	General	0	50	0	1486	63	35	0	0
 1000.0000000000	1000.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MotorThermalControl	General	0	50	0	1473	63	35	55	55
-830;831;832	830;831;832	AlarmCodesNoFaultTransition	Semicolon separated list of alarm codes that do not make the system go to fault		STRING	3	1	OSS	General	0.1	100	0	1485	49	28	0	0
+830,831,832	830,831,832	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	1	OSS	General	0.1	100	0	1485	49	28	0	0
 5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	OSS	General	0	0	0	1487	49	28	0	0
 2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	1	OSS	General	0	0	0	1488	49	28	0	0
 -6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	OSS	General	0	0	0	1489	49	28	0	0
-300.0000000000	300.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	OSS	General	0	50	0	1474	49	28	54	55
-2000	2000	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	962	50	28	54	55
-2000	2000	coolDownTankTimeout	Timeout for the tank to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	961	50	28	54	55
-		ID String	This is not used for this subsystem, is kept for consistency.		STRING	3	0	OSS	OSS	0	0	0	964	50	28	54	55
-2000.0000000000	2000.0000000000	operationTransitionTimeout	Timeout for the transition between automatic and manual mode, in seconds.	s	DOUBLE	2	1	OSS	OSS	0	0	0	695	50	28	54	55
-2000	2000	powerOffCoolingTimeout	Timeout for the cooling system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	967	50	28	54	55
-2000	2000	powerOffMainPumpTimeout	Timeout for the main pump system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	969	50	28	54	55
-2000	2000	powerOffOilCirculationTimeout	Timeout for the oil circulation system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	970	50	28	54	55
-2000	2000	powerOnCoolingTimeout	Timeout for the cooling system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	958	50	28	54	55
-2000	2000	powerOnMainPumpTimeout	Timeout for the main pump system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	968	50	28	54	55
-2000	2000	powerOnOilCirculationTimeout	Timeout for the oil circulation system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	959	50	28	54	55
-3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	OSS	OSS	0	0	0	965	50	28	54	55
-800.OSS	800.OSS	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	OSS	OSS	0	0	0	963	50	28	54	55
-10.0000000000	10.0000000000	watchdogMaximumTime	Maximum time that the controller will wait without a watchdog signal	s	DOUBLE	2	1	OSS	OSS	0	0	0	1033	50	28	54	55
+300.0000000000	300.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	OSS	General	0	50	0	1474	49	28	55	55
+2000	2000	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	962	50	28	55	55
+2000	2000	coolDownTankTimeout	Timeout for the tank to cool down during the observation sequence	s	DOUBLE	2	1	OSS	OSS	0	0	0	961	50	28	55	55
+		ID String	This is not used for this subsystem, is kept for consistency.		STRING	3	0	OSS	OSS	0	0	0	964	50	28	55	55
+2000.0000000000	2000.0000000000	operationTransitionTimeout	Timeout for the transition between automatic and manual mode, in seconds.	s	DOUBLE	2	1	OSS	OSS	0	0	0	695	50	28	55	55
+2000	2000	powerOffCoolingTimeout	Timeout for the cooling system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	967	50	28	55	55
+2000	2000	powerOffMainPumpTimeout	Timeout for the main pump system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	969	50	28	55	55
+2000	2000	powerOffOilCirculationTimeout	Timeout for the oil circulation system to power off	s	DOUBLE	2	1	OSS	OSS	0	0	0	970	50	28	55	55
+2000	2000	powerOnCoolingTimeout	Timeout for the cooling system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	958	50	28	55	55
+2000	2000	powerOnMainPumpTimeout	Timeout for the main pump system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	968	50	28	55	55
+2000	2000	powerOnOilCirculationTimeout	Timeout for the oil circulation system to power on	s	DOUBLE	2	1	OSS	OSS	0	0	0	959	50	28	55	55
+3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	1	OSS	OSS	0	0	0	965	50	28	55	55
+800.OSS	800.OSS	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	1	OSS	OSS	0	0	0	963	50	28	55	55
+10.0000000000	10.0000000000	watchdogMaximumTime	Maximum time that the controller will wait without a watchdog signal	s	DOUBLE	2	1	OSS	OSS	0	0	0	1033	50	28	55	55
 3.0000000000	3.0000000000	Fault Iterations Safety NoOk	This is a counter used to trigger the Safety NO OK variable as TRUE if the value is greater than the set value.		DOUBLE	2	1	Safety	General	0	0	0	727	57	31	54	55
 1000.0000000000	1000.0000000000	Monitoring Timeout ms	This is the timeout for the monitoring task in the TMA safety code.	ms	DOUBLE	2	1	Safety	General	0	0	0	730	57	31	54	55
 1000.0000000000	1000.0000000000	OverrideCausesTimeout	This is the timeout for executing the override causes command.	ms	DOUBLE	2	1	Safety	General	0	0	0	731	57	31	54	55
