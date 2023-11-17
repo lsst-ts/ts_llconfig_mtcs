@@ -270,7 +270,7 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	DeployablePlatform	General	0	50	0	1464	24	20	54	55
 10.1000000000	10.1000000000	ACW margin	Marin used in azimuth reference calculation with Azimuth Cable Wrap (ACW). The algorithm will use ACW as base value for azimuth and compare it to adapt to ACW value or to set as invalid reference.	deg	DOUBLE	2	0	EncoderSystem	General	1	12	1	1412	27	21	55	55
 2.0000000000	2.0000000000	Azimuth Critical Active Heads	If the number of active heads for azimuth axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	852	27	21	55	55
-10.0000000000	10.0000000000	Azimuth heads reference threshold [i.u]	Maximum error in the reference of azimuth heads		DOUBLE	2	1	EncoderSystem	General	0	0	0	703	27	21	55	55
+10.0000000000	10.0000000000	Azimuth heads reference threshold [i.u]	Maximum error in the reference of azimuth heads		DOUBLE	2	0	EncoderSystem	General	0	0	0	703	27	21	55	55
 0.0100000000	0.0100000000	Azimuth reference margin	If the reference between any head and the mean value of the 4 heads is higher than this value, the encoder reference (homing) will fail.	deg	DOUBLE	2	0	EncoderSystem	General	1	3	0	1490	27	21	0	0
 1243770.000000	1243770.000000	Azimuth Tape Line Count	Number of line counts in the azimuth tape		DOUBLE	2	0	EncoderSystem	General	-2	50	0	393	27	21	55	55
 0.0000000000	0.0000000000	Azimuth Telescope Offset	REBOOT AFTER CHANGING!! This is the offset between telescope zero and encoder tape zero for azimuth. The zero for encoder is the junction of the tape and the zero for telescope is the north orientation	deg	DOUBLE	2	0	EncoderSystem	General	0	10	0	401	27	21	55	55
@@ -279,7 +279,7 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 2000.0000000000	2000.0000000000	CMD timeout clear heads errors	Timeout for  clearing active heads errors	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1101	27	21	55	55
 6000.0000000000	6000.0000000000	CMD timeout power off	Timeout for  powering off axis heads	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1100	27	21	55	55
 10000.0000000000	10000.0000000000	CMD timeout power on	Timeout for  powering on axis heads	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1099	27	21	55	55
-110000.0000000000	110000.0000000000	CMD timeout reboot	Timeout for rebooting EIB hardware	ms	DOUBLE	2	1	EncoderSystem	General	0	0	0	1103	27	21	55	55
+110000.0000000000	110000.0000000000	CMD timeout reboot	Timeout for rebooting EIB hardware	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1103	27	21	55	55
 4000.0000000000	4000.0000000000	CMD timeout reference off	Timeout to stop reference execution	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1098	27	21	55	55
 42000.0000000000	42000.0000000000	CMD timeout reference on	Timeout to perform reference	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1097	27	21	0	0
 2000.0000000000	2000.0000000000	CMD timeout Relative Offset	Timeout to set the relative position offset in the EIB readings	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1250	27	21	55	55
@@ -1171,16 +1171,3 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 1000.000000	1000.000000	Reset pulse time	Time of the reset pulse sent to Top en chiller controller	ms	DOUBLE	2	1	TopEndChiller	General	1000	3000	1	376	46	26	54	55
 2200.TopEndChiller	2200.TopEndChiller	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	TopEndChiller	General	0	0	0	1493	46	26	0	0
 300.0000000000	300.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	TopEndChiller	General	0	50	0	1475	46	26	54	55
-100.0000000000	100.0000000000	AverageSampleLength	This is the sample number used to make the error average to compare it with the MaxAllowedError and finish the slewing movement. This value is used for both the Azimuth and Elevation axes.		DOUBLE	2	0	TrackingTrajectory	General	0	1	0	718	44	24	54	55
-0.0015000000	0.0015000000	Azimuth Slew Threshold	Minimum position change that would consider a tracking command as slewing for azimuth axis	rad/s	DOUBLE	2	0	TrackingTrajectory	General	0	1	0	325	44	24	54	55
-12000.0000000000	12000.0000000000	Command queue size	Size of the queue which receives the LSST commands		DOUBLE	2	0	TrackingTrajectory	General	0	0	0	331	44	24	54	55
-6.5000000000E-5	6.5000000000E-5	Elevation Slew Threshold	Minimum position change that would consider a tracking command as slewing for elevation axis	rad/s	DOUBLE	2	0	TrackingTrajectory	General	0	1	0	714	44	24	54	55
-0.0000000000	0.0000000000	Final motion behaviour	Define how the algorithm works after reaching desired point. 0 for keep velocity and 1 for recalculation		DOUBLE	2	0	TrackingTrajectory	General	0	1	1	329	44	24	54	55
-2.5000000000E-7	2.5000000000E-7	MaxAllowedError	This is the maximum allowed error for the trajectory generation. Is used to stop the slewing movement and start the tracking. This value is used for both azimuth and elevation axes.	rad	DOUBLE	2	0	TrackingTrajectory	General	0	1	0	717	44	24	54	55
-2.0000000000	2.0000000000	Number of Axes	Number of reflexxess axes. DO NOT FORGET SYNCHRONIZATION AXIS. For example for azimuth and elevation axis you need 3 axis.		DOUBLE	2	0	TrackingTrajectory	General	0	0	0	327	44	24	54	55
-C:\\ReflexxesFuncs.dll	C:\\ReflexxesFuncs.dll	Reflexxess dll path	Path in the PXI where the reflexxess dll is stored		STRING	3	0	TrackingTrajectory	General	0	0	0	384	44	24	54	55
-3.0000000000	3.0000000000	Synchronization behaviour	Manage the synchronization of axis when generating trajectory. 3 no synchronization and 1 time synchronization		DOUBLE	2	0	TrackingTrajectory	General	0	5	1	336	44	24	54	55
--0.0020000000	-0.0020000000	Time Setpoint offset	Time to add to setpoint time to adjust the delays. It should at least be one scan engine execution time.	s	DOUBLE	2	0	TrackingTrajectory	General	0.0005	1000	0	335	44	24	54	55
-1000.0000000000	1000.0000000000	Wait for data before error	The trajectory generator waits this time for data before sending an error	ms	DOUBLE	2	0	TrackingTrajectory	General	0	0	0	326	44	24	54	55
-50.0000000000	50.0000000000	Waiting time for setpoint time	Time to sleep the setpoint receiving task before checking again if the setpoint time is the actual time.	us	DOUBLE	2	0	TrackingTrajectory	General	250	1000	1	334	44	24	54	55
-5000.0000000000	5000.0000000000	Waiting time if no data	Time to sleep the setpoint receiving task before checking if new data is available.	us	DOUBLE	2	0	TrackingTrajectory	General	250	10000	1	333	44	24	54	55
