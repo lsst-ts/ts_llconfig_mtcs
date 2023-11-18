@@ -564,7 +564,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 -0.2000000000	-0.1000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Elevation	-0.2	20	0	1284	53	25	57	55
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	0	MainAxis	Elevation	0	0	0	1334	53	25	55	55
 2.2	5.200000	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	0	MainAxis	Elevation	0	0	0	1285	53	25	0	55
-2	5.100000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	0	55
+2.2	5.100000	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	0	55
 0	0	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1287	53	25	55	55
 86.4000000000	86.4000000000	Limits Positive Adjustable Software limit value	Value for Positive adjustable software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Elevation	80	90	0	1288	53	25	55	55
 0	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1290	53	25	0	0
