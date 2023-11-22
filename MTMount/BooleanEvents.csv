@@ -61,33 +61,31 @@ Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	37	B
 Deployable Platform Safety	A safety issue has occurred in the deployable platform module.	1200.DP	1207	2	32	PlatformEvents0	Alarm	EQUAL	1	Safety Switch	1	0	79	1
 Locking Pin Safety	A safety issue has occured in the locking pin module.	1400.LP	1401	2	27	LockingPinEvents0	Alarm	EQUAL	1	Safety Switch	1	0	80	1
 Balancing System Safety	A safety issue has occured in the balancing system module.	1100.BAL	1110	2	33	BalancingEvents0	Alarm	EQUAL	1	Safety Switch	1	0	81	1
-ActionTimeout	Timeout when power on/off or change to remote/local mode	2200.TopEndChiller	2203	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ActionTimeout	1	0	96	1
 CameraFansFailure	The fans of the camera section have a failure	2200.TopEndChiller	2205	2	39	TopEndChiller_Events	Alarm	EQUAL	1	CameraFansFailure	1	0	97	1
 M2FansFailure	The fans of the M2 section have a failure	2200.TopEndChiller	2216	2	39	TopEndChiller_Events	Alarm	EQUAL	1	M2FansFailure	1	0	98	1
-Heat Exchanger 1 Fan Failure	Failure in the fans of the heat exchanber 1	2200.TopEndChiller	2210	2	39	TopEndChiller_Events	Alarm	EQUAL	1	HeatExchangerFansFailure001	1	0	99	1
-Heat Exchanger 2 Fan Failure	Failure in the fans of the heat exchanber 2	2200.TopEndChiller	2211	2	39	TopEndChiller_Events	Alarm	EQUAL	1	HeatExchangerFansFailure002	1	0	100	1
+Heat Exchanger 1 Fan Failure	Failure in the fans of the heat exchanber 1	2200.TopEndChiller	2210	2	39	TopEndChiller_Events	Alarm	EQUAL	1	HeatExchanger1FansFailure	1	0	99	1
+Heat Exchanger 2 Fan Failure	Failure in the fans of the heat exchanber 2	2200.TopEndChiller	2211	2	39	TopEndChiller_Events	Alarm	EQUAL	1	HeatExchanger2FansFailure	1	0	100	1
 0201 3 Way valve Failure	Failure of the 0201 3 way valve	2200.TopEndChiller	2201	2	39	TopEndChiller_Events	Alarm	EQUAL	1	3wayValvesFailure0201	1	0	101	1
 0202 3 Way valve Failure	Failure of the 0202 3 way valve	2200.TopEndChiller	2202	2	39	TopEndChiller_Events	Alarm	EQUAL	1	3wayValvesFailure0202	1	0	102	1
-Electrical Cabinet 1 Control Failure	Failure of the temperature controller in electrical cabinet 1	2200.TopEndChiller	2206	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempControlSystemFailure1	1	0	103	1
-Electrical Cabinet 2 Control Failure	Failure of the temperature controller in electrical cabinet 2	2200.TopEndChiller	2207	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempControlSystemFailure2	1	0	104	1
-Electrical Cabinet 3 Control Failure	Failure of the temperature controller in electrical cabinet 3	2200.TopEndChiller	2208	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempControlSystemFailure3	1	0	105	1
-Electrical Cabinet 4 Control Failure	Failure of the temperature controller in electrical cabinet 4	2200.TopEndChiller	2209	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempControlSystemFailure4	1	0	106	1
-Temperature Alarm Cabinet 1	Alarm temperature for electrical cabinet 1	2200.TopEndChiller	2224	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempAlarm1	1	0	107	1
-Temperature Alarm Cabinet 2	Alarm temperature for electrical cabinet 2	2200.TopEndChiller	2225	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempAlarm2	1	0	108	1
+Electrical Cabinet 1 Control Failure	Failure of the temperature controller in electrical cabinet 1	2200.TopEndChiller	2206	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinet1SystemFailure	0	0	103	1
+Electrical Cabinet 2 Control Failure	Failure of the temperature controller in electrical cabinet 2	2200.TopEndChiller	2207	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinet2SystemFailure	0	0	104	1
+Electrical Cabinet 3 Control Failure	Failure of the temperature controller in electrical cabinet 3	2200.TopEndChiller	2208	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinet3SystemFailure	1	0	105	1
+Electrical Cabinet 4 Control Failure	Failure of the temperature controller in electrical cabinet 4	2200.TopEndChiller	2209	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinet4SystemFailure	0	0	106	1
+Temperature Alarm Cabinet 1	Alarm temperature for electrical cabinet 1	2200.TopEndChiller	2224	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempAlarm1	0	0	107	1
+Temperature Alarm Cabinet 2	Alarm temperature for electrical cabinet 2	2200.TopEndChiller	2225	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempAlarm2	0	0	108	1
 Temperature Alarm Cabinet 3	Alarm temperature for electrical cabinet 3	2200.TopEndChiller	2226	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempAlarm3	1	0	109	1
-Temperature Alarm Cabinet 4	Alarm temperature for electrical cabinet 4	2200.TopEndChiller	2227	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempAlarm4	1	0	110	1
+Temperature Alarm Cabinet 4	Alarm temperature for electrical cabinet 4	2200.TopEndChiller	2227	2	39	TopEndChiller_Events	Alarm	EQUAL	1	ElectricalCabinetTempAlarm4	0	0	110	1
 Temperature 0501	Temperature of the sensor 0501 out of range	2200.TopEndChiller	2218	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Temp0501OutOfRange	1	0	111	1
 Temperature 0502	Temperature of the sensor 0502 out of range	2200.TopEndChiller	2219	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Temp0502OutOfRange	1	0	112	1
-Temperature 0504	Temperature of the sensor 0504 out of range	2200.TopEndChiller	2220	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Temp0504OutOfRange	1	0	113	1
-Temperature 0505	Temperature of the sensor 0505 out of range	2200.TopEndChiller	2221	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Temp0505OutOfRange	1	0	114	1
+Temperature 0504	Temperature of the sensor 0504 out of range	2200.TopEndChiller	2220	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Temp0504OutOfRange	0	0	113	1
+Temperature 0505	Temperature of the sensor 0505 out of range	2200.TopEndChiller	2221	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Temp0505OutOfRange	0	0	114	1
 Temperature 0506	Temperature of the sensor 0506 out of range	2200.TopEndChiller	2222	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Temp0506OutOfRange	1	0	115	1
 Temperature 0507	Temperature of the sensor 0507 out of range	2200.TopEndChiller	2223	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Temp0507OutOfRange	1	0	116	1
 Humidity 0501	Humidity of the sensor 0501 out of range	2200.TopEndChiller	2212	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Humidity0501OutOfRange	1	0	117	1
 Humidity 0502	Humidity of the sensor 0502 out of range	2200.TopEndChiller	2213	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Humidity0502OutOfRange	1	0	118	1
 Humidity 0504	Humidity of the sensor 0504 out of range	2200.TopEndChiller	2214	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Humidity0504OutOfRange	1	0	119	1
 Humidity 0505	Humidity of the sensor 0505 out of range	2200.TopEndChiller	2215	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Humidity0505OutOfRange	1	0	120	1
-PLC Malfunction	The PLC for Top End chiller is working bad	2200.TopEndChiller	2217	2	39	TopEndChiller_Events	Alarm	EQUAL	0	PLCMalfunction	1	0	121	1
-Air Compressed Valve Failure	Failure of the compressed air valve	2200.TopEndChiller	2204	2	39	TopEndChiller_Events	Alarm	EQUAL	0	AirCompressedValveFailure	1	0	122	1
+Air Compressed Valve Failure	Failure of the compressed air valve	2200.TopEndChiller	2204	2	39	TopEndChiller_Events	Alarm	EQUAL	0	AirCompressedValveFailure	0	0	122	1
 Observation Sequence	The OSSs observation sequence returned an alarm	800.OSS	801	2	40	OSSEvents	Alarm	EQUAL	1	Observation Sequence	1	0	123	1
 Cooling System	The OSSs cooling system returned an alarm	800.OSS	802	2	40	OSSEvents	Alarm	EQUAL	1	Cooling System	1	0	124	1
 Main Pump System	The OSSs main pump  system returned an alarm	800.OSS	803	2	40	OSSEvents	Alarm	EQUAL	1	Main Pump System	1	0	125	1
