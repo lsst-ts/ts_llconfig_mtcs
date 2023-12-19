@@ -223,3 +223,5 @@ Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	400.Ele
 Soft Stop	Soft Stop perfomed in the OSS	800.OSS	830	2	40	OSSEvents	Alarm	EQUAL	1	Soft Stop	1	0.3	402	1
 Axis Externally Disabled	The axis was disabled externally without using the enable command.	100.Azimuth	190	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	409	1
 Axis Externally Disabled	The axis was disabled externally without using the enable command.	400.Elevation	490	2	49	ElevationAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	411	1
+Hall Sensor Faulty	The hall sensor is faulty. Problably it is an EtherCAT line issue	100.Azimuth	141	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	HallSensorFaulty	1	0	412	1
+Hall Sensor Faulty	The hall sensor is faulty. Problably it is an EtherCAT line issue	400.Azimuth	441	2	49	ElevationAxisEvents	Alarm	EQUAL	1	HallSensorFaulty	1	0	413	1
