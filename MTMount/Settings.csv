@@ -480,7 +480,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 90	90	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1347	52	25	98	0
 1.0000000000	1.0000000000	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1348	52	25	55	55
 10	10	Softmotion Tracking max acceleration	This acceleration is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1343	52	25	98	0
-42	40	Softmotion Tracking max jerk	This jerk is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	98	0
+40	40	Softmotion Tracking max jerk	This jerk is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	98	0
 7	7	Softmotion Tracking max speed	This jerk is the maximum available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	90	0
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homing process	ms	DOUBLE	2	0	MainAxis	Azimuth	800	20000	1	1223	52	25	55	55
 100.Azimuth	100.Azimuth	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Azimuth	0	0	0	553	52	25	55	55
@@ -555,14 +555,14 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Limits Min Position enable	Minimum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1277	53	25	55	55
 -0.1	-0.1	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	0	MainAxis	Elevation	-1.3	20	1	1278	53	25	0	0
 0	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1279	53	25	104	0
-5.1000000000	15.1000000000	Limits Negative Adjustable Software limit value	Value for Negative adjustable software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Elevation	0	20	0	1280	53	25	98	55
+15.1000000000	15.1000000000	Limits Negative Adjustable Software limit value	Value for Negative adjustable software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Elevation	0	20	0	1280	53	25	98	55
 0	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1282	53	25	104	0
 0	1	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1281	53	25	104	0
 1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1283	53	25	0	55
 -0.2000000000	-0.2000000000	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Elevation	-0.2	20	0	1284	53	25	0	0
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	0	MainAxis	Elevation	0	0	0	1334	53	25	55	55
 5.5	5.5	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	0	MainAxis	Elevation	0	0	0	1285	53	25	0	0
-5.4	5.25	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	98	0
+5.25	5.25	Limits Overspeed Warning Value	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	1	MainAxis	Elevation	0	0	0	1286	53	25	98	0
 0	1	Limits Positive Adjustable Software limit enable	Enable positive adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1287	53	25	104	0
 86.4000000000	86.4000000000	Limits Positive Adjustable Software limit value	Value for Positive adjustable software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Elevation	80	90	0	1288	53	25	55	55
 0	1	Limits Positive Limit Switch enable	Enable positive Limit Switch		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1290	53	25	104	0
@@ -599,8 +599,8 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1001.0000000000	1001.0000000000	Softmotion No received Data Counter Warning Value	Above this number the softmotion driver send a warning. Its time, no new data is received from encoder an internal counter increases its value by 1000, decreasing by 1 each no problem iteration		DOUBLE	2	0	MainAxis	Elevation	4	12	0	416	53	25	55	55
 390.0000000000	390.0000000000	Softmotion Number of Electric Turns	Number of electric turns in for the axis. This is the number of poles		DOUBLE	2	0	MainAxis	Elevation	4	12	0	524	53	25	55	55
 1	1	Softmotion Speed From Position	If true the speed is calculated from position data, otherwise the EIB speed will be used		BOOLEAN	1	0	MainAxis	Elevation	4	12	0	422	53	25	55	55
-90	100	Softmotion Tracking margin acceleration	This acceleration is the margin available acceleration when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1351	53	25	98	55
-90	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1352	53	25	98	55
+100	100	Softmotion Tracking margin acceleration	This acceleration is the margin available acceleration when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1351	53	25	98	55
+100	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1352	53	25	98	55
 1.0000000000	1.0000000000	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1353	53	25	55	55
 5	5	Softmotion Tracking max acceleration	This acceleration is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1354	53	25	99	0
 20	20	Softmotion Tracking max jerk	This jerk is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	25	1	1355	53	25	99	0
@@ -610,9 +610,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 5	5	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	99	0
 20	20	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	0	0
 5	5	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	99	0
-5.5	5.25	TCS Max Acceleration	Maximum allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	98	0
+5.25	5.25	TCS Max Acceleration	Maximum allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	98	0
 21	21	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	99	0
-5.5	5.25	TCS Max Velocity	Maximum allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	98	0
+5.25	5.25	TCS Max Velocity	Maximum allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	98	0
 1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1307	53	25	55	55
 2000.000000	2000.000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1308	53	25	55	55
 200.0000000000	200.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1310	53	25	55	55
