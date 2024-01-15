@@ -23,7 +23,6 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 10000.0000000000	10000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	0	Balancing	Balancing1	1	7	0	199	37	22	54	55
 1	1	Positive Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	Balancing	Balancing1	0	0	0	890	37	22	54	55
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	205	37	22	54	55
-0.0000000000	0.0000000000	SlewThreshold	Deprecated, not in use, but kept to prevent errors.		DOUBLE	2	0	Balancing	Balancing1	0	0	0	206	37	22	54	55
 31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing1	0.01	40	1	820	37	22	54	55
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	202	37	22	54	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	203	37	22	54	55
@@ -48,7 +47,6 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 10000.000000	10000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	0	Balancing	Balancing2	1	7	0	223	38	22	54	55
 1	1	Positive Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	Balancing	Balancing2	0	0	0	891	38	22	54	55
 3000.000000	3000.000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	0	Balancing	Balancing2	0	0	0	224	38	22	54	55
-0.000000	0.000000	SlewThreshold	Deprecated, not in use, but kept to prevent errors.		DOUBLE	2	0	Balancing	Balancing2	0	0	0	225	38	22	54	55
 31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing2	0.01	50	1	821	38	22	54	55
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing2	0	0	0	226	38	22	54	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing2	0	0	0	227	38	22	54	55
@@ -73,7 +71,6 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 10000.000000	10000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	0	Balancing	Balancing3	1	7	0	237	39	22	55	55
 1	1	Positive Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	Balancing	Balancing3	0	0	0	892	39	22	55	55
 3000.000000	3000.000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	0	Balancing	Balancing3	0	0	0	238	39	22	55	55
-0.000000	0.000000	SlewThreshold	Deprecated, not in use, but kept to prevent errors.		DOUBLE	2	0	Balancing	Balancing3	0	0	0	239	39	22	55	55
 31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing3	0.01	50	1	822	39	22	55	55
 3000.000000	3000.000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing3	0	0	0	240	39	22	55	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing3	0	0	0	241	39	22	55	55
@@ -98,7 +95,6 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 10000.000000	10000.000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	0	Balancing	Balancing4	1	7	0	251	40	22	54	55
 1	1	Positive Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	Balancing	Balancing4	0	0	0	893	40	22	54	55
 3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	0	Balancing	Balancing4	0	0	0	252	40	22	54	55
-0.000000	0.000000	SlewThreshold	Deprecated, not in use, but kept to prevent errors.		DOUBLE	2	0	Balancing	Balancing4	0	0	0	253	40	22	54	55
 31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing4	0.01	40	1	823	40	22	54	55
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing4	0	0	0	254	40	22	54	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing4	0	0	0	255	40	22	54	55
@@ -1166,9 +1162,5 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 25000.0000000000	25000.0000000000	BeforeOSSLaunchWait	This is the time to wait before launching the deployable platform task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1096	58	32	0	0
 0.0000000000	0.0000000000	BeforeSafetyLaunchWait	This is the time to wait before launching the safety task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	737	58	32	54	55
 15000.0000000000	15000.0000000000	BeforeTECLaunchWait	This is the time to wait before launching the TEC task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1408	58	32	0	0
-		ID String	This is not used for this subsystem, is kept for consistency.		STRING	3	1	TopEndChiller	General	5000	30000	1	1492	46	26	0	0
-10000.000000	10000.000000	LocalRemote timeout	After this time the Top End chiller checking for local remote change will send a timeout error	ms	DOUBLE	2	1	TopEndChiller	General	5000	30000	1	377	46	26	54	55
-10000.000000	10000.000000	Power ON/OFF timeout	After this time the Top End chiller checking for power on or off will send a timeout error	ms	DOUBLE	2	1	TopEndChiller	General	5000	30000	1	375	46	26	54	55
-1000.0000000000	1000.0000000000	Reset pulse time	Time of the reset pulse sent to Top end chiller controller	ms	DOUBLE	2	1	TopEndChiller	General	1000	3000	1	376	46	26	54	55
+		ID String	This is not used for this subsystem, is kept for consistency.		STRING	3	0	TopEndChiller	General	5000	30000	1	1492	46	26	0	0
 2200.TopEndChiller	2200.TopEndChiller	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	TopEndChiller	General	0	0	0	1493	46	26	0	0
-300.0000000000	300.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	TopEndChiller	General	0	50	0	1475	46	26	54	55
