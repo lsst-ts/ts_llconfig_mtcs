@@ -431,7 +431,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 -185	-185	Limits Negative Adjustable Software limit value	Value for Negative adjustable software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Azimuth	Limits Negative Software limit value	0	1	1245	52	25	0	0
 1	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1178	52	25	0	0
 1	1	Limits Negative Operational Limit Switch enable	Enable negative Operational limit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1249	52	25	84	0
-1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	55	55
+1	1	Limits Negative Software limit enable	Enable negative software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	624	52	25	0	55
 -185	-185	Limits Negative Software limit value	Value for negative software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Azimuth	-275	0	1	625	52	25	0	0
 1	1	Limits Overspeed enable	Enable the overspeed limit, does not affect the warning.	deg/s	BOOLEAN	1	0	MainAxis	Azimuth	0	0	0	1328	52	25	97	55
 10.2	10.2	Limits Overspeed Value	If this speed value is overcomed an the critical speed limit alarm will be triggered.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	0	10.2	1	706	52	25	0	0
@@ -442,7 +442,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Limits Positive Operational Limit Switch enable	Enable positive Operational imit switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1248	52	25	84	0
 1	1	Limits Positive Software limit enable	Enable positive software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	626	52	25	0	55
 185	185	Limits Positive Software limit value	Value for Positive software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Azimuth	0	275	1	627	52	25	0	0
-1	1	Limits Softmotion Negative Software limit enable	Enable positive software limit in softmotion. Bellow this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1359	52	25	55	55
+1	1	Limits Softmotion Negative Software limit enable	Enable positive software limit in softmotion. Bellow this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1359	52	25	0	55
 -275.0000000000	-275.0000000000	Limits Softmotion Negative Software limit value	Value for softmotion Positive software limit. \nBellow this limit the axis does not allow any movement. This limit must allow all desired movements, also maintenance movements to safety limits	deg	DOUBLE	2	0	MainAxis	Azimuth	-290	-200	1	1361	52	25	55	55
 1	1	Limits Softmotion Positive Software limit enable	Enable positive software limit in softmotion. Over this limit the axis does not allow any movement.		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1357	52	25	55	55
 275.0000000000	275.0000000000	Limits Softmotion Positive Software limit value	Value for softmotion Positive software limit. \nOver this limit the axis does not allow any movement. This limit must allow all desired movements, also maintenance movements to safety limits	deg	DOUBLE	2	0	MainAxis	Azimuth	200	275	1	1358	52	25	55	55
