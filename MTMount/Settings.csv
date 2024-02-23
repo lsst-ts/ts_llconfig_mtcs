@@ -416,7 +416,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.0000000000	1.0000000000	Homing Jerk	Jerk for Homing procedure	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	5	1	689	52	25	55	55
 0.0000000000	0.0000000000	Homing Position Direction	If the actual position is higher than the value in this setting the homing will be performed in negative direction. Otherwise positive direction homing will be done	deg	DOUBLE	2	0	MainAxis	Azimuth	300	1500	0	1460	52	25	55	55
 0.1000000000	0.1000000000	Homing Speed	Speed for Homing procedure	deg/s	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.2	1	683	52	25	55	55
-0.0100000000	0.0100000000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	1	MainAxis	Azimuth	4	12	0	1060	52	25	55	55
+0.0010000000	0.0010000000	In Position Margin	This is not used!	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1510	52	25	0	0
 16.0000000000	16.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Azimuth	15	16	1	1231	52	25	55	55
 5.0000000000	5.0000000000	Limits AZCW Critical Deviation Value	Maximum allowed deviation between AZCW and AZ verification value. If this value is overcomed an alarm will be generated in azimuth		DOUBLE	2	0	MainAxis	Azimuth	0.1	28	0	1229	52	25	55	55
 0	0	Limits AZCW Deviation Enable	Maximum allowed deviation between AZCW and AZ verification is enabled		BOOLEAN	1	0	MainAxis	Azimuth	0.1	28	1	1228	52	25	55	55
@@ -542,13 +542,13 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 45.0000000000	45.0000000000	Homing Position Direction	If the actual position is higher than the value in this setting the homing will be performed in negative direction. Otherwise positive direction homing will be done	deg	DOUBLE	2	0	MainAxis	Elevation	300	1500	0	1461	53	25	55	55
 0.1000000000	0.1000000000	Homing Speed	Speed for Homing procedure	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	0.2	1	1270	53	25	55	55
 1	1	Homing Start in Positive Direction	If True the start direction will be positive one, otherwise it will try in negative direction first		BOOLEAN	1	0	MainAxis	Elevation	0.01	0.2	1	1271	53	25	55	55
-0.010000	0.010000	In Position Margin	This value is used to send the in position event	deg	DOUBLE	2	1	MainAxis	Elevation	4	12	0	1272	53	25	55	55
+0.0010000000	0.0010000000	In Position Margin	This is not used!	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1511	53	25	0	0
 12.0000000000	12.0000000000	Limits Active Drives	Bellow this value the system will send a warning		DOUBLE	2	0	MainAxis	Elevation	15	16	1	1273	53	25	55	55
 1	1	Limits Following Error enable	Enable the following error		BOOLEAN	1	0	MainAxis	Elevation	0	0	0	1332	53	25	55	55
 1	1	Limits Following Error Value	Set the maximum allowed following error	deg	DOUBLE	2	0	MainAxis	Elevation	0	0	0	1331	53	25	55	55
 1	1	Limits Max Position enable	Maximum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1275	53	25	0	0
 90.1	90.1	Limits Max Position value	Maximum allowed position command	deg	DOUBLE	2	0	MainAxis	Elevation	80	91.3	1	1276	53	25	0	0
-1	1	Limits Min Position enable	Minimum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1277	53	25	55	55
+1	1	Limits Min Position enable	Minimum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1277	53	25	0	55
 -0.1	-0.1	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	0	MainAxis	Elevation	-1.3	20	1	1278	53	25	0	0
 0	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Elevation	0.1	28	1	1279	53	25	104	0
 15.1000000000	15.1000000000	Limits Negative Adjustable Software limit value	Value for Negative adjustable software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Elevation	0	20	0	1280	53	25	99	55
