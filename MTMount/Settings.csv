@@ -403,9 +403,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	0	0
 4	4	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	0	0
 1	1	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	0	0
-1.1	1.1	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	109	0
-4.4	4.4	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	109	0
-1.1	1.1	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	109	0
+1.1	1.1	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	110	0
+4.4	4.4	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	110	0
+1.1	1.1	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	110	0
 1	1	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	0	0
 4	4	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	638	52	25	0	0
 1	1	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	0	0
@@ -527,9 +527,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.5	0.5	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	0	0
 2	2	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	0	0
 0.5	0.5	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	0	0
-0.6	0.6	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	109	0
-2.5	2.5	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	109	0
-0.6	0.6	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	109	0
+0.6	0.6	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	110	0
+2.5	2.5	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	110	0
+0.6	0.6	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	110	0
 0.5	0.5	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	0	0
 2	2	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	0	0
 0.5	0.5	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	0	0
@@ -1142,6 +1142,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 5200.0000000000	5200.0000000000	ResetCausesTimeout	This is the timeout for executing the reset causes command.	ms	DOUBLE	2	0	Safety	General	0	0	0	732	57	31	54	55
 500.0000000000	500.0000000000	RT to Safety Clock ms	This is the RT to safety clock time value.	ms	DOUBLE	2	0	Safety	General	0	0	0	729	57	31	54	55
 3000.0000000000	3000.0000000000	Safety Clock ms	This is the safety clock time value.	ms	DOUBLE	2	0	Safety	General	0	0	0	728	57	31	54	55
+0	0	FalseSetting	Just for Testing. Delete it		BOOLEAN	1	1	Telemetry	TelemetryTask	0	1300	1	1515	80	38	0	0
 400.0000000000	400.0000000000	AfterCommanderLaunchWait	This is the time to wait after launching the commander	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	736	58	32	54	55
 10000.0000000000	10000.0000000000	BeforeAmbientTemperatureTaskLaunchWait	This is the time to wait before launching the Ambient Temperature task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	1402	58	32	54	55
 8500.0000000000	8500.0000000000	BeforeAZMotorThermalLaunchWait	This is the time to wait before launching the azimuth motor thermal control task	ms	DOUBLE	2	0	TMAMainRT	General	0	0	0	746	58	32	0	0

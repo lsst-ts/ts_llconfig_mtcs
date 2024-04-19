@@ -225,3 +225,4 @@ Axis Externally Disabled	The axis was disabled externally without using the enab
 Axis Externally Disabled	The axis was disabled externally without using the enable command.	400.Elevation	490	2	49	ElevationAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	411	1
 Hall Sensor Faulty	The hall sensor is faulty. Problably it is an EtherCAT line issue	100.Azimuth	141	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	HallSensorFaulty	1	0	412	1
 Hall Sensor Faulty	The hall sensor is faulty. Problably it is an EtherCAT line issue	400.Azimuth	441	2	49	ElevationAxisEvents	Alarm	EQUAL	1	HallSensorFaulty	1	0	413	1
+Capacitor Cabinet1 fuses	The negative Operational limit switch has been reached by axis	2800.Telemetry	2801	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FalseSetting	0	0	414	1
