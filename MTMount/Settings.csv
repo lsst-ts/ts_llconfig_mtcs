@@ -403,9 +403,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	0	0
 4	4	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	0	0
 1	1	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	0	0
-1.1	1.1	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	110	0
-4.4	4.4	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	110	0
-1.1	1.1	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	110	0
+1.1	1.1	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	109	0
+4.4	4.4	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	109	0
+1.1	1.1	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	109	0
 1	1	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	0	0
 4	4	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	638	52	25	0	0
 1	1	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	0	0
@@ -463,7 +463,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	712	52	25	55	55
 10	10	Softmotion max acceleration	This acceleration is the maximum available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1371	52	25	99	0
 40	40	Softmotion max jerk	This jerk is the maximum available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1372	52	25	99	0
-7	7	Softmotion max speed	This speed is the maximum available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	90	0
+7	7	Softmotion max speed	This speed is the maximum available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	100	0
 118000.0000000000	118000.0000000000	Softmotion Maximum Torque Per Drive	The maximum allowed torque per drive. The system will not allow that command to each drive goes over this value	Nm	DOUBLE	2	0	MainAxis	Azimuth	6000	118000	1	600	52	25	55	55
 8.0000000000	8.0000000000	Softmotion Minimun drives for no fault	Bellow this limit the axis will be in fault		DOUBLE	2	0	MainAxis	Azimuth	1	16	1	413	52	25	55	55
 1.0000000000	1.0000000000	Softmotion Necessary Hall Sensors	If the number of active hall sensors is bellow this value and alarm will be triggered in the axis. This number should be 1 for Azimuth and 2 for elevation. \nAs an exception, it can be used 1 in elevation if one hall sensor is faulty, but all the motors th		DOUBLE	2	0	MainAxis	Azimuth	1	1	1	1506	52	25	0	0
@@ -476,12 +476,12 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.0000000000	1.0000000000	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1348	52	25	55	55
 10	10	Softmotion Tracking max acceleration	This acceleration is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1343	52	25	99	0
 40	40	Softmotion Tracking max jerk	This jerk is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	99	0
-7	7	Softmotion Tracking max speed	This jerk is the maximum available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	90	0
+7	7	Softmotion Tracking max speed	This jerk is the maximum available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	100	0
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homing process	ms	DOUBLE	2	0	MainAxis	Azimuth	800	20000	1	1223	52	25	55	55
 100.Azimuth	100.Azimuth	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Azimuth	0	0	0	553	52	25	55	55
 10	10	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.000000001	10.5	1	612	52	25	99	0
 40	40	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	99	0
-7	7	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	90	0
+7	7	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	0	0
 10.5	10.5	TCS Max Acceleration	Maximum allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	614	52	25	99	0
 42	42	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	99	0
 8	8	TCS Max Velocity	Maximum allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	615	52	25	99	0
@@ -527,9 +527,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.5	0.5	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1255	53	25	0	0
 2	2	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1256	53	25	0	0
 0.5	0.5	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5	1	1257	53	25	0	0
-0.6	0.6	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	110	0
-2.5	2.5	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	110	0
-0.6	0.6	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	110	0
+0.6	0.6	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	109	0
+2.5	2.5	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	109	0
+0.6	0.6	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	109	0
 0.5	0.5	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	0	0
 2	2	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	0	0
 0.5	0.5	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	0	0
