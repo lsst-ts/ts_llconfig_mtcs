@@ -204,7 +204,7 @@ CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.Modbu
 ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	304	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	306	1
 ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	307	1
-CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	291	1
+CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	0	0	291	1
 ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	308	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	CabinetOK	1	0	292	1
 ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	ConnectionOK	1	0	309	1
