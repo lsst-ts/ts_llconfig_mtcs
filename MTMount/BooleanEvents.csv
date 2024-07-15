@@ -190,14 +190,14 @@ Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off 
 Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1200.DP	1270	2	32	PlatformEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	395	1
 Critical Speed Limit	This event triggers if the parameter "Platform Max Critical Velocity" is exceeded.	1200.DP	1201	2	25	PlatformEvents1	Alarm	EQUAL	1	(Velocity1>Platform Max Critical Velocity)||(Velocity2>Platform Max Critical Velocity)	1	0	52	1
 Critical Speed Limit	This event triggers if the parameter "Platform Max Critical Velocity" is exceeded.	1200.DP	1201	2	26	PlatformEvents2	Alarm	EQUAL	1	(Velocity1>Platform Max Critical Velocity)||(Velocity2>Platform Max Critical Velocity)	1	0	53	1
-Capacitor Cabinet1 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2801	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 1	0	0	414	1
-Capacitor Cabinet2 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2802	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 2	0	0	422	1
-Capacitor Cabinet3 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2803	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 3	0	0	423	1
-Capacitor Cabinet4 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2804	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 4	0	0	424	1
-Capacitor Cabinet5 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2805	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 5	0	0	425	1
-Capacitor Cabinet6 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2806	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 6	0	0	426	1
-Capacitor Cabinet7 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2807	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 7	0	0	427	1
-Capacitor Cabinet8 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2808	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 8	0	0	428	1
+Capacitor Cabinet1 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2801	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 1	1	0	414	1
+Capacitor Cabinet2 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2802	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 2	1	0	422	1
+Capacitor Cabinet3 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2803	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 3	1	0	423	1
+Capacitor Cabinet4 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2804	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 4	1	0	424	1
+Capacitor Cabinet5 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2805	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 5	1	0	425	1
+Capacitor Cabinet6 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2806	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 6	1	0	426	1
+Capacitor Cabinet7 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2807	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 7	1	0	427	1
+Capacitor Cabinet8 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2808	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 8	1	0	428	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	0	0	288	1
 ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	303	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	289	1
