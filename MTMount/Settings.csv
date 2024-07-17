@@ -1113,9 +1113,9 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 5.0000000000	5.0000000000	ValveValidBand	This is the band at which the valve will tell that is in position.	%	DOUBLE	2	0	MotorThermalControl	ElevationGroup2	0	0	0	901	69	35	54	55
 360000.0000000000	360000.0000000000	TimeForWaitTemperatureStabilization	Time to wait before enabling the temperature faults	ms	DOUBLE	2	0	MotorThermalControl	General	0	50	0	1486	63	35	0	0
 1000.0000000000	1000.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MotorThermalControl	General	0	50	0	1473	63	35	55	55
-833,834,835	833,834,835	AlarmCodesForLevelActivatedInEnable	Coma separated list of alarm codes that do are activated when the system is on enable		STRING	3	0	OSS	General	0.1	100	0	1513	49	28	0	0
-831,832	831,832	AlarmCodesForLevelActivatedInPowering	Coma separated list of alarm codes that do are activated when the system starts poweirng on		STRING	3	0	OSS	General	0.1	100	0	1514	49	28	0	0
-830,831,832	830,831,832	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	0	OSS	General	0.1	100	0	1485	49	28	0	0
+850,851,852,853	850,851,852,853	AlarmCodesForLevelActivatedInEnable	Coma separated list of alarm codes that do are activated when the system is on enable		STRING	3	0	OSS	General	0.1	100	0	1513	49	28	0	0
+854,855	854,855	AlarmCodesForLevelActivatedInPowering	Coma separated list of alarm codes that do are activated when the system starts poweirng on		STRING	3	0	OSS	General	0.1	100	0	1514	49	28	0	0
+840,841,842	840,841,842	AlarmCodesNoFaultTransition	Coma separated list of alarm codes that do not make the system go to fault		STRING	3	0	OSS	General	0.1	100	0	1485	49	28	0	0
 5.0000000000	5.0000000000	TemperatureDeviationAlarm	This is the temperature difference at which a TemperatureTooHigh alarm is sent, the difference must be positive for being an overtemperature.	Cdeg	DOUBLE	2	1	OSS	General	0	0	0	1487	49	28	0	0
 2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	0	OSS	General	0	0	0	1488	49	28	0	0
 -6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	OSS	General	0	0	0	1489	49	28	0	0
