@@ -792,8 +792,8 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 -0.3	-0.3	Retracted Position	The retracted position.	deg	DOUBLE	2	0	MirrorCover	MC4	-5	136	1	841	18	19	55	55
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	MirrorCover	MC4	0	0	0	494	18	19	55	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	MirrorCover	MC4	0	0	0	495	18	19	55	55
-1500.MC	1500.MC	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MirrorCoverLocks	General	1	7	0	527	56	30	54	55
-200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MirrorCoverLocks	General	0	50	0	1471	56	30	54	55
+1500.MC	1500.MC	SystemSource	This is the identifier for the system used when publishing the Alarm source.		STRING	3	0	MirrorCoverLocks	General	1	7	0	527	56	30	55	55
+200.0000000000	200.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	MirrorCoverLocks	General	0	50	0	1471	56	30	55	55
 50.000000	50.000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL1	0	9	0	84	19	30	54	55
 0	0	DisableColisionCheck	WARNING! This setting is used to disable the collision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	0	MirrorCoverLocks	MCL1	0	136	1	1398	19	30	0	55
 1500	1500	Error ID	Error id of the current instance.		STRING	3	0	MirrorCoverLocks	MCL1	1	7	0	92	19	30	54	55
@@ -844,31 +844,31 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	MirrorCoverLocks	MCL2	0	0	0	509	20	30	54	55
 174	174	Unlocked Position	The unlocked position.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL2	-5	180	1	858	20	30	54	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	MirrorCoverLocks	MCL2	0	0	0	510	20	30	54	55
-50.0000000000	50.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	9	0	86	21	30	54	55
-0	0	DisableColisionCheck	WARNING! This setting is used to disable the collision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	0	MirrorCoverLocks	MCL3	0	136	1	1400	21	30	54	55
-1500	1500	Error ID	Error id of the current instance.		STRING	3	0	MirrorCoverLocks	MCL3	1	7	0	94	21	30	54	55
-MCL X-	MCL X-	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCoverLocks	MCL3	1	7	0	462	21	30	54	55
-MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separated by ",").		STRING	3	0	MirrorCoverLocks	MCL3	1	7	0	577	21	30	54	55
-5	5	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	-5	140	0	832	21	30	54	55
-20.0000000000	20.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	50	1	867	21	30	54	55
-5.5	5.5	Locked Position	The locked position.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	-5	136	0	863	21	30	54	55
-173.0000000000	173.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	190	1	43	21	30	54	55
-50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	880	21	30	54	55
-3.000000	3.000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	136	1	110	21	30	54	55
-180.0000000000	180.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	500	1	51	21	30	54	55
-180.000000	180.000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	500	1	60	21	30	54	55
-6	6	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCoverLocks	MCL3	1	7	0	102	21	30	54	55
-360.0000000000	360.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	900	1	69	21	30	54	55
-48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	50	1	78	21	30	54	55
-45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0.1	50	1	35	21	30	54	55
--1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	511	21	30	54	55
-150.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	512	21	30	54	55
-3000.0000000000	3000.0000000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	513	21	30	54	55
-3000.0000000000	3000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	1	7	0	514	21	30	54	55
-3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	649	21	30	54	55
-3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	515	21	30	54	55
-172	172	Unlocked Position	The unlocked position.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	-5	180	1	859	21	30	54	55
-100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	516	21	30	54	55
+50.0000000000	50.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	9	0	86	21	30	55	55
+0	0	DisableColisionCheck	WARNING! This setting is used to disable the collision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	0	MirrorCoverLocks	MCL3	0	136	1	1400	21	30	55	55
+1500	1500	Error ID	Error id of the current instance.		STRING	3	0	MirrorCoverLocks	MCL3	1	7	0	94	21	30	55	55
+MCL X-	MCL X-	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCoverLocks	MCL3	1	7	0	462	21	30	55	55
+MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify the ID Strings to search when guard executed. (separated by ",").		STRING	3	0	MirrorCoverLocks	MCL3	1	7	0	577	21	30	55	55
+5	5	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	-5	140	0	832	21	30	55	55
+20.0000000000	20.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	50	1	867	21	30	55	55
+5.5	5.5	Locked Position	The locked position.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	-5	136	0	863	21	30	55	55
+173.0000000000	173.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	190	1	43	21	30	55	55
+50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	880	21	30	55	55
+3.000000	3.000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	136	1	110	21	30	55	55
+180.0000000000	180.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	500	1	51	21	30	55	55
+180.000000	180.000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	500	1	60	21	30	55	55
+6	6	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCoverLocks	MCL3	1	7	0	102	21	30	55	55
+360.0000000000	360.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	900	1	69	21	30	55	55
+48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	50	1	78	21	30	55	55
+45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0.1	50	1	35	21	30	55	55
+-1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	511	21	30	55	55
+150.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	512	21	30	55	55
+3000.0000000000	3000.0000000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	513	21	30	55	55
+3000.0000000000	3000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	1	7	0	514	21	30	55	55
+3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	649	21	30	55	55
+3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	515	21	30	55	55
+172	172	Unlocked Position	The unlocked position.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	-5	180	1	859	21	30	55	55
+100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	516	21	30	55	55
 50.0000000000	50.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL4	0	9	0	87	22	30	54	55
 0	0	DisableColisionCheck	WARNING! This setting is used to disable the collision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	0	MirrorCoverLocks	MCL4	0	136	1	1401	22	30	54	55
 1500	1500	Error ID	Error id of the current instance.		STRING	3	0	MirrorCoverLocks	MCL4	1	7	0	95	22	30	54	55
