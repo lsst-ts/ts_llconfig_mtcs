@@ -400,18 +400,18 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.0020000000	0.0020000000	Control Speed FeedForward Activation Variation	The speed feedforward gain will increase this value every iteration until the required value in Control Speed FeedForward setting is achieved. Decrease of the value will be made next iteration and this setting has no effect.		DOUBLE	2	0	MainAxis	Azimuth	0.0001	0.1	0	1417	52	25	55	55
 100	100	Control Speed FeedForward Gain	Controller Speed feedforward gain	%	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	654	52	25	55	55
 0.1000000000	0.1000000000	Control Ti (Integral time)	Integral time for the controller	s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	653	52	25	55	55
-0.1	0.1	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	0	0
+0.5	0.1	EUI Default Acceleration	Default acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	556	52	25	0	0
 0.4	0.4	EUI Default Jerk	Default Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	620	52	25	0	0
-0.1	0.1	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	0	0
+0.5	0.1	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	0	0
 0.15	0.15	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	0	0
 0.5	0.5	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	0	0
-0.15	0.15	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	0	0
-0.1	0.1	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	0	0
+0.55	0.15	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	0	0
+0.5	0.1	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	0	0
 0.4	0.4	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	638	52	25	0	0
-0.1	0.1	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	0	0
-0.15	0.15	HHD Max Acceleration	Maximum allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	548	52	25	0	0
+0.5	0.1	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	0	0
+0.25	0.15	HHD Max Acceleration	Maximum allowed acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	548	52	25	0	0
 0.5	0.5	HHD Max Jerk	Maximum Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	639	52	25	0	0
-0.15	0.15	HHD Max Velocity	Maximum allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	543	52	25	0	0
+0.55	0.15	HHD Max Velocity	Maximum allowed velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	543	52	25	0	0
 0.1000000000	0.1000000000	Homing Acceleration	Acceleration for Homing procedure	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.5	1	687	52	25	55	55
 0.4	0.4	Homing Jerk	Jerk for Homing procedure	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	5	1	689	52	25	0	0
 0.0000000000	0.0000000000	Homing Position Direction	If the actual position is higher than the value in this setting the homing will be performed in negative direction. Otherwise positive direction homing will be done	deg	DOUBLE	2	0	MainAxis	Azimuth	300	1500	0	1460	52	25	55	55
