@@ -1128,7 +1128,7 @@ ELDTgroup2	ELDTgroup2	ID String	This is the identifier for the motor group in st
 2.0000000000	2.0000000000	TemperatureDeviationHysteresis	This is the temperature hysteresis for temperature deviation alarm and warning.	Cdeg	DOUBLE	2	0	OSS	General	0	0	0	1488	49	28	0	0
 -6.0000000000	-6.0000000000	TemperatureDeviationWarning	This is the temperature difference at which a TemperatureTooLow warning is sent, the difference must be negative for being an under temperature.	Cdeg	DOUBLE	2	1	OSS	General	0	0	0	1489	49	28	0	0
 300.0000000000	300.0000000000	TimeToCheckActiveAlarms	TimeToCheckActiveAlarms	ms	DOUBLE	2	0	OSS	General	0	50	0	1474	49	28	55	55
-2000.0000000000	2000.0000000000	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	0	OSS	OSS	0	0	0	962	50	28	55	55
+2000.0000000000	2000.0000000000	coolDownBearingsTimeout	Timeout for the bearings to cool down during the observation sequence	s	DOUBLE	2	0	OSS	OSS	0	0	0	962	50	28	0	55
 2000.0000000000	2000.0000000000	coolDownTankTimeout	Timeout for the tank to cool down during the observation sequence	s	DOUBLE	2	0	OSS	OSS	0	0	0	961	50	28	55	55
 10.0000000000	10.0000000000	EnabledLevelVariationHysteresis	Hysteris for the enabled level variation events	mm	DOUBLE	2	1	OSS	OSS	0	0	0	1525	50	28	0	0
 20.0000000000	20.0000000000	EnabledLevelVariationWarning1	Maximum allowed variation of the level when the OSS is enabled before tirggering a startup	mm	DOUBLE	2	1	OSS	OSS	0	0	0	1522	50	28	0	0
