@@ -424,7 +424,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.5000000000	1.5000000000	Limits Following Error Value	Set the maximum allowed following error	deg	DOUBLE	2	0	MainAxis	Azimuth	1.2	3	1	710	52	25	55	55
 1	1	Limits Max Position enable	Maximum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1181	52	25	55	55
 182	182	Limits Max Position value	Maximum allowed position command	deg	DOUBLE	2	0	MainAxis	Azimuth	0	272	1	1179	52	25	0	0
-1	1	Limits Min Position enable	Minimum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	55	55
+1	1	Limits Min Position enable	Minimum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	0	55
 -182	-182	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	0	MainAxis	Azimuth	-272	0	1	1180	52	25	0	0
 1	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	55	55
 -185	-185	Limits Negative Adjustable Software limit value	Value for Negative adjustable software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Azimuth	Limits Negative Software limit value	0	1	1245	52	25	0	0
