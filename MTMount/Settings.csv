@@ -153,7 +153,7 @@ c:\\Configuration\\ACWData.ini	c:\\Configuration\\ACWData.ini	Motor timer file p
 5000.0000000000	5000.0000000000	OffTrans_Timeout	Timeout time to switch off the system	ms	DOUBLE	2	0	CW	ACW	0	0	0	1204	60	33	55	55
 10000.0000000000	10000.0000000000	OnTrans_Timeout	Timeout time to switch on the system	ms	DOUBLE	2	0	CW	ACW	0	0	0	1205	60	33	55	55
 360.0000000000	360.0000000000	Position Offset	This is the offset added to the position of the CW, it is used both for the telemetry sent by the bosch task as well as the commands sent by the statechart. This setting is updated only after a reboot of the TMA-PXI.	deg	DOUBLE	2	0	CW	ACW	-355	-365	0	810	60	33	55	55
-1	1	Positive Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	CW	ACW	0	0	0	1208	60	33	55	55
+1	1	Positive Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	CW	ACW	0	0	0	1208	60	33	0	55
 2000.0000000000	2000.0000000000	ResettingTime	Timeout time to reset the system	ms	DOUBLE	2	0	CW	ACW	0	0	0	1206	60	33	55	55
 1.0000000000	1.0000000000	Rotation sense	Manage the rotation sense. A value of 1 makes the ACW rotates clockwise locking to gears and - 1 makes rotates counter clockwise		DOUBLE	2	0	CW	ACW	-1	1	1	1207	60	33	55	55
 14	14	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	CW	ACW	0.01	15	1	1209	60	33	55	55
