@@ -1,26 +1,4 @@
 NAME	DESCRIPTION	AREA	NUMBER	TYPE_ID	EVENTSYSTEM_ID	EVENTSYSTEM	TYPE	EVENT_TYPE	REF_VALUE	EVALUATION_STRING	ENABLED	TIME_TO_TRIGGER	ID	EVENT_TYPE_ID
-Lubrication Level 1 Low	The motor 1 lubrication level is low	300.ACW	306	1	52	ACW_Events	Warning	EQUAL	1	Lubrication Level 1	1	0	323	1
-Lubrication Level 2 Low	The motor 2 lubrication level is low	300.ACW	307	1	52	ACW_Events	Warning	EQUAL	1	Lubrication Level 2	1	0	324	1
-Speed Limit	The speed limit was violated	300.ACW	301	1	52	ACW_Events	Warning	EQUAL	1	Motor 1 Speed > Speed Limit || Motor 2 Speed > Speed Limit	1	0	325	1
-Azimuth Deviation Limit	The allowed deviation between azimuth position and azimuth cable wrap position was overcomed	300.ACW	313	1	52	ACW_Events	Warning	EQUAL	1	(((Azimuth Position-Motor 1 Position)>Azimuth Deviation)||(-(Azimuth Position-Motor 1 Position)>Azimuth Deviation)||((Azimuth Position-Motor 2 Position)>Azimuth Deviation)||(-(Azimuth Position-Motor 2 Position)>Azimuth Deviation))&&~Azimuth Deviation Override	1	0	326	1
-NoNewData	New data does not arrive from EIB	100.Azimuth	105	1	47	AzimuthAxisEvents	Warning	EQUAL	1	NoNewDataWarningActive	0	0	311	1
-AZCW Deviation Limit	The maximum allowed deviation between azimuth cable wrap position and azimuth position was overcomed	100.Azimuth	120	1	47	AzimuthAxisEvents	Warning	EQUAL	1	(((Position-CW Position)>Limits AZCW Maximum Deviation Value)||((Position-CW Position)<-Limits AZCW Maximum Deviation Value))&&Limits AZCW Deviation Enable	1	0	335	1
-Past Time in Tracking Command	A tracking command was received with a past timestamp demand value.	100.Azimuth	150	1	47	AzimuthAxisEvents	Warning	EQUAL	1	pastTimeInTrackingCommand_Warning	1	0	396	1
-Speed Limit	The speed limit was violated.	1100.BAL	1101	1	34	BalancingEvents1	Warning	EQUAL	1	Velocity > Speed Limit	1	0	66	1
-Speed Limit	The speed limit was violated.	1100.BAL	1101	1	35	BalancingEvents2	Warning	EQUAL	1	Velocity > Speed Limit	1	0	68	1
-Speed Limit	The speed limit was violated.	1100.BAL	1101	1	36	BalancingEvents3	Warning	EQUAL	1	Velocity > Speed Limit	1	0	67	1
-Speed Limit	The speed limit was violated.	1100.BAL	1101	1	37	BalancingEvents4	Warning	EQUAL	1	Velocity > Speed Limit	1	0	69	1
-Speed Limit	The speed limit was violated	1000.CCW	1001	1	51	CCW_Events	Warning	EQUAL	1	Motor 1 Speed > Speed Limit || Motor 2 Speed > Speed Limit	1	0	184	1
-Lubrication Level 1 Low	The motor 1 lubrication level is low	1000.CCW	1006	1	51	CCW_Events	Warning	EQUAL	1	Lubrication Level 1	1	0	186	1
-Lubrication Level 2 Low	The motor 2 lubrication level is low	1000.CCW	1007	1	51	CCW_Events	Warning	EQUAL	1	Lubrication Level 2	1	0	187	1
-NoNewData	New data does not arrive from EIB	400.Elevation	405	1	49	ElevationAxisEvents	Warning	EQUAL	1	NoNewDataWarningActive	0	0	359	1
-Past Time in Tracking Command	A tracking command was received with a past timestamp demand value.	400.Elevation	450	1	49	ElevationAxisEvents	Warning	EQUAL	1	pastTimeInTrackingCommand_Warning	1	0	397	1
-Speed Limit	The speed limit was violated.	1400.LP	1402	1	28	LockingPinEvents1	Warning	EQUAL	1	Velocity>Speed Limit	1	0	64	1
-Speed Limit	The speed limit was violated.	1400.LP	1402	1	29	LockingPinEvents2	Warning	EQUAL	1	Velocity>Speed Limit	1	0	65	1
-Phase drives telemetry reader	Phase drives telemetry reader task has an issue	50. MainAxes	54	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesTelemetryReaderTaskRunning	1	0	240	1
-Phase drives telemetry not connected	Phase drives telemetry connection is down	50. MainAxes	53	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesTelemetryNSconnected	1	0	241	1
-Phase drives status reader	Phase drives status task has an issue	50. MainAxes	52	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesStatusReaderTaskRunning	1	0	242	1
-Phase drives status not connected	Phase drives status connection is down	50. MainAxes	51	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesStatusNSconnected	1	0	243	1
 Temperature Drop	Cabinet Temperature decreased below limit.	1300.MainCabinet	1308	1	2	MainCabinetEvents	Warning	EQUAL	1	~Door&&(((Cabinet Temperature 1<=Low Cabinet Temperature)&&(~Cabinet Temperature 1 error))||((Cabinet Temperature 2<=Low Cabinet Temperature)&&(~Cabinet Temperature 2 error)))	1	0	4	1
 Surface Temperature Increase	Surface temperature increased beyond limit.	1300.MainCabinet	1311	1	2	MainCabinetEvents	Warning	EQUAL	1	~Door&&((Surface Temperature-Ambient Temperature)>=High Surface Temperature)&&(~Surface Temperature error)&&(~RMC connection error)	1	0	7	1
 Surface Temperature Drop	Surface temperature decreased below limit.	1300.MainCabinet	1310	1	2	MainCabinetEvents	Warning	EQUAL	1	~Door&&((Surface Temperature-Ambient Temperature)<=Low Surface Temperature)&&(~Surface Temperature error)&&(~RMC connection error)	1	0	8	1
@@ -32,182 +10,57 @@ Speed Limit	This event triggers if the parameter "Motor Max Velocity" is exceede
 Speed Limit	This event triggers if the parameter "Motor Max Velocity" is exceeded.	1500.MCL	1504	1	20	MCLEvents2	Warning	EQUAL	1	Velocity>Motor Max Velocity	1	0	35	1
 Speed Limit	This event triggers if the parameter "Motor Max Velocity" is exceeded.	1500.MCL	1504	1	21	MCLEvents3	Warning	EQUAL	1	Velocity>Motor Max Velocity	1	0	36	1
 Speed Limit	This event triggers if the parameter "Motor Max Velocity" is exceeded.	1500.MCL	1504	1	22	MCLEvents4	Warning	EQUAL	1	Velocity>Motor Max Velocity	1	0	37	1
-MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	1	44	MPSEvents	Warning	EQUAL	1	(Current > MaxCurrentWarning)  || (Current < -(MaxCurrentWarning))	1	0	191	1
-MinVoltage	The minimum allowed volage was lost.	600.MPS	601	1	44	MPSEvents	Warning	EQUAL	1	Voltage < MinVoltageWarning	0	0	192	1
 Speed Limit	This event triggers if the parameter "Platform Max Velocity" is exceeded.	1200.DP	1201	1	25	PlatformEvents1	Warning	EQUAL	1	(Velocity1>Platform Max Velocity)||(Velocity2>Platform Max Velocity)	1	0	50	1
 Speed Limit	This event triggers if the parameter "Platform Max Velocity" is exceeded.	1200.DP	1201	1	25	PlatformEvents1	Warning	EQUAL	1	(Velocity1>Platform Max Velocity)||(Velocity2>Platform Max Velocity)	1	0	50	1
 Speed Limit	This event triggers if the parameter "Platform Max Velocity" is exceeded.	1200.DP	1201	1	26	PlatformEvents2	Warning	EQUAL	1	(Velocity1>Platform Max Velocity)||(Velocity2>Platform Max Velocity)	1	0	51	1
-Azimuth Cable Wrap Safety	A safety issue has ocurred in the azimuth cable wrap module	300.ACW	312	2	52	ACW_Events	Alarm	EQUAL	1	Safety Switch	1	0	327	1
-Critical Speed Limit	The critical speed limit was violated	300.ACW	309	2	52	ACW_Events	Alarm	EQUAL	1	Motor 1 Speed>Critical Speed Limit||Motor 2 Speed>Critical Speed Limit	1	0	328	1
-Negative Software Limit	The negative software limit is overcomed	300.ACW	311	2	52	ACW_Events	Alarm	EQUAL	1	Negative Software Limit Enable&&((Motor 1 Position<Min Software Limit)||(Motor 2 Position<Min Software Limit))	1	0	329	1
-Positive Software Limit	The positive software limit is overcomed	300.ACW	310	2	52	ACW_Events	Alarm	EQUAL	1	Positive Software Limit Enable&&((Motor 1 Position>Max Software Limit)||(Motor 2 Position>Max Software Limit))	1	0	330	1
-Critical Azimuth Deviation Limit	The maximum allowed deviation between azimuth position and azimuth cable wrap position was overcomed	300.ACW	314	2	52	ACW_Events	Alarm	EQUAL	1	(((Azimuth Position-Motor 1 Position)>Critical Azimuth Deviation)||((-(Azimuth Position-Motor 1 Position))>Critical Azimuth Deviation)||((Azimuth Position-Motor 2 Position)>Critical Azimuth Deviation)||((-(Azimuth Position-Motor 2 Position))>Critical Azimuth Deviation))&&~Azimuth Deviation Override	1	0	332	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	300.ACW	315	2	52	ACW_Events	Alarm	EQUAL	1	Main Cabinet Off	1	0	333	1
-Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	300.ACW	370	2	52	ACW_Events	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	389	1
-SoftMotion Axis Fault	The softmotion axis went to fault	100.Azimuth	101	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	163	1
-STO	The STO for the axis is active	100.Azimuth	102	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Safety Switch	1	0	165	1
-NoNewData	New data does not arrive from EIB	100.Azimuth	105	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	NoNewDataAlarmActive	1	0	310	1
-Positive Software limit	The positive software limit has been exceeded	100.Azimuth	110	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Software limit value)&&Limits Positive Software limit enable	1	0	318	1
-Negative Software limit	The negative software limit has been exceeded	100.Azimuth	111	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Software limit value)&&Limits Negative Software limit enable	1	0	319	1
-Positive Limit Switch	The positive limit switch has been reached by axis	100.Azimuth	112	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Positive Limit Switch && Limits Positive Limit Switch enable	1	0	321	1
-Negative Limit Switch	The negative limit switch has been reached by axis	100.Azimuth	112	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Negative Limit Switch && Limits Negative Limit Switch enable	1	0	322	1
-Critical AZCW Deviation Limit	The maximum allowed deviation between azimuth cable wrap position and azimuth position was overcomed	100.Azimuth	120	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(((Position-CW Position)>Limits AZCW Critical Deviation Value)||((Position-CW Position)<-Limits AZCW Critical Deviation Value))&&Limits AZCW Deviation Enable	1	0	334	1
-TMAPXI-AXESPXI communcication failure	The communication between TMAPXI and AXESPXI is down. This was detected by the AXESPXI and the axis is in fault	100.Azimuth	100	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	TMAPXI-AXESPXI comm fault	1	0	336	1
-Positive Adjustable Software limit	The positive adjustable software limit has been exceeded	100.Azimuth	113	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Adjustable Software limit value)&&Limits Positive Adjustable Software limit enable	1	0	339	1
-Negative Adjustable Software limit	The negative adjustable software limit has been exceeded	100.Azimuth	113	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Adjustable Software limit value)&&Limits Negative Adjustable Software limit enable	1	0	340	1
-Negative Operational Limit Switch	The negative Operational limit switch has been reached by axis	100.Azimuth	112	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Negative Operational Limit Switch && Limits Negative Operational Limit Switch enable	1	0	341	1
-Positive Operational Limit Switch	The positive Operational limit switch has been reached by axis	100.Azimuth	112	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Positive Operational Limit Switch && Limits Positive Operational Limit Switch enable	1	0	342	1
-Negative Softmotion Software limit	The negative software limit in the axis softmotion has been exceeded	100.Azimuth	131	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	negativeSoftware	1	0	362	1
-Negative Softmotion Software limit	The negative software limit in the axis softmotion has been exceeded	100.Azimuth	131	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	negativeSoftware	1	0	362	1
-Positive Softmotion Software limit	The positive software limit in the axis softmotion has been exceeded	100.Azimuth	132	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	positiveSoftware	1	0	363	1
-Following Error	The axis detect and excesive deviation from the command	100.Azimuth	133	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	followingError	1	0	364	1
-Overspeed	Overspeed Alarm ocurred	100.Azimuth	104	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	overSpeed	1	0	365	1
-Axis Fault	Axis control algorith detected a fault. Posible causes are: NoNewData, Too Many Drives in Faul, AXESPXI and TMAPXI comm fault or software error. Check if NoNewData or PXIs comm alarms are active, otherwise this means drives fault	100.Azimuth	136	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	external	1	0	366	1
-Axis Communication Tasks Not Running	The status or telemetry task for the axis is not running.	100.Azimuth	181	2	47	AzimuthAxisEvents	Alarm	EQUAL	0	AxisStatusReaderTaskRunning&&AxisStatusReaderTaskRunning	1	0	374	1
-Axis Communication Not Connected	The status or telemetry task for the axis is NOT connected.	100.Azimuth	180	2	47	AzimuthAxisEvents	Alarm	EQUAL	0	AxisStatusNSconnected&&AxisStatusNSconnected	1	0	375	1
-Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	100.Azimuth	160	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	1	0	398	1
-Axis Externally Disabled	The axis was disabled externally without using the enable command.	100.Azimuth	190	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	409	1
-Hall Sensor Faulty	The hall sensor is faulty. Problably it is an EtherCAT line issue	100.Azimuth	141	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	HallSensorFaulty	1	0	412	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1600.AZDT	1611	2	53	AzimuthGroupEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	225	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	55	AzimuthGroupEvents1	Alarm	EQUAL	1	ValveFaulty	0	0	199	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	56	AzimuthGroupEvents2	Alarm	EQUAL	1	ValveFaulty	0	0	200	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	57	AzimuthGroupEvents3	Alarm	EQUAL	1	ValveFaulty	0	0	201	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	58	AzimuthGroupEvents4	Alarm	EQUAL	1	ValveFaulty	0	0	202	1
-Balancing System Safety	A safety issue has occured in the balancing system module.	1100.BAL	1110	2	33	BalancingEvents0	Alarm	EQUAL	1	Safety Switch	1	0	81	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1100.BAL	1111	2	33	BalancingEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	189	1
-Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1100.BAL	1170	2	33	BalancingEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	390	1
-Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	34	BalancingEvents1	Alarm	EQUAL	1	Velocity > Max Critical Speed	1	0	70	1
-Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	34	BalancingEvents1	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	141	1
-Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2	34	BalancingEvents1	Alarm	EQUAL	1	Positive Software Limit Enable&&(Position>Max Position Limit)	1	0	142	1
-Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	35	BalancingEvents2	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	71	1
-Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2	35	BalancingEvents2	Alarm	EQUAL	1	Positive Software Limit Enable&&(Position>Max Position Limit)	1	0	140	1
-Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	35	BalancingEvents2	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	145	1
-Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	36	BalancingEvents3	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	72	1
-Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2	36	BalancingEvents3	Alarm	EQUAL	1	Positive Software Limit Enable&&(Position>Max Position Limit)	1	0	143	1
-Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	36	BalancingEvents3	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	146	1
-Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	37	BalancingEvents4	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	73	1
-Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2	37	BalancingEvents4	Alarm	EQUAL	1	Positive Software Limit Enable&&(Position>Max Position Limit)	1	0	144	1
-Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	37	BalancingEvents4	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	147	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1900.Cabinet0101	1911	2	61	Cabinet010Events0	Alarm	EQUAL	1	Main Cabinet Off	1	0	278	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1900.Cabinet0101	1901	2	62	Cabinet010Events1	Alarm	EQUAL	1	ValveFaulty	1	0	281	1
-Positive Limit Switch Pressed	The positive limit switch is pressed	1000.CCW	1002	2	51	CCW_Events	Alarm	EQUAL	1	Limit Switch Positive&&(Positive Limit Switch Enable)	1	0	177	1
-Negative Limit Switch Pressed	The negative limit switch is pressed	1000.CCW	1003	2	51	CCW_Events	Alarm	EQUAL	1	Limit Switch Negative&&(Negative Limit Switch Enable)	1	0	178	1
-Critical Speed Limit	The critical speed limit was violated	1000.CCW	1009	2	51	CCW_Events	Alarm	EQUAL	1	Motor 1 Speed>Critical Speed Limit||Motor 2 Speed>Critical Speed Limit	1	0	179	1
-Positive Software Limit	The positive software limit is overcomed	1000.CCW	1010	2	51	CCW_Events	Alarm	EQUAL	1	Positive Software Limit Enable&&((Motor 1 Position>Max Software Limit)||(Motor 2 Position>Max Software Limit))	1	0	180	1
-Negative Software Limit	The negative software limit is overcomed	1000.CCW	1011	2	51	CCW_Events	Alarm	EQUAL	1	Negative Software Limit Enable&&((Motor 1 Position<Min Software Limit)||(Motor 2 Position<Min Software Limit))	1	0	181	1
-Camera Cable Wrap Safety	A safety issue has ocurred in the camera cable wrap module	1000.CCW	1012	2	51	CCW_Events	Alarm	EQUAL	1	Safety Switch	1	0	182	1
-Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1000.CCW	1070	2	51	CCW_Events	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	391	1
-Negative Adjustable Software limit	The negative adjustable software limit has been exceeded	400.Elevation	413	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Adjustable Software limit value)&&Limits Negative Adjustable Software limit enable	1	0	344	1
-Negative Operational Limit Switch	The negative Operational limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Negative Operational Limit Switch && Limits Negative Operational Limit Switch enable	1	0	345	1
-Negative Limit Switch	The negative limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Negative Limit Switch && Limits Negative Limit Switch enable	1	0	346	1
-Negative Software limit	The negative software limit has been exceeded	400.Elevation	411	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Software limit value)&&Limits Negative Software limit enable	1	0	347	1
-NoNewData	New data does not arrive from EIB	400.Elevation	405	2	49	ElevationAxisEvents	Alarm	EQUAL	1	NoNewDataAlarmActive	1	0	348	1
-Positive Adjustable Software limit	The positive adjustable software limit has been exceeded	400.Elevation	413	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Adjustable Software limit value)&&Limits Positive Adjustable Software limit enable	1	0	351	1
-Positive Operational Limit Switch	The positive Operational limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Positive Operational Limit Switch && Limits Positive Operational Limit Switch enable	1	0	352	1
-Positive Limit Switch	The positive limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Positive Limit Switch && Limits Positive Limit Switch enable	1	0	353	1
-Positive Software limit	The positive software limit has been exceeded	400.Elevation	410	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Software limit value)&&Limits Positive Software limit enable	1	0	354	1
-SoftMotion Axis Fault	The softmotion axis went to fault	400.Elevation	401	2	49	ElevationAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	355	1
-STO	The STO for the axis is active	400.Elevation	402	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Safety Switch	1	0	356	1
-TMAPXI-AXESPXI communcication failure	The communication between TMAPXI and AXESPXI is down. This was detected by the AXESPXI and the axis is in fault	400.Elevation	400	2	49	ElevationAxisEvents	Alarm	EQUAL	1	TMAPXI-AXESPXI comm fault	1	0	357	1
-Following Error	The axis detect and excesive deviation from the command	400.Elevation	433	2	49	ElevationAxisEvents	Alarm	EQUAL	1	followingError	1	0	367	1
-Negative Softmotion Software limit	The negative software limit in the axis softmotion has been exceeded	400.Elevation	431	2	49	ElevationAxisEvents	Alarm	EQUAL	1	negativeSoftware	1	0	368	1
-Overspeed	Overspeed Alarm ocurred	400.Elevation	404	2	49	ElevationAxisEvents	Alarm	EQUAL	1	overSpeed	1	0	369	1
-Positive Softmotion Software limit	The positive software limit in the axis softmotion has been exceeded	400.Elevation	432	2	49	ElevationAxisEvents	Alarm	EQUAL	1	positiveSoftware	1	0	370	1
-Axis Fault	Axis control algorith detected a fault. Posible causes are: NoNewData, Too Many Drives in Faul, AXESPXI and TMAPXI comm fault or software error. Check if NoNewData or PXIs comm alarms are active, otherwise this means drives fault	400.Elevation	436	2	49	ElevationAxisEvents	Alarm	EQUAL	1	external	1	0	371	1
-Axis Communication Tasks Not Running	The status or telemetry task for the axis is not running.	400.Elevation	481	2	49	ElevationAxisEvents	Alarm	EQUAL	0	AxisStatusReaderTaskRunning&&AxisStatusReaderTaskRunning	1	0	372	1
-Axis Communication Not Connected	The status or telemetry task for the axis is NOT connected.	400.Elevation	480	2	49	ElevationAxisEvents	Alarm	EQUAL	0	AxisStatusNSconnected&&AxisStatusNSconnected	1	0	373	1
-Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	400.Elevation	460	2	49	ElevationAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	0	0	399	1
-Axis Externally Disabled	The axis was disabled externally without using the enable command.	400.Elevation	490	2	49	ElevationAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	411	1
-Hall Sensor Faulty	The hall sensor is faulty. Problably it is an EtherCAT line issue	400.Azimuth	441	2	49	ElevationAxisEvents	Alarm	EQUAL	1	HallSensorFaulty	1	0	413	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1700.ELDT	1711	2	54	ElevationGroupEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	226	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1700.ELDT	1701	2	59	ElevationGroupEvents1	Alarm	EQUAL	1	ValveFaulty	0	0	203	1
-ValveFaulty	The valve of the drives temperature controller is faulty.	1700.ELDT	1701	2	60	ElevationGroupEvents2	Alarm	EQUAL	1	ValveFaulty	0	0	204	1
-Locking Pin Safety	A safety issue has occured in the locking pin module.	1400.LP	1401	2	27	LockingPinEvents0	Alarm	EQUAL	1	Safety Switch	1	0	80	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1400.LP	1411	2	27	LockingPinEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	194	1
-Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1400.LP	1470	2	27	LockingPinEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	392	1
-Critical Speed Limit	The critical speed limit was violated.	1400.LP	1402	2	28	LockingPinEvents1	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	47	1
-Position Positive Limit	The maximum position was violated	1400.LP	1404	2	28	LockingPinEvents1	Alarm	EQUAL	1	Position>Max Position	1	0	129	1
-Position Negative Limit	The Minimum position was violated	1400.LP	1403	2	28	LockingPinEvents1	Alarm	EQUAL	1	Position<Min Position	1	0	132	1
-Critical Speed Limit	The critical speed limit was violated.	1400.LP	1402	2	29	LockingPinEvents2	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	49	1
-Position Positive Limit	The maximum position was violated	1400.LP	1404	2	29	LockingPinEvents2	Alarm	EQUAL	1	Position>Max Position	1	0	130	1
-Position Negative Limit	The Minimum position was violated	1400.LP	1403	2	29	LockingPinEvents2	Alarm	EQUAL	1	Position<Min Position	1	0	131	1
-Axis CMD Writer	Axis command writter has issue	50. MainAxes	55	2	46	MainAxisEvents	Alarm	EQUAL	0	AxisCMDwriterTaskRunning	1	0	244	1
-Axis CMDs not connected	Axis command connection is down	50. MainAxes	56	2	46	MainAxisEvents	Alarm	EQUAL	0	AxisCMDNSconnected	1	0	245	1
-OSSAlarm	The OSS is in Fault state	50. MainAxes	57	2	46	MainAxisEvents	Alarm	EQUAL	1	OSSAlarm	1	0	316	1
-Phase Power Supply Alarm	The Phass Power Supply, supply for main axis, is in fault state	50. MainAxes	58	2	46	MainAxisEvents	Alarm	EQUAL	1	PhasePowerSupplyAlarm	1	0	317	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	50. MainAxes	65	2	46	MainAxisEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	361	1
+Speed Limit	The speed limit was violated.	1400.LP	1402	1	28	LockingPinEvents1	Warning	EQUAL	1	Velocity>Speed Limit	1	0	64	1
+Speed Limit	The speed limit was violated.	1400.LP	1402	1	29	LockingPinEvents2	Warning	EQUAL	1	Velocity>Speed Limit	1	0	65	1
+Speed Limit	The speed limit was violated.	1100.BAL	1101	1	34	BalancingEvents1	Warning	EQUAL	1	Velocity > Speed Limit	1	0	66	1
+Speed Limit	The speed limit was violated.	1100.BAL	1101	1	36	BalancingEvents3	Warning	EQUAL	1	Velocity > Speed Limit	1	0	67	1
+Speed Limit	The speed limit was violated.	1100.BAL	1101	1	35	BalancingEvents2	Warning	EQUAL	1	Velocity > Speed Limit	1	0	68	1
+Speed Limit	The speed limit was violated.	1100.BAL	1101	1	37	BalancingEvents4	Warning	EQUAL	1	Velocity > Speed Limit	1	0	69	1
+Speed Limit	The speed limit was violated	1000.CCW	1001	1	51	CCW_Events	Warning	EQUAL	1	Motor 1 Speed > Speed Limit || Motor 2 Speed > Speed Limit	1	0	184	1
+Lubrication Level 1 Low	The motor 1 lubrication level is low	1000.CCW	1006	1	51	CCW_Events	Warning	EQUAL	1	Lubrication Level 1	1	0	186	1
+Lubrication Level 2 Low	The motor 2 lubrication level is low	1000.CCW	1007	1	51	CCW_Events	Warning	EQUAL	1	Lubrication Level 2	1	0	187	1
+MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	1	44	MPSEvents	Warning	EQUAL	1	(Current > MaxCurrentWarning)  || (Current < -(MaxCurrentWarning))	1	0	191	1
+MinVoltage	The minimum allowed volage was lost.	600.MPS	601	1	44	MPSEvents	Warning	EQUAL	1	Voltage < MinVoltageWarning	0	0	192	1
+Phase drives telemetry reader	Phase drives telemetry reader task has an issue	50. MainAxes	54	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesTelemetryReaderTaskRunning	1	0	240	1
+Phase drives telemetry not connected	Phase drives telemetry connection is down	50. MainAxes	53	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesTelemetryNSconnected	1	0	241	1
+Phase drives status reader	Phase drives status task has an issue	50. MainAxes	52	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesStatusReaderTaskRunning	1	0	242	1
+Phase drives status not connected	Phase drives status connection is down	50. MainAxes	51	1	46	MainAxisEvents	Warning	EQUAL	0	PhaseDrivesStatusNSconnected	1	0	243	1
+NoNewData	New data does not arrive from EIB	100.Azimuth	105	1	47	AzimuthAxisEvents	Warning	EQUAL	1	NoNewDataWarningActive	0	0	311	1
+Lubrication Level 1 Low	The motor 1 lubrication level is low	300.ACW	306	1	52	ACW_Events	Warning	EQUAL	1	Lubrication Level 1	1	0	323	1
+Lubrication Level 2 Low	The motor 2 lubrication level is low	300.ACW	307	1	52	ACW_Events	Warning	EQUAL	1	Lubrication Level 2	1	0	324	1
+Speed Limit	The speed limit was violated	300.ACW	301	1	52	ACW_Events	Warning	EQUAL	1	Motor 1 Speed > Speed Limit || Motor 2 Speed > Speed Limit	1	0	325	1
+Azimuth Deviation Limit	The allowed deviation between azimuth position and azimuth cable wrap position was overcomed	300.ACW	313	1	52	ACW_Events	Warning	EQUAL	1	(((Azimuth Position-Motor 1 Position)>Azimuth Deviation)||(-(Azimuth Position-Motor 1 Position)>Azimuth Deviation)||((Azimuth Position-Motor 2 Position)>Azimuth Deviation)||(-(Azimuth Position-Motor 2 Position)>Azimuth Deviation))&&~Azimuth Deviation Override	1	0	326	1
+AZCW Deviation Limit	The maximum allowed deviation between azimuth cable wrap position and azimuth position was overcomed	100.Azimuth	120	1	47	AzimuthAxisEvents	Warning	EQUAL	1	(((Position-CW Position)>Limits AZCW Maximum Deviation Value)||((Position-CW Position)<-Limits AZCW Maximum Deviation Value))&&Limits AZCW Deviation Enable	1	0	335	1
+NoNewData	New data does not arrive from EIB	400.Elevation	405	1	49	ElevationAxisEvents	Warning	EQUAL	1	NoNewDataWarningActive	0	0	359	1
+Past Time in Tracking Command	A tracking command was received with a past timestamp demand value.	100.Azimuth	150	1	47	AzimuthAxisEvents	Warning	EQUAL	1	pastTimeInTrackingCommand_Warning	1	0	396	1
+Past Time in Tracking Command	A tracking command was received with a past timestamp demand value.	400.Elevation	450	1	49	ElevationAxisEvents	Warning	EQUAL	1	pastTimeInTrackingCommand_Warning	1	0	397	1
 Critical Temperature Increase 	Cabinet Temperature increased above critical limit.	1300.MainCabinet	1351	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Door&&(((((Cabinet Temperature 1>=Critical High Cabinet Temperature)&&(~Cabinet Temperature 1 error))||((Cabinet Temperature 2>=Critical High Cabinet Temperature)&&(~Cabinet Temperature 2 error)))&&(~RMC connection error))||((Backup Temperature>=Critical High Cabinet Temperature)&&(RMC connection error)))	1	0	5	1
 Critical Temperature Drop	Cabinet Temperature decreased below critical limit.	1300.MainCabinet	1350	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Door&&(((((Cabinet Temperature 1<=Critical Low Cabinet Temperature)&&(~Cabinet Temperature 1 error))||((Cabinet Temperature 2<=Critical Low Cabinet Temperature)&&(~Cabinet Temperature 2 error)))&&(~RMC connection error))||((Backup Temperature<=Critical Low Cabinet Temperature)&&(RMC connection error)))	1	0	6	1
 Cabinet Fan Faulty	The heat exchanger fan is faulty.	1300.MainCabinet	1301	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Fan Faulty	1	0	10	1
 Cabinet Heater Faulty	The cabinet heater is faulty.	1300.MainCabinet	1302	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Heater Faulty	1	0	11	1
-Cabinet Valve Faulty	The cabinet valve is faulty.	1300.MainCabinet	1303	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Valve Faulty	1	0	148	1
-Backup Temperature Sensor Failed	The backup temperature sensor used when RMC not working failed.  If the RMC controller communication is lost, the backup hysteresis based controller will not work.	1300.MainCabinet	1312	2	2	MainCabinetEvents	Alarm	EQUAL	1	Backup Sensor error	1	0	149	1
-RMC connection error	The connection with the RMC controller was lost. The system is controlled through an hysteresis regulator.	1300.MainCabinet	1313	2	2	MainCabinetEvents	Alarm	EQUAL	1	RMC connection error	1	0	270	1
-Internal Temperature Sensor 1 Failed	The temperature sensor that measures the internal temperature in the main cabinet (1) has failed. Its value is not valid.	1300.MainCabinet	1304	2	2	MainCabinetEvents	Alarm	EQUAL	1	Cabinet Temperature 1 error	1	0	275	1
-Surface Temperature Sensor Failed	The temperature sensor that measures the surface temperature in the main cabinet has failed. Its value is not valid.	1300.MainCabinet	1306	2	2	MainCabinetEvents	Alarm	EQUAL	1	Surface Temperature error	1	0	276	1
-Internal Temperature Sensor 2 Failed	The temperature sensor that measures the internal temperature in the main cabinet (2) has failed. Its value is not valid.	1300.MainCabinet	1305	2	2	MainCabinetEvents	Alarm	EQUAL	1	Cabinet Temperature 2 error	1	0	277	1
 Mirror Cover Safety	A safety issue has occured in the mirror cover module.	900.MC	901	2	14	MCEvents0	Alarm	EQUAL	1	Safety Switch	1	0	29	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	900.MC	911	2	14	MCEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	196	1
-Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	900.MC	970	2	14	MCEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	393	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	900.MC	903	2	15	MCEvents1	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	38	1
-ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	15	MCEvents1	Alarm	EQUAL	1	Colision	0	0	168	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	900.MC	903	2	16	MCEvents2	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	39	1
-ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	16	MCEvents2	Alarm	EQUAL	1	Colision	0	0	169	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	900.MC	903	2	17	MCEvents3	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	40	1
-ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	17	MCEvents3	Alarm	EQUAL	1	Colision	0	0	170	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	900.MC	903	2	18	MCEvents4	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	41	1
-ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	18	MCEvents4	Alarm	EQUAL	1	Colision	0	0	171	1
-Mirror Cover Safety	A safety issue has occured in the mirror cover module.	1500.MCL	1501	2	45	MCLEvents0	Alarm	EQUAL	1	Safety Switch	1	0	150	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1500.MCL	1511	2	45	MCLEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	198	1
-Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1500.MC	1570	2	45	MCLEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	394	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	1500.MCL	1503	2	19	MCLEvents1	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	42	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	1500.MCL	1503	2	20	MCLEvents2	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	43	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	1500.MCL	1503	2	21	MCLEvents3	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	44	1
 Critical Speed Limit	This event triggers if the parameter "Critical Max Motor Velocity" is exceeded.	1500.MCL	1503	2	22	MCLEvents4	Alarm	EQUAL	1	Velocity>Critical Max Motor Velocity	1	0	45	1
-MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	2	44	MPSEvents	Alarm	EQUAL	1	(Current > MaxCurrent)  || (Current < -(MaxCurrent))	1	0	166	1
-MinVoltage	The minimum allowed volage was lost.	600.MPS	601	2	44	MPSEvents	Alarm	EQUAL	1	Voltage < MinVoltage	0	0	167	1
-Main Power Supply Safety	A safety issue has occured in the Main Power Supply module.	600.MPS	602	2	44	MPSEvents	Alarm	EQUAL	1	Safety Switch	1	0	190	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	600.MPS	611	2	44	MPSEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	195	1
-Observation Sequence	The OSSs observation sequence returned an alarm	800.OSS	801	2	40	OSSEvents	Alarm	EQUAL	1	Observation Sequence	1	0	123	1
-Cooling System	The OSSs cooling system returned an alarm	800.OSS	802	2	40	OSSEvents	Alarm	EQUAL	1	Cooling System	1	0	124	1
-Main Pump System	The OSSs main pump  system returned an alarm	800.OSS	803	2	40	OSSEvents	Alarm	EQUAL	1	Main Pump System	1	0	125	1
-Circulation System	The OSSs circulation system returned an alarm	800.OSS	804	2	40	OSSEvents	Alarm	EQUAL	1	Circulation System	1	0	126	1
-Connection Lost	The connection with the OSS has been lost	800.OSS	806	2	40	OSSEvents	Alarm	EQUAL	1	Connection Lost>watchdogMaximumTime	1	0	128	1
-OSS Malfunction	A safety issue has occurred in the OSS	800.OSS	810	2	40	OSSEvents	Alarm	EQUAL	1	Safety Switch	1	0	223	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	800.OSS	811	2	40	OSSEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	224	1
-Cabinet AZ_OS_CBT_5001 High temperature	The temperature of the Cabinet AZ_OS_CBT_5001 is too high	800.OSS	812	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet AZ_OS_CBT_5001 High temperature	1	0	376	1
-Cabinet EL_OS_CBT_5001 High temperature	The temperature of the Cabinet EL_OS_CBT_5001  is too high	800.OSS	814	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5001 High temperature	1	0	377	1
-Cabinet EL_OS_CBT_5002 High temperature	The temperature of the Cabinet EL_OS_CBT_5002  is too high	800.OSS	816	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5002 High temperature	1	0	378	1
-Cabinet EL_OS_CBT_5002 Low temperature	The temperature of the Cabinet EL_OS_CBT_5002  is too Low	800.OSS	817	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5002 Low temperature	1	0	379	1
-Cabinet EL_OS_CBT_5001 Low temperature	The temperature of the Cabinet EL_OS_CBT_5001  is too Low	800.OSS	815	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5001 Low temperature	1	0	380	1
-Cabinet AZ_OS_CBT_5001 Low temperature	The temperature of the Cabinet AZ_OS_CBT_5001  is too Low	800.OSS	813	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet AZ_OS_CBT_5001 Low temperature	1	0	381	1
-Hard Stop	Hard Stop perfomed in the OSS	800.OSS	819	2	40	OSSEvents	Alarm	EQUAL	1	Hard Stop	1	0.3	383	1
-Emergency Stop	Emergency Stop perfomed in the OSS	800.OSS	818	2	40	OSSEvents	Alarm	EQUAL	1	Emergency Stop	1	0.3	384	1
-OSS Modbus fail	The Modbus comunication with the OSS is down	800.OSS	821	2	40	OSSEvents	Alarm	EQUAL	0	ModbusConnected	1	0	387	1
-Soft Stop	Soft Stop perfomed in the OSS	800.OSS	830	2	40	OSSEvents	Alarm	EQUAL	1	Soft Stop	1	0.3	402	1
-Deployable Platform Safety	A safety issue has occurred in the deployable platform module.	1200.DP	1207	2	32	PlatformEvents0	Alarm	EQUAL	1	Safety Switch	1	0	79	1
-Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1200.DP	1211	2	32	PlatformEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	193	1
-Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1200.DP	1270	2	32	PlatformEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	395	1
+Critical Speed Limit	The critical speed limit was violated.	1400.LP	1402	2	28	LockingPinEvents1	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	47	1
+Critical Speed Limit	The critical speed limit was violated.	1400.LP	1402	2	29	LockingPinEvents2	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	49	1
 Critical Speed Limit	This event triggers if the parameter "Platform Max Critical Velocity" is exceeded.	1200.DP	1201	2	25	PlatformEvents1	Alarm	EQUAL	1	(Velocity1>Platform Max Critical Velocity)||(Velocity2>Platform Max Critical Velocity)	1	0	52	1
 Critical Speed Limit	This event triggers if the parameter "Platform Max Critical Velocity" is exceeded.	1200.DP	1201	2	26	PlatformEvents2	Alarm	EQUAL	1	(Velocity1>Platform Max Critical Velocity)||(Velocity2>Platform Max Critical Velocity)	1	0	53	1
-Capacitor Cabinet1 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2801	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 1	1	0	414	1
-Capacitor Cabinet2 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2802	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 2	1	0	422	1
-Capacitor Cabinet3 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2803	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 3	1	0	423	1
-Capacitor Cabinet4 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2804	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 4	1	0	424	1
-Capacitor Cabinet5 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2805	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 5	1	0	425	1
-Capacitor Cabinet6 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2806	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 6	1	0	426	1
-Capacitor Cabinet7 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2807	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 7	1	0	427	1
-Capacitor Cabinet8 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2808	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 8	1	0	428	1
-CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	0	0	288	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	303	1
-CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	289	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	304	1
-CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	306	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	307	1
-CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	0	0	291	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	308	1
-CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	CabinetOK	1	0	292	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	ConnectionOK	1	0	309	1
+Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	34	BalancingEvents1	Alarm	EQUAL	1	Velocity > Max Critical Speed	1	0	70	1
+Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	35	BalancingEvents2	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	71	1
+Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	36	BalancingEvents3	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	72	1
+Critical Speed Limit	The critical speed limit was violated.	1100.BAL	1101	2	37	BalancingEvents4	Alarm	EQUAL	1	Velocity>Max Critical Speed	1	0	73	1
+Deployable Platform Safety	A safety issue has occurred in the deployable platform module.	1200.DP	1207	2	32	PlatformEvents0	Alarm	EQUAL	1	Safety Switch	1	0	79	1
+Locking Pin Safety	A safety issue has occured in the locking pin module.	1400.LP	1401	2	27	LockingPinEvents0	Alarm	EQUAL	1	Safety Switch	1	0	80	1
+Balancing System Safety	A safety issue has occured in the balancing system module.	1100.BAL	1110	2	33	BalancingEvents0	Alarm	EQUAL	1	Safety Switch	1	0	81	1
 CameraFansFailure	The fans of the camera section have a failure	2200.TopEndChiller	2205	2	39	TopEndChiller_Events	Alarm	EQUAL	1	CameraFansFailure	0	0	97	1
 M2FansFailure	The fans of the M2 section have a failure	2200.TopEndChiller	2216	2	39	TopEndChiller_Events	Alarm	EQUAL	1	M2FansFailure	0	0	98	1
 Heat Exchanger 1 Fan Failure	Failure in the fans of the heat exchanber 1	2200.TopEndChiller	2210	2	39	TopEndChiller_Events	Alarm	EQUAL	1	HeatExchanger1FansFailure	0	0	99	1
@@ -233,3 +86,150 @@ Humidity 0502	Humidity of the sensor 0502 out of range	2200.TopEndChiller	2213	2
 Humidity 0504	Humidity of the sensor 0504 out of range	2200.TopEndChiller	2214	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Humidity0504OutOfRange	0	0	119	1
 Humidity 0505	Humidity of the sensor 0505 out of range	2200.TopEndChiller	2215	2	39	TopEndChiller_Events	Alarm	EQUAL	1	Humidity0505OutOfRange	0	0	120	1
 Air Compressed Valve Failure	Failure of the compressed air valve	2200.TopEndChiller	2204	2	39	TopEndChiller_Events	Alarm	EQUAL	0	AirCompressedValveFailure	0	0	122	1
+Observation Sequence	The OSSs observation sequence returned an alarm	800.OSS	801	2	40	OSSEvents	Alarm	EQUAL	1	Observation Sequence	1	0	123	1
+Cooling System	The OSSs cooling system returned an alarm	800.OSS	802	2	40	OSSEvents	Alarm	EQUAL	1	Cooling System	1	0	124	1
+Main Pump System	The OSSs main pump  system returned an alarm	800.OSS	803	2	40	OSSEvents	Alarm	EQUAL	1	Main Pump System	1	0	125	1
+Circulation System	The OSSs circulation system returned an alarm	800.OSS	804	2	40	OSSEvents	Alarm	EQUAL	1	Circulation System	1	0	126	1
+Connection Lost	The connection with the OSS has been lost	800.OSS	806	2	40	OSSEvents	Alarm	EQUAL	1	Connection Lost>watchdogMaximumTime	1	0	128	1
+Position Positive Limit	The maximum position was violated	1400.LP	1404	2	28	LockingPinEvents1	Alarm	EQUAL	1	Position>Max Position	1	0	129	1
+Position Positive Limit	The maximum position was violated	1400.LP	1404	2	29	LockingPinEvents2	Alarm	EQUAL	1	Position>Max Position	1	0	130	1
+Position Negative Limit	The Minimum position was violated	1400.LP	1403	2	29	LockingPinEvents2	Alarm	EQUAL	1	Position<Min Position	1	0	131	1
+Position Negative Limit	The Minimum position was violated	1400.LP	1403	2	28	LockingPinEvents1	Alarm	EQUAL	1	Position<Min Position	1	0	132	1
+Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2	35	BalancingEvents2	Alarm	EQUAL	1	Positive Software Limit Enable&&(Position>Max Position Limit)	1	0	140	1
+Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	34	BalancingEvents1	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	141	1
+Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2	34	BalancingEvents1	Alarm	EQUAL	1	Positive Software Limit Enable&&(Position>Max Position Limit)	1	0	142	1
+Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2	36	BalancingEvents3	Alarm	EQUAL	1	Positive Software Limit Enable&&(Position>Max Position Limit)	1	0	143	1
+Positive Position Limit	The maximum position limit was violated.	1100.BAL	1102	2	37	BalancingEvents4	Alarm	EQUAL	1	Positive Software Limit Enable&&(Position>Max Position Limit)	1	0	144	1
+Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	35	BalancingEvents2	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	145	1
+Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	36	BalancingEvents3	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	146	1
+Negative Position Limit	The minimum position limit was violated.	1100.BAL	1103	2	37	BalancingEvents4	Alarm	EQUAL	1	Negative Software Limit Enable&&(Position<Min Position Limit)	1	0	147	1
+Cabinet Valve Faulty	The cabinet valve is faulty.	1300.MainCabinet	1303	2	2	MainCabinetEvents	Alarm	EQUAL	1	~Cabinet Valve Faulty	1	0	148	1
+Backup Temperature Sensor Failed	The backup temperature sensor used when RMC not working failed.  If the RMC controller communication is lost, the backup hysteresis based controller will not work.	1300.MainCabinet	1312	2	2	MainCabinetEvents	Alarm	EQUAL	1	Backup Sensor error	1	0	149	1
+Mirror Cover Safety	A safety issue has occured in the mirror cover module.	1500.MCL	1501	2	45	MCLEvents0	Alarm	EQUAL	1	Safety Switch	1	0	150	1
+SoftMotion Axis Fault	The softmotion axis went to fault	100.Azimuth	101	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	163	1
+STO	The STO for the axis is active	100.Azimuth	102	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Safety Switch	1	0	165	1
+MaxCurrent	The maximum allowed current was exceed.	600.MPS	600	2	44	MPSEvents	Alarm	EQUAL	1	(Current > MaxCurrent)  || (Current < -(MaxCurrent))	1	0	166	1
+MinVoltage	The minimum allowed volage was lost.	600.MPS	601	2	44	MPSEvents	Alarm	EQUAL	1	Voltage < MinVoltage	0	0	167	1
+ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	15	MCEvents1	Alarm	EQUAL	1	Colision	0	0	168	1
+ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	16	MCEvents2	Alarm	EQUAL	1	Colision	0	0	169	1
+ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	17	MCEvents3	Alarm	EQUAL	1	Colision	0	0	170	1
+ColisionEvent	This event triggers if any MC are going to colision.	900.MC	908	2	18	MCEvents4	Alarm	EQUAL	1	Colision	0	0	171	1
+Positive Limit Switch Pressed	The positive limit switch is pressed	1000.CCW	1002	2	51	CCW_Events	Alarm	EQUAL	1	Limit Switch Positive&&(Positive Limit Switch Enable)	1	0	177	1
+Negative Limit Switch Pressed	The negative limit switch is pressed	1000.CCW	1003	2	51	CCW_Events	Alarm	EQUAL	1	Limit Switch Negative&&(Negative Limit Switch Enable)	1	0	178	1
+Critical Speed Limit	The critical speed limit was violated	1000.CCW	1009	2	51	CCW_Events	Alarm	EQUAL	1	Motor 1 Speed>Critical Speed Limit||Motor 2 Speed>Critical Speed Limit	1	0	179	1
+Positive Software Limit	The positive software limit is overcomed	1000.CCW	1010	2	51	CCW_Events	Alarm	EQUAL	1	Positive Software Limit Enable&&((Motor 1 Position>Max Software Limit)||(Motor 2 Position>Max Software Limit))	1	0	180	1
+Negative Software Limit	The negative software limit is overcomed	1000.CCW	1011	2	51	CCW_Events	Alarm	EQUAL	1	Negative Software Limit Enable&&((Motor 1 Position<Min Software Limit)||(Motor 2 Position<Min Software Limit))	1	0	181	1
+Camera Cable Wrap Safety	A safety issue has ocurred in the camera cable wrap module	1000.CCW	1012	2	51	CCW_Events	Alarm	EQUAL	1	Safety Switch	1	0	182	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1100.BAL	1111	2	33	BalancingEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	189	1
+Main Power Supply Safety	A safety issue has occured in the Main Power Supply module.	600.MPS	602	2	44	MPSEvents	Alarm	EQUAL	1	Safety Switch	1	0	190	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1200.DP	1211	2	32	PlatformEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	193	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1400.LP	1411	2	27	LockingPinEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	194	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	600.MPS	611	2	44	MPSEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	195	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	900.MC	911	2	14	MCEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	196	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1500.MCL	1511	2	45	MCLEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	198	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	55	AzimuthGroupEvents1	Alarm	EQUAL	1	ValveFaulty	0	0	199	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	56	AzimuthGroupEvents2	Alarm	EQUAL	1	ValveFaulty	0	0	200	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	57	AzimuthGroupEvents3	Alarm	EQUAL	1	ValveFaulty	0	0	201	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1600.AZDT	1601	2	58	AzimuthGroupEvents4	Alarm	EQUAL	1	ValveFaulty	0	0	202	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1700.ELDT	1701	2	59	ElevationGroupEvents1	Alarm	EQUAL	1	ValveFaulty	0	0	203	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1700.ELDT	1701	2	60	ElevationGroupEvents2	Alarm	EQUAL	1	ValveFaulty	0	0	204	1
+OSS Malfunction	A safety issue has occurred in the OSS	800.OSS	810	2	40	OSSEvents	Alarm	EQUAL	1	Safety Switch	1	0	223	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	800.OSS	811	2	40	OSSEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	224	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1600.AZDT	1611	2	53	AzimuthGroupEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	225	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1700.ELDT	1711	2	54	ElevationGroupEvents0	Alarm	EQUAL	1	Main Cabinet Off	1	0	226	1
+Axis CMD Writer	Axis command writter has issue	50. MainAxes	55	2	46	MainAxisEvents	Alarm	EQUAL	0	AxisCMDwriterTaskRunning	1	0	244	1
+Axis CMDs not connected	Axis command connection is down	50. MainAxes	56	2	46	MainAxisEvents	Alarm	EQUAL	0	AxisCMDNSconnected	1	0	245	1
+RMC connection error	The connection with the RMC controller was lost. The system is controlled through an hysteresis regulator.	1300.MainCabinet	1313	2	2	MainCabinetEvents	Alarm	EQUAL	1	RMC connection error	1	0	270	1
+Internal Temperature Sensor 1 Failed	The temperature sensor that measures the internal temperature in the main cabinet (1) has failed. Its value is not valid.	1300.MainCabinet	1304	2	2	MainCabinetEvents	Alarm	EQUAL	1	Cabinet Temperature 1 error	1	0	275	1
+Surface Temperature Sensor Failed	The temperature sensor that measures the surface temperature in the main cabinet has failed. Its value is not valid.	1300.MainCabinet	1306	2	2	MainCabinetEvents	Alarm	EQUAL	1	Surface Temperature error	1	0	276	1
+Internal Temperature Sensor 2 Failed	The temperature sensor that measures the internal temperature in the main cabinet (2) has failed. Its value is not valid.	1300.MainCabinet	1305	2	2	MainCabinetEvents	Alarm	EQUAL	1	Cabinet Temperature 2 error	1	0	277	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	1900.Cabinet0101	1911	2	61	Cabinet010Events0	Alarm	EQUAL	1	Main Cabinet Off	1	0	278	1
+ValveFaulty	The valve of the drives temperature controller is faulty.	1900.Cabinet0101	1901	2	62	Cabinet010Events1	Alarm	EQUAL	1	ValveFaulty	1	0	281	1
+CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	0	0	288	1
+CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	289	1
+CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	0	0	291	1
+CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	CabinetOK	1	0	292	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	303	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	304	1
+CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	306	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	307	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	308	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	ConnectionOK	1	0	309	1
+NoNewData	New data does not arrive from EIB	100.Azimuth	105	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	NoNewDataAlarmActive	1	0	310	1
+OSSAlarm	The OSS is in Fault state	50. MainAxes	57	2	46	MainAxisEvents	Alarm	EQUAL	1	OSSAlarm	1	0	316	1
+Phase Power Supply Alarm	The Phass Power Supply, supply for main axis, is in fault state	50. MainAxes	58	2	46	MainAxisEvents	Alarm	EQUAL	1	PhasePowerSupplyAlarm	1	0	317	1
+Positive Software limit	The positive software limit has been exceeded	100.Azimuth	110	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Software limit value)&&Limits Positive Software limit enable	1	0	318	1
+Negative Software limit	The negative software limit has been exceeded	100.Azimuth	111	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Software limit value)&&Limits Negative Software limit enable	1	0	319	1
+Positive Limit Switch	The positive limit switch has been reached by axis	100.Azimuth	112	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Positive Limit Switch && Limits Positive Limit Switch enable	1	0	321	1
+Negative Limit Switch	The negative limit switch has been reached by axis	100.Azimuth	112	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Negative Limit Switch && Limits Negative Limit Switch enable	1	0	322	1
+Azimuth Cable Wrap Safety	A safety issue has ocurred in the azimuth cable wrap module	300.ACW	312	2	52	ACW_Events	Alarm	EQUAL	1	Safety Switch	1	0	327	1
+Critical Speed Limit	The critical speed limit was violated	300.ACW	309	2	52	ACW_Events	Alarm	EQUAL	1	Motor 1 Speed>Critical Speed Limit||Motor 2 Speed>Critical Speed Limit	1	0	328	1
+Negative Software Limit	The negative software limit is overcomed	300.ACW	311	2	52	ACW_Events	Alarm	EQUAL	1	Negative Software Limit Enable&&((Motor 1 Position<Min Software Limit)||(Motor 2 Position<Min Software Limit))	1	0	329	1
+Positive Software Limit	The positive software limit is overcomed	300.ACW	310	2	52	ACW_Events	Alarm	EQUAL	1	Positive Software Limit Enable&&((Motor 1 Position>Max Software Limit)||(Motor 2 Position>Max Software Limit))	1	0	330	1
+Critical Azimuth Deviation Limit	The maximum allowed deviation between azimuth position and azimuth cable wrap position was overcomed	300.ACW	314	2	52	ACW_Events	Alarm	EQUAL	1	(((Azimuth Position-Motor 1 Position)>Critical Azimuth Deviation)||((-(Azimuth Position-Motor 1 Position))>Critical Azimuth Deviation)||((Azimuth Position-Motor 2 Position)>Critical Azimuth Deviation)||((-(Azimuth Position-Motor 2 Position))>Critical Azimuth Deviation))&&~Azimuth Deviation Override	1	0	332	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	300.ACW	315	2	52	ACW_Events	Alarm	EQUAL	1	Main Cabinet Off	1	0	333	1
+Critical AZCW Deviation Limit	The maximum allowed deviation between azimuth cable wrap position and azimuth position was overcomed	100.Azimuth	120	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(((Position-CW Position)>Limits AZCW Critical Deviation Value)||((Position-CW Position)<-Limits AZCW Critical Deviation Value))&&Limits AZCW Deviation Enable	1	0	334	1
+TMAPXI-AXESPXI communcication failure	The communication between TMAPXI and AXESPXI is down. This was detected by the AXESPXI and the axis is in fault	100.Azimuth	100	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	TMAPXI-AXESPXI comm fault	1	0	336	1
+Positive Adjustable Software limit	The positive adjustable software limit has been exceeded	100.Azimuth	113	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Adjustable Software limit value)&&Limits Positive Adjustable Software limit enable	1	0	339	1
+Negative Adjustable Software limit	The negative adjustable software limit has been exceeded	100.Azimuth	113	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Adjustable Software limit value)&&Limits Negative Adjustable Software limit enable	1	0	340	1
+Negative Operational Limit Switch	The negative Operational limit switch has been reached by axis	100.Azimuth	112	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Negative Operational Limit Switch && Limits Negative Operational Limit Switch enable	1	0	341	1
+Positive Operational Limit Switch	The positive Operational limit switch has been reached by axis	100.Azimuth	112	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	Positive Operational Limit Switch && Limits Positive Operational Limit Switch enable	1	0	342	1
+Negative Adjustable Software limit	The negative adjustable software limit has been exceeded	400.Elevation	413	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Adjustable Software limit value)&&Limits Negative Adjustable Software limit enable	1	0	344	1
+Negative Operational Limit Switch	The negative Operational limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Negative Operational Limit Switch && Limits Negative Operational Limit Switch enable	1	0	345	1
+Negative Limit Switch	The negative limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Negative Limit Switch && Limits Negative Limit Switch enable	1	0	346	1
+Negative Software limit	The negative software limit has been exceeded	400.Elevation	411	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position<Limits Negative Software limit value)&&Limits Negative Software limit enable	1	0	347	1
+NoNewData	New data does not arrive from EIB	400.Elevation	405	2	49	ElevationAxisEvents	Alarm	EQUAL	1	NoNewDataAlarmActive	1	0	348	1
+Positive Adjustable Software limit	The positive adjustable software limit has been exceeded	400.Elevation	413	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Adjustable Software limit value)&&Limits Positive Adjustable Software limit enable	1	0	351	1
+Positive Operational Limit Switch	The positive Operational limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Positive Operational Limit Switch && Limits Positive Operational Limit Switch enable	1	0	352	1
+Positive Limit Switch	The positive limit switch has been reached by axis	400.Elevation	412	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Positive Limit Switch && Limits Positive Limit Switch enable	1	0	353	1
+Positive Software limit	The positive software limit has been exceeded	400.Elevation	410	2	49	ElevationAxisEvents	Alarm	EQUAL	1	(Position>Limits Positive Software limit value)&&Limits Positive Software limit enable	1	0	354	1
+SoftMotion Axis Fault	The softmotion axis went to fault	400.Elevation	401	2	49	ElevationAxisEvents	Alarm	EQUAL	1	fault occurred	1	0	355	1
+STO	The STO for the axis is active	400.Elevation	402	2	49	ElevationAxisEvents	Alarm	EQUAL	1	Safety Switch	1	0	356	1
+TMAPXI-AXESPXI communcication failure	The communication between TMAPXI and AXESPXI is down. This was detected by the AXESPXI and the axis is in fault	400.Elevation	400	2	49	ElevationAxisEvents	Alarm	EQUAL	1	TMAPXI-AXESPXI comm fault	1	0	357	1
+Main Cabinet Off	A fault ocurred at the Main Cabinet that is going to power off the cabinet.	50. MainAxes	65	2	46	MainAxisEvents	Alarm	EQUAL	1	Main Cabinet Off	1	0	361	1
+Negative Softmotion Software limit	The negative software limit in the axis softmotion has been exceeded	100.Azimuth	131	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	negativeSoftware	1	0	362	1
+Negative Softmotion Software limit	The negative software limit in the axis softmotion has been exceeded	100.Azimuth	131	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	negativeSoftware	1	0	362	1
+Positive Softmotion Software limit	The positive software limit in the axis softmotion has been exceeded	100.Azimuth	132	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	positiveSoftware	1	0	363	1
+Following Error	The axis detect and excesive deviation from the command	100.Azimuth	133	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	followingError	1	0	364	1
+Overspeed	Overspeed Alarm ocurred	100.Azimuth	104	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	overSpeed	1	0	365	1
+Axis Fault	Axis control algorith detected a fault. Posible causes are: NoNewData, Too Many Drives in Faul, AXESPXI and TMAPXI comm fault or software error. Check if NoNewData or PXIs comm alarms are active, otherwise this means drives fault	100.Azimuth	136	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	external	1	0	366	1
+Following Error	The axis detect and excesive deviation from the command	400.Elevation	433	2	49	ElevationAxisEvents	Alarm	EQUAL	1	followingError	1	0	367	1
+Negative Softmotion Software limit	The negative software limit in the axis softmotion has been exceeded	400.Elevation	431	2	49	ElevationAxisEvents	Alarm	EQUAL	1	negativeSoftware	1	0	368	1
+Overspeed	Overspeed Alarm ocurred	400.Elevation	404	2	49	ElevationAxisEvents	Alarm	EQUAL	1	overSpeed	1	0	369	1
+Positive Softmotion Software limit	The positive software limit in the axis softmotion has been exceeded	400.Elevation	432	2	49	ElevationAxisEvents	Alarm	EQUAL	1	positiveSoftware	1	0	370	1
+Axis Fault	Axis control algorith detected a fault. Posible causes are: NoNewData, Too Many Drives in Faul, AXESPXI and TMAPXI comm fault or software error. Check if NoNewData or PXIs comm alarms are active, otherwise this means drives fault	400.Elevation	436	2	49	ElevationAxisEvents	Alarm	EQUAL	1	external	1	0	371	1
+Axis Communication Tasks Not Running	The status or telemetry task for the axis is not running.	400.Elevation	481	2	49	ElevationAxisEvents	Alarm	EQUAL	0	AxisStatusReaderTaskRunning&&AxisStatusReaderTaskRunning	1	0	372	1
+Axis Communication Not Connected	The status or telemetry task for the axis is NOT connected.	400.Elevation	480	2	49	ElevationAxisEvents	Alarm	EQUAL	0	AxisStatusNSconnected&&AxisStatusNSconnected	1	0	373	1
+Axis Communication Tasks Not Running	The status or telemetry task for the axis is not running.	100.Azimuth	181	2	47	AzimuthAxisEvents	Alarm	EQUAL	0	AxisStatusReaderTaskRunning&&AxisStatusReaderTaskRunning	1	0	374	1
+Axis Communication Not Connected	The status or telemetry task for the axis is NOT connected.	100.Azimuth	180	2	47	AzimuthAxisEvents	Alarm	EQUAL	0	AxisStatusNSconnected&&AxisStatusNSconnected	1	0	375	1
+Cabinet AZ_OS_CBT_5001 High temperature	The temperature of the Cabinet AZ_OS_CBT_5001 is too high	800.OSS	812	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet AZ_OS_CBT_5001 High temperature	1	0	376	1
+Cabinet EL_OS_CBT_5001 High temperature	The temperature of the Cabinet EL_OS_CBT_5001  is too high	800.OSS	814	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5001 High temperature	1	0	377	1
+Cabinet EL_OS_CBT_5002 High temperature	The temperature of the Cabinet EL_OS_CBT_5002  is too high	800.OSS	816	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5002 High temperature	1	0	378	1
+Cabinet EL_OS_CBT_5002 Low temperature	The temperature of the Cabinet EL_OS_CBT_5002  is too Low	800.OSS	817	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5002 Low temperature	1	0	379	1
+Cabinet EL_OS_CBT_5001 Low temperature	The temperature of the Cabinet EL_OS_CBT_5001  is too Low	800.OSS	815	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet EL_OS_CBT_5001 Low temperature	1	0	380	1
+Cabinet AZ_OS_CBT_5001 Low temperature	The temperature of the Cabinet AZ_OS_CBT_5001  is too Low	800.OSS	813	2	40	OSSEvents	Alarm	EQUAL	1	Cabinet AZ_OS_CBT_5001 Low temperature	1	0	381	1
+Hard Stop	Hard Stop perfomed in the OSS	800.OSS	819	2	40	OSSEvents	Alarm	EQUAL	1	Hard Stop	1	0.3	383	1
+Emergency Stop	Emergency Stop perfomed in the OSS	800.OSS	818	2	40	OSSEvents	Alarm	EQUAL	1	Emergency Stop	1	0.3	384	1
+OSS Modbus fail	The Modbus comunication with the OSS is down	800.OSS	821	2	40	OSSEvents	Alarm	EQUAL	0	ModbusConnected	1	0	387	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	300.ACW	370	2	52	ACW_Events	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	389	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1100.BAL	1170	2	33	BalancingEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	390	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1000.CCW	1070	2	51	CCW_Events	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	391	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1400.LP	1470	2	27	LockingPinEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	392	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	900.MC	970	2	14	MCEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	393	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1500.MC	1570	2	45	MCLEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	394	1
+Bosch Power Supply Off	The bosch power supply is off , therefore the systems that use the bosch drives cannot be used.	1200.DP	1270	2	32	PlatformEvents0	Alarm	EQUAL	1	BoschPowerSupplyNotOK	1	0	395	1
+Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	100.Azimuth	160	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	1	0	398	1
+Extrapolation Time Exceeded	The defined extrapolation time was exceeded.	400.Elevation	460	2	49	ElevationAxisEvents	Alarm	EQUAL	1	extrapolationTimeLimit	0	0	399	1
+Soft Stop	Soft Stop perfomed in the OSS	800.OSS	830	2	40	OSSEvents	Alarm	EQUAL	1	Soft Stop	1	0.3	402	1
+Axis Externally Disabled	The axis was disabled externally without using the enable command.	100.Azimuth	190	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	409	1
+Axis Externally Disabled	The axis was disabled externally without using the enable command.	400.Elevation	490	2	49	ElevationAxisEvents	Alarm	EQUAL	1	externalDisable	1	0	411	1
+Hall Sensor Faulty	The hall sensor is faulty. Problably it is an EtherCAT line issue	100.Azimuth	141	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	HallSensorFaulty	1	0	412	1
+Hall Sensor Faulty	The hall sensor is faulty. Problably it is an EtherCAT line issue	400.Azimuth	441	2	49	ElevationAxisEvents	Alarm	EQUAL	1	HallSensorFaulty	1	0	413	1
+Capacitor Cabinet1 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2801	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 1	1	0	414	1
+Capacitor Cabinet2 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2802	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 2	1	0	422	1
+Capacitor Cabinet3 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2803	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 3	1	0	423	1
+Capacitor Cabinet4 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2804	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 4	1	0	424	1
+Capacitor Cabinet5 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2805	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 5	1	0	425	1
+Capacitor Cabinet6 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2806	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 6	1	0	426	1
+Capacitor Cabinet7 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2807	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 7	1	0	427	1
+Capacitor Cabinet8 fuses	Capacitor bank fuses were blown.	2800.Telemetry	2808	2	74	TelemetryTaskEvents	Alarm	EQUAL	1	FuseCapacitorBank 8	1	0	428	1
