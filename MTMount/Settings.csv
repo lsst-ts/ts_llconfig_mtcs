@@ -696,10 +696,10 @@ MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	
 137.0000000000	137.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC1	-5	140	1	37	15	19	55	55
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCover	MC1	0	0	0	874	15	19	55	55
 0.8000000000	0.8000000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC1	-5	136	1	104	15	19	55	55
-60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCover	MC1	0	120	1	45	15	19	55	55
-60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCover	MC1	0	120	1	53	15	19	55	55
+30	30	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCover	MC1	0	120	1	45	15	19	0	0
+30	30	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCover	MC1	0	120	1	53	15	19	0	0
 5.0000000000	5.0000000000	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCover	MC1	1	7	0	96	15	19	55	55
-120.0000000000	120.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCover	MC1	0	440	1	62	15	19	55	55
+60	60	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCover	MC1	0	440	1	62	15	19	0	0
 22.0000000000	22.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCover	MC1	0.1	25	1	71	15	19	55	55
 20.0000000000	20.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCover	MC1	0.1	25	1	29	15	19	55	55
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCover	MC1	0	0	0	468	15	19	55	55
@@ -712,7 +712,7 @@ MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y-,MC Y+,MCL Y-,MCL X+,MCL Y+,MCL X-	
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	MirrorCover	MC1	0	0	0	473	15	19	55	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	MirrorCover	MC1	0	0	0	474	15	19	55	55
 25.000000	25.000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	0	MirrorCover	MC2	0	25	1	81	16	19	55	55
-135.2	135.2	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC2	-5	140	1	836	16	19	55	55
+136	136	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC2	-5	140	1	836	16	19	0	0
 0	0	DisableColisionCheck	WARNING! This setting is used to disable the collision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	0	MirrorCover	MC2	0	136	1	1395	16	19	113	55
 900	900	Error ID	Error id of the current instance.		STRING	3	0	MirrorCover	MC2	1	7	0	89	16	19	55	55
 MC Y+	MC Y+	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC2	1	7	0	465	16	19	55	55
@@ -720,13 +720,13 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 8.0000000000	8.0000000000	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	0	MirrorCover	MC2	-5	140	0	827	16	19	55	55
 1	1	IsOnTop	This setting is used to know if this MC is on top or not. This is used in the guard.		BOOLEAN	1	0	MirrorCover	MC2	0	136	1	572	16	19	55	55
 10.0000000000	10.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	0	MirrorCover	MC2	0	50	1	870	16	19	55	55
-136.000000000	136.000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC2	-5	136	1	38	16	19	55	55
+137.000000000	137.000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC2	-5	140	1	38	16	19	0	0
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCover	MC2	0	0	0	875	16	19	55	55
 -1	-1	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC2	-5	136	1	105	16	19	55	55
-60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCover	MC2	0	120	1	46	16	19	55	55
-60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCover	MC2	0	120	1	54	16	19	55	55
+30	30	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCover	MC2	0	120	1	46	16	19	0	0
+30	30	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCover	MC2	0	120	1	54	16	19	0	0
 11	11	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCover	MC2	1	7	0	97	16	19	55	55
-120.0000000000	120.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCover	MC2	0	440	1	63	16	19	55	55
+60	60	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCover	MC2	0	440	1	63	16	19	0	0
 22.0000000000	22.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCover	MC2	0	25	1	72	16	19	55	55
 20.0000000000	20.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCover	MC2	0	25	1	31	16	19	55	55
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCover	MC2	0	0	0	475	16	19	55	55
@@ -739,7 +739,7 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	MirrorCover	MC2	0	0	0	480	16	19	55	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	MirrorCover	MC2	0	0	0	481	16	19	55	55
 25.0000000000	25.0000000000	Critical Max Motor Velocity	The motor velocity at which an alarm is triggered.	deg/s	DOUBLE	2	0	MirrorCover	MC3	0	25	1	82	17	19	55	55
-134.0000000000	134.0000000000	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC3	-5	140	1	837	17	19	55	55
+135.7000000000	135.7000000000	Deployed Position	The deployed position.	deg	DOUBLE	2	0	MirrorCover	MC3	-5	140	1	837	17	19	0	0
 0	0	DisableColisionCheck	WARNING! This setting is used to disable the collision check (value TRUE), use only when something is wrong. Otherwise leave it to FALSE.		BOOLEAN	1	0	MirrorCover	MC3	0	136	1	1396	17	19	113	55
 900	900	Error ID	Error id of the current instance.		STRING	3	0	MirrorCover	MC3	1	7	0	90	17	19	55	55
 MC X-	MC X-	ID String	This is the identifier for the cover in string format.		STRING	3	1	MirrorCover	MC3	1	7	0	466	17	19	55	55
@@ -747,13 +747,13 @@ MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC Y+,MC Y-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 8.0000000000	8.0000000000	InRangeMargin	This is the value used to verify that the mirror cover is deployed or retracted.	deg	DOUBLE	2	0	MirrorCover	MC3	-5	140	0	828	17	19	55	55
 0	0	IsOnTop	This setting is used to know if this MC is on top or not. This is used in the guard.		BOOLEAN	1	0	MirrorCover	MC3	0	136	1	573	17	19	55	55
 10.0000000000	10.0000000000	Jog Speed	The motor speed used when jog 100 percent is used.	deg/s	DOUBLE	2	0	MirrorCover	MC3	0	50	1	871	17	19	55	55
-135.0000000000	135.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC3	-5	136	1	39	17	19	55	55
+137	137	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC3	-5	140	1	39	17	19	0	0
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCover	MC3	0	0	0	876	17	19	55	55
 -1	-1	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC3	-5	136	1	106	17	19	55	55
-60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCover	MC3	0	120	1	47	17	19	55	55
-60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCover	MC3	0	120	1	55	17	19	55	55
+30	30	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCover	MC3	0	120	1	47	17	19	0	0
+30	30	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCover	MC3	0	120	1	55	17	19	0	0
 9.000000	9.000000	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCover	MC3	1	7	0	98	17	19	55	55
-120.0000000000	120.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCover	MC3	0	440	1	65	17	19	55	55
+60	60	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCover	MC3	0	440	1	65	17	19	0	0
 22.0000000000	22.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCover	MC3	0.1	25	1	73	17	19	55	55
 20.0000000000	20.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCover	MC3	0.1	25	1	30	17	19	55	55
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCover	MC3	0	0	0	482	17	19	55	55
@@ -777,10 +777,10 @@ MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	MC X+,MC X-,MCL Y-,MCL X+,MCL Y+,MCL X-	
 132	132	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC4	-5	140.5	1	40	18	19	55	55
 25.0000000000	25.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCover	MC4	0	0	0	877	18	19	55	55
 -1	-1	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCover	MC4	-5	136	1	107	18	19	55	55
-60.0000000000	60.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCover	MC4	0	120	1	48	18	19	55	55
-60.0000000000	60.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCover	MC4	0	120	1	56	18	19	55	55
+30	30	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCover	MC4	0	120	1	48	18	19	0	0
+30	30	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCover	MC4	0	120	1	56	18	19	0	0
 7	7	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCover	MC4	1	7	0	99	18	19	55	55
-120.0000000000	120.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCover	MC4	1	440	1	66	18	19	55	55
+60	60	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCover	MC4	1	440	1	66	18	19	0	0
 22.0000000000	22.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCover	MC4	0.1	25	1	75	18	19	55	55
 20.0000000000	20.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCover	MC4	0	25	1	32	18	19	55	55
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCover	MC4	0	0	0	489	18	19	55	55
@@ -805,10 +805,10 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 173.0000000000	173.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL1	0	190	1	41	19	30	54	55
 50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL1	0	0	0	878	19	30	54	55
 3.0000000000	3.0000000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL1	0	136	1	108	19	30	54	55
-180.0000000000	180.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL1	0.1	600	1	49	19	30	54	55
-180.0000000000	180.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL1	0.1	600	1	57	19	30	54	55
+90	90	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL1	0.1	600	1	49	19	30	0	0
+90	90	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL1	0.1	600	1	57	19	30	0	0
 10	10	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCoverLocks	MCL1	1	7	0	100	19	30	54	55
-360.0000000000	360.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL1	0.1	900	1	67	19	30	54	55
+180	180	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL1	0.1	900	1	67	19	30	0	0
 48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL1	0	21	0	76	19	30	54	55
 45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL1	0	50	1	33	19	30	54	55
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCoverLocks	MCL1	0	0	0	497	19	30	54	55
@@ -830,10 +830,10 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 175	175	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL2	0	190	1	42	20	30	54	55
 50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL2	0	0	0	879	20	30	54	55
 3.000000	3.000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL2	0	136	1	109	20	30	54	55
-180.0000000000	180.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL2	0.1	600	1	50	20	30	54	55
-180.0000000000	180.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL2	0.1	600	1	58	20	30	54	55
+90	90	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL2	0.1	600	1	50	20	30	0	0
+90	90	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL2	0.1	600	1	58	20	30	0	0
 12	12	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCoverLocks	MCL2	1	7	0	101	20	30	54	55
-360.0000000000	360.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL2	0.1	900	1	68	20	30	54	55
+180	180	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL2	0.1	900	1	68	20	30	0	0
 48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL2	0	50	1	77	20	30	54	55
 45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL2	0	50	1	34	20	30	54	55
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCoverLocks	MCL2	0	0	0	504	20	30	54	55
@@ -855,10 +855,10 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 173.0000000000	173.0000000000	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	190	1	43	21	30	55	55
 50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	880	21	30	55	55
 3.000000	3.000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	136	1	110	21	30	55	55
-180.0000000000	180.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	500	1	51	21	30	55	55
-180.000000	180.000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	500	1	60	21	30	55	55
+90	90	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	500	1	51	21	30	0	0
+90	90	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	500	1	60	21	30	0	0
 6	6	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCoverLocks	MCL3	1	7	0	102	21	30	55	55
-360.0000000000	360.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	900	1	69	21	30	55	55
+180	180	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL3	0.1	900	1	69	21	30	0	0
 48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	50	1	78	21	30	55	55
 45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL3	0.1	50	1	35	21	30	55	55
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCoverLocks	MCL3	0	0	0	511	21	30	55	55
@@ -880,10 +880,10 @@ MC X+,MC Y+,MC X-,MC Y-	MC X+,MC Y+,MC X-,MC Y-	IDStringsToCheck	Here specify th
 165	165	Max Angle Position	The maximum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL4	0	180	1	44	22	30	54	55
 50.0000000000	50.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL4	0	0	0	881	22	30	54	55
 3.000000	3.000000	Min Angle Position	The minimum angle position of the motor.	deg	DOUBLE	2	0	MirrorCoverLocks	MCL4	0	136	1	111	22	30	54	55
-180.0000000000	180.0000000000	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL4	0.1	500	1	52	22	30	54	55
-180.0000000000	180.0000000000	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL4	0.1	500	1	61	22	30	54	55
+90	90	Motor Acceleration	The acceleration of the motor.	deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL4	0.1	500	1	52	22	30	0	0
+90	90	Motor Deceleration	The deceleration of the motor.	 deg/s^2	DOUBLE	2	0	MirrorCoverLocks	MCL4	0.1	500	1	61	22	30	0	0
 8	8	Motor ID	ID of the instances motor.		DOUBLE	2	0	MirrorCoverLocks	MCL4	1	7	0	103	22	30	54	55
-360.0000000000	360.0000000000	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL4	0.1	900	1	70	22	30	54	55
+180	180	Motor Jerk	The jerk of the motor.	 deg/s^3	DOUBLE	2	0	MirrorCoverLocks	MCL4	0.1	900	1	70	22	30	0	0
 48.0000000000	48.0000000000	Motor Max Velocity	The motor velocity at which a warning is triggered.	deg/s	DOUBLE	2	0	MirrorCoverLocks	MCL4	0.1	50	1	79	22	30	54	55
 45.0000000000	45.0000000000	Motor Velocity	The motor velocity at which sequences are executed.	deg/s	DOUBLE	2	1	MirrorCoverLocks	MCL4	0.1	50	0	36	22	30	54	55
 -1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	MirrorCoverLocks	MCL4	0	0	0	517	22	30	54	55
