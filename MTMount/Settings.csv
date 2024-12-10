@@ -425,9 +425,9 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Limits Following Error enable	Enable the following error		BOOLEAN	1	0	MainAxis	Azimuth	0	0	0	1330	52	25	55	55
 1.5000000000	1.5000000000	Limits Following Error Value	Set the maximum allowed following error	deg	DOUBLE	2	0	MainAxis	Azimuth	1.2	3	1	710	52	25	55	55
 1	1	Limits Max Position enable	Maximum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1181	52	25	55	55
-260	260	Limits Max Position value	Maximum allowed position command	deg	DOUBLE	2	0	MainAxis	Azimuth	0	272	1	1179	52	25	122	0
+260	260	Limits Max Position value	Maximum allowed position command	deg	DOUBLE	2	0	MainAxis	Azimuth	0	272	1	1179	52	25	123	0
 1	1	Limits Min Position enable	Minimum allowed position command verification is enabled		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1182	52	25	55	55
--260	-260	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	0	MainAxis	Azimuth	-272	0	1	1180	52	25	122	0
+-260	-260	Limits Min Position value	Minimum allowed position command	deg	DOUBLE	2	0	MainAxis	Azimuth	-272	0	1	1180	52	25	123	0
 1	1	Limits Negative Adjustable Software limit enable	Enable negative adjustable software limit		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1244	52	25	0	0
 -262	-262	Limits Negative Adjustable Software limit value	Value for Negative adjustable software limit. \nThis limit will be valid if it is enabled independent if the axis may move in relative mode	deg	DOUBLE	2	0	MainAxis	Azimuth	Limits Negative Software limit value	0	1	1245	52	25	0	0
 1	1	Limits Negative Limit Switch enable	Enable negative Limit Switch		BOOLEAN	1	1	MainAxis	Azimuth	0.1	28	1	1178	52	25	0	0
@@ -458,18 +458,18 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.5	1.5	OVERRIDE Max Jerk	Maximum jerk when a safety override of limit switches is active	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	29	1	643	52	25	114	0
 0.3	0.3	OVERRIDE Max Velocity	Maximum allowed velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Azimuth	0.00000001	0.2	0	545	52	25	114	0
 1.0000000000	1.0000000000	Position readings when homming	This value will manage the times data is get from AxesPXI to calculate the actual absolute position. Each reading is a packet of 50 elements. More data makes the mean more insensitive to noise effect.		DOUBLE	2	0	MainAxis	Azimuth	1	10	1	1502	52	25	0	0
-2	2	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1341	52	25	122	0
-8	8	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1342	52	25	122	0
+2	2	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1341	52	25	0	0
+8	8	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1342	52	25	0	0
 1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to calculate the position rms value that is used for In position event		DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1428	52	25	55	55
 0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1425	52	25	55	55
 0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	712	52	25	55	55
 2	2	Softmotion longSlew max acceleration	This acceleration is the maximum available acceleration for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1528	52	25	0	0
-8	8	Softmotion longSlew max jerk	This jerk is the maximum available jerk for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1529	52	25	122	0
-2	2	Softmotion longSlew max speed	This speed is the maximum available speed for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1527	52	25	0	0
+8	8	Softmotion longSlew max jerk	This jerk is the maximum available jerk for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1529	52	25	0	0
+2	2	Softmotion longSlew max speed	This speed is the maximum available speed for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1527	52	25	123	0
 4000	4000	Softmotion longSlew threshold	This is the threshold for defining when a slew is set to be a long slew and use the according softmotion longSlew performance values.	deg	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1530	52	25	114	0
 2	2	Softmotion max acceleration	This acceleration is the maximum available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1371	52	25	0	0
-8	8	Softmotion max jerk	This jerk is the maximum available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1372	52	25	122	0
-2	2	Softmotion max speed	This speed is the maximum available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	0	0
+8	8	Softmotion max jerk	This jerk is the maximum available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1372	52	25	0	0
+2	2	Softmotion max speed	This speed is the maximum available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1370	52	25	123	0
 118000.0000000000	118000.0000000000	Softmotion Maximum Torque Per Drive	The maximum allowed torque per drive. The system will not allow that command to each drive goes over this value	Nm	DOUBLE	2	0	MainAxis	Azimuth	6000	118000	1	600	52	25	55	55
 8.0000000000	8.0000000000	Softmotion Minimun drives for no fault	Bellow this limit the axis will be in fault		DOUBLE	2	0	MainAxis	Azimuth	1	16	1	413	52	25	55	55
 1.0000000000	1.0000000000	Softmotion Necessary Hall Sensors	If the number of active hall sensors is bellow this value and alarm will be triggered in the axis. This number should be 1 for Azimuth and 2 for elevation. \nAs an exception, it can be used 1 in elevation if one hall sensor is faulty, but all the motors th		DOUBLE	2	0	MainAxis	Azimuth	1	1	1	1506	52	25	0	0
@@ -479,18 +479,18 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	Softmotion Speed From Position	If true the speed is calculated from position data, otherwise the EIB speed will be used		BOOLEAN	1	0	MainAxis	Azimuth	4	12	0	423	52	25	55	55
 100	100	Softmotion Tracking margin acceleration	This acceleration is the margin available acceleration when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1346	52	25	0	0
 100	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1347	52	25	0	0
-5	5	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1348	52	25	122	0
+5	5	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1348	52	25	123	0
 2	2	Softmotion Tracking max acceleration	This acceleration is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1343	52	25	0	0
-8	8	Softmotion Tracking max jerk	This jerk is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	122	0
-2	2	Softmotion Tracking max speed	This jerk is the maximum available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	0	0
+8	8	Softmotion Tracking max jerk	This jerk is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1344	52	25	0	0
+2	2	Softmotion Tracking max speed	This jerk is the maximum available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1345	52	25	123	0
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homing process	ms	DOUBLE	2	0	MainAxis	Azimuth	800	20000	1	1223	52	25	55	55
 100.Azimuth	100.Azimuth	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Azimuth	0	0	0	553	52	25	55	55
 2	2	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.000000001	10.5	1	612	52	25	0	0
 8	8	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000000001	42	1	635	52	25	0	0
-2	2	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	0	0
+2	2	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.0000001	10.5	1	613	52	25	123	0
 3	3	TCS Max Acceleration	Maximum allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	614	52	25	0	0
-10	10	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	122	0
-3	3	TCS Max Velocity	Maximum allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	615	52	25	0	0
+10	10	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	42	1	634	52	25	0	0
+3	3	TCS Max Velocity	Maximum allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	615	52	25	123	0
 1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1172	52	25	55	55
 2000.0000000000	2000.0000000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	1171	52	25	55	55
 300.0000000000	300.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Azimuth	4	12	0	606	52	25	55	55
@@ -584,18 +584,18 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1.5	1.5	OVERRIDE Max Jerk	Maximum jerk when a safety override of limit switches is active	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	28	1	1297	53	25	114	0
 0.3	0.3	OVERRIDE Max Velocity	Maximum allowed velocity when a safety limit switch is overrided	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	0.2	0	1298	53	25	114	0
 1.0000000000	1.0000000000	Position readings when homming	This value will manage the times data is get from AxesPXI to calculate the actual absolute position. Each reading is a packet of 50 elements. More data makes the mean more insensitive to noise effect.		DOUBLE	2	0	MainAxis	Elevation	1	10	1	1503	53	25	0	0
-2	2	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1349	53	25	122	0
-8	8	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1350	53	25	122	0
+2	2	Softmotion Error Stop acceleration	This acceleration will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1349	53	25	0	0
+8	8	Softmotion Error Stop jerk	This jerk will be applied when the softmotion axis detects a fault, like overspeed or following error	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1350	53	25	0	0
 1000.0000000000	1000.0000000000	Softmotion In position buffer size	This value manage the buffer size to calculate the position rms value that is used for In position event		DOUBLE	2	0	MainAxis	Elevation	4	12	0	1427	53	25	55	55
 0.0001000000	0.0001000000	Softmotion In position Hysteresis	This value added to the Softmotion In position Margin determines when the in position is set to false	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1426	53	25	55	55
 0.0010000000	0.0010000000	Softmotion In position Margin	This value will indicate when the softmotion axis indicates that the axis in desired position	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	713	53	25	55	55
 2	2	Softmotion longSlew max acceleration	This acceleration is the maximum available acceleration for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1531	53	25	0	0
-8	8	Softmotion longSlew max jerk	This jerk is the maximum available jerk for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1532	53	25	122	0
-2	2	Softmotion longSlew max speed	This speed is the maximum available speed for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1533	53	25	0	0
+8	8	Softmotion longSlew max jerk	This jerk is the maximum available jerk for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1532	53	25	0	0
+2	2	Softmotion longSlew max speed	This speed is the maximum available speed for the axis when doing a long slew, this is defined by the longSlew Threshold setting	deg/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1533	53	25	123	0
 4000	4000	Softmotion longSlew threshold	This is the threshold for defining when a slew is set to be a long slew and use the according softmotion longSlew performance values.	deg	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1534	53	25	0	0
 2	2	Softmotion max acceleration	This acceleration is the maximum available acceleration for the axis.	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1373	53	25	0	0
-8	8	Softmotion max jerk	This jerk is the maximum available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1374	53	25	122	0
-2	2	Softmotion max speed	This speed is the maximum available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1375	53	25	0	0
+8	8	Softmotion max jerk	This jerk is the maximum available jerk for the axis.	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1374	53	25	0	0
+2	2	Softmotion max speed	This speed is the maximum available speed for the axis.	deg/s	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1375	53	25	123	0
 24000.0000000000	24000.0000000000	Softmotion Maximum Torque Per Drive	The maximum allowed torque per drive. The system will not allow that command to each drive goes over this value	Nm	DOUBLE	2	0	MainAxis	Elevation	4000	24000	1	601	53	25	55	55
 5.0000000000	5.0000000000	Softmotion Minimun drives for no fault	Bellow this limit the axis will be in fault		DOUBLE	2	0	MainAxis	Elevation	3	12	1	412	53	25	55	55
 2.0000000000	2.0000000000	Softmotion Necessary Hall Sensors	If the number of active hall sensors is bellow this value and alarm will be triggered in the axis. This number should be 1 for Azimuth and 2 for elevation. \nAs an exception, it can be used 1 in elevation if one hall sensor is faulty, but all the motors th		DOUBLE	2	0	MainAxis	Elevation	1	2	1	1507	53	25	0	0
@@ -607,16 +607,16 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 100	100	Softmotion Tracking margin jerk	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1352	53	25	55	55
 1	1	Softmotion Tracking margin speed	This acceleration is the margin available jerk when axis is in tracking mode. This is used by tracking algorithm from the maximum available for tracking/slewing when slewing.	%	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1353	53	25	0	0
 2	2	Softmotion Tracking max acceleration	This acceleration is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^2	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1354	53	25	0	0
-8	8	Softmotion Tracking max jerk	This jerk is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	25	1	1355	53	25	122	0
-2	2	Softmotion Tracking max speed	This jerk is the maximum available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1356	53	25	0	0
+8	8	Softmotion Tracking max jerk	This jerk is the maximum available acceleration when axis is in tracking mode. This is used for tracking and slewing combination	deg/s^3	DOUBLE	2	0	MainAxis	Elevation	0.00000001	25	1	1355	53	25	0	0
+2	2	Softmotion Tracking max speed	This jerk is the maximum available speed when axis is in tracking mode. This is used for tracking and slewing combination	deg/s	DOUBLE	2	0	MainAxis	Elevation	0.00000001	6	1	1356	53	25	123	0
 3000.0000000000	3000.0000000000	Stabilization Time	Time to wait after finding references in Homing process	ms	DOUBLE	2	0	MainAxis	Elevation	800	20000	1	1299	53	25	55	55
 400.Elevation	400.Elevation	Subsystem Path	Defines the subsystem path when an error must be transmitted		STRING	3	0	MainAxis	Elevation	0	0	0	1300	53	25	55	55
 2	2	TCS Default Acceleration	Default acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1301	53	25	0	0
 8	8	TCS Default Jerk	Default Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1302	53	25	0	0
-2	2	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	0	0
+2	2	TCS Default Velocity	Default velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1303	53	25	123	0
 3	3	TCS Max Acceleration	Maximum allowed acceleration in CSC command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1304	53	25	0	0
-10	10	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	122	0
-3	3	TCS Max Velocity	Maximum allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	0	0
+10	10	TCS Max Jerk	Maximum Jerk in CSC command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	21	1	1305	53	25	0	0
+3	3	TCS Max Velocity	Maximum allowed velocity in CSC command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	10.5	1	1306	53	25	123	0
 1000.0000000000	1000.0000000000	Timeout for Ack CW	Timeout for receive and ack from Cable Wrap	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1307	53	25	55	55
 2000.000000	2000.000000	Timeout for Ack EIB	Timeout for receive and ack from EIB	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1308	53	25	55	55
 200.0000000000	200.0000000000	Timeout for Axis Disable	Timeout for disable axis and drives in the softmotion axis	ms	DOUBLE	2	0	MainAxis	Elevation	4	12	0	1310	53	25	55	55
