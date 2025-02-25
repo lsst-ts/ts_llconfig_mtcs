@@ -177,7 +177,7 @@ c:\\Configuration\\ACWData.ini	c:\\Configuration\\ACWData.ini	Motor timer file p
 2	2	Default Acceleration	The default acceleration of the motor	deg/s^2	DOUBLE	2	0	CW	CCW	0.1	3	1	748	61	33	54	55
 12	12	Default Jerk	The default jerk of the motor	deg/s^3	DOUBLE	2	0	CW	CCW	0.5	20	1	749	61	33	54	55
 3.500000	3.500000	Default Speed	The default speed of the motor	deg/s^2	DOUBLE	2	1	CW	CCW	0.1	5.25	1	750	61	33	54	55
-1	1	Force Drive Selection	Force to use a drive when  powering on and not look to using to times to decide. The selected drive will be managed by setting Forced Drive. This setting is for testing purposes only.		BOOLEAN	1	0	CW	CCW	0	0	0	811	61	33	54	55
+0	0	Force Drive Selection	Force to use a drive when  powering on and not look to using to times to decide. The selected drive will be managed by setting Forced Drive. This setting is for testing purposes only.		BOOLEAN	1	0	CW	CCW	0	0	0	811	61	33	0	0
 2	2	Forced Drive	Drive to use when setting Force Drive Selection is True. Use number  1 or 2 to select Motor 1 or  Motor 2		DOUBLE	2	0	CW	CCW	1	2	1	812	61	33	54	55
 Motor 1	Motor 1	ID String 1	This is the identifier for the Motor 1 in string format.		STRING	3	0	CW	CCW	0	0	0	773	61	33	54	55
 Motor 2	Motor 2	ID String 2	This is the identifier for the Motor 2 in string format.		STRING	3	0	CW	CCW	0	0	0	819	61	33	54	55
