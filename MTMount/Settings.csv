@@ -413,6 +413,36 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	119	0
 4	4	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	119	0
 1	1	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	119	0
+0	0	Filter Damping X 1 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Azimuth	0	100	0	1543	52	25	0	0
+0.0000000000	0.0000000000	Filter Damping X 1 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1544	52	25	0	0
+0.0000000000	0.0000000000	Filter Damping X 1 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1545	52	25	0	0
+35.0000000000	35.0000000000	Filter Damping X 1 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1546	52	25	0	0
+2.0000000000	2.0000000000	Filter Damping X 1 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1547	52	25	0	0
+0	0	Filter Damping X 2 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Azimuth	0	100	0	1548	52	25	0	0
+0.0000000000	0.0000000000	Filter Damping X 2 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1549	52	25	0	0
+0.0000000000	0.0000000000	Filter Damping X 2 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1550	52	25	0	0
+35.0000000000	35.0000000000	Filter Damping X 2 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1551	52	25	0	0
+2.0000000000	2.0000000000	Filter Damping X 2 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1552	52	25	0	0
+1	1	Filter Damping Y 1 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Azimuth	0	100	0	1553	52	25	0	0
+0.0000000000	0.0000000000	Filter Damping Y 1 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1554	52	25	0	0
+0.0000000000	0.0000000000	Filter Damping Y 1 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1555	52	25	0	0
+35.0000000000	35.0000000000	Filter Damping Y 1 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1556	52	25	0	0
+2.0000000000	2.0000000000	Filter Damping Y 1 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1557	52	25	0	0
+0	0	Filter Damping Y 2 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Azimuth	0	100	0	1558	52	25	0	0
+0.0000000000	0.0000000000	Filter Damping Y 2 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1559	52	25	0	0
+0.0000000000	0.0000000000	Filter Damping Y 2 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1560	52	25	0	0
+35.0000000000	35.0000000000	Filter Damping Y 2 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1561	52	25	0	0
+2.0000000000	2.0000000000	Filter Damping Y 2 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1562	52	25	0	0
+1	1	Filter Position 1 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Azimuth	0	100	0	1563	52	25	0	0
+0.0000000000	0.0000000000	Filter Position 1 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1564	52	25	0	0
+0.0000000000	0.0000000000	Filter Position 1 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1565	52	25	0	0
+25.0000000000	25.0000000000	Filter Position 1 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1566	52	25	0	0
+1.0000000000	1.0000000000	Filter Position 1 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1567	52	25	0	0
+0	0	Filter Position 2 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Azimuth	0	100	0	1568	52	25	0	0
+0.0000000000	0.0000000000	Filter Position 2 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1569	52	25	0	0
+0.0000000000	0.0000000000	Filter Position 2 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1570	52	25	0	0
+25.0000000000	25.0000000000	Filter Position 2 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1571	52	25	0	0
+1.0000000000	1.0000000000	Filter Position 2 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1572	52	25	0	0
 0.5	0.5	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	557	52	25	119	0
 2	2	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	14	1	638	52	25	119	0
 0.5	0.5	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	1.5	1	558	52	25	119	0
@@ -542,6 +572,36 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 1	1	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1259	53	25	119	0
 4	4	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	24	1	1260	53	25	119	0
 1	1	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	5.5	1	1261	53	25	119	0
+0	0	Filter Damping X 1 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Elevation	0	100	0	1573	53	25	0	0
+0.0000000000	0.0000000000	Filter Damping X 1 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1574	53	25	0	0
+0.0000000000	0.0000000000	Filter Damping X 1 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1575	53	25	0	0
+35.0000000000	35.0000000000	Filter Damping X 1 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1576	53	25	0	0
+2.0000000000	2.0000000000	Filter Damping X 1 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1577	53	25	0	0
+0	0	Filter Damping X 2 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Elevation	0	100	0	1578	53	25	0	0
+0.0000000000	0.0000000000	Filter Damping X 2 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1579	53	25	0	0
+0.0000000000	0.0000000000	Filter Damping X 2 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1580	53	25	0	0
+35.0000000000	35.0000000000	Filter Damping X 2 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1581	53	25	0	0
+2.0000000000	2.0000000000	Filter Damping X 2 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1582	53	25	0	0
+0	0	Filter Damping Y 1 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Elevation	0	100	0	1583	53	25	0	0
+0.0000000000	0.0000000000	Filter Damping Y 1 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1584	53	25	0	0
+0.0000000000	0.0000000000	Filter Damping Y 1 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1585	53	25	0	0
+35.0000000000	35.0000000000	Filter Damping Y 1 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1586	53	25	0	0
+2.0000000000	2.0000000000	Filter Damping Y 1 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1587	53	25	0	0
+0	0	Filter Damping Y 2 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Elevation	0	100	0	1588	53	25	0	0
+0.0000000000	0.0000000000	Filter Damping Y 2 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1589	53	25	0	0
+0.0000000000	0.0000000000	Filter Damping Y 2 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1590	53	25	0	0
+35.0000000000	35.0000000000	Filter Damping Y 2 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1591	53	25	0	0
+2.0000000000	2.0000000000	Filter Damping Y 2 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1592	53	25	0	0
+1	1	Filter Position 1 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Elevation	0	100	0	1593	53	25	0	0
+0.0000000000	0.0000000000	Filter Position 1 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1594	53	25	0	0
+0.0000000000	0.0000000000	Filter Position 1 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1595	53	25	0	0
+10.0000000000	10.0000000000	Filter Position 1 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1596	53	25	0	0
+1.0000000000	1.0000000000	Filter Position 1 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1597	53	25	0	0
+0	0	Filter Position 2 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Elevation	0	100	0	1598	53	25	0	0
+0.0000000000	0.0000000000	Filter Position 2 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1599	53	25	0	0
+0.0000000000	0.0000000000	Filter Position 2 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1600	53	25	0	0
+25.0000000000	25.0000000000	Filter Position 2 low cutoff frequency	Defines the low cuoff frequency for Lowpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Elevation	0	100	0	1601	53	25	0	0
+1.0000000000	1.0000000000	Filter Position 2 order	Defines the order of the filter		DOUBLE	2	0	MainAxis	Elevation	0	100	0	1602	53	25	0	0
 0.5	0.5	HHD Default Acceleration	Default acceleration in HHD command mode	deg/s^2	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1262	53	25	119	0
 2	2	HHD Default Jerk	Default Jerk in HHD command mode	deg/s^3	DOUBLE	2	1	MainAxis	Elevation	0.00000001	28	1	1263	53	25	119	0
 0.5	0.5	HHD Default Velocity	Default velocity in HHD command mode	deg/s	DOUBLE	2	1	MainAxis	Elevation	0.00000001	1.5	1	1264	53	25	119	0
