@@ -3,29 +3,29 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 10.0000000000	10.0000000000	Commands to update settings	When the number of commands set in this settings is received by the task, the settings will be updated		DOUBLE	2	0	AmbientTemperatureTracking	AmbientTemperatureTracking	5	250	1	1378	78	37	54	55
 10.0000000000	10.0000000000	Initial Temperature	The system will start with this temperature until a commands to update the ambient temperature is received	ºC	DOUBLE	2	0	AmbientTemperatureTracking	AmbientTemperatureTracking	5	15	1	1377	78	37	54	55
 1000.001892	1000.001892	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing1	0	0	0	298	37	22	0	0
-1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	0	Balancing	Balancing1	1000	1700	1	209	37	22	54	55
-3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	0	Balancing	Balancing1	1000	3000	1	210	37	22	54	55
-25.0000000000	25.0000000000	Default Speed	The default speed of the motor.	mm/s	DOUBLE	2	1	Balancing	Balancing1	5	26	1	208	37	22	54	55
-0.0000000000	0.0000000000	First Side Position	This is the position to which the balancing moves first, when doing a side to side move.	mm	DOUBLE	2	0	Balancing	Balancing1	0	0	0	211	37	22	54	55
-0. X-	0. X-	ID String	This is the identifier for the cover in string format.		STRING	3	1	Balancing	Balancing1	0	0	0	532	37	22	54	55
-1279.0000000000	1279.0000000000	Last Side Position	This is the position to which the balancing moves last, when doing a side to side move.	mm	DOUBLE	2	0	Balancing	Balancing1	0	0	0	212	37	22	54	55
-32.0000000000	32.0000000000	Max Critical Speed	The maximum critical speed of the balancing motor, at which an alarm is triggered.	mm/s	DOUBLE	2	0	Balancing	Balancing1	0.1	50	1	321	37	22	54	55
-1280.0000000000	1280.0000000000	Max Position	Maximum allowed position, cmds with a position above this one are rejected.	mm	DOUBLE	2	0	Balancing	Balancing1	0	1300	1	424	37	22	54	55
-1281.0000000000	1281.0000000000	Max Position Limit	The maximum position of the balancing motor, at which an error is fired.	mm	DOUBLE	2	0	Balancing	Balancing1	0	1300	1	882	37	22	54	55
-31.0000000000	31.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	Balancing	Balancing1	0	40	1	317	37	22	54	55
-0.0000000000	0.0000000000	Min Position	Maximum allowed position, cmds with a position above this one are rejected.	mm	DOUBLE	2	0	Balancing	Balancing1	-20	20	1	428	37	22	54	55
--1.0000000000	-1.0000000000	Min Position Limit	The minimum position of the balancing motor, at which an error is fired.	mm	DOUBLE	2	0	Balancing	Balancing1	-30	10	1	886	37	22	54	55
-15.0000000000	15.0000000000	Motor ID	The motor ID used in this instance.		DOUBLE	2	0	Balancing	Balancing1	0	0	0	207	37	22	54	55
--1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	408	37	22	54	55
-150.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	0	Balancing	Balancing1	0	0	0	201	37	22	54	55
-1	1	Negative Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	Balancing	Balancing1	0	0	0	1383	37	22	54	55
-10000.0000000000	10000.0000000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	200	37	22	54	55
-10000.0000000000	10000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	0	Balancing	Balancing1	1	7	0	199	37	22	54	55
-1	1	Positive Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	Balancing	Balancing1	0	0	0	890	37	22	54	55
-3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	205	37	22	54	55
-31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing1	0.01	40	1	820	37	22	54	55
-3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	202	37	22	54	55
-100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	203	37	22	54	55
+1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	0	Balancing	Balancing1	1000	1700	1	209	37	22	55	55
+3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	0	Balancing	Balancing1	1000	3000	1	210	37	22	55	55
+25.0000000000	25.0000000000	Default Speed	The default speed of the motor.	mm/s	DOUBLE	2	1	Balancing	Balancing1	5	26	1	208	37	22	55	55
+0.0000000000	0.0000000000	First Side Position	This is the position to which the balancing moves first, when doing a side to side move.	mm	DOUBLE	2	0	Balancing	Balancing1	0	0	0	211	37	22	55	55
+0. X-	0. X-	ID String	This is the identifier for the cover in string format.		STRING	3	1	Balancing	Balancing1	0	0	0	532	37	22	55	55
+1279.0000000000	1279.0000000000	Last Side Position	This is the position to which the balancing moves last, when doing a side to side move.	mm	DOUBLE	2	0	Balancing	Balancing1	0	0	0	212	37	22	55	55
+32.0000000000	32.0000000000	Max Critical Speed	The maximum critical speed of the balancing motor, at which an alarm is triggered.	mm/s	DOUBLE	2	0	Balancing	Balancing1	0.1	50	1	321	37	22	55	55
+1280.0000000000	1280.0000000000	Max Position	Maximum allowed position, cmds with a position above this one are rejected.	mm	DOUBLE	2	0	Balancing	Balancing1	0	1300	1	424	37	22	55	55
+1281.0000000000	1281.0000000000	Max Position Limit	The maximum position of the balancing motor, at which an error is fired.	mm	DOUBLE	2	0	Balancing	Balancing1	0	1300	1	882	37	22	55	55
+31.0000000000	31.0000000000	Max Speed	The maximum speed of the motor, if the speed is greater than this the command is rejected.	deg/s	DOUBLE	2	0	Balancing	Balancing1	0	40	1	317	37	22	55	55
+0.0000000000	0.0000000000	Min Position	Maximum allowed position, cmds with a position above this one are rejected.	mm	DOUBLE	2	0	Balancing	Balancing1	-20	20	1	428	37	22	55	55
+-1.0000000000	-1.0000000000	Min Position Limit	The minimum position of the balancing motor, at which an error is fired.	mm	DOUBLE	2	0	Balancing	Balancing1	-30	10	1	886	37	22	55	55
+15.0000000000	15.0000000000	Motor ID	The motor ID used in this instance.		DOUBLE	2	0	Balancing	Balancing1	0	0	0	207	37	22	55	55
+-1.0000000000	-1.0000000000	MoveVelocity_Trns_TimeOut	Timeout for Move Velocity commands. Negative numbers means no timeout.	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	408	37	22	55	55
+150.0000000000	150.0000000000	Move_Trans_TimeMargin	Margin to apply to calculation time for specified movement before a timeout error occurs	%	DOUBLE	2	0	Balancing	Balancing1	0	0	0	201	37	22	55	55
+1	1	Negative Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	Balancing	Balancing1	0	0	0	1383	37	22	55	55
+10000.0000000000	10000.0000000000	OffTrans_Timeout	Power off transition timeout	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	200	37	22	55	55
+10000.0000000000	10000.0000000000	OnTrans_Timeout	Power on transition timeout	ms	DOUBLE	2	0	Balancing	Balancing1	1	7	0	199	37	22	55	55
+1	1	Positive Software Limit Enable	Enable the software limit. If the value of this param is false the software limit does not work and will not trigger any alarm. Disable this only for testing or to get the system out of software limit		BOOLEAN	1	1	Balancing	Balancing1	0	0	0	890	37	22	55	55
+3000.0000000000	3000.0000000000	ResettingTime	Timeout for the reset transition.	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	205	37	22	55	55
+31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing1	0.01	40	1	820	37	22	55	55
+3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	202	37	22	55	55
+100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	203	37	22	55	55
 1000.000000	1000.000000	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing2	0	0	0	302	38	22	0	0
 1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	0	Balancing	Balancing2	1000	1700	1	243	38	22	54	55
 3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	0	Balancing	Balancing2	1000	4000	1	215	38	22	54	55
