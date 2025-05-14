@@ -282,7 +282,7 @@ DP X-	DP X-	ID String	This is the identifier for the deployable platform in stri
 42000.0000000000	42000.0000000000	CMD timeout reference on	Timeout to perform reference	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1097	27	21	0	0
 2000.0000000000	2000.0000000000	CMD timeout Relative Offset	Timeout to set the relative position offset in the EIB readings	ms	DOUBLE	2	0	EncoderSystem	General	0	0	0	1250	27	21	55	55
 /c/Configuration/EIB/multi_ext.txt	/c/Configuration/EIB/multi_ext.txt	EIB config file path	The file path in PXI to get the EIB configuration. This file is Heidenhain developed file		STRING	3	0	EncoderSystem	General	-2	50	1	177	27	21	55	55
-1	1	EIB Events Read Enable	If true the events will be retrieved from the EIB otherwise no.		BOOLEAN	1	0	EncoderSystem	General	-2	50	0	1536	27	21	0	0
+0	0	EIB Events Read Enable	If true the events will be retrieved from the EIB otherwise no.		BOOLEAN	1	0	EncoderSystem	General	-2	50	0	1536	27	21	0	0
 2000.0000000000	2000.0000000000	EIB Events Read Time (ms)	Time period to check for new events in the EIB	ms	DOUBLE	2	0	EncoderSystem	General	-2	50	0	1535	27	21	0	0
 2.0000000000	2.0000000000	Elevation Critical Active Heads	If the number of active heads for elevation axis is bellow this value an alarm will be triggered		DOUBLE	2	0	EncoderSystem	General	1	3	1	1175	27	21	55	55
 10.0000000000	10.0000000000	Elevation reference margin	If the reference between any head and the mean value of the 4 heads is higher than this value, the encoder reference (homing) will fail.	deg	DOUBLE	2	0	EncoderSystem	General	1	3	0	1491	27	21	0	0
