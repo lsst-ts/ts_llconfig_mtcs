@@ -161,12 +161,12 @@ CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.Modbu
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	289	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	CabinetOK	0	0	291	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	CabinetOK	1	0	292	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	303	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	304	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	63	TMA_AX_DZ_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	300	303	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	64	TMA_AZ_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	300	304	1
 CabinetControllerNotOK	The modbus temperature controller is in alarm.	2600.ModbusTemperature	2601	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	CabinetOK	1	0	306	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	307	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	0	308	1
-ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	ConnectionOK	1	0	309	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	65	TMA_AZ_PD_TRM_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	300	307	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	66	TMA_EL_PD_CBT_0001_Events	Alarm	EQUAL	0	ConnectionOK	1	300	308	1
+ConnectionNotOK	The modbus temperature controller iconnection is not okay.	2600.ModbusTemperature	2602	2	67	TMA_EL_PD_CBT_0002_Events	Alarm	EQUAL	0	ConnectionOK	1	300	309	1
 NoNewData	New data does not arrive from EIB	100.Azimuth	105	2	47	AzimuthAxisEvents	Alarm	EQUAL	1	NoNewDataAlarmActive	1	0	310	1
 OSSAlarm	The OSS is in Fault state	50. MainAxes	57	2	46	MainAxisEvents	Alarm	EQUAL	1	OSSAlarm	1	0	316	1
 Phase Power Supply Alarm	The Phass Power Supply, supply for main axis, is in fault state	50. MainAxes	58	2	46	MainAxisEvents	Alarm	EQUAL	1	PhasePowerSupplyAlarm	1	0	317	1
