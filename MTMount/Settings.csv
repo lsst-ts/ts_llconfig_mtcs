@@ -2,7 +2,7 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 0.0000000000	0.0000000000	Ambient Temperature Offset	Offset to apply to the received ambient temperature	ºC	DOUBLE	2	1	AmbientTemperatureTracking	AmbientTemperatureTracking	-2	2	1	1376	78	37	54	55
 10.0000000000	10.0000000000	Commands to update settings	When the number of commands set in this settings is received by the task, the settings will be updated		DOUBLE	2	0	AmbientTemperatureTracking	AmbientTemperatureTracking	5	250	1	1378	78	37	54	55
 10.0000000000	10.0000000000	Initial Temperature	The system will start with this temperature until a commands to update the ambient temperature is received	ºC	DOUBLE	2	0	AmbientTemperatureTracking	AmbientTemperatureTracking	5	15	1	1377	78	37	54	55
-1000.001892	1000.001892	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing1	0	0	0	298	37	22	0	0
+200.000000	200.000000	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing1	0	0	0	298	37	22	0	0
 1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	0	Balancing	Balancing1	1000	1700	1	209	37	22	55	55
 3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	0	Balancing	Balancing1	1000	3000	1	210	37	22	55	55
 25.0000000000	25.0000000000	Default Speed	The default speed of the motor.	mm/s	DOUBLE	2	1	Balancing	Balancing1	5	26	1	208	37	22	55	55
@@ -26,7 +26,7 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing1	0.01	40	1	820	37	22	55	55
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	202	37	22	55	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing1	0	0	0	203	37	22	55	55
-1000.000000	1000.000000	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing2	0	0	0	302	38	22	0	0
+200.000000	200.000000	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing2	0	0	0	302	38	22	0	0
 1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	0	Balancing	Balancing2	1000	1700	1	243	38	22	54	55
 3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	0	Balancing	Balancing2	1000	4000	1	215	38	22	54	55
 25.0000000000	25.0000000000	Default Speed	The default speed of the motor.	mm/s	DOUBLE	2	1	Balancing	Balancing2	5	26	1	216	38	22	54	55
@@ -50,7 +50,7 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing2	0.01	50	1	821	38	22	54	55
 3000.0000000000	3000.0000000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing2	0	0	0	226	38	22	54	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing2	0	0	0	227	38	22	54	55
-500.000000	500.000000	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing3	0	0	0	308	39	22	0	0
+500.004913	500.004913	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing3	0	0	0	308	39	22	0	0
 1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	0	Balancing	Balancing3	1000	1700	1	229	39	22	55	55
 3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	0	Balancing	Balancing3	1500	4000	1	230	39	22	55	55
 25.0000000000	25.0000000000	Default Speed	The default speed of the motor.	mm/s	DOUBLE	2	1	Balancing	Balancing3	5	30	1	231	39	22	55	55
@@ -74,7 +74,7 @@ VALUE	VALUE_SAVED	NAME	DESCRIPTION	UNIT	TYPE	TYPE_ID	VISIBLE	STATECHART	INSTANCE
 31.0000000000	31.0000000000	Speed Limit	If this speed value is overcomed a speed limit warning will be triggered.	deg/s	DOUBLE	2	0	Balancing	Balancing3	0.01	50	1	822	39	22	55	55
 3000.000000	3000.000000	StopTrans_Timeout	Maximum time allowed for a stop command	ms	DOUBLE	2	0	Balancing	Balancing3	0	0	0	240	39	22	55	55
 100.0000000000	100.0000000000	WaitAfterReset	Time to wait after a reset to go to idle	ms	DOUBLE	2	0	Balancing	Balancing3	0	0	0	241	39	22	55	55
-500.000092	500.000092	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing4	0	0	0	311	40	22	0	0
+500.003296	500.003296	Balance Position	This is the balance position for balancing weight.	mm	DOUBLE	2	1	Balancing	Balancing4	0	0	0	311	40	22	0	0
 1500.0000000000	1500.0000000000	Default Acceleration	The default acceleration of the motor.	mm/s^2	DOUBLE	2	0	Balancing	Balancing4	1000	1700	1	294	40	22	54	55
 3000.0000000000	3000.0000000000	Default Jerk	The default jerk of the motor.	mm/s^3	DOUBLE	2	0	Balancing	Balancing4	1500	4000	1	244	40	22	54	55
 25.0000000000	25.0000000000	Default Speed	The default speed of the motor.	mm/s	DOUBLE	2	1	Balancing	Balancing4	5	30	1	245	40	22	54	55
