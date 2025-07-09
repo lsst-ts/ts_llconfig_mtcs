@@ -412,7 +412,7 @@ LP X-	LP X-	ID String	This is the identifier for the cover in string format.		ST
 0.5	0.5	EUI Default Velocity	Default velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10	1	555	52	25	0	0
 1	1	EUI Max Acceleration	Maximum allowed acceleration in EUI command mode	deg/s^2	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	10.5	1	547	52	25	0	0
 4	4	EUI Max Jerk	Maximum Jerk in EUI command mode	deg/s^3	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	48	1	621	52	25	0	0
-1	1	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	0	0
+1.1	1	EUI Max Velocity	Maximum allowed velocity in EUI command mode	deg/s	DOUBLE	2	1	MainAxis	Azimuth	0.00000001	11	1	541	52	25	0	0
 0	0	Filter Damping X 1 Enabled?	Defines if the filter is enabled (True). 		BOOLEAN	1	0	MainAxis	Azimuth	0	100	0	1543	52	25	0	0
 0.0000000000	0.0000000000	Filter Damping X 1 Filter Type	Defines the filter type to use where 0 Lowpass, 1 Highpass, 2 Bandpass, 3 BandStop. It is a Butterworth base filter		DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1544	52	25	0	0
 0.0000000000	0.0000000000	Filter Damping X 1 high cutoff frequency	Defines the high cuoff frequency for Highpass, Bandpass and BandStop filters	Hz	DOUBLE	2	0	MainAxis	Azimuth	0	100	0	1545	52	25	0	0
